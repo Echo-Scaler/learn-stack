@@ -1,0 +1,11 @@
+{
+  "name": "all-in-one",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix my-learning-hub run dev",
+    "start": "npm --prefix my-learning-hub start",
+    "build": "npm --prefix my-learning-hub run build",
+    "preview": "npm --prefix my-learning-hub run preview"
+  }
+}
