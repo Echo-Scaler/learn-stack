@@ -1,7 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "cd my-learning-hub && npm install && npm run build",
-  "outputDirectory": "my-learning-hub/dist",
+  "buildCommand": "node scripts/build.js",
+  "outputDirectory": "dist",
   "cleanUrls": true,
   "trailingSlash": true,
   "redirects": [

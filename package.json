@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "npm --prefix my-learning-hub run dev",
     "start": "npm --prefix my-learning-hub start",
-    "build": "cd my-learning-hub && npm install && npm run build",
+    "build": "node scripts/build.js",
     "preview": "npm --prefix my-learning-hub run preview"
   }
 }
