@@ -1,0 +1,656 @@
+---
+const { id } = Astro.locals.starlightRoute;
+const sidebar = Astro.locals.starlightRoute.sidebar || [];
+
+// Helper to recursively flatten sidebar links in a group
+function flattenGroup(entries: any[]): Array<{ href: string; label: string; isCurrent: boolean }> {
+  let result: any[] = [];
+  if (!entries || !Array.isArray(entries)) return result;
+  for (const item of entries) {
+    if (item.type === 'link') {
+      result.push(item);
+    } else if (item.type === 'group' && item.entries) {
+      result = result.concat(flattenGroup(item.entries));
+    }
+  }
+  return result;
+}
+
+const norm = (url: string) => (url || '').replace(/\/+$/, '').toLowerCase();
+const currentPath = norm(Astro.url.pathname);
+const currentId = (id || '').replace(/\.md$/, '').toLowerCase();
+
+// Find the course group that contains the current lesson
+let currentGroup: any = null;
+let sectorLessons: Array<{ href: string; label: string; isCurrent: boolean }> = [];
+
+for (const group of sidebar) {
+  if (group.type === 'group') {
+    const flat = flattenGroup(group.entries);
+    const hasCurrent = flat.some(item => {
+      const itemHref = norm(item.href);
+      return item.isCurrent || (currentPath && itemHref === currentPath) || (currentId && itemHref.includes(currentId));
+    });
+    if (hasCurrent) {
+      currentGroup = group;
+      sectorLessons = flat;
+      break;
+    }
+  }
+}
+
+// Fallback matching by first path segment (e.g. /javascript/...)
+if (!currentGroup && currentPath) {
+  const segments = currentPath.split('/').filter(Boolean);
+  const sectorSegment = segments[0]; // 'javascript', 'php', etc.
+  if (sectorSegment) {
+    for (const group of sidebar) {
+      if (group.type === 'group') {
+        const flat = flattenGroup(group.entries);
+        if (flat.some(item => norm(item.href).includes(`/${sectorSegment}/`))) {
+          currentGroup = group;
+          sectorLessons = flat;
+          break;
+        }
+      }
+    }
+  }
+}
+
+const totalLessons = sectorLessons.length;
+const currentIndex = sectorLessons.findIndex(item => {
+  const itemHref = norm(item.href);
+  return item.isCurrent || (currentPath && itemHref === currentPath) || (currentId && itemHref.includes(currentId));
+});
+
+const currentNum = currentIndex >= 0 ? currentIndex + 1 : 1;
+const prevLesson = currentIndex > 0 ? sectorLessons[currentIndex - 1] : null;
+const nextLesson = currentIndex >= 0 && currentIndex < totalLessons - 1 ? sectorLessons[currentIndex + 1] : null;
+
+const sectorTitle = currentGroup ? currentGroup.label : '';
+const progressPercent = totalLessons > 0 ? Math.round((currentNum / totalLessons) * 100) : 0;
+
+// Sector Icons
+const sectorIcons: Record<string, string> = {
+  'PHP': '🐘',
+  'JavaScript': '⚡',
+  'Laravel': '🔺',
+  'MySQL': '🗄️',
+  'EC-CUBE': '🛍️',
+  'Docker & DevOps': '🐳',
+  'TOEIC': '🎯',
+  'Japanese N1 Grammar': '⛩️',
+  'Japanese N1 Vocabulary': '📖',
+  'Japanese N1 Kanji': '🈸',
+  'AWS Cloud & DevOps': '☁️',
+};
+const sectorIcon = sectorIcons[sectorTitle] || '📚';
+
+// Smart Window Pagination generator
+function getPaginationItems(currentIdx: number, total: number) {
+  if (total <= 9) {
+    return Array.from({ length: total }, (_, i) => ({ type: 'page', num: i + 1, index: i }));
+  }
+  const items: Array<{ type: 'page' | 'ellipsis'; num?: number; index?: number }> = [];
+  const start = Math.max(0, currentIdx - 2);
+  const end = Math.min(total - 1, currentIdx + 2);
+
+  if (start > 0) {
+    items.push({ type: 'page', num: 1, index: 0 });
+    if (start > 1) items.push({ type: 'ellipsis' });
+  }
+
+  for (let i = start; i <= end; i++) {
+    items.push({ type: 'page', num: i + 1, index: i });
+  }
+
+  if (end < total - 1) {
+    if (end < total - 2) items.push({ type: 'ellipsis' });
+    items.push({ type: 'page', num: total, index: total - 1 });
+  }
+  return items;
+}
+
+const paginationItems = totalLessons > 0 ? getPaginationItems(currentIndex >= 0 ? currentIndex : 0, totalLessons) : [];
+---
+
+{totalLessons > 0 && (
+  <nav class="sector-pagination print:hidden" aria-label="Course Lesson Navigation">
+    <!-- Top Bar: Sector Identity, Progress & Quick Jump Dropdown -->
+    <div class="pagination-header">
+      <div class="header-left-meta">
+        <div class="sector-badge">
+          <span class="sector-icon">{sectorIcon}</span>
+          <span class="sector-name">{sectorTitle} Track</span>
+        </div>
+        <div class="progress-info">
+          <span class="lesson-counter">Lesson {currentNum} of {totalLessons}</span>
+          <span class="progress-divider">•</span>
+          <span class="progress-percent">{progressPercent}% complete</span>
+        </div>
+      </div>
+
+      <!-- Quick Jump & Track Switcher -->
+      <div class="header-right-actions">
+        <div class="chapter-jump-wrapper">
+          <label for="chapterSelect" class="sr-only">Jump to chapter</label>
+          <select
+            id="chapterSelect"
+            class="chapter-select"
+            onchange="if (this.value) window.location.href = this.value;"
+          >
+            <option value="" disabled>Jump to chapter ({totalLessons} lessons)...</option>
+            {sectorLessons.map((lesson, idx) => {
+              const clean = (lesson.label || '').replace(/^00\.\s*|^\d+[\.\-_]\s*/, '');
+              return (
+                <option value={lesson.href} selected={idx === currentIndex}>
+                  {idx + 1}. {clean}
+                </option>
+              );
+            })}
+          </select>
+        </div>
+
+        <button
+          type="button"
+          class="switch-track-btn"
+          onclick="const m = document.getElementById('trackModal'); if (m && typeof m.showModal === 'function') { m.showModal(); } else { window.location.href = '/#programs'; }"
+          title="Switch to Japanese N1 or other tracks"
+        >
+          <span>All Tracks ▾</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Progress Bar Line -->
+    <div class="progress-track" role="progressbar" aria-valuenow={progressPercent} aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-fill" style={`width: ${progressPercent}%;`}></div>
+    </div>
+
+    <!-- Numbered Page Pills -->
+    {totalLessons > 1 && (
+      <div class="numbered-pagination">
+        {prevLesson ? (
+          <a href={prevLesson.href} class="page-pill nav-arrow" title="Previous Lesson">
+            ◀
+          </a>
+        ) : (
+          <span class="page-pill nav-arrow disabled" aria-disabled="true">
+            ◀
+          </span>
+        )}
+
+        <div class="numbered-pills-list">
+          {paginationItems.map((item) => {
+            if (item.type === 'ellipsis') {
+              return <span class="page-pill ellipsis">…</span>;
+            }
+            const isCur = item.index === currentIndex;
+            const targetLesson = item.index !== undefined ? sectorLessons[item.index] : null;
+            return targetLesson ? (
+              <a
+                href={targetLesson.href}
+                class={`page-pill ${isCur ? 'active' : ''}`}
+                title={`Go to Lesson ${item.num}: ${targetLesson.label}`}
+                aria-current={isCur ? 'page' : undefined}
+              >
+                {item.num}
+              </a>
+            ) : null;
+          })}
+        </div>
+
+        {nextLesson ? (
+          <a href={nextLesson.href} class="page-pill nav-arrow" title="Next Lesson">
+            ▶
+          </a>
+        ) : (
+          <span class="page-pill nav-arrow disabled" aria-disabled="true">
+            ▶
+          </span>
+        )}
+      </div>
+    )}
+
+    <!-- Prev & Next Action Cards (Compact, Modern Klook Style) -->
+    <div class="cards-grid">
+      <!-- Previous Card -->
+      {prevLesson ? (
+        <a href={prevLesson.href} class="lesson-card prev-card" rel="prev">
+          <div class="card-arrow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+          </div>
+          <div class="card-content">
+            <span class="card-label">PREVIOUS LESSON</span>
+            <span class="card-title">{(prevLesson.label || '').replace(/^00\.\s*|^\d+[\.\-_]\s*/, '')}</span>
+          </div>
+        </a>
+      ) : (
+        <div class="lesson-card disabled-card">
+          <div class="card-arrow muted-arrow">✦</div>
+          <div class="card-content">
+            <span class="card-label">TRACK START</span>
+            <span class="card-title">First lesson of this course</span>
+          </div>
+        </div>
+      )}
+
+      <!-- Next Card -->
+      {nextLesson ? (
+        <a href={nextLesson.href} class="lesson-card next-card" rel="next">
+          <div class="card-content text-right">
+            <span class="card-label">NEXT LESSON</span>
+            <span class="card-title">{(nextLesson.label || '').replace(/^00\.\s*|^\d+[\.\-_]\s*/, '')}</span>
+          </div>
+          <div class="card-arrow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </div>
+        </a>
+      ) : (
+        <a href="/" class="lesson-card complete-card">
+          <div class="card-content text-right">
+            <span class="card-label">🎉 COURSE COMPLETED</span>
+            <span class="card-title">Explore All Programs ↗</span>
+          </div>
+          <div class="card-arrow celebration-arrow">🏆</div>
+        </a>
+      )}
+    </div>
+  </nav>
+)}
+
+<style>
+  .sector-pagination {
+    margin: 2.25rem auto 1.5rem;
+    max-width: 920px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  @media (min-width: 768px) {
+    .sector-pagination {
+      margin: 3.5rem auto 1.5rem;
+    }
+  }
+
+  /* Header Row */
+  .pagination-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  @media (max-width: 640px) {
+    .pagination-header {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0.75rem;
+    }
+  }
+
+  .header-left-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 640px) {
+    .header-left-meta {
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+
+  .sector-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    background: var(--sl-color-hairline);
+    padding: 0.3rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--sl-color-gray-1);
+    border: 1px solid var(--sl-color-hairline);
+  }
+
+  .sector-icon {
+    font-size: 0.95rem;
+  }
+
+  .progress-info {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-size: 0.85rem;
+    color: var(--sl-color-gray-3);
+    font-weight: 500;
+  }
+
+  .lesson-counter {
+    color: var(--sl-color-gray-1);
+    font-weight: 600;
+  }
+
+  .progress-divider {
+    color: var(--sl-color-gray-4);
+  }
+
+  .progress-percent {
+    color: #ff5b00;
+    font-weight: 600;
+  }
+
+  .header-right-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 640px) {
+    .header-right-actions {
+      display: flex;
+      width: 100%;
+      gap: 0.5rem;
+    }
+  }
+
+  /* Chapter Quick Selector */
+  .chapter-jump-wrapper {
+    position: relative;
+  }
+
+  @media (max-width: 640px) {
+    .chapter-jump-wrapper {
+      flex: 1;
+      min-width: 0;
+    }
+  }
+
+  .chapter-select {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--sl-color-gray-2);
+    background: var(--sl-color-bg);
+    border: 1px solid var(--sl-color-hairline);
+    padding: 0.45rem 2rem 0.45rem 0.85rem;
+    border-radius: 8px;
+    cursor: pointer;
+    max-width: 280px;
+    width: 100%;
+    text-overflow: ellipsis;
+    outline: none;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+
+  @media (max-width: 640px) {
+    .chapter-select {
+      max-width: 100%;
+    }
+  }
+
+  .chapter-select:hover,
+  .chapter-select:focus {
+    border-color: #ff5b00;
+    color: var(--sl-color-gray-1);
+  }
+
+  /* Progress Bar */
+  .progress-track {
+    width: 100%;
+    height: 4px;
+    background: var(--sl-color-hairline);
+    border-radius: 9999px;
+    overflow: hidden;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #ff5b00, #ff8a00);
+    border-radius: 9999px;
+    transition: width 0.3s ease;
+  }
+
+  /* Numbered Pagination Row */
+  .numbered-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    padding: 0.5rem 0;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 480px) {
+    .numbered-pagination {
+      gap: 0.25rem;
+    }
+  }
+
+  .numbered-pills-list {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media (max-width: 480px) {
+    .numbered-pills-list {
+      gap: 0.25rem;
+    }
+  }
+
+  .page-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 34px;
+    height: 34px;
+    padding: 0 0.45rem;
+    border-radius: 8px;
+    background: var(--sl-color-hairline);
+    color: var(--sl-color-gray-2);
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-decoration: none !important;
+    transition: all 0.15s ease;
+    user-select: none;
+  }
+
+  @media (max-width: 480px) {
+    .page-pill {
+      min-width: 30px;
+      height: 30px;
+      padding: 0 0.25rem;
+      font-size: 0.75rem;
+    }
+  }
+
+  .page-pill:hover:not(.ellipsis):not(.disabled) {
+    background: #ff5b00;
+    color: #ffffff !important;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(255, 91, 0, 0.3);
+  }
+
+  .page-pill.active {
+    background: #ff5b00;
+    color: #ffffff !important;
+    box-shadow: 0 2px 10px rgba(255, 91, 0, 0.35);
+  }
+
+  .page-pill.ellipsis {
+    background: transparent;
+    color: var(--sl-color-gray-4);
+    cursor: default;
+    min-width: 20px;
+  }
+
+  .page-pill.nav-arrow {
+    font-size: 0.75rem;
+    background: var(--sl-color-hairline);
+  }
+
+  .page-pill.disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  /* Cards Grid */
+  .cards-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+
+  @media (min-width: 640px) {
+    .cards-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+  }
+
+  .lesson-card {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    padding: 0.95rem 1.15rem;
+    background: var(--sl-color-bg);
+    border: 1px solid var(--sl-color-hairline);
+    border-radius: 12px;
+    text-decoration: none !important;
+    color: inherit !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  @media (min-width: 640px) {
+    .lesson-card {
+      gap: 1rem;
+      padding: 1.15rem 1.35rem;
+    }
+  }
+
+  .lesson-card:hover:not(.disabled-card) {
+    border-color: #ff5b00;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  .next-card {
+    justify-content: flex-end;
+  }
+
+  .disabled-card {
+    opacity: 0.55;
+    background: var(--sl-color-hairline);
+    cursor: default;
+  }
+
+  .complete-card {
+    background: linear-gradient(135deg, rgba(255, 91, 0, 0.06), rgba(255, 138, 0, 0.02));
+    border-color: rgba(255, 91, 0, 0.25);
+  }
+
+  .card-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--sl-color-hairline);
+    color: var(--sl-color-gray-1);
+    flex-shrink: 0;
+    transition: all 0.2s ease;
+  }
+
+  .lesson-card:hover:not(.disabled-card) .card-arrow {
+    background: #ff5b00;
+    color: #ffffff;
+  }
+
+  .muted-arrow {
+    color: var(--sl-color-gray-4);
+    font-size: 0.85rem;
+  }
+
+  .celebration-arrow {
+    font-size: 1.1rem;
+    background: transparent;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .text-right {
+    text-align: right;
+    align-items: flex-end;
+  }
+
+  .card-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: var(--sl-color-gray-4);
+    margin-bottom: 0.25rem;
+  }
+
+  .lesson-card:hover:not(.disabled-card) .card-label {
+    color: #ff5b00;
+  }
+
+  .card-title {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--sl-color-gray-1);
+    line-height: 1.35;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    max-width: 100%;
+  }
+
+  @media (min-width: 640px) {
+    .card-title {
+      font-size: 0.95rem;
+      white-space: nowrap;
+      display: block;
+    }
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+</style>

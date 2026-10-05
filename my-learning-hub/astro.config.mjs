@@ -1,0 +1,78 @@
+// @ts-check
+import { defineConfig } from 'astro/config';
+import starlight from '@astrojs/starlight';
+
+// Course groups: the sidebar column is never rendered (see src/routeData.ts),
+// but this data powers prev/next pagination and the lesson picker.
+const courses = [
+	{ label: 'PHP', directory: 'php' },
+	{ label: 'JavaScript', directory: 'javascript' },
+	{ label: 'Laravel', directory: 'laravel' },
+	{ label: 'MySQL', directory: 'mysql' },
+	{ label: 'EC-CUBE', directory: 'eccube' },
+	{ label: 'Docker & DevOps', directory: 'devops' },
+	{ label: 'TOEIC', directory: 'toeic' },
+	{ label: 'Japanese N1 Grammar', directory: 'japanese-grammar' },
+	{ label: 'Japanese N1 Vocabulary', directory: 'japanese-vocab' },
+	{ label: 'Japanese N1 Kanji', directory: 'japanese-kanji' },
+	{ label: 'AWS Cloud & DevOps', directory: 'aws' },
+];
+
+// https://astro.build/config
+export default defineConfig({
+	site: 'https://my-learning-hub-kyaw-wai-yans-projects.vercel.app',
+	redirects: {
+		'/japanese/00_n1_overview_and_strategy/01_n1_exam_structure_and_study_guide/': '/japanese-grammar/00_n1_overview_and_strategy/01_n1_exam_structure_and_study_guide/',
+		'/japanese/01_n1_grammar_mastery/01_time_relationship_and_simultaneity/': '/japanese-grammar/01_n1_grammar_mastery/01_time_relationship_and_simultaneity/',
+		'/japanese/01_n1_grammar_mastery/02_cause_reason_and_basis/': '/japanese-grammar/01_n1_grammar_mastery/02_cause_reason_and_basis/',
+		'/japanese/01_n1_grammar_mastery/03_conditions_assumptions_and_limits/': '/japanese-grammar/01_n1_grammar_mastery/03_conditions_assumptions_and_limits/',
+		'/japanese/01_n1_grammar_mastery/04_contrast_concession_and_unrelatedness/': '/japanese-grammar/01_n1_grammar_mastery/04_contrast_concession_and_unrelatedness/',
+		'/japanese/01_n1_grammar_mastery/05_emphasis_extreme_degree_and_state/': '/japanese-grammar/01_n1_grammar_mastery/05_emphasis_extreme_degree_and_state/',
+		'/japanese/01_n1_grammar_mastery/06_obligation_judgment_and_impossibility/': '/japanese-grammar/01_n1_grammar_mastery/06_obligation_judgment_and_impossibility/',
+		'/japanese/01_n1_grammar_mastery/07_formal_written_and_archaic_patterns/': '/japanese-grammar/01_n1_grammar_mastery/07_formal_written_and_archaic_patterns/',
+		'/japanese/02_n1_vocabulary_mastery/01_high_frequency_verbs/': '/japanese-vocab/01_high_frequency_verbs/',
+		'/japanese/02_n1_vocabulary_mastery/01b_high_frequency_verbs_vol2/': '/japanese-vocab/01b_high_frequency_verbs_vol2/',
+		'/japanese/02_n1_vocabulary_mastery/02_high_frequency_nouns_and_concepts/': '/japanese-vocab/02_high_frequency_nouns_and_concepts/',
+		'/japanese/02_n1_vocabulary_mastery/02b_high_frequency_nouns_vol2/': '/japanese-vocab/02b_high_frequency_nouns_vol2/',
+		'/japanese/02_n1_vocabulary_mastery/03_high_frequency_adjectives_and_adverbs/': '/japanese-vocab/03_high_frequency_adjectives_and_adverbs/',
+		'/japanese/02_n1_vocabulary_mastery/03b_high_frequency_adverbs_and_conjunctions/': '/japanese-vocab/03b_high_frequency_adverbs_and_conjunctions/',
+		'/japanese/02_n1_vocabulary_mastery/04_yojijukugo_four_character_idioms/': '/japanese-vocab/04_yojijukugo_four_character_idioms/',
+		'/japanese/02_n1_vocabulary_mastery/05_onomatopoeia_and_mimetic_words/': '/japanese-vocab/05_onomatopoeia_and_mimetic_words/',
+		'/japanese/02_n1_vocabulary_mastery/06_confusing_words_nuance_and_synonyms/': '/japanese-vocab/06_confusing_words_nuance_and_synonyms/',
+		'/japanese/02_n1_vocabulary_mastery/07_n1_sector_specialized_business_and_it_lexicon/': '/japanese-vocab/07_n1_sector_specialized_business_and_it_lexicon/',
+		'/japanese/03_n1_real_exam_grammar_practice/01_n1_grammar_exam_simulation_test1/': '/japanese-grammar/02_n1_real_exam_grammar_practice/01_n1_grammar_exam_simulation_test1/',
+		'/japanese/03_n1_real_exam_grammar_practice/02_n1_sentence_composition_star_questions/': '/japanese-grammar/02_n1_real_exam_grammar_practice/02_n1_sentence_composition_star_questions/',
+		'/japanese/': '/japanese-grammar/00_n1_overview_and_strategy/01_n1_exam_structure_and_study_guide/',
+		'/aws/': '/aws/00_overview/',
+		'/php/': '/php/00_overview/',
+		'/javascript/': '/javascript/00_overview/',
+		'/laravel/': '/laravel/00_overview/',
+		'/mysql/': '/mysql/00_overview/',
+		'/devops/': '/devops/01_docker_core/01-docker-fundamentals-and-architecture/',
+		'/eccube/': '/eccube/01_basics/01-introduction/01-what-is-ec-cube/',
+		'/toeic/': '/toeic/00_study_plan_roadmap/01_score_breakdown_and_strategy/',
+		'/japanese-grammar/': '/japanese-grammar/00_n1_overview_and_strategy/01_n1_exam_structure_and_study_guide/',
+		'/japanese-vocab/': '/japanese-vocab/01_high_frequency_verbs/',
+		'/japanese-kanji/': '/japanese-kanji/00_n1_kanji_overview_and_strategy/',
+		'/kanji/': '/japanese-kanji/00_n1_kanji_overview_and_strategy/',
+	},
+	integrations: [
+		starlight({
+			title: 'LearnStack',
+			customCss: ['./src/styles/custom.css'],
+			tableOfContents: false,
+			routeMiddleware: './src/routeData.ts',
+			sidebar: courses.map(({ label, directory }) => ({
+				label,
+				collapsed: true,
+				items: [{ autogenerate: { directory } }],
+			})),
+			components: {
+				Header: './src/components/CustomHeader.astro',
+				Sidebar: './src/components/EmptySidebar.astro',
+				Pagination: './src/components/CustomPagination.astro',
+				Search: './src/components/CustomSearch.astro',
+			},
+		}),
+	],
+});
