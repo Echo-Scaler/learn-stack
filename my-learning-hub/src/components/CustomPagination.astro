@@ -267,17 +267,21 @@ const paginationItems = totalLessons > 0 ? getPaginationItems(currentIndex >= 0 
 
 <style>
   .sector-pagination {
-    margin: 2.25rem auto 1.5rem;
+    margin: 2rem auto 1.5rem;
     max-width: 920px;
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
+    gap: 1.15rem;
     font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+    padding-bottom: max(2.5rem, env(safe-area-inset-bottom, 24px));
+    width: 100%;
+    overflow-x: hidden;
   }
 
   @media (min-width: 768px) {
     .sector-pagination {
       margin: 3.5rem auto 1.5rem;
+      gap: 1.35rem;
     }
   }
 
@@ -287,8 +291,8 @@ const paginationItems = totalLessons > 0 ? getPaginationItems(currentIndex >= 0 
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 1rem;
-    padding-bottom: 0.5rem;
+    gap: 0.75rem;
+    padding-bottom: 0.25rem;
   }
 
   @media (max-width: 640px) {
@@ -434,28 +438,38 @@ const paginationItems = totalLessons > 0 ? getPaginationItems(currentIndex >= 0 
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.4rem;
+    gap: 0.35rem;
     padding: 0.5rem 0;
-    flex-wrap: wrap;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .numbered-pagination::-webkit-scrollbar {
+    display: none;
   }
 
   @media (max-width: 480px) {
     .numbered-pagination {
-      gap: 0.25rem;
+      gap: 0.2rem;
+      justify-content: flex-start;
+      padding: 0.35rem 0.25rem;
     }
   }
 
   .numbered-pills-list {
     display: flex;
     align-items: center;
-    gap: 0.35rem;
-    flex-wrap: wrap;
+    gap: 0.3rem;
+    flex-wrap: nowrap;
     justify-content: center;
+    flex-shrink: 0;
   }
 
   @media (max-width: 480px) {
     .numbered-pills-list {
-      gap: 0.25rem;
+      gap: 0.2rem;
     }
   }
 
@@ -474,14 +488,16 @@ const paginationItems = totalLessons > 0 ? getPaginationItems(currentIndex >= 0 
     text-decoration: none !important;
     transition: all 0.15s ease;
     user-select: none;
+    flex-shrink: 0;
   }
 
   @media (max-width: 480px) {
     .page-pill {
-      min-width: 30px;
+      min-width: 29px;
       height: 30px;
-      padding: 0 0.25rem;
-      font-size: 0.75rem;
+      padding: 0 0.2rem;
+      font-size: 0.74rem;
+      border-radius: 6px;
     }
   }
 
@@ -502,12 +518,21 @@ const paginationItems = totalLessons > 0 ? getPaginationItems(currentIndex >= 0 
     background: transparent;
     color: var(--sl-color-gray-4);
     cursor: default;
-    min-width: 20px;
+    min-width: 16px;
+    flex-shrink: 0;
   }
 
   .page-pill.nav-arrow {
     font-size: 0.75rem;
     background: var(--sl-color-hairline);
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 480px) {
+    .page-pill.nav-arrow {
+      min-width: 30px;
+      height: 30px;
+    }
   }
 
   .page-pill.disabled {
