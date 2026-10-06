@@ -349,7 +349,7 @@ const paginationItems = totalLessons > 0 ? getPaginationItems(currentIndex >= 0 
   }
 
   .progress-percent {
-    color: #ff5b00;
+    color: var(--sl-sector-primary, #ff5b00);
     font-weight: 600;
   }
 
@@ -401,12 +401,15 @@ const paginationItems = totalLessons > 0 ? getPaginationItems(currentIndex >= 0 
   @media (max-width: 640px) {
     .chapter-select {
       max-width: 100%;
+      font-size: 16px !important; /* CRITICAL: Prevents iOS Safari from auto-zooming on focus */
+      min-height: 44px;
+      padding: 0.55rem 2rem 0.55rem 0.85rem;
     }
   }
 
   .chapter-select:hover,
   .chapter-select:focus {
-    border-color: #ff5b00;
+    border-color: var(--sl-sector-primary, #ff5b00);
     color: var(--sl-color-gray-1);
   }
 
@@ -421,7 +424,7 @@ const paginationItems = totalLessons > 0 ? getPaginationItems(currentIndex >= 0 
 
   .progress-fill {
     height: 100%;
-    background: linear-gradient(90deg, #ff5b00, #ff8a00);
+    background: linear-gradient(90deg, var(--sl-sector-primary, #ff5b00), var(--sl-sector-link-hover, #ff8a00));
     border-radius: 9999px;
     transition: width 0.3s ease;
   }
@@ -483,16 +486,16 @@ const paginationItems = totalLessons > 0 ? getPaginationItems(currentIndex >= 0 
   }
 
   .page-pill:hover:not(.ellipsis):not(.disabled) {
-    background: #ff5b00;
+    background: var(--sl-sector-primary, #ff5b00);
     color: #ffffff !important;
     transform: translateY(-1px);
-    box-shadow: 0 2px 8px rgba(255, 91, 0, 0.3);
+    box-shadow: 0 2px 8px var(--sl-sector-glow, rgba(255, 91, 0, 0.3));
   }
 
   .page-pill.active {
-    background: #ff5b00;
+    background: var(--sl-sector-primary, #ff5b00);
     color: #ffffff !important;
-    box-shadow: 0 2px 10px rgba(255, 91, 0, 0.35);
+    box-shadow: 0 2px 10px var(--sl-sector-glow, rgba(255, 91, 0, 0.35));
   }
 
   .page-pill.ellipsis {
@@ -550,9 +553,9 @@ const paginationItems = totalLessons > 0 ? getPaginationItems(currentIndex >= 0 
   }
 
   .lesson-card:hover:not(.disabled-card) {
-    border-color: #ff5b00;
+    border-color: var(--sl-sector-primary, #ff5b00);
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 20px var(--sl-sector-glow, rgba(0, 0, 0, 0.08));
   }
 
   .next-card {
@@ -566,8 +569,8 @@ const paginationItems = totalLessons > 0 ? getPaginationItems(currentIndex >= 0 
   }
 
   .complete-card {
-    background: linear-gradient(135deg, rgba(255, 91, 0, 0.06), rgba(255, 138, 0, 0.02));
-    border-color: rgba(255, 91, 0, 0.25);
+    background: linear-gradient(135deg, var(--sl-sector-card-bg, rgba(255, 91, 0, 0.06)), rgba(255, 138, 0, 0.02));
+    border-color: var(--sl-sector-primary, #ff5b00);
   }
 
   .card-arrow {
@@ -584,7 +587,7 @@ const paginationItems = totalLessons > 0 ? getPaginationItems(currentIndex >= 0 
   }
 
   .lesson-card:hover:not(.disabled-card) .card-arrow {
-    background: #ff5b00;
+    background: var(--sl-sector-primary, #ff5b00);
     color: #ffffff;
   }
 

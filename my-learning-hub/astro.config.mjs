@@ -16,12 +16,14 @@ const courses = [
 	{ label: 'Japanese N1 Vocabulary', directory: 'japanese-vocab' },
 	{ label: 'Japanese N1 Kanji', directory: 'japanese-kanji' },
 	{ label: 'AWS Cloud & DevOps', directory: 'aws' },
+	{ label: 'Networking & Cloud Automation', directory: 'networking' },
 ];
 
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://my-learning-hub-kyaw-wai-yans-projects.vercel.app',
 	redirects: {
+		'/networking/': '/networking/00_overview/',
 		'/japanese/00_n1_overview_and_strategy/01_n1_exam_structure_and_study_guide/': '/japanese-grammar/00_n1_overview_and_strategy/01_n1_exam_structure_and_study_guide/',
 		'/japanese/01_n1_grammar_mastery/01_time_relationship_and_simultaneity/': '/japanese-grammar/01_n1_grammar_mastery/01_time_relationship_and_simultaneity/',
 		'/japanese/01_n1_grammar_mastery/02_cause_reason_and_basis/': '/japanese-grammar/01_n1_grammar_mastery/02_cause_reason_and_basis/',

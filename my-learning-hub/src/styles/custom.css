@@ -38,6 +38,14 @@
   --safe-bottom: env(safe-area-inset-bottom, 0px);
   --safe-left: env(safe-area-inset-left, 0px);
   --safe-right: env(safe-area-inset-right, 0px);
+
+  /* Default Learning Sector Fallbacks */
+  --sl-sector-primary: #ff5b00;
+  --sl-sector-link: #ff5b00;
+  --sl-sector-link-hover: #e04f00;
+  --sl-sector-glow: rgba(255, 91, 0, 0.35);
+  --sl-sector-row-hover: rgba(255, 91, 0, 0.05);
+  --sl-sector-card-bg: rgba(255, 91, 0, 0.04);
 }
 
 @media (min-width: 50rem) {
@@ -65,6 +73,226 @@
   --devlab-bg-light: #131927;
   --klook-orange: #ff6d1a;
   --klook-blue: #38bdf8;
+
+  --sl-sector-primary: #ff6d1a;
+  --sl-sector-link: #ff782e;
+  --sl-sector-link-hover: #ffa166;
+  --sl-sector-glow: rgba(255, 109, 26, 0.45);
+  --sl-sector-row-hover: rgba(255, 109, 26, 0.08);
+  --sl-sector-card-bg: rgba(255, 109, 26, 0.06);
+}
+
+/* =========================================================
+   SECTOR COLOR MATRICES (ALL 11 TRACKS - LIGHT & DARK)
+   ========================================================= */
+
+/* 1. Japanese Grammar */
+html[data-sector="japanese-grammar"] {
+  --sl-sector-primary: #dc2626;
+  --sl-sector-link: #dc2626;
+  --sl-sector-link-hover: #b91c1c;
+  --sl-sector-glow: rgba(220, 38, 38, 0.35);
+  --sl-sector-row-hover: rgba(220, 38, 38, 0.06);
+  --sl-sector-card-bg: rgba(220, 38, 38, 0.04);
+}
+:root[data-theme="dark"] html[data-sector="japanese-grammar"],
+html[data-theme="dark"][data-sector="japanese-grammar"] {
+  --sl-sector-primary: #ef4444;
+  --sl-sector-link: #f87171;
+  --sl-sector-link-hover: #fca5a5;
+  --sl-sector-glow: rgba(239, 68, 68, 0.45);
+  --sl-sector-row-hover: rgba(239, 68, 68, 0.1);
+  --sl-sector-card-bg: rgba(239, 68, 68, 0.08);
+}
+
+/* 2. Japanese Vocab */
+html[data-sector="japanese-vocab"] {
+  --sl-sector-primary: #0284c7;
+  --sl-sector-link: #0284c7;
+  --sl-sector-link-hover: #0369a1;
+  --sl-sector-glow: rgba(2, 132, 199, 0.35);
+  --sl-sector-row-hover: rgba(2, 132, 199, 0.06);
+  --sl-sector-card-bg: rgba(2, 132, 199, 0.04);
+}
+:root[data-theme="dark"] html[data-sector="japanese-vocab"],
+html[data-theme="dark"][data-sector="japanese-vocab"] {
+  --sl-sector-primary: #38bdf8;
+  --sl-sector-link: #38bdf8;
+  --sl-sector-link-hover: #7dd3fc;
+  --sl-sector-glow: rgba(56, 189, 248, 0.45);
+  --sl-sector-row-hover: rgba(56, 189, 248, 0.1);
+  --sl-sector-card-bg: rgba(56, 189, 248, 0.08);
+}
+
+/* 3. Japanese Kanji */
+html[data-sector="japanese-kanji"] {
+  --sl-sector-primary: #e11d48;
+  --sl-sector-link: #e11d48;
+  --sl-sector-link-hover: #be123c;
+  --sl-sector-glow: rgba(225, 29, 72, 0.35);
+  --sl-sector-row-hover: rgba(225, 29, 72, 0.06);
+  --sl-sector-card-bg: rgba(225, 29, 72, 0.04);
+}
+:root[data-theme="dark"] html[data-sector="japanese-kanji"],
+html[data-theme="dark"][data-sector="japanese-kanji"] {
+  --sl-sector-primary: #fb7185;
+  --sl-sector-link: #fb7185;
+  --sl-sector-link-hover: #fda4af;
+  --sl-sector-glow: rgba(251, 113, 133, 0.45);
+  --sl-sector-row-hover: rgba(251, 113, 133, 0.1);
+  --sl-sector-card-bg: rgba(251, 113, 133, 0.08);
+}
+
+/* 4. AWS Cloud */
+html[data-sector="aws"] {
+  --sl-sector-primary: #f59e0b;
+  --sl-sector-link: #d97706;
+  --sl-sector-link-hover: #b45309;
+  --sl-sector-glow: rgba(245, 158, 11, 0.35);
+  --sl-sector-row-hover: rgba(245, 158, 11, 0.06);
+  --sl-sector-card-bg: rgba(245, 158, 11, 0.04);
+}
+:root[data-theme="dark"] html[data-sector="aws"],
+html[data-theme="dark"][data-sector="aws"] {
+  --sl-sector-primary: #fbbf24;
+  --sl-sector-link: #fbbf24;
+  --sl-sector-link-hover: #fde68a;
+  --sl-sector-glow: rgba(251, 191, 36, 0.45);
+  --sl-sector-row-hover: rgba(251, 191, 36, 0.1);
+  --sl-sector-card-bg: rgba(251, 191, 36, 0.08);
+}
+
+/* 5. PHP Core */
+html[data-sector="php"] {
+  --sl-sector-primary: #7c3aed;
+  --sl-sector-link: #7c3aed;
+  --sl-sector-link-hover: #6d28d9;
+  --sl-sector-glow: rgba(124, 58, 237, 0.35);
+  --sl-sector-row-hover: rgba(124, 58, 237, 0.06);
+  --sl-sector-card-bg: rgba(124, 58, 237, 0.04);
+}
+:root[data-theme="dark"] html[data-sector="php"],
+html[data-theme="dark"][data-sector="php"] {
+  --sl-sector-primary: #a78bfa;
+  --sl-sector-link: #a78bfa;
+  --sl-sector-link-hover: #c4b5fd;
+  --sl-sector-glow: rgba(167, 139, 250, 0.45);
+  --sl-sector-row-hover: rgba(167, 139, 250, 0.1);
+  --sl-sector-card-bg: rgba(167, 139, 250, 0.08);
+}
+
+/* 6. Modern JavaScript */
+html[data-sector="javascript"] {
+  --sl-sector-primary: #ca8a04;
+  --sl-sector-link: #ca8a04;
+  --sl-sector-link-hover: #a16207;
+  --sl-sector-glow: rgba(202, 138, 4, 0.35);
+  --sl-sector-row-hover: rgba(202, 138, 4, 0.06);
+  --sl-sector-card-bg: rgba(202, 138, 4, 0.04);
+}
+:root[data-theme="dark"] html[data-sector="javascript"],
+html[data-theme="dark"][data-sector="javascript"] {
+  --sl-sector-primary: #facc15;
+  --sl-sector-link: #facc15;
+  --sl-sector-link-hover: #fde047;
+  --sl-sector-glow: rgba(250, 204, 21, 0.45);
+  --sl-sector-row-hover: rgba(250, 204, 21, 0.1);
+  --sl-sector-card-bg: rgba(250, 204, 21, 0.08);
+}
+
+/* 7. Laravel Enterprise */
+html[data-sector="laravel"] {
+  --sl-sector-primary: #ef4444;
+  --sl-sector-link: #ef4444;
+  --sl-sector-link-hover: #dc2626;
+  --sl-sector-glow: rgba(239, 68, 68, 0.35);
+  --sl-sector-row-hover: rgba(239, 68, 68, 0.06);
+  --sl-sector-card-bg: rgba(239, 68, 68, 0.04);
+}
+:root[data-theme="dark"] html[data-sector="laravel"],
+html[data-theme="dark"][data-sector="laravel"] {
+  --sl-sector-primary: #f87171;
+  --sl-sector-link: #f87171;
+  --sl-sector-link-hover: #fca5a5;
+  --sl-sector-glow: rgba(248, 113, 113, 0.45);
+  --sl-sector-row-hover: rgba(248, 113, 113, 0.1);
+  --sl-sector-card-bg: rgba(248, 113, 113, 0.08);
+}
+
+/* 8. MySQL Production */
+html[data-sector="mysql"] {
+  --sl-sector-primary: #00758f;
+  --sl-sector-link: #00758f;
+  --sl-sector-link-hover: #005b6f;
+  --sl-sector-glow: rgba(0, 117, 143, 0.35);
+  --sl-sector-row-hover: rgba(0, 117, 143, 0.06);
+  --sl-sector-card-bg: rgba(0, 117, 143, 0.04);
+}
+:root[data-theme="dark"] html[data-sector="mysql"],
+html[data-theme="dark"][data-sector="mysql"] {
+  --sl-sector-primary: #38bdf8;
+  --sl-sector-link: #38bdf8;
+  --sl-sector-link-hover: #7dd3fc;
+  --sl-sector-glow: rgba(56, 189, 248, 0.45);
+  --sl-sector-row-hover: rgba(56, 189, 248, 0.1);
+  --sl-sector-card-bg: rgba(56, 189, 248, 0.08);
+}
+
+/* 9. Docker & DevOps */
+html[data-sector="devops"] {
+  --sl-sector-primary: #0ea5e9;
+  --sl-sector-link: #0284c7;
+  --sl-sector-link-hover: #0369a1;
+  --sl-sector-glow: rgba(14, 165, 233, 0.35);
+  --sl-sector-row-hover: rgba(14, 165, 233, 0.06);
+  --sl-sector-card-bg: rgba(14, 165, 233, 0.04);
+}
+:root[data-theme="dark"] html[data-sector="devops"],
+html[data-theme="dark"][data-sector="devops"] {
+  --sl-sector-primary: #38bdf8;
+  --sl-sector-link: #38bdf8;
+  --sl-sector-link-hover: #7dd3fc;
+  --sl-sector-glow: rgba(56, 189, 248, 0.45);
+  --sl-sector-row-hover: rgba(56, 189, 248, 0.1);
+  --sl-sector-card-bg: rgba(56, 189, 248, 0.08);
+}
+
+/* 10. EC-CUBE 4 Enterprise */
+html[data-sector="eccube"] {
+  --sl-sector-primary: #10b981;
+  --sl-sector-link: #059669;
+  --sl-sector-link-hover: #047857;
+  --sl-sector-glow: rgba(16, 185, 129, 0.35);
+  --sl-sector-row-hover: rgba(16, 185, 129, 0.06);
+  --sl-sector-card-bg: rgba(16, 185, 129, 0.04);
+}
+:root[data-theme="dark"] html[data-sector="eccube"],
+html[data-theme="dark"][data-sector="eccube"] {
+  --sl-sector-primary: #34d399;
+  --sl-sector-link: #34d399;
+  --sl-sector-link-hover: #6ee7b7;
+  --sl-sector-glow: rgba(52, 211, 153, 0.45);
+  --sl-sector-row-hover: rgba(52, 211, 153, 0.1);
+  --sl-sector-card-bg: rgba(52, 211, 153, 0.08);
+}
+
+/* 11. TOEIC Exam */
+html[data-sector="toeic"] {
+  --sl-sector-primary: #0891b2;
+  --sl-sector-link: #0891b2;
+  --sl-sector-link-hover: #0e7490;
+  --sl-sector-glow: rgba(8, 145, 178, 0.35);
+  --sl-sector-row-hover: rgba(8, 145, 178, 0.06);
+  --sl-sector-card-bg: rgba(8, 145, 178, 0.04);
+}
+:root[data-theme="dark"] html[data-sector="toeic"],
+html[data-theme="dark"][data-sector="toeic"] {
+  --sl-sector-primary: #22d3ee;
+  --sl-sector-link: #22d3ee;
+  --sl-sector-link-hover: #67e8f9;
+  --sl-sector-glow: rgba(34, 211, 238, 0.45);
+  --sl-sector-row-hover: rgba(34, 211, 238, 0.1);
+  --sl-sector-card-bg: rgba(34, 211, 238, 0.08);
 }
 
 /* =========================================================
@@ -74,6 +302,7 @@ html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 *, *::before, *::after {
@@ -85,7 +314,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-  max-width: 100vw;
+  width: 100%;
+  max-width: 100%;
   padding-left: var(--safe-left);
   padding-right: var(--safe-right);
 }
@@ -296,6 +526,7 @@ main:has(.devlab-hero-wrapper) > .content-panel:first-child {
   max-width: 100%;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
   border-collapse: collapse;
   margin: 1.5rem 0;
   border: 1px solid var(--sl-color-hairline);
@@ -310,6 +541,7 @@ main:has(.devlab-hero-wrapper) > .content-panel:first-child {
   font-size: 0.88rem;
   line-height: 1.55;
   vertical-align: top;
+  min-width: 110px;
 }
 
 @media (max-width: 480px) {
@@ -317,6 +549,7 @@ main:has(.devlab-hero-wrapper) > .content-panel:first-child {
   .sl-markdown-content td {
     padding: 0.6rem 0.75rem;
     font-size: 0.82rem;
+    min-width: 85px;
   }
 }
 
@@ -327,14 +560,107 @@ main:has(.devlab-hero-wrapper) > .content-panel:first-child {
   white-space: nowrap;
 }
 
+/* Table Row Subtle Sector Hover Highlight */
+.sl-markdown-content table tr {
+  transition: background-color 0.15s ease;
+}
+
+.sl-markdown-content table tbody tr:hover td {
+  background-color: var(--sl-sector-row-hover, rgba(255, 91, 0, 0.05)) !important;
+}
+
+/* =========================================================
+   MARKDOWN CONTENT LINKS & HOVER (NEVER TURN WHITE ON HOVER)
+   ========================================================= */
+.sl-markdown-content a:not(:where(.not-content *)) {
+  color: var(--sl-sector-link, var(--klook-orange)) !important;
+  text-decoration: underline !important;
+  text-decoration-color: transparent !important;
+  text-underline-offset: 3px !important;
+  text-decoration-thickness: 1.5px !important;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease, text-shadow 0.15s ease, transform 0.15s ease;
+}
+
+/* Hover & Focus state: Keep sector identity, luminous & distinct underline */
+.sl-markdown-content a:hover:not(:where(.not-content *)),
+.sl-markdown-content a:focus-visible:not(:where(.not-content *)) {
+  color: var(--sl-sector-link-hover, #ff782e) !important;
+  text-decoration-color: currentColor !important;
+}
+
+:root[data-theme='dark'] .sl-markdown-content a:hover:not(:where(.not-content *)) {
+  text-shadow: 0 0 12px var(--sl-sector-glow, rgba(255, 109, 26, 0.45));
+}
+
+/* Table links */
+.sl-markdown-content table a:not(:where(.not-content *)) {
+  font-weight: 600;
+  display: inline-block;
+}
+
+.sl-markdown-content table a:hover:not(:where(.not-content *)) {
+  transform: translateX(1px);
+}
+
+/* List item links (TOC, Bullet Points, e.g. AWS overview) */
+.sl-markdown-content ul li a:not(:where(.not-content *)),
+.sl-markdown-content ol li a:not(:where(.not-content *)) {
+  transition: color 0.15s ease, text-decoration-color 0.15s ease, transform 0.15s ease;
+}
+
+.sl-markdown-content ul li a:hover:not(:where(.not-content *)),
+.sl-markdown-content ol li a:hover:not(:where(.not-content *)) {
+  color: var(--sl-sector-link-hover, #ff782e) !important;
+  text-decoration-color: currentColor !important;
+}
+
+/* Cross-Sector Links Hover Styling (Across Curriculums, Roadmaps, and Intrapages) */
+a[href*="/japanese-grammar/"]:hover { color: #f87171 !important; text-decoration: underline !important; }
+a[href*="/japanese-vocab/"]:hover { color: #38bdf8 !important; text-decoration: underline !important; }
+a[href*="/japanese-kanji/"]:hover { color: #fb7185 !important; text-decoration: underline !important; }
+a[href*="/aws/"]:hover { color: #fbbf24 !important; text-decoration: underline !important; }
+a[href*="/php/"]:hover { color: #a78bfa !important; text-decoration: underline !important; }
+a[href*="/javascript/"]:hover { color: #facc15 !important; text-decoration: underline !important; }
+a[href*="/laravel/"]:hover { color: #f87171 !important; text-decoration: underline !important; }
+a[href*="/mysql/"]:hover { color: #38bdf8 !important; text-decoration: underline !important; }
+a[href*="/devops/"]:hover { color: #38bdf8 !important; text-decoration: underline !important; }
+a[href*="/eccube/"]:hover { color: #34d399 !important; text-decoration: underline !important; }
+a[href*="/toeic/"]:hover { color: #22d3ee !important; text-decoration: underline !important; }
+
+:root:not([data-theme="dark"]) a[href*="/japanese-grammar/"]:hover { color: #b91c1c !important; }
+:root:not([data-theme="dark"]) a[href*="/japanese-vocab/"]:hover { color: #0369a1 !important; }
+:root:not([data-theme="dark"]) a[href*="/japanese-kanji/"]:hover { color: #be123c !important; }
+:root:not([data-theme="dark"]) a[href*="/aws/"]:hover { color: #b45309 !important; }
+:root:not([data-theme="dark"]) a[href*="/php/"]:hover { color: #6d28d9 !important; }
+:root:not([data-theme="dark"]) a[href*="/javascript/"]:hover { color: #a16207 !important; }
+:root:not([data-theme="dark"]) a[href*="/laravel/"]:hover { color: #dc2626 !important; }
+:root:not([data-theme="dark"]) a[href*="/mysql/"]:hover { color: #005b6f !important; }
+:root:not([data-theme="dark"]) a[href*="/devops/"]:hover { color: #0369a1 !important; }
+:root:not([data-theme="dark"]) a[href*="/eccube/"]:hover { color: #047857 !important; }
+:root:not([data-theme="dark"]) a[href*="/toeic/"]:hover { color: #0e7490 !important; }
+
 /* Ensure code blocks and pre do not cause horizontal overflow on iPhone */
-.sl-markdown-content pre {
+.sl-markdown-content pre,
+.expressive-code pre {
   max-width: 100% !important;
   overflow-x: auto !important;
-  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch !important;
+  overscroll-behavior-x: contain !important;
   border-radius: 10px;
   font-size: 0.85rem !important;
   margin: 1.25rem 0 !important;
+}
+
+.expressive-code {
+  max-width: 100% !important;
+}
+
+@media (max-width: 480px) {
+  .sl-markdown-content pre,
+  .expressive-code pre {
+    font-size: 0.8rem !important;
+    padding: 0.85rem !important;
+  }
 }
 
 .sl-markdown-content code:not(pre code) {
@@ -351,6 +677,8 @@ main:has(.devlab-hero-wrapper) > .content-panel:first-child {
 .sl-markdown-content .mermaid svg,
 .sl-markdown-content [data-mermaid-chart] {
   max-width: 100% !important;
+  width: 100% !important;
+  height: auto !important;
   overflow-x: auto !important;
   -webkit-overflow-scrolling: touch;
 }
@@ -388,6 +716,9 @@ header.header {
   background: var(--sl-color-bg);
   overflow: hidden;
   margin-bottom: 0;
+  max-width: 1360px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .devlab-hero {
@@ -409,6 +740,12 @@ header.header {
   flex-direction: column;
   justify-content: center;
   border-bottom: var(--devlab-border);
+}
+
+@media (max-width: 480px) {
+  .hero-left {
+    padding: 1.75rem 1rem 1.25rem !important;
+  }
 }
 
 @media (min-width: 600px) {
@@ -556,21 +893,33 @@ header.header {
   .hero-actions {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.85rem;
     flex-wrap: wrap;
+    margin-bottom: 1.5rem;
   }
   .btn-black {
-    padding: 0.75rem 1.5rem !important;
+    padding: 0.75rem 1.4rem !important;
     font-size: 0.85rem !important;
+    min-height: 44px;
   }
   .btn-video {
     font-size: 0.85rem !important;
-    gap: 0.65rem !important;
+    gap: 0.55rem !important;
+    min-height: 44px;
   }
   .btn-video-avatar {
     width: 36px !important;
     height: 36px !important;
     font-size: 0.75rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-right {
+    padding: 1.5rem 1rem !important;
+  }
+  .hero-art-svg {
+    max-width: 230px !important;
   }
 }
 
@@ -629,6 +978,9 @@ header.header {
   border: var(--devlab-border);
   border-top: none;
   background: var(--sl-color-bg);
+  max-width: 1360px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .stat-cell {
@@ -708,6 +1060,22 @@ header.header {
 .avatar-circle:nth-child(2) { background: #007aff; }
 .avatar-circle:nth-child(3) { background: #10b981; }
 
+@media (max-width: 480px) {
+  .stat-cell {
+    padding: 1rem 0.85rem !important;
+  }
+  .stat-number {
+    font-size: 1.5rem !important;
+  }
+  .stat-label {
+    font-size: 0.74rem !important;
+  }
+  .tech-brands-list {
+    font-size: 0.82rem !important;
+    gap: 0.35rem 0.5rem !important;
+  }
+}
+
 .tech-brands-list {
   display: flex;
   flex-wrap: wrap;
@@ -733,7 +1101,7 @@ header.header {
    ========================================================= */
 .catalog-section {
   margin: 3rem auto;
-  max-width: 1280px;
+  max-width: 1360px;
 }
 
 @media (min-width: 768px) {
@@ -749,6 +1117,16 @@ header.header {
   letter-spacing: -0.02em;
   color: var(--sl-color-gray-1);
   margin-bottom: 0.4rem;
+}
+
+@media (max-width: 480px) {
+  .catalog-heading {
+    font-size: clamp(1.35rem, 5.5vw, 1.75rem) !important;
+  }
+  .catalog-sub {
+    font-size: 0.85rem !important;
+    margin-bottom: 1.25rem !important;
+  }
 }
 
 .catalog-sub {
@@ -781,7 +1159,8 @@ header.header {
   gap: 0.5rem;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  padding-bottom: 0.4rem;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 0.5rem;
   scrollbar-width: none;
 }
 
@@ -811,6 +1190,7 @@ header.header {
   text-decoration: none !important;
   white-space: nowrap;
   flex-shrink: 0;
+  scroll-snap-align: start;
   transition: all 0.15s ease;
 }
 
@@ -820,26 +1200,138 @@ header.header {
   transform: translateY(-1px);
 }
 
-.track-pill-highlight {
-  background: rgba(220, 38, 38, 0.1);
+.track-pill-highlight,
+.track-pill-grammar {
+  background: rgba(220, 38, 38, 0.1) !important;
   color: #dc2626 !important;
-  border: 1px solid rgba(220, 38, 38, 0.3);
+  border: 1px solid rgba(220, 38, 38, 0.3) !important;
 }
 
-.track-pill-highlight:hover {
-  background: #dc2626;
+.track-pill-highlight:hover,
+.track-pill-grammar:hover {
+  background: #dc2626 !important;
   color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(220, 38, 38, 0.3);
 }
 
 .track-pill-vocab {
-  background: rgba(2, 132, 199, 0.1);
+  background: rgba(2, 132, 199, 0.1) !important;
   color: #0284c7 !important;
-  border: 1px solid rgba(2, 132, 199, 0.3);
+  border: 1px solid rgba(2, 132, 199, 0.3) !important;
 }
 
 .track-pill-vocab:hover {
-  background: #0284c7;
+  background: #0284c7 !important;
   color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.3);
+}
+
+.track-pill-kanji {
+  background: rgba(225, 29, 72, 0.1) !important;
+  color: #e11d48 !important;
+  border: 1px solid rgba(225, 29, 72, 0.3) !important;
+}
+
+.track-pill-kanji:hover {
+  background: #e11d48 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(225, 29, 72, 0.3);
+}
+
+.track-pill-aws {
+  background: rgba(245, 158, 11, 0.1) !important;
+  color: #f59e0b !important;
+  border: 1px solid rgba(245, 158, 11, 0.3) !important;
+}
+
+.track-pill-aws:hover {
+  background: #f59e0b !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.3);
+}
+
+.track-pill-php {
+  background: rgba(124, 58, 237, 0.1) !important;
+  color: #7c3aed !important;
+  border: 1px solid rgba(124, 58, 237, 0.3) !important;
+}
+
+.track-pill-php:hover {
+  background: #7c3aed !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(124, 58, 237, 0.3);
+}
+
+.track-pill-js {
+  background: rgba(202, 138, 4, 0.1) !important;
+  color: #ca8a04 !important;
+  border: 1px solid rgba(202, 138, 4, 0.3) !important;
+}
+
+.track-pill-js:hover {
+  background: #ca8a04 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(202, 138, 4, 0.3);
+}
+
+.track-pill-laravel {
+  background: rgba(239, 68, 68, 0.1) !important;
+  color: #ef4444 !important;
+  border: 1px solid rgba(239, 68, 68, 0.3) !important;
+}
+
+.track-pill-laravel:hover {
+  background: #ef4444 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(239, 68, 68, 0.3);
+}
+
+.track-pill-mysql {
+  background: rgba(0, 117, 143, 0.1) !important;
+  color: #00758f !important;
+  border: 1px solid rgba(0, 117, 143, 0.3) !important;
+}
+
+.track-pill-mysql:hover {
+  background: #00758f !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(0, 117, 143, 0.3);
+}
+
+.track-pill-devops {
+  background: rgba(14, 165, 233, 0.1) !important;
+  color: #0ea5e9 !important;
+  border: 1px solid rgba(14, 165, 233, 0.3) !important;
+}
+
+.track-pill-devops:hover {
+  background: #0ea5e9 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(14, 165, 233, 0.3);
+}
+
+.track-pill-eccube {
+  background: rgba(16, 185, 129, 0.1) !important;
+  color: #10b981 !important;
+  border: 1px solid rgba(16, 185, 129, 0.3) !important;
+}
+
+.track-pill-eccube:hover {
+  background: #10b981 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3);
+}
+
+.track-pill-toeic {
+  background: rgba(8, 145, 178, 0.1) !important;
+  color: #0891b2 !important;
+  border: 1px solid rgba(8, 145, 178, 0.3) !important;
+}
+
+.track-pill-toeic:hover {
+  background: #0891b2 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(8, 145, 178, 0.3);
 }
 
 /* Catalog Grid: Fluid columns for all screen sizes */
@@ -882,6 +1374,12 @@ header.header {
   flex-direction: column;
   justify-content: space-between;
   transition: all 0.2s ease;
+}
+
+@media (max-width: 640px) {
+  .catalog-card {
+    padding: 1.35rem 1.15rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -939,19 +1437,21 @@ header.header {
   color: var(--klook-orange);
 }
 
-/* Japanese & Vocab Catalog Card Highlights */
+/* =========================================================
+   ALL 11 CATALOG CARDS HIGHLIGHTS & HOVER STATES
+   ========================================================= */
+
+/* 1. Japanese Grammar */
 .card-highlight-japanese {
   background: linear-gradient(180deg, rgba(220, 38, 38, 0.03) 0%, transparent 100%);
   border-left: 3px solid #dc2626;
 }
-
 .tag-japanese {
   color: #dc2626 !important;
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
 }
-
 .tag-badge-new {
   background: #dc2626;
   color: #ffffff;
@@ -961,99 +1461,224 @@ header.header {
   border-radius: 9999px;
   letter-spacing: 0.04em;
 }
-
 .footer-action-japanese {
   color: #dc2626 !important;
   font-weight: 700;
+  transition: all 0.15s ease;
 }
-
 .card-highlight-japanese:hover .footer-action-japanese {
   color: #b91c1c !important;
+  transform: translateX(2px);
 }
 
+/* 2. Japanese Vocab */
 .card-highlight-vocab {
   background: linear-gradient(180deg, rgba(2, 132, 199, 0.03) 0%, transparent 100%);
   border-left: 3px solid #0284c7;
 }
-
 .tag-vocab {
   color: #0284c7 !important;
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
 }
-
 .footer-action-vocab {
   color: #0284c7 !important;
   font-weight: 700;
+  transition: all 0.15s ease;
 }
-
 .card-highlight-vocab:hover .footer-action-vocab {
   color: #0369a1 !important;
+  transform: translateX(2px);
 }
 
-.card-highlight-aws {
-  background: linear-gradient(180deg, rgba(245, 158, 11, 0.04) 0%, transparent 100%);
-  border-left: 3px solid #f59e0b;
-}
-
-.tag-aws {
-  color: #f59e0b !important;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-}
-
-.footer-action-aws {
-  color: #f59e0b !important;
-  font-weight: 700;
-}
-
-.card-highlight-aws:hover .footer-action-aws {
-  color: #d97706 !important;
-}
-
+/* 3. Japanese Kanji */
 .card-highlight-kanji {
   background: linear-gradient(180deg, rgba(225, 29, 72, 0.04) 0%, transparent 100%);
   border-left: 3px solid #e11d48;
 }
-
 .tag-kanji {
   color: #e11d48 !important;
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
 }
-
 .footer-action-kanji {
   color: #e11d48 !important;
   font-weight: 700;
+  transition: all 0.15s ease;
 }
-
 .card-highlight-kanji:hover .footer-action-kanji {
   color: #be123c !important;
+  transform: translateX(2px);
 }
 
-.track-pill-kanji {
-  background: rgba(225, 29, 72, 0.1) !important;
-  color: #e11d48 !important;
-  border-color: rgba(225, 29, 72, 0.3) !important;
+/* 4. AWS Cloud */
+.card-highlight-aws {
+  background: linear-gradient(180deg, rgba(245, 158, 11, 0.04) 0%, transparent 100%);
+  border-left: 3px solid #f59e0b;
 }
-
-.track-pill-kanji:hover {
-  background: #e11d48 !important;
-  color: #ffffff !important;
-}
-
-.track-pill-aws {
-  background: rgba(245, 158, 11, 0.1) !important;
+.tag-aws {
   color: #f59e0b !important;
-  border-color: rgba(245, 158, 11, 0.3) !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+.footer-action-aws {
+  color: #f59e0b !important;
+  font-weight: 700;
+  transition: all 0.15s ease;
+}
+.card-highlight-aws:hover .footer-action-aws {
+  color: #d97706 !important;
+  transform: translateX(2px);
 }
 
-.track-pill-aws:hover {
-  background: #f59e0b !important;
-  color: #ffffff !important;
+/* 5. PHP Core */
+.card-highlight-php {
+  background: linear-gradient(180deg, rgba(124, 58, 237, 0.04) 0%, transparent 100%);
+  border-left: 3px solid #7c3aed;
+}
+.tag-php {
+  color: #7c3aed !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+.footer-action-php {
+  color: #7c3aed !important;
+  font-weight: 700;
+  transition: all 0.15s ease;
+}
+.card-highlight-php:hover .footer-action-php {
+  color: #6d28d9 !important;
+  transform: translateX(2px);
+}
+
+/* 6. Modern JavaScript */
+.card-highlight-js {
+  background: linear-gradient(180deg, rgba(202, 138, 4, 0.04) 0%, transparent 100%);
+  border-left: 3px solid #ca8a04;
+}
+.tag-js {
+  color: #ca8a04 !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+.footer-action-js {
+  color: #ca8a04 !important;
+  font-weight: 700;
+  transition: all 0.15s ease;
+}
+.card-highlight-js:hover .footer-action-js {
+  color: #a16207 !important;
+  transform: translateX(2px);
+}
+
+/* 7. Laravel Enterprise */
+.card-highlight-laravel {
+  background: linear-gradient(180deg, rgba(239, 68, 68, 0.04) 0%, transparent 100%);
+  border-left: 3px solid #ef4444;
+}
+.tag-laravel {
+  color: #ef4444 !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+.footer-action-laravel {
+  color: #ef4444 !important;
+  font-weight: 700;
+  transition: all 0.15s ease;
+}
+.card-highlight-laravel:hover .footer-action-laravel {
+  color: #dc2626 !important;
+  transform: translateX(2px);
+}
+
+/* 8. MySQL Production */
+.card-highlight-mysql {
+  background: linear-gradient(180deg, rgba(0, 117, 143, 0.04) 0%, transparent 100%);
+  border-left: 3px solid #00758f;
+}
+.tag-mysql {
+  color: #00758f !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+.footer-action-mysql {
+  color: #00758f !important;
+  font-weight: 700;
+  transition: all 0.15s ease;
+}
+.card-highlight-mysql:hover .footer-action-mysql {
+  color: #005b6f !important;
+  transform: translateX(2px);
+}
+
+/* 9. Docker & DevOps */
+.card-highlight-devops {
+  background: linear-gradient(180deg, rgba(14, 165, 233, 0.04) 0%, transparent 100%);
+  border-left: 3px solid #0ea5e9;
+}
+.tag-devops {
+  color: #0ea5e9 !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+.footer-action-devops {
+  color: #0ea5e9 !important;
+  font-weight: 700;
+  transition: all 0.15s ease;
+}
+.card-highlight-devops:hover .footer-action-devops {
+  color: #0284c7 !important;
+  transform: translateX(2px);
+}
+
+/* 10. EC-CUBE 4 Enterprise */
+.card-highlight-eccube {
+  background: linear-gradient(180deg, rgba(16, 185, 129, 0.04) 0%, transparent 100%);
+  border-left: 3px solid #10b981;
+}
+.tag-eccube {
+  color: #10b981 !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+.footer-action-eccube {
+  color: #10b981 !important;
+  font-weight: 700;
+  transition: all 0.15s ease;
+}
+.card-highlight-eccube:hover .footer-action-eccube {
+  color: #059669 !important;
+  transform: translateX(2px);
+}
+
+/* 11. TOEIC Exam */
+.card-highlight-toeic {
+  background: linear-gradient(180deg, rgba(8, 145, 178, 0.04) 0%, transparent 100%);
+  border-left: 3px solid #0891b2;
+}
+.tag-toeic {
+  color: #0891b2 !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+.footer-action-toeic {
+  color: #0891b2 !important;
+  font-weight: 700;
+  transition: all 0.15s ease;
+}
+.card-highlight-toeic:hover .footer-action-toeic {
+  color: #0e7490 !important;
+  transform: translateX(2px);
 }
 
 .tech-brand-japanese {
@@ -1077,6 +1702,14 @@ header.header {
   cursor: pointer;
   transition: all 0.15s ease;
   white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .switch-track-btn {
+    min-height: 44px;
+    padding: 0.5rem 0.95rem;
+    font-size: 0.82rem;
+  }
 }
 
 .switch-track-btn:hover {

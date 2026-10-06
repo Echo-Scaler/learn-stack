@@ -102,7 +102,7 @@ Master modern software engineering, cloud architecture, and high-income language
 <div class="stat-label">In-Depth Topics</div>
 </div>
 <div class="stat-cell">
-<div class="stat-number">11 Tracks</div>
+<div class="stat-number">12 Tracks</div>
 <div class="stat-label">Beginner to Senior Level</div>
 </div>
 <div class="stat-cell">
@@ -117,7 +117,7 @@ Master modern software engineering, cloud architecture, and high-income language
 <span>•</span>
 <span style="color:#f59e0b; font-weight:700;">AWS</span>
 <span>•</span>
-<span>EC-CUBE</span>
+<span style="color:#0284c7; font-weight:700;">Network</span>
 </div>
 </div>
 </div>
@@ -130,98 +130,103 @@ Master modern software engineering, cloud architecture, and high-income language
 <p class="catalog-sub">Select your learning path from beginner syntax to enterprise architecture &amp; language mastery.</p>
 </div>
 <div class="track-filter-bar">
+<a href="/networking/00_overview/" class="track-pill" style="border-color:#0284c7; color:#0284c7;">🌐 Networking &amp; Automation (NEW)</a>
 <a href="/aws/00_overview/" class="track-pill track-pill-aws">☁️ AWS Labs (47 Labs)</a>
-<a href="/japanese-grammar/00_n1_overview_and_strategy/01_n1_exam_structure_and_study_guide/" class="track-pill track-pill-highlight">⛩️ N1 Grammar (10 Lessons)</a>
+<a href="/japanese-grammar/00_n1_overview_and_strategy/01_n1_exam_structure_and_study_guide/" class="track-pill track-pill-grammar">⛩️ N1 Grammar (10 Lessons)</a>
 <a href="/japanese-vocab/01_high_frequency_verbs/" class="track-pill track-pill-vocab">📖 N1 Vocab (570+ Words)</a>
 <a href="/japanese-kanji/00_n1_kanji_overview_and_strategy/" class="track-pill track-pill-kanji">🈸 N1 Kanji (10 Modules)</a>
-<a href="/toeic/00_study_plan_roadmap/01_score_breakdown_and_strategy/" class="track-pill">🎯 TOEIC 800+</a>
-<a href="/php/01_variables/" class="track-pill">🐘 PHP Core</a>
-<a href="/javascript/01_introduction_and_runtime/" class="track-pill">⚡ JavaScript</a>
+<a href="/toeic/00_study_plan_roadmap/01_score_breakdown_and_strategy/" class="track-pill track-pill-toeic">🎯 TOEIC 800+</a>
+<a href="/php/01_variables/" class="track-pill track-pill-php">🐘 PHP Core</a>
+<a href="/javascript/01_introduction_and_runtime/" class="track-pill track-pill-js">⚡ JavaScript</a>
+<a href="/laravel/01_intro_and_request_lifecycle/" class="track-pill track-pill-laravel">🔺 Laravel</a>
+<a href="/mysql/00_beginner_mysql_core_concepts_and_real_work_guide/" class="track-pill track-pill-mysql">🗄️ MySQL</a>
+<a href="/devops/01_docker_core/01-docker-fundamentals-and-architecture/" class="track-pill track-pill-devops">🐳 Docker &amp; DevOps</a>
+<a href="/eccube/01_basics/01-introduction/01-what-is-ec-cube/" class="track-pill track-pill-eccube">🛍️ EC-CUBE 4</a>
 </div>
 </div>
 
 <div class="catalog-grid">
-<a href="/php/01_variables/" class="catalog-card">
+<a href="/php/01_variables/" class="catalog-card card-highlight-php">
 <div>
-<span class="catalog-card-tag">Track 01 • Backend</span>
+<span class="catalog-card-tag tag-php">Track 01 • Backend</span>
 <h3>PHP Core &amp; Design Patterns</h3>
 <p>PHP 8.x Syntax၊ OOP Architecture၊ MVC Pattern၊ PDO Database နှင့် GoF Design Patterns (Singleton, Factory, Repository, Strategy) များ။</p>
 </div>
 <div class="catalog-card-footer">
 <span>14 Chapters</span>
-<span>Start Program ↗</span>
+<span class="footer-action-php">Start Program ↗</span>
 </div>
 </a>
 
-<a href="/javascript/01_introduction_and_runtime/" class="catalog-card">
+<a href="/javascript/01_introduction_and_runtime/" class="catalog-card card-highlight-js">
 <div>
-<span class="catalog-card-tag">Track 02 • Frontend &amp; Runtime</span>
+<span class="catalog-card-tag tag-js">Track 02 • Frontend &amp; Runtime</span>
 <h3>Modern JavaScript (ES6+ to V8)</h3>
 <p>V8 Engine Architecture၊ Event Loop၊ Closures၊ Promises၊ Async/Await၊ DOM Events နှင့် Memory Optimization နည်းဗျူဟာများ။</p>
 </div>
 <div class="catalog-card-footer">
 <span>13 Chapters</span>
-<span>Start Program ↗</span>
+<span class="footer-action-js">Start Program ↗</span>
 </div>
 </a>
 
-<a href="/laravel/01_intro_and_request_lifecycle/" class="catalog-card">
+<a href="/laravel/01_intro_and_request_lifecycle/" class="catalog-card card-highlight-laravel">
 <div>
-<span class="catalog-card-tag">Track 03 • Framework</span>
+<span class="catalog-card-tag tag-laravel">Track 03 • Framework</span>
 <h3>Laravel Enterprise Architecture</h3>
 <p>Request Lifecycle၊ Service Container၊ Eloquent Relationships၊ Sanctum API၊ Async Queues၊ Redis Caching နှင့် AWS Integration။</p>
 </div>
 <div class="catalog-card-footer">
 <span>20 Chapters</span>
-<span>Start Program ↗</span>
+<span class="footer-action-laravel">Start Program ↗</span>
 </div>
 </a>
 
-<a href="/mysql/00_beginner_mysql_core_concepts_and_real_work_guide/" class="catalog-card">
+<a href="/mysql/00_beginner_mysql_core_concepts_and_real_work_guide/" class="catalog-card card-highlight-mysql">
 <div>
-<span class="catalog-card-tag">Track 04 • Database</span>
+<span class="catalog-card-tag tag-mysql">Track 04 • Database</span>
 <h3>MySQL Production Database</h3>
 <p>InnoDB Engine၊ B-Tree Indexing Deep Dive၊ EXPLAIN Plans၊ ACID Isolation Levels၊ Partitioning နှင့် Replication Clustering။</p>
 </div>
 <div class="catalog-card-footer">
 <span>21 Chapters</span>
-<span>Start Program ↗</span>
+<span class="footer-action-mysql">Start Program ↗</span>
 </div>
 </a>
 
-<a href="/eccube/01_basics/01-introduction/01-what-is-ec-cube/" class="catalog-card">
+<a href="/eccube/01_basics/01-introduction/01-what-is-ec-cube/" class="catalog-card card-highlight-eccube">
 <div>
-<span class="catalog-card-tag">Track 05 • E-Commerce CMS</span>
+<span class="catalog-card-tag tag-eccube">Track 05 • E-Commerce CMS</span>
 <h3>EC-CUBE 4 Special Enterprise</h3>
 <p>Japan No.1 E-Commerce CMS Architecture (Symfony + Doctrine)၊ Event Subscribers၊ Plugin Development နှင့် ၄၀ ကျော်သော Client Tasks များ။</p>
 </div>
 <div class="catalog-card-footer">
 <span>60+ Modules</span>
-<span>Start Program ↗</span>
+<span class="footer-action-eccube">Start Program ↗</span>
 </div>
 </a>
 
-<a href="/devops/01_docker_core/01-docker-fundamentals-and-architecture/" class="catalog-card">
+<a href="/devops/01_docker_core/01-docker-fundamentals-and-architecture/" class="catalog-card card-highlight-devops">
 <div>
-<span class="catalog-card-tag">Track 06 • DevOps &amp; Cloud</span>
+<span class="catalog-card-tag tag-devops">Track 06 • DevOps &amp; Cloud</span>
 <h3>Docker &amp; DevOps Cloud Mastery</h3>
 <p>Multi-stage Builds၊ Docker Compose Orchestration၊ Production LEMP Stack၊ Kubernetes (Pods, Ingress, Helm) နှင့် AWS Deployment။</p>
 </div>
 <div class="catalog-card-footer">
 <span>30+ Modules</span>
-<span>Start Program ↗</span>
+<span class="footer-action-devops">Start Program ↗</span>
 </div>
 </a>
 
-<a href="/toeic/00_study_plan_roadmap/01_score_breakdown_and_strategy/" class="catalog-card">
+<a href="/toeic/00_study_plan_roadmap/01_score_breakdown_and_strategy/" class="catalog-card card-highlight-toeic">
 <div>
-<span class="catalog-card-tag">Track 07 • Language Exam</span>
+<span class="catalog-card-tag tag-toeic">Track 07 • Language Exam</span>
 <h3>TOEIC Exam Preparation Hub</h3>
 <p>၁၀ ပတ်အတွင်း အမှတ် ၈၀၀ ကျော်ရယူနိုင်မည့် Study Roadmap၊ ၁၀ စက္ကန့် သဒ္ဒါ လျှို့ဝှက်ချက်များ၊ Essential Vocab 800 နှင့် Real Exam Simulations။</p>
 </div>
 <div class="catalog-card-footer">
 <span>70+ Tests &amp; Guides</span>
-<span>Start Program ↗</span>
+<span class="footer-action-toeic">Start Program ↗</span>
 </div>
 </a>
 
@@ -270,6 +275,18 @@ Master modern software engineering, cloud architecture, and high-income language
 <div class="catalog-card-footer">
 <span>10 In-Depth Modules</span>
 <span class="footer-action-kanji">Start Kanji ↗</span>
+</div>
+</a>
+
+<a href="/networking/00_overview/" class="catalog-card" style="border: 1px solid rgba(14, 165, 233, 0.35);">
+<div>
+<span class="catalog-card-tag" style="background: rgba(14, 165, 233, 0.15); color: #0284c7; border: 1px solid rgba(14, 165, 233, 0.3);">Track 12 • Networking &amp; Automation <span class="tag-badge-new" style="background:#0284c7;">NEW</span></span>
+<h3>Enterprise Networking &amp; Cloud Automation</h3>
+<p>OSI 7 Layers vs TCP/IP၊ Packet Flow၊ DNS/DHCP/NAT၊ IPv4 &amp; CIDR Notation (/16 to /32)၊ VLSM အကြီးဆုံးမှ အသေးဆုံးသို့ Subnetting တွက်ချက်နည်း၊ AWS VPC Multi-Tier Architecture နှင့် Terraform IaC အလိုအလျောက် တည်ဆောက်ခြင်း လမ်းညွှန်။</p>
+</div>
+<div class="catalog-card-footer">
+<span>6 In-Depth Guides</span>
+<span style="color:#0284c7; font-weight:700;">Start Networking ↗</span>
 </div>
 </a>
 </div>

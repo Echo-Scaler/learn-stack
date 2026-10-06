@@ -72,7 +72,17 @@ description: "| အချက်အလက် (Item) | အသေးစိတ်ဖ
 | **11** | **Default Built-in Functions** | [11_most_used_built_in_functions.md](/php/11_most_used_built_in_functions/) | လုပ်ငန်းခွင်သုံး မဖြစ်မနေ Built-in Functions များ (Strings, Arrays, DateTime, Files, JSON) |
 | **12** | **Modern PHP 8+ Features** | [12_modern_php8_features.md](/php/12_modern_php8_features/) | Match expression, Nullsafe (?->), Enums, Readonly classes, Attributes (#[Route]) |
 | **13** | **Design Patterns & Structures** | [13_design_patterns_in_php.md](/php/13_design_patterns_in_php/) | Repository Pattern, Dependency Injection, DTO, Factory, Singleton, Event-Driven Architecture |
-| **14** | **🚀 Laravel Beginner to Master** | [LARAVEL_BEGINNER_TO_MASTER.md](/laravel/00_overview/) | Laravel အစမှ အဆုံး လုပ်ငန်းခွင်သုံး အဆင့်ဆင့်လမ်းညွှန် (Routing, Eloquent ORM, Blade, API, Sanctum, Queues, Helpers) |
+| **14** | **File I/O & Streams** | [14_file_io_and_streams.md](/php/14_file_io_and_streams/) | Streams, Stream Filters, `flock()` Concurrency Locking, Chunked Reading, Generators `yield`, Atomic File Writes |
+| **15** | **CGI, FastCGI & PHP-FPM** | [15_cgi_fastcgi_and_php_fpm.md](/php/15_cgi_fastcgi_and_php_fpm/) | CGI vs FastCGI၊ PHP-FPM Master/Worker Process Architecture၊ Unix Socket vs TCP၊ `pm.max_children` Tuning၊ 502/504 Error Troubleshooting |
+| **16** | **Middleware & Pipeline Pattern** | [16_middleware_and_pipeline.md](/php/16_middleware_and_pipeline/) | Onion Architecture၊ PSR-15 Request Pipeline Runner၊ CORS၊ Timing Logger၊ Bearer Auth Guard၊ Rate Limiting |
+| **17** | **Authentication & Authorization** | [17_authentication_and_authorization.md](/php/17_authentication_and_authorization/) | AuthN vs AuthZ၊ Modern Argon2id Hashing၊ Stateful Session vs Stateless JWT၊ RBAC Database Schema & ABAC Policy Guard |
+| **18** | **Batch Processing & Cron Jobs** | [18_batch_processing_and_cron_jobs.md](/php/18_batch_processing_and_cron_jobs/) | Single Dispatcher Pattern (`* * * * *`)၊ Pure PHP Scheduler Engine၊ Overlap Mutex Lock၊ Keyset Pagination Chunking၊ POSIX Graceful Shutdown |
+| **19** | **Async Programming, Fibers & Swoole** | [19_async_programming_fibers_and_swoole.md](/php/19_async_programming_fibers_and_swoole/) | Sync vs Async၊ `curl_multi` Parallel HTTP Client၊ PHP 8.1+ Fibers `suspend()`/`resume()`၊ Swoole High-Performance Coroutines Server |
+| **20** | **Database Migrations & Seeders** | [20_database_migrations_and_seeders.md](/php/20_database_migrations_and_seeders/) | Schema Version Control၊ Pure PHP Migration Runner (`up`/`down` rollback)၊ High-Performance Bulk Seeder၊ Zero-Downtime Expand-Contract Pattern |
+| **21** | **Redis, Pub/Sub & Distributed Locks** | [21_redis_pubsub_and_distributed_locks.md](/php/21_redis_pubsub_and_distributed_locks/) | `phpredis` Core Data Structures၊ Centralized Redis Session Handler၊ Real-time Pub/Sub Messaging၊ Atomic Distributed Lock (Redlock) |
+| **22** | **Database Replication & Connection Pooling** | [22_database_replication_and_connection_pooling.md](/php/22_database_replication_and_connection_pooling/) | Primary-Replica Read/Write Split PDO Manager၊ Replication Lag Sticky Reads Pattern၊ Persistent PDO vs ProxySQL vs Swoole Pool |
+| **23** | **Complete Caching Architecture** | [23_complete_caching_architecture.md](/php/23_complete_caching_architecture/) | 6-Level Caching (APCu/OPcache, File Cache, HTTP Cache ETag/304, CDN Edge Purge, Database Redis Cache Stampede Mutex Lock) |
+| **24** | **🚀 Laravel Beginner to Master** | [LARAVEL_BEGINNER_TO_MASTER.md](/laravel/00_overview/) | Laravel အစမှ အဆုံး လုပ်ငန်းခွင်သုံး အဆင့်ဆင့်လမ်းညွှန် (Routing, Eloquent ORM, Blade, API, Sanctum, Queues, Helpers) |
 
 ---
 
