@@ -30,7 +30,8 @@ graph LR
 2. **Backend Fundamentals**: [PHP Core & Design Patterns Track](/php/00_overview/) မှ PHP 8.x Features, OOP Architecture, MVC Pattern နှင့် Database PDO ဆက်သွယ်မှုများကို လေ့လာပါ။
 3. **Database Engineering**: [MySQL Production Database Track](/mysql/00_overview/) မှ InnoDB Engine, B-Tree Indexing, EXPLAIN Query Plan နှင့် ACID Transactions များကို စနစ်တကျ ရေးဆွဲပါ။
 4. **Enterprise Framework**: [Laravel Track](/laravel/00_overview/) မှ Service Container, Eloquent ORM, Sanctum RESTful API, Redis Caching နှင့် Async Queues များကို လေ့လာပါ။
-5. **Containerization**: [Docker & DevOps Track](/devops/00_overview/) ဖြင့် LEMP Production Stack ပြင်ဆင်ပြီး Cloud ပေါ်သို့ တင်ပါ။
+5. **Version Control & Collaboration**: [Git & GitHub Enterprise Track](/git/00_overview/) ဖြင့် Atomic Commits, Interactive Rebase, Merge Conflict Resolution နှင့် Trunk-Based Team Flow များကို ကျင့်သုံးပါ။
+6. **Containerization & Deployment**: [Docker & DevOps Track](/devops/00_overview/) ဖြင့် LEMP Production Stack ပြင်ဆင်ပြီး Cloud ပေါ်သို့ တင်ပါ။
 
 ---
 

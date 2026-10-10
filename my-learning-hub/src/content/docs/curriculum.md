@@ -1,13 +1,13 @@
 ---
 title: Complete Engineering Curriculum
-description: Overview of all 13 tracks, 520+ lessons, chapter breakdown, and competencies
+description: Overview of all 14 tracks, 527+ lessons, chapter breakdown, and competencies
 ---
 
 <div class="curriculum-container">
 
 <div class="curriculum-intro">
   <p class="lead-text">
-    LearnStack တွင် ပါဝင်သော သင်ရိုးညွှန်းတမ်းအားလုံး (စုစုပေါင်း <strong>၅၂၀ ခန်း</strong>၊ ၁၃ ခုသော အထူးပြု Track များ) ၏ ကဏ္ဍအလိုက် အသေးစိတ် မာတိကာနှင့် လေ့လာရမည့် ခေါင်းစဉ်များ ဖြစ်ပါသည်။
+    LearnStack တွင် ပါဝင်သော သင်ရိုးညွှန်းတမ်းအားလုံး (စုစုပေါင်း <strong>၅၂၇ ခန်း</strong>၊ ၁၄ ခုသော အထူးပြု Track များ) ၏ ကဏ္ဍအလိုက် အသေးစိတ် မာတိကာနှင့် လေ့လာရမည့် ခေါင်းစဉ်များ ဖြစ်ပါသည်။
   </p>
 </div>
 
@@ -332,6 +332,24 @@ description: Overview of all 13 tracks, 520+ lessons, chapter breakdown, and com
     - [17. Level 3 — Spring Boot Backend Development (IoC, DI, Multi-profile YAML, REST API, Validation, Security)](/java/17_level3_spring_boot_backend_development/)
     - [18. Level 4 — Professional Dev Tools & Workflow (Git Branching/Rebase, Maven Scopes, JUnit 5, Mockito, SLF4J, Postman)](/java/18_level4_professional_dev_tools_workflow/)
     - [19. Level 5 — Production, Docker & Troubleshooting (JWT, Multi-stage Docker, GitHub Actions, Heap Tuning, jstack/jcmd)](/java/19_level5_production_security_docker_troubleshooting/)
+
+---
+
+## 🐙 14. Git & GitHub Enterprise Engineering Track
+- **စုစုပေါင်း အခန်းရေ**: ၇ ခန်း (3 Sections)
+- **အဆင့်**: Beginner မှ 4-Year Mid/Senior DevOps & Team Lead အဆင့်ထိ
+- **လေ့လာရန်ကြာချိန်**: ၁ ပတ် မှ ၂ ပတ်
+- **အဓိက ခေါင်းစဉ်များ**:
+  - **Section 1: Architecture & Core Workflow**:
+    - [00. Git & GitHub Enterprise Engineering Roadmap (0 to 4-Year Mid/Senior Level)](/git/00_overview/)
+    - [01. Git Architecture Internals, Setup & SSH Security](/git/01_git_architecture_and_setup/)
+    - [02. Daily Developer Workflow & Atomic Commits](/git/02_daily_workflow_and_atomic_commits/)
+  - **Section 2: Branching, Merging & Clean Rebase**:
+    - [03. Branching Strategies, Merge Conflicts & Git Stash](/git/03_branching_merging_and_stash/)
+    - [04. Rebase Mastery, Interactive Rebase & Clean History](/git/04_rebase_mastery_and_clean_history/)
+  - **Section 3: Team Flow, Enterprise & Disaster Recovery**:
+    - [05. Team Collaboration, GitHub Workflow & Branching Models](/git/05_team_collaboration_and_github_flow/)
+    - [06. Disaster Recovery, Advanced Git Tools & Troubleshooting](/git/06_disaster_recovery_and_advanced_tools/)
 
 </div>
 

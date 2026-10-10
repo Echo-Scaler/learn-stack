@@ -26,7 +26,7 @@ Master modern software engineering, cloud architecture, and high-income language
 </div>
 <div class="hero-guarantee">
 <span class="asterisk-red">✱</span>
-<span>520+ Production lessons, AWS Real Labs, Japanese N1 Mastery &amp; senior IQ architecture</span>
+<span>527+ Production lessons, AWS Real Labs, Japanese N1 Mastery &amp; senior IQ architecture</span>
 </div>
 </div>
 
@@ -94,15 +94,15 @@ Master modern software engineering, cloud architecture, and high-income language
 <div class="avatar-circle">Dev</div>
 <div class="avatar-circle">Pro</div>
 </div>
-<div class="stat-number">520+</div>
+<div class="stat-number">527+</div>
 <div class="stat-label">Production Lessons</div>
 </div>
 <div class="stat-cell">
-<div class="stat-number">185+</div>
+<div class="stat-number">190+</div>
 <div class="stat-label">In-Depth Topics</div>
 </div>
 <div class="stat-cell">
-<div class="stat-number">13 Tracks</div>
+<div class="stat-number">14 Tracks</div>
 <div class="stat-label">Beginner to Senior Level</div>
 </div>
 <div class="stat-cell">
@@ -114,6 +114,8 @@ Master modern software engineering, cloud architecture, and high-income language
 <span>MySQL</span>
 <span>•</span>
 <span style="color:#ea580c; font-weight:700;">Java</span>
+<span>•</span>
+<span style="color:#f05032; font-weight:700;">Git</span>
 <span>•</span>
 <span>Docker</span>
 <span>•</span>
@@ -132,6 +134,7 @@ Master modern software engineering, cloud architecture, and high-income language
 <p class="catalog-sub">Select your learning path from beginner syntax to enterprise architecture &amp; language mastery.</p>
 </div>
 <div class="track-filter-bar">
+<a href="/git/00_overview/" class="track-pill track-pill-git">🐙 Git &amp; GitHub (7 Ch)</a>
 <a href="/java/00_overview/" class="track-pill track-pill-java">☕ Java (20 Ch)</a>
 <a href="/php/00_overview/" class="track-pill track-pill-php">🐘 PHP (24 Ch)</a>
 <a href="/javascript/00_overview/" class="track-pill track-pill-js">⚡ JavaScript (13 Ch)</a>
@@ -302,6 +305,18 @@ Master modern software engineering, cloud architecture, and high-income language
 <div class="catalog-card-footer">
 <span>20 In-Depth Modules (4 Sections)</span>
 <span class="footer-action-java">Start Java ↗</span>
+</div>
+</a>
+
+<a href="/git/00_overview/" class="catalog-card card-highlight-git">
+<div>
+<span class="catalog-card-tag tag-git" style="color:#f05032; font-weight:700;">Track 14 • DevOps &amp; Engineering <span class="tag-badge-new" style="background:#f05032; color:#fff;">VERSION CONTROL</span></span>
+<h3>Git &amp; GitHub Enterprise Mastery</h3>
+<p>Git Object Internals (Blobs/Trees/Commits)၊ Atomic Commits (git add -p)၊ Interactive Rebase (-i)၊ Merge Conflicts Resolution၊ Trunk-Based vs GitFlow နှင့် git reflog Disaster Recovery (မြန်မာဘာသာ အပြည့်အစုံ)။</p>
+</div>
+<div class="catalog-card-footer">
+<span>7 In-Depth Modules (3 Sections)</span>
+<span style="color:#f05032; font-weight:700;">Start Git ↗</span>
 </div>
 </a>
 </div>

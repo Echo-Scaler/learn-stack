@@ -18,12 +18,14 @@ const courses = [
 	{ label: 'AWS Cloud & DevOps', directory: 'aws' },
 	{ label: 'Networking & Cloud Automation', directory: 'networking' },
 	{ label: 'Java', directory: 'java' },
+	{ label: 'Git & GitHub Enterprise', directory: 'git' },
 ];
 
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://my-learning-hub-kyaw-wai-yans-projects.vercel.app',
 	redirects: {
+		'/git/': '/git/00_overview/',
 		'/java/': '/java/00_overview/',
 		'/networking/': '/networking/00_overview/',
 		'/japanese/00_n1_overview_and_strategy/01_n1_exam_structure_and_study_guide/': '/japanese-grammar/00_n1_overview_and_strategy/01_n1_exam_structure_and_study_guide/',

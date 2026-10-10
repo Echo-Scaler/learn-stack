@@ -85,6 +85,8 @@ const sectorIcons: Record<string, string> = {
   'AWS Cloud & DevOps': '☁️',
   'Networking & Cloud Automation': '🌐',
   'Java': '☕',
+  'Git & GitHub Enterprise': '🐙',
+  'Git': '🐙',
 };
 const sectorIcon = sectorIcons[sectorTitle] || '📚';
 
@@ -601,6 +603,48 @@ function classifyLesson(href: string, courseName: string) {
         sectionTitle: '4. 5-Level Industry Masterclass',
         sectionIcon: '⭐',
         badge: 'PRODUCTION READY',
+        subTag
+      };
+    }
+  }
+
+  // 8. Git & GitHub Enterprise Track (3 Sections, 7 chapters)
+  if (courseName === 'Git & GitHub Enterprise' || courseName === 'Git' || normHref.includes('/git/')) {
+    const num = parseInt(clean.match(/(\d+)/)?.[1] || '0', 10);
+    if (clean.includes('00_overview') || num <= 2) {
+      let subTag = 'Git Architecture';
+      if (clean.includes('00_overview')) subTag = 'Course Roadmap';
+      else if (num === 1) subTag = 'Objects & Setup';
+      else if (num === 2) subTag = 'Atomic Commits';
+      return {
+        sectionKey: 'git_foundations',
+        sectionTitle: '1. Architecture & Core Workflow',
+        sectionIcon: '🐙',
+        badge: 'GIT INTERNALS',
+        subTag
+      };
+    }
+    if (num >= 3 && num <= 4) {
+      let subTag = 'Branching & Rebase';
+      if (num === 3) subTag = 'Merge & Stash';
+      else if (num === 4) subTag = 'Interactive Rebase';
+      return {
+        sectionKey: 'git_branching',
+        sectionTitle: '2. Branching & Clean Rebase',
+        sectionIcon: '🌿',
+        badge: 'REBASE & MERGE',
+        subTag
+      };
+    }
+    if (num >= 5) {
+      let subTag = 'Team Flow & Recovery';
+      if (num === 5) subTag = 'Team & GitHub Flow';
+      else if (num === 6) subTag = 'Reflog & Recovery';
+      return {
+        sectionKey: 'git_advanced',
+        sectionTitle: '3. Team Flow & Disaster Recovery',
+        sectionIcon: '🛡️',
+        badge: 'ENTERPRISE GIT',
         subTag
       };
     }
