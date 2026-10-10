@@ -1,20 +1,20 @@
 ---
 title: Complete Engineering Curriculum
-description: Overview of all 10 tracks, 468+ lessons, chapter breakdown, and competencies
+description: Overview of all 13 tracks, 515+ lessons, chapter breakdown, and competencies
 ---
 
 <div class="curriculum-container">
 
 <div class="curriculum-intro">
   <p class="lead-text">
-    LearnStack တွင် ပါဝင်သော သင်ရိုးညွှန်းတမ်းအားလုံး (စုစုပေါင်း <strong>၄၆၈ ခန်း</strong>) ၏ ကဏ္ဍအလိုက် အသေးစိတ် မာတိကာနှင့် လေ့လာရမည့် ခေါင်းစဉ်များ ဖြစ်ပါသည်။
+    LearnStack တွင် ပါဝင်သော သင်ရိုးညွှန်းတမ်းအားလုံး (စုစုပေါင်း <strong>၅၁၅ ခန်း</strong>၊ ၁၃ ခုသော အထူးပြု Track များ) ၏ ကဏ္ဍအလိုက် အသေးစိတ် မာတိကာနှင့် လေ့လာရမည့် ခေါင်းစဉ်များ ဖြစ်ပါသည်။
   </p>
 </div>
 
 ---
 
 ## 🐘 1. PHP Core & Design Patterns Track
-- **စုစုပေါင်း အခန်းရေ**: ၁၄ ခန်း
+- **စုစုပေါင်း အခန်းရေ**: ၂၄ ခန်း (3 Sections)
 - **အဆင့်**: Beginner မှ Senior Architecture အထိ
 - **လေ့လာရန်ကြာချိန်**: ၂ ပတ် မှ ၃ ပတ်
 - **အဓိက ခေါင်းစဉ်များ**:
@@ -32,6 +32,16 @@ description: Overview of all 10 tracks, 468+ lessons, chapter breakdown, and com
   12. [11. Most Used Built-in Functions](/php/11_most_used_built_in_functions/)
   13. [12. Modern PHP 8.x Features](/php/12_modern_php8_features/)
   14. [13. Design Patterns (Singleton, Factory, Repository, Strategy)](/php/13_design_patterns_in_php/)
+  15. [14. File I/O & Streams](/php/14_file_io_and_streams/)
+  16. [15. CGI, FastCGI & PHP-FPM](/php/15_cgi_fastcgi_and_php_fpm/)
+  17. [16. Middleware & Request Pipeline](/php/16_middleware_and_pipeline/)
+  18. [17. Authentication & Authorization](/php/17_authentication_and_authorization/)
+  19. [18. Batch Processing & Cron Jobs](/php/18_batch_processing_and_cron_jobs/)
+  20. [19. Async Programming, Fibers & Swoole](/php/19_async_programming_fibers_and_swoole/)
+  21. [20. Database Migrations & Seeders](/php/20_database_migrations_and_seeders/)
+  22. [21. Redis PubSub & Distributed Locks](/php/21_redis_pubsub_and_distributed_locks/)
+  23. [22. Database Replication & Connection Pooling](/php/22_database_replication_and_connection_pooling/)
+  24. [23. Complete Enterprise Caching Architecture](/php/23_complete_caching_architecture/)
 
 ---
 
@@ -114,15 +124,60 @@ description: Overview of all 10 tracks, 468+ lessons, chapter breakdown, and com
 ---
 
 ## 🛍️ 5. EC-CUBE 4 Special Enterprise Track
-- **စုစုပေါင်း အခန်းရေ**: ၂၀၇ ခန်း (Core Architecture, Template Engine, 40+ Client Tasks)
-- **အဆင့်**: Production E-Commerce Developer
-- **အဓိက ခေါင်းစဉ်များ**:
-  - [01. What is EC-CUBE & Architecture Overview](/eccube/01_basics/01-introduction/01-what-is-ec-cube/)
-  - [02. Event Subscribers & Hook Points](/eccube/01_basics/06-backend-customization/02-event-subscribers-hookpoints/)
-  - [03. 40 Real-World Japanese Client Production Tasks](/eccube/02_client_tasks/01_display_product_code/)
-  - [04. Payment Gateway Integration & Webhooks](/eccube/04_payment/02_payment_methods_integration/)
-  - [05. Template & Twig Theme Design System](/eccube/09_template_design/readme/)
-  - [06. High Performance & 100k Order CSV Tuning](/eccube/performance/05_large_csv_and_admin_performance/)
+- **စုစုပေါင်း အခန်းရေ**: ၂၁၇ ခန်း (Core Architecture, Database Internals, 40 Client Tasks, Twig Theme, 17 Client Requirements)
+- **အဆင့်**: Production E-Commerce Developer (Beginner မှ Senior Genba Specialist အထိ)
+- **လေ့လာရန်ကြာချိန်**: ၄ ပတ် မှ ၆ ပတ်
+- **အဓိက အပိုင်း ၅ ပိုင်းနှင့် မာတိကာ**:
+  - **Track Overview**: [🛍️ EC-CUBE 4 Course Overview & Strategic Architecture Map](/eccube/00_overview/)
+  - **Section 1: Architecture & Core Basics (၂၆ ခန်း)**:
+    - [01. What is EC-CUBE & Architecture Overview](/eccube/01_basics/01-introduction/01-what-is-ec-cube/)
+    - [02. Environment Setup & Docker Compose](/eccube/01_basics/02-environment-setup/01-docker-setup/)
+    - [03. Admin Screen & Store Management](/eccube/01_basics/03-admin-and-store-management/01-admin-overview/)
+    - [04. Symfony Routing, Controllers & DI Container](/eccube/01_basics/04-architecture-and-core-concepts/01-symfony-and-routing/)
+    - [05. Doctrine ORM, Entities & Repositories](/eccube/01_basics/04-architecture-and-core-concepts/02-doctrine-orm-and-entities/)
+    - [06. Event Subscribers & Hook Points](/eccube/01_basics/06-backend-customization/02-event-subscribers-hookpoints/)
+    - [07. Plugin Development Architecture](/eccube/01_basics/07-plugin-development/01-plugin-concept-and-structure/)
+  - **Section 2: Work Tasks & Database Internals (၈ ခန်း)**:
+    - [00. Work Tasks & Database Architecture Overview](/eccube/10_work_tasks_and_database/readme/)
+    - [01. Product Structure & Database (dtb_product, dtb_product_class, SKU)](/eccube/10_work_tasks_and_database/01_product_structure_and_database/)
+    - [02. Checkout Structure & Database (PurchaseFlow, CartSession)](/eccube/10_work_tasks_and_database/02_checkout_structure_and_database/)
+    - [03. Order Structure & Database (dtb_order, dtb_order_item, Status Lifecycle)](/eccube/10_work_tasks_and_database/03_order_structure_and_database/)
+    - [04. Delivery Structure & Database (dtb_shipping, dtb_delivery_fee, Multi-Delivery)](/eccube/10_work_tasks_and_database/04_delivery_structure_and_database/)
+    - [05. Payment Structure & Database (Credit Card, Webhook, Auth vs Capture)](/eccube/10_work_tasks_and_database/05_payment_structure_and_database/)
+    - [06. Integrated Lifecycle & System ERD (Entity Relationship Diagram)](/eccube/10_work_tasks_and_database/06_integrated_lifecycle_and_erd/)
+    - [07. Checkout Pipeline & Payment Calculation Deep Dive (10% vs 8% Tax)](/eccube/10_work_tasks_and_database/07_checkout_and_payment_calculation_deep_dive/)
+  - **Section 3: 40 Real-World Japanese Client Production Tasks (၄၂ ခန်း)**:
+    - [Task 01. Display Product Code on Detail Page](/eccube/02_client_tasks/01_display_product_code/)
+    - [Task 02. Custom Delivery Fee Zero Preprocessor](/eccube/02_client_tasks/02_purchaseflow_custom_delivery_fee/)
+    - [Task 03. Member Point Rate Custom Calculation](/eccube/02_client_tasks/03_point_rate_custom_rule/)
+    - [Task 04. Minimum & Maximum Order Quantity Rules](/eccube/02_client_tasks/04_min_max_order_quantity_rule/)
+    - [Task 05. Auto-Complete Address from Postal Code](/eccube/02_client_tasks/05_postal_code_auto_complete/)
+    - [40 Client Tasks Complete Index](/eccube/02_client_tasks/01_display_product_code/)
+  - **Section 4: Twig & Template Design Customization (၁၃ ခန်း)**:
+    - [00. Template Engine & Roadmap Overview](/eccube/09_template_design/00-course-overview-and-roadmap/01-course-overview-and-roadmap/)
+    - [01. Template Architecture & Structure](/eccube/09_template_design/01-template-architecture-and-structure/01-template-architecture-and-structure/)
+    - [02. Twig Template Essentials & Inheritance](/eccube/09_template_design/02-twig-template-engine-essentials/01-twig-template-engine-essentials/)
+    - [03. Layout & Frame System](/eccube/09_template_design/03-eccube-layout-and-frame-system/01-eccube-layout-and-frame-system/)
+    - [04. Japanese EC UI/UX Conversion Optimization](/eccube/09_template_design/09-japanese-ec-ui-ux-and-conversion-optimization/01-japanese-ec-ui-ux-and-conversion-optimization/)
+  - **Section 5: Client Requirements Master Hub (၁၂၈ ခန်း - မော်ဂျူး ၁၇ ခု)**:
+    - [📋 Open Complete Client Requirements Master Hub](/eccube/requirements/readme/)
+    - [01. 🛒 Order Management (8 Lessons)](/eccube/requirements/03_order_management/readme/)
+    - [02. 💳 Payment Gateways & External APIs (6 Lessons)](/eccube/requirements/04_payment/readme/)
+    - [03. 📦 Shipping & Delivery Customization (6 Lessons)](/eccube/requirements/05_shipping/readme/)
+    - [04. 🏷️ Product Management & Stock (14 Lessons)](/eccube/requirements/product-management/readme/)
+    - [05. 🔍 Search & Filtering (QueryBuilder, Price Range, CSV) (6 Lessons)](/eccube/requirements/search-filter/readme/)
+    - [06. 🎁 Campaign & Coupons (Discount Logic, Tax) (5 Lessons)](/eccube/requirements/08_campaign_coupon/readme/)
+    - [07. ❤️ Favorite & Wishlist (AJAX, N+1 Prevention, Ranking) (9 Lessons)](/eccube/requirements/favorite-wishlist/readme/)
+    - [08. 👥 Customer Management & Rank System (7 Lessons)](/eccube/requirements/06_customer_management/readme/)
+    - [09. 💬 LINE Marketing & Messaging API (6 Lessons)](/eccube/requirements/line-marketing/readme/)
+    - [10. ✉️ Email Management (Twig Mail, Auto-Alerts) (6 Lessons)](/eccube/requirements/email-management/readme/)
+    - [11. 📊 Sales & Analytics Reports (Daily/Monthly, Demographics) (5 Lessons)](/eccube/requirements/sales-reports/readme/)
+    - [12. 🔔 Event Subscribers & Hookpoints (13 Lessons)](/eccube/requirements/event-subscriber/readme/)
+    - [13. 🔌 External API Integration (Guzzle, Webhooks) (5 Lessons)](/eccube/requirements/api-integration/readme/)
+    - [14. 🛡️ Auth Roles & Permissions (Firewall, RBAC) (5 Lessons)](/eccube/requirements/auth-permission/readme/)
+    - [15. 🔒 Security Hardening (SQLi, XSS, CSRF) (6 Lessons)](/eccube/requirements/07_security/readme/)
+    - [16. ⚡ Performance Tuning & Large CSV (7 Lessons)](/eccube/requirements/performance/readme/)
+    - [17. 📑 Customization Reference List (13 Lessons)](/eccube/requirements/customization-list/readme/)
 
 ---
 
@@ -231,6 +286,46 @@ description: Overview of all 10 tracks, 468+ lessons, chapter breakdown, and com
   - [08. Japanese IT Workplace & Genba Technical Kanji (障害・脆弱性・担保)](/japanese-kanji/07_japanese_workplace_and_it_genba_kanji/)
   - [09. N1 Kanji Real Exam Simulation Test 1 (20 Reading Questions)](/japanese-kanji/08_n1_kanji_real_exam_reading_test1/)
   - [10. N1 Kanji Real Exam Simulation Test 2 (20 Reading Questions)](/japanese-kanji/09_n1_kanji_real_exam_reading_test2/)
+
+---
+
+## 🌐 12. Networking & Cloud Automation Track
+- **စုစုပေါင်း အခန်းရေ**: ၆ ခန်း (1 Section)
+- **အဆင့်**: Network Foundations မှ AWS VPC Architecture & Terraform IaC အထိ
+- **လေ့လာရန်ကြာချိန်**: ၁ ပတ် မှ ၂ ပတ်
+- **အဓိက ခေါင်းစဉ်များ**:
+  - [00. Networking & Cloud Automation Overview](/networking/00_overview/)
+  - [01. OSI 7 Layers vs TCP/IP Protocol Suite & Packet Encapsulation](/networking/01_osi_model_and_tcp_ip_layers/)
+  - [02. IPv4 Architecture, Subnetting, CIDR Notation & VLSM Calculation](/networking/02_ip_addressing_subnetting_cidr_vlsm/)
+  - [03. Core Network Services & Protocols (DNS, DHCP, NAT, BGP, ARP, ICMP)](/networking/03_core_network_protocols_dns_dhcp_nat_bgp/)
+  - [04. AWS Cloud Networking Architecture (VPC, Subnets, IGW, NAT GW, Transit GW)](/networking/04_aws_cloud_networking_architecture/)
+  - [05. Terraform IaC VPC Automation Lab (Multi-AZ Production Cloud Network)](/networking/05_terraform_iac_vpc_automation_lab/)
+
+---
+
+## ☕ 13. Java Enterprise Architecture Track
+- **စုစုပေါင်း အခန်းရေ**: ၁၅ ခန်း (3 Sections)
+- **အဆင့်**: Beginner မှ 4-Year Mid/Senior Enterprise Engineer အဆင့်ထိ
+- **လေ့လာရန်ကြာချိန်**: ၄ ပတ် မှ ၆ ပတ်
+- **အဓိက ခေါင်းစဉ်များ**:
+  - **Section 1: Foundations & Memory Internals**:
+    - [00. Java Enterprise Engineering Roadmap (0 to 4-Year Mid/Senior Level)](/java/00_overview/)
+    - [01. Java Basics, Syntax, JVM Architecture & Execution Model](/java/01_java_basics_and_syntax/)
+    - [02. Methods, Memory Management (Stack vs Heap) & Pass-by-Value Internals](/java/02_methods_and_memory_stack_heap/)
+  - **Section 2: Deep Object-Oriented Programming (OOP Masterclass)**:
+    - [03. OOP Classes, Objects, Constructors & Initialization Lifecycle](/java/03_oop_classes_objects_constructors/)
+    - [04. OOP Encapsulation, Access Modifiers, Immutability & Java Records](/java/04_oop_encapsulation_access_modifiers/)
+    - [05. OOP Inheritance, Dynamic Dispatch & Polymorphism In-Depth](/java/05_oop_inheritance_and_polymorphism/)
+    - [06. OOP Abstraction & Interfaces (Loose Coupling, Contract Design)](/java/06_oop_abstraction_and_interfaces/)
+  - **Section 3: Senior Enterprise Architecture, Concurrency & Spring Boot**:
+    - [07. Strings, String Constant Pool (SCP) & Wrapper Class Caching](/java/07_strings_and_wrapper_classes/)
+    - [08. Exception Handling Architecture & Enterprise Production Best Practices](/java/08_exception_handling_best_practices/)
+    - [09. Java Collections Framework Deep Dive (ArrayList, LinkedList, HashMap Internals)](/java/09_collections_framework_deep_dive/)
+    - [10. Generics, Type Safety, Type Erasure & PECS Principle](/java/10_generics_and_type_safety/)
+    - [11. Modern Java: Lambdas, Functional Interfaces, Stream API & Optional](/java/11_java8_lambdas_and_streams/)
+    - [12. Multithreading & Concurrency (Thread Safety, volatile, ThreadPool, CompletableFuture)](/java/12_multithreading_and_concurrency/)
+    - [13. Gang of Four (GoF) Design Patterns in Java (Singleton, Builder, Strategy, Observer)](/java/13_design_patterns_in_java/)
+    - [14. Enterprise Database Integration & Spring Boot Architecture (HikariCP, JPA, REST APIs)](/java/14_enterprise_database_and_spring_boot/)
 
 </div>
 

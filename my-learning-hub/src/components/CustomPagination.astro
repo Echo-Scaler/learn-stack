@@ -42,7 +42,7 @@ for (const group of sidebar) {
 // Fallback matching by first path segment (e.g. /javascript/...)
 if (!currentGroup && currentPath) {
   const segments = currentPath.split('/').filter(Boolean);
-  const sectorSegment = segments[0]; // 'javascript', 'php', etc.
+  const sectorSegment = segments[0];
   if (sectorSegment) {
     for (const group of sidebar) {
       if (group.type === 'group') {
@@ -83,6 +83,8 @@ const sectorIcons: Record<string, string> = {
   'Japanese N1 Vocabulary': '📖',
   'Japanese N1 Kanji': '🈸',
   'AWS Cloud & DevOps': '☁️',
+  'Networking & Cloud Automation': '🌐',
+  'Java': '☕',
 };
 const sectorIcon = sectorIcons[sectorTitle] || '📚';
 
@@ -112,57 +114,612 @@ function getPaginationItems(currentIdx: number, total: number) {
 }
 
 const paginationItems = totalLessons > 0 ? getPaginationItems(currentIndex >= 0 ? currentIndex : 0, totalLessons) : [];
+
+// -------------------------------------------------------------
+// COURSE STRUCTURE & SECTION CLASSIFICATION
+// -------------------------------------------------------------
+function classifyLesson(href: string, courseName: string) {
+  const clean = (href || '').replace(/^\/+|\/+$/g, '').toLowerCase();
+  const normHref = `/${clean}/`;
+
+  // 1. EC-CUBE Track (5 Core Sections, 217 chapters)
+  if (courseName === 'EC-CUBE' || normHref.includes('/eccube/')) {
+    if (normHref.includes('/00_overview/') || normHref.includes('/01_basics/')) {
+      return {
+        sectionKey: 'eccube_basics',
+        sectionTitle: '1. Architecture & Core Basics',
+        sectionIcon: '🏗️',
+        badge: 'CORE BASICS',
+        subTag: normHref.includes('/00_overview/') ? 'Course Roadmap' : 'Core Basics'
+      };
+    }
+    if (normHref.includes('/10_work_tasks_and_database/')) {
+      return {
+        sectionKey: 'eccube_db',
+        sectionTitle: '2. Database Internals & ERD Architecture',
+        sectionIcon: '🗄️',
+        badge: 'DB & ERD',
+        subTag: 'Database Internals'
+      };
+    }
+    if (normHref.includes('/02_client_tasks/')) {
+      return {
+        sectionKey: 'eccube_tasks',
+        sectionTitle: '3. 40 Real-World Client Tasks',
+        sectionIcon: '💼',
+        badge: 'CLIENT TASKS',
+        subTag: 'Client Tasks'
+      };
+    }
+    if (normHref.includes('/09_template_design/')) {
+      return {
+        sectionKey: 'eccube_twig',
+        sectionTitle: '4. Twig Template Customization & UI',
+        sectionIcon: '🎨',
+        badge: 'TWIG & UI',
+        subTag: 'Template Design'
+      };
+    }
+    if (normHref.includes('/requirements/')) {
+      let subTag = 'Business Requirements';
+      if (normHref.includes('/03_order_management/')) subTag = 'Order Management';
+      else if (normHref.includes('/04_payment/')) subTag = 'Payment Gateways';
+      else if (normHref.includes('/05_shipping/')) subTag = 'Shipping & Delivery';
+      else if (normHref.includes('/product-management/')) subTag = 'Product Management';
+      else if (normHref.includes('/search-filter/')) subTag = 'Search & Filter';
+      else if (normHref.includes('/08_campaign_coupon/')) subTag = 'Campaign & Coupon';
+      else if (normHref.includes('/favorite-wishlist/')) subTag = 'Favorite & Wishlist';
+      else if (normHref.includes('/06_customer_management/')) subTag = 'Customer Management';
+      else if (normHref.includes('/line-marketing/')) subTag = 'LINE Marketing';
+      else if (normHref.includes('/email-management/')) subTag = 'Email System';
+      else if (normHref.includes('/sales-reports/')) subTag = 'Sales & Reports';
+      else if (normHref.includes('/event-subscriber/')) subTag = 'Event Subscribers';
+      else if (normHref.includes('/api-integration/')) subTag = 'External APIs';
+      else if (normHref.includes('/auth-permission/')) subTag = 'Auth & Permissions';
+      else if (normHref.includes('/07_security/')) subTag = 'Security Hardening';
+      else if (normHref.includes('/performance/')) subTag = 'Performance Tuning';
+      else if (normHref.includes('/customization-list/')) subTag = 'Customization Reference';
+      else if (normHref.includes('/requirements/readme/')) subTag = 'Master Hub';
+
+      return {
+        sectionKey: 'eccube_req',
+        sectionTitle: '5. Enterprise Business Requirements Hub',
+        sectionIcon: '📋',
+        badge: '17 REQUIREMENTS',
+        subTag
+      };
+    }
+  }
+
+  // 2. AWS Cloud Track (4 Core Sections, 48 chapters)
+  if (courseName === 'AWS Cloud & DevOps' || normHref.includes('/aws/')) {
+    if (normHref.includes('/00_overview/') || normHref.includes('/01_networking_and_security/')) {
+      let subTag = 'Networking Foundations';
+      if (normHref.includes('/00_overview/')) subTag = 'Course Roadmap';
+      else if (normHref.includes('/networking_and_security_foundations_burmese')) subTag = 'Comprehensive Guide';
+      return {
+        sectionKey: 'aws_net',
+        sectionTitle: '1. Networking & Security Foundations',
+        sectionIcon: '🌐',
+        badge: 'NET & SEC',
+        subTag
+      };
+    }
+    if (normHref.includes('/02_beginner_to_advanced_real_work/')) {
+      let subTag = 'Production Real Work';
+      if (normHref.includes('/00_course_overview')) subTag = 'Lab Overview';
+      else if (normHref.includes('/11_level11') || normHref.includes('/12_level12')) subTag = 'Genba Operations';
+      else if (normHref.includes('/13_final') || normHref.includes('/14_aws_cli')) subTag = 'Capstone & CLI';
+      return {
+        sectionKey: 'aws_labs',
+        sectionTitle: '2. 15-Level Production Real-Work Labs',
+        sectionIcon: '🛠️',
+        badge: '15 LABS',
+        subTag
+      };
+    }
+    if (normHref.includes('/03_saa_solutions_architect_real_work/')) {
+      let subTag = 'SAA Solutions Architect';
+      if (normHref.includes('/00_phase0') || normHref.includes('/01_phase1')) subTag = 'Core & Global Infra';
+      else if (normHref.includes('/15_phase15') || normHref.includes('/16_phase16') || normHref.includes('/17_phase17')) subTag = 'Well-Architected & Decision';
+      return {
+        sectionKey: 'aws_saa',
+        sectionTitle: '3. SAA Solutions Architect Phases',
+        sectionIcon: '🏛️',
+        badge: 'SAA ARCH',
+        subTag
+      };
+    }
+    if (normHref.includes('/04_saa_c03_practice_exams/')) {
+      return {
+        sectionKey: 'aws_exams',
+        sectionTitle: '4. SAA-C03 Real Exam Practice Sets',
+        sectionIcon: '📝',
+        badge: 'EXAM SETS',
+        subTag: 'Practice Exams'
+      };
+    }
+  }
+
+  // 3. Docker & DevOps Track (2 Core Sections, 46 chapters)
+  if (courseName === 'Docker & DevOps' || normHref.includes('/devops/')) {
+    if (normHref.includes('/00_overview/') || normHref.includes('/01_docker_core/')) {
+      let subTag = 'Docker Core';
+      if (normHref.includes('/00_overview/')) subTag = 'Course Roadmap';
+      else if (normHref.includes('/advanced-docker-kubernetes-production/')) subTag = 'Production Workloads';
+      else if (normHref.includes('/laravel-docker-project/')) subTag = 'Laravel Project';
+      else if (normHref.includes('/docker-commands-reference')) subTag = 'Commands Reference';
+      return {
+        sectionKey: 'devops_docker',
+        sectionTitle: '1. Docker Fundamentals & Core Engine',
+        sectionIcon: '🐳',
+        badge: 'DOCKER CORE',
+        subTag
+      };
+    }
+    if (normHref.includes('/02_kubernetes_and_cloud/')) {
+      let subTag = 'Kubernetes Engine';
+      if (normHref.includes('/00_beginner')) subTag = 'Foundations Guide';
+      else if (normHref.includes('/11_k8s') || normHref.includes('/12_pods') || normHref.includes('/13_deployments')) subTag = 'K8s Architecture';
+      else if (normHref.includes('/14_k8s_services') || normHref.includes('/15_ingress')) subTag = 'Networking & Ingress';
+      else if (normHref.includes('/18_helm') || normHref.includes('/20_observability')) subTag = 'Helm & GitOps';
+      return {
+        sectionKey: 'devops_k8s',
+        sectionTitle: '2. Kubernetes & Production Cloud Deployment',
+        sectionIcon: '☸️',
+        badge: 'KUBERNETES',
+        subTag
+      };
+    }
+  }
+
+  // 4. PHP Track (3 Sections, 24 chapters)
+  if (courseName === 'PHP' || normHref.includes('/php/')) {
+    const num = parseInt(clean.match(/(\d+)/)?.[1] || '0', 10);
+    if (clean.includes('00_overview') || num <= 8) {
+      let subTag = 'Language Fundamentals';
+      if (clean.includes('00_overview')) subTag = 'Course Roadmap';
+      else if (num >= 4 && num <= 5) subTag = 'OOP & Superglobals';
+      else if (num === 6 || num === 8) subTag = 'Database & Security';
+      return {
+        sectionKey: 'php_core',
+        sectionTitle: '1. PHP Core & OOP Fundamentals',
+        sectionIcon: '🐘',
+        badge: 'PHP CORE',
+        subTag
+      };
+    }
+    if (num >= 9 && num <= 14) {
+      let subTag = 'Design Patterns';
+      if (num === 9 || num === 10) subTag = 'REST API & MVC';
+      else if (num === 12) subTag = 'Modern PHP 8.x';
+      else if (num === 14) subTag = 'Streams & File IO';
+      return {
+        sectionKey: 'php_arch',
+        sectionTitle: '2. Architecture & Design Patterns',
+        sectionIcon: '🏗️',
+        badge: 'PATTERNS',
+        subTag
+      };
+    }
+    if (num >= 15) {
+      let subTag = 'Enterprise Scaling';
+      if (num === 15 || num === 16) subTag = 'PHP-FPM & Middleware';
+      else if (num === 17 || num === 18) subTag = 'Auth & Cron Batches';
+      else if (num === 19 || num === 21) subTag = 'Async & Redis Locks';
+      else if (num >= 22) subTag = 'Replication & Caching';
+      return {
+        sectionKey: 'php_ops',
+        sectionTitle: '3. Enterprise Infrastructure & Performance',
+        sectionIcon: '⚡',
+        badge: 'ENTERPRISE',
+        subTag
+      };
+    }
+  }
+
+  // 5. Modern JavaScript Track (2 Sections, 13 chapters)
+  if (courseName === 'JavaScript' || normHref.includes('/javascript/')) {
+    const num = parseInt(clean.match(/(\d+)/)?.[1] || '0', 10);
+    if (clean.includes('00_overview') || num <= 5) {
+      let subTag = 'Core Basics';
+      if (clean.includes('00_overview')) subTag = 'Course Roadmap';
+      else if (num === 1) subTag = 'Engine & V8 Runtime';
+      else if (num === 4) subTag = 'Scope & Closures';
+      else if (num === 5) subTag = 'DOM & Events';
+      return {
+        sectionKey: 'js_core',
+        sectionTitle: '1. Modern Core & Language Fundamentals',
+        sectionIcon: '⚡',
+        badge: 'JS CORE',
+        subTag
+      };
+    }
+    if (num >= 6) {
+      let subTag = 'Async & Architecture';
+      if (num === 6 || num === 7) subTag = 'Async, Promises & Fetch';
+      else if (num === 8) subTag = 'Prototypes & Classes';
+      else if (num === 9 || num === 10) subTag = 'Modern ESNext & Storage';
+      else if (num >= 11) subTag = 'Performance & Security';
+      return {
+        sectionKey: 'js_adv',
+        sectionTitle: '2. Async Runtime, OOP & Architecture',
+        sectionIcon: '🚀',
+        badge: 'ADVANCED JS',
+        subTag
+      };
+    }
+  }
+
+  // 6. Laravel Track (3 Sections, 20 chapters)
+  if (courseName === 'Laravel' || normHref.includes('/laravel/')) {
+    const num = parseInt(clean.match(/(\d+)/)?.[1] || '0', 10);
+    if (clean.includes('00_overview') || num <= 6) {
+      let subTag = 'Core Framework';
+      if (clean.includes('00_overview')) subTag = 'Course Roadmap';
+      else if (num === 1 || num === 2) subTag = 'Lifecycle & Structure';
+      else if (num === 3 || num === 4) subTag = 'Routing & Blade';
+      else if (num === 5 || num === 6) subTag = 'Migrations & Eloquent';
+      return {
+        sectionKey: 'laravel_core',
+        sectionTitle: '1. Core Framework Architecture',
+        sectionIcon: '🔺',
+        badge: 'LARAVEL CORE',
+        subTag
+      };
+    }
+    if (num >= 7 && num <= 13) {
+      let subTag = 'Enterprise Services';
+      if (num === 7 || num === 8) subTag = 'Validation & Auth';
+      else if (num === 9 || num === 10) subTag = 'Storage & Sanctum APIs';
+      else if (num === 11) subTag = 'Queues & Mail';
+      else if (num === 13) subTag = 'Service Repository';
+      return {
+        sectionKey: 'laravel_services',
+        sectionTitle: '2. Enterprise Services & APIs',
+        sectionIcon: '🛠️',
+        badge: 'SERVICES & APIS',
+        subTag
+      };
+    }
+    if (num >= 14) {
+      let subTag = 'Production Scaling';
+      if (num === 14 || num === 19) subTag = 'Security & Hardening';
+      else if (num === 16) subTag = 'Redis & Caching';
+      else if (num === 17) subTag = 'AWS Cloud Integration';
+      else if (num === 18) subTag = 'Task Scheduling';
+      return {
+        sectionKey: 'laravel_prod',
+        sectionTitle: '3. Production Scaling, Cloud & Realtime',
+        sectionIcon: '🚀',
+        badge: 'PRODUCTION',
+        subTag
+      };
+    }
+  }
+
+  // 7. MySQL Track (3 Sections, 21 chapters)
+  if (courseName === 'MySQL' || normHref.includes('/mysql/')) {
+    const num = clean.includes('00_beginner') ? -1 : parseInt(clean.match(/(\d+)/)?.[1] || '0', 10);
+    if (clean.includes('00_beginner') || clean.includes('00_overview') || num <= 6) {
+      let subTag = 'SQL Essentials';
+      if (clean.includes('00_overview')) subTag = 'Course Roadmap';
+      else if (clean.includes('00_beginner')) subTag = 'Beginner Real-Work Guide';
+      else if (num === 1 || num === 2) subTag = 'DBMS & Schema Design';
+      else if (num === 5 || num === 6) subTag = 'Aggregates & Joins';
+      return {
+        sectionKey: 'mysql_core',
+        sectionTitle: '1. Core Architecture & SQL Mastery',
+        sectionIcon: '🗄️',
+        badge: 'MYSQL CORE',
+        subTag
+      };
+    }
+    if (num >= 7 && num <= 12) {
+      let subTag = 'Advanced Queries';
+      if (num === 7 || num === 8) subTag = 'CTEs & Window Functions';
+      else if (num === 9 || num === 10) subTag = 'Views & Stored Procs';
+      else if (num === 11 || num === 12) subTag = 'Triggers & Transactions';
+      return {
+        sectionKey: 'mysql_adv',
+        sectionTitle: '2. Advanced Queries & Programmability',
+        sectionIcon: '📊',
+        badge: 'ADVANCED SQL',
+        subTag
+      };
+    }
+    if (num >= 13) {
+      let subTag = 'Performance & HA';
+      if (num === 13) subTag = 'Indexing & EXPLAIN';
+      else if (num === 14 || num === 15) subTag = 'JSON & Partitioning';
+      else if (num === 16 || num === 17) subTag = 'Backup & Replication';
+      else if (num >= 18) subTag = 'Security & Architecture';
+      return {
+        sectionKey: 'mysql_ops',
+        sectionTitle: '3. High Availability, Indexing & Ops',
+        sectionIcon: '⚡',
+        badge: 'PERFORMANCE & HA',
+        subTag
+      };
+    }
+  }
+
+  // 8. Networking Track (1 Section, 6 chapters)
+  if (courseName === 'Networking & Cloud Automation' || normHref.includes('/networking/')) {
+    let subTag = 'Networking Foundations';
+    if (clean.includes('00_overview')) subTag = 'Course Roadmap';
+    else if (clean.includes('01_basic')) subTag = 'OSI & TCP/IP';
+    else if (clean.includes('02_ipv4') || clean.includes('03_vlsm')) subTag = 'CIDR & VLSM Subnetting';
+    else if (clean.includes('04_cloud') || clean.includes('05_cloud')) subTag = 'VPC & Terraform Automation';
+    return {
+      sectionKey: 'net_core',
+      sectionTitle: '1. Foundations, CIDR & Automation',
+      sectionIcon: '🌐',
+      badge: 'NETWORKING',
+      subTag
+    };
+  }
+
+  // 9. Japanese N1 Vocabulary (2 Sections, 10 chapters)
+  if (courseName === 'Japanese N1 Vocabulary' || normHref.includes('/japanese-vocab/')) {
+    if (clean.includes('01_') || clean.includes('01b_') || clean.includes('02_') || clean.includes('02b_') || clean.includes('03_') || clean.includes('03b_')) {
+      let subTag = 'Core Verbs & Nouns';
+      if (clean.includes('verbs')) subTag = 'Verbs Mastery';
+      else if (clean.includes('nouns')) subTag = 'Nouns & Concepts';
+      else if (clean.includes('adjectives')) subTag = 'Adjectives & Adverbs';
+      return {
+        sectionKey: 'jv_core',
+        sectionTitle: '1. Core Vocabulary (Verbs, Nouns & Adjectives)',
+        sectionIcon: '📖',
+        badge: 'CORE VOCAB',
+        subTag
+      };
+    }
+    let subTag = 'Idioms & IT Lexicon';
+    if (clean.includes('yojijukugo')) subTag = '四字熟語 Idioms';
+    else if (clean.includes('onomatopoeia')) subTag = 'Mimetics & Nuances';
+    else if (clean.includes('lexicon')) subTag = 'IT & Business Lexicon';
+    return {
+      sectionKey: 'jv_adv',
+      sectionTitle: '2. Idioms, Nuances & IT Lexicon',
+      sectionIcon: '🈸',
+      badge: 'N1 LEXICON',
+      subTag
+    };
+  }
+
+  // 10. Japanese N1 Kanji (2 Sections, 10 chapters)
+  if (courseName === 'Japanese N1 Kanji' || normHref.includes('/japanese-kanji/')) {
+    const num = parseInt(clean.match(/(\d+)/)?.[1] || '0', 10);
+    if (clean.includes('00_n1_kanji') || num <= 4) {
+      let subTag = 'High-Freq Kanji';
+      if (clean.includes('00_n1_kanji')) subTag = 'Exam Strategy';
+      else if (num === 2) subTag = 'Society & Law';
+      else if (num === 3) subTag = 'Mind & Psychology';
+      return {
+        sectionKey: 'jk_core',
+        sectionTitle: '1. High-Frequency N1 Kanji Mastery',
+        sectionIcon: '🈸',
+        badge: 'N1 KANJI',
+        subTag
+      };
+    }
+    let subTag = 'Radicals & Tests';
+    if (num === 5) subTag = 'Similar Radicals';
+    else if (num === 6) subTag = 'Ateji & Readings';
+    else if (num === 7) subTag = 'IT Genba Kanji';
+    else if (num >= 8) subTag = 'Real Exam Reading Tests';
+    return {
+      sectionKey: 'jk_adv',
+      sectionTitle: '2. Radicals, Ateji & JLPT Exam Tests',
+      sectionIcon: '📜',
+      badge: 'RADICALS & EXAMS',
+      subTag
+    };
+  }
+
+  // 4. TOEIC Track
+  if (courseName === 'TOEIC' || normHref.includes('/toeic/')) {
+    if (normHref.includes('/00_study_plan_roadmap/')) return { sectionKey: 'toeic_plan', sectionTitle: '1. Study Plan & Roadmap Strategy', sectionIcon: '📅', badge: 'ROADMAP', subTag: 'Study Plan' };
+    if (normHref.includes('/01_grammar_mastery/')) return { sectionKey: 'toeic_gram', sectionTitle: '2. Grammar Secrets (Parts 5 & 6)', sectionIcon: '📖', badge: 'GRAMMAR', subTag: 'Grammar' };
+    if (normHref.includes('/02_sentence_patterns_and_phrases/')) return { sectionKey: 'toeic_pat', sectionTitle: '3. Essential Sentence Patterns & Phrases', sectionIcon: '🔤', badge: 'PATTERNS', subTag: 'Sentence Patterns' };
+    if (normHref.includes('/03_essential_vocabulary_800/')) return { sectionKey: 'toeic_voc', sectionTitle: '4. Essential 800 Business Vocabulary', sectionIcon: '📚', badge: '800 VOCAB', subTag: 'Business Vocab' };
+    if (normHref.includes('/04_real_exam_reading_practice/')) return { sectionKey: 'toeic_read', sectionTitle: '5. Real Exam Reading Practice (Part 7)', sectionIcon: '📰', badge: 'READING', subTag: 'Reading Practice' };
+    if (normHref.includes('/05_grammar_real_exam/')) return { sectionKey: 'toeic_gexam', sectionTitle: '6. 26 Real Exam Grammar Simulation Tests', sectionIcon: '✍️', badge: 'EXAM TESTS', subTag: 'Grammar Exams' };
+    if (normHref.includes('/06_real_exam_vocabulary_800/')) return { sectionKey: 'toeic_vexam', sectionTitle: '7. Real Exam Vocabulary Practice Sets', sectionIcon: '🎯', badge: 'VOCAB TESTS', subTag: 'Vocab Exams' };
+  }
+
+  // 5. Japanese Grammar
+  if (courseName === 'Japanese N1 Grammar' || normHref.includes('/japanese-grammar/')) {
+    if (normHref.includes('/00_n1_overview_and_strategy/')) return { sectionKey: 'jg_ov', sectionTitle: '1. N1 Exam Structure & Strategy Guide', sectionIcon: '⛩️', badge: 'OVERVIEW', subTag: 'Strategy' };
+    if (normHref.includes('/01_n1_grammar_mastery/')) return { sectionKey: 'jg_gram', sectionTitle: '2. N1 Grammar Mastery (7 Modules)', sectionIcon: '📜', badge: 'N1 GRAMMAR', subTag: 'Grammar Mastery' };
+    if (normHref.includes('/02_n1_real_exam_grammar_practice/')) return { sectionKey: 'jg_exam', sectionTitle: '3. Real Exam Grammar & Star Questions', sectionIcon: '📝', badge: 'PRACTICE EXAMS', subTag: 'Star Questions' };
+  }
+
+  // 6. Networking & Cloud Automation
+  if (courseName === 'Networking & Cloud Automation' || normHref.includes('/networking/')) {
+    return { sectionKey: 'net_core', sectionTitle: 'Networking & Cloud Automation', sectionIcon: '🌐', badge: 'NETWORKING', subTag: 'Cloud Networking' };
+  }
+
+  // 7. Java Enterprise Track (3 Sections, 15 chapters)
+  if (courseName === 'Java' || normHref.includes('/java/')) {
+    const num = parseInt(clean.match(/(\d+)/)?.[1] || '0', 10);
+    if (clean.includes('00_overview') || num <= 3) {
+      let subTag = 'JVM Foundations';
+      if (clean.includes('00_overview')) subTag = 'Course Roadmap';
+      else if (num === 1) subTag = 'Syntax & Primitive Types';
+      else if (num === 2) subTag = 'Stack vs Heap Memory';
+      else if (num === 3) subTag = 'Classes & Constructors';
+      return {
+        sectionKey: 'java_foundations',
+        sectionTitle: '1. Core Foundations & JVM Memory',
+        sectionIcon: '☕',
+        badge: 'JVM CORE',
+        subTag
+      };
+    }
+    if (num >= 4 && num <= 8) {
+      let subTag = 'OOP Mastery';
+      if (num === 4) subTag = 'Encapsulation & Access';
+      else if (num === 5) subTag = 'Inheritance & Polymorphism';
+      else if (num === 6) subTag = 'Abstraction & Interfaces';
+      else if (num === 7) subTag = 'Strings & Wrappers';
+      else if (num === 8) subTag = 'Exception Handling';
+      return {
+        sectionKey: 'java_oop',
+        sectionTitle: '2. OOP Mastery & Exception Handling',
+        sectionIcon: '🛡️',
+        badge: 'OOP ARCHITECTURE',
+        subTag
+      };
+    }
+    if (num >= 9) {
+      let subTag = 'Enterprise Engineering';
+      if (num === 9) subTag = 'Collections Internals';
+      else if (num === 10) subTag = 'Generics & PECS';
+      else if (num === 11) subTag = 'Lambdas & Streams';
+      else if (num === 12) subTag = 'Multithreading & Locks';
+      else if (num === 13) subTag = 'GoF Design Patterns';
+      else if (num === 14) subTag = 'Spring Boot & Database';
+      return {
+        sectionKey: 'java_senior',
+        sectionTitle: '3. Advanced Concurrency, Patterns & Spring',
+        sectionIcon: '🚀',
+        badge: '4-YEAR SENIOR',
+        subTag
+      };
+    }
+  }
+
+  // Default fallback
+  return { sectionKey: 'general', sectionTitle: `${courseName || 'Course'} Curriculum`, sectionIcon: '📚', badge: 'LESSONS', subTag: courseName || 'Lessons' };
+}
+
+interface EnrichedLesson {
+  href: string;
+  label: string;
+  cleanTitle: string;
+  isCurrent: boolean;
+  globalIndex: number;
+  sectionKey: string;
+  sectionTitle: string;
+  sectionIcon: string;
+  badge: string;
+  subTag?: string;
+}
+
+const enrichedLessons: EnrichedLesson[] = sectorLessons.map((lesson, idx) => {
+  const isCur = idx === currentIndex;
+  let cleanTitle = (lesson.label || '').replace(/^00\.\s*|^\d+[\.\-_]\s*/, '').trim();
+  const meta = classifyLesson(lesson.href, sectorTitle);
+
+  // If title is a generic "Overview", "Readme", or "Course Overview", qualify with module or parent folder name
+  if (/^(course\s+)?overview$/i.test(cleanTitle) || /^readme$/i.test(cleanTitle)) {
+    const segments = lesson.href.split('/').filter(Boolean);
+    const parentSeg = segments[segments.length - 2] || '';
+    const formatted = parentSeg
+      .replace(/^\d+[\-_]/, '')
+      .split(/[-_]/)
+      .map(w => w.charAt(0).toUpperCase() + w.slice(1))
+      .join(' ');
+    cleanTitle = formatted ? `${formatted} Overview` : (meta.subTag ? `${meta.subTag} Overview` : `${sectorTitle} Course Overview & Roadmap`);
+  }
+
+  return {
+    href: lesson.href,
+    label: lesson.label,
+    cleanTitle,
+    isCurrent: isCur,
+    globalIndex: idx,
+    sectionKey: meta.sectionKey,
+    sectionTitle: meta.sectionTitle,
+    sectionIcon: meta.sectionIcon,
+    badge: meta.badge,
+    subTag: meta.subTag,
+  };
+});
+
+// Group lessons into structured sections
+interface SectionGroup {
+  key: string;
+  title: string;
+  icon: string;
+  badge: string;
+  isCurrentSection: boolean;
+  lessons: EnrichedLesson[];
+}
+
+const sectionGroups: SectionGroup[] = [];
+const sectionMap = new Map<string, SectionGroup>();
+
+for (const lesson of enrichedLessons) {
+  if (!sectionMap.has(lesson.sectionKey)) {
+    const isCurrentSec = lesson.sectionKey === enrichedLessons[currentIndex]?.sectionKey;
+    const group: SectionGroup = {
+      key: lesson.sectionKey,
+      title: lesson.sectionTitle,
+      icon: lesson.sectionIcon,
+      badge: lesson.badge,
+      isCurrentSection: isCurrentSec,
+      lessons: [],
+    };
+    sectionMap.set(lesson.sectionKey, group);
+    sectionGroups.push(group);
+  }
+  sectionMap.get(lesson.sectionKey)!.lessons.push(lesson);
+}
+
+// Ensure section groups always render in strict numerical order (1, 2, 3, 4, 5...)
+sectionGroups.sort((a, b) => a.title.localeCompare(b.title, undefined, { numeric: true }));
+
+const currentEnrichedLesson = currentIndex >= 0 ? enrichedLessons[currentIndex] : null;
+const cleanCurrentTitle = currentEnrichedLesson ? currentEnrichedLesson.cleanTitle : 'Select Chapter';
 ---
 
 {totalLessons > 0 && (
   <nav class="sector-pagination print:hidden" aria-label="Course Lesson Navigation">
-    <!-- Top Bar: Sector Identity, Progress & Quick Jump Dropdown -->
+    <!-- Modern Header Row: Sector Pill, Module Pill & Interactive Chapter Selector -->
     <div class="pagination-header">
       <div class="header-left-meta">
-        <div class="sector-badge">
+        <a href={sectorLessons[0]?.href || '/'} class="sector-badge" title={`${sectorTitle} Course Overview`}>
           <span class="sector-icon">{sectorIcon}</span>
-          <span class="sector-name">{sectorTitle} Track</span>
-        </div>
-        <div class="progress-info">
-          <span class="lesson-counter">Lesson {currentNum} of {totalLessons}</span>
-          <span class="progress-divider">•</span>
-          <span class="progress-percent">{progressPercent}% complete</span>
-        </div>
+          <span class="sector-name">{sectorTitle}</span>
+        </a>
+
+        {currentEnrichedLesson && (
+          <span class="current-module-chip" title={currentEnrichedLesson.sectionTitle}>
+            <span class="chip-icon">{currentEnrichedLesson.sectionIcon}</span>
+            <span class="chip-label">{currentEnrichedLesson.subTag || currentEnrichedLesson.badge}</span>
+          </span>
+        )}
       </div>
 
-      <!-- Quick Jump & Track Switcher -->
+      <!-- Modern Quick Chapter Navigator Trigger -->
       <div class="header-right-actions">
-        <div class="chapter-jump-wrapper">
-          <label for="chapterSelect" class="sr-only">Jump to chapter</label>
-          <select
-            id="chapterSelect"
-            class="chapter-select"
-            onchange="if (this.value) window.location.href = this.value;"
-          >
-            <option value="" disabled>Jump to chapter ({totalLessons} lessons)...</option>
-            {sectorLessons.map((lesson, idx) => {
-              const clean = (lesson.label || '').replace(/^00\.\s*|^\d+[\.\-_]\s*/, '');
-              return (
-                <option value={lesson.href} selected={idx === currentIndex}>
-                  {idx + 1}. {clean}
-                </option>
-              );
-            })}
-          </select>
-        </div>
+        <button
+          type="button"
+          class="modern-chapter-trigger-btn"
+          id="openModernNavBtn"
+          aria-haspopup="dialog"
+          title="Open Chapter Navigator"
+        >
+          <span class="btn-icon">📑</span>
+          <span class="btn-title-truncate">{cleanCurrentTitle}</span>
+          <span class="btn-dropdown-arrow">▾</span>
+        </button>
 
         <button
           type="button"
           class="switch-track-btn"
           onclick="const m = document.getElementById('trackModal'); if (m && typeof m.showModal === 'function') { m.showModal(); } else { window.location.href = '/#programs'; }"
-          title="Switch to Japanese N1 or other tracks"
+          title="Switch to another track"
         >
           <span>All Tracks ▾</span>
         </button>
       </div>
     </div>
 
-    <!-- Progress Bar Line -->
+    <!-- Progress Line -->
     <div class="progress-track" role="progressbar" aria-valuenow={progressPercent} aria-valuemin="0" aria-valuemax="100">
       <div class="progress-fill" style={`width: ${progressPercent}%;`}></div>
     </div>
@@ -212,7 +769,7 @@ const paginationItems = totalLessons > 0 ? getPaginationItems(currentIndex >= 0 
       </div>
     )}
 
-    <!-- Prev & Next Action Cards (Compact, Modern Klook Style) -->
+    <!-- Prev & Next Action Cards (Modern Klook Style) -->
     <div class="cards-grid">
       <!-- Previous Card -->
       {prevLesson ? (
@@ -232,8 +789,8 @@ const paginationItems = totalLessons > 0 ? getPaginationItems(currentIndex >= 0 
         <div class="lesson-card disabled-card">
           <div class="card-arrow muted-arrow">✦</div>
           <div class="card-content">
-            <span class="card-label">TRACK START</span>
-            <span class="card-title">First lesson of this course</span>
+            <span class="card-label">COURSE START</span>
+            <span class="card-title">First chapter of this track</span>
           </div>
         </div>
       )}
@@ -253,7 +810,7 @@ const paginationItems = totalLessons > 0 ? getPaginationItems(currentIndex >= 0 
           </div>
         </a>
       ) : (
-        <a href="/" class="lesson-card complete-card">
+        <a href="/curriculum/" class="lesson-card complete-card">
           <div class="card-content text-right">
             <span class="card-label">🎉 COURSE COMPLETED</span>
             <span class="card-title">Explore All Programs ↗</span>
@@ -262,10 +819,331 @@ const paginationItems = totalLessons > 0 ? getPaginationItems(currentIndex >= 0 
         </a>
       )}
     </div>
+
+    <!-- ========================================================
+         MODERN ACCORDION CHAPTER NAVIGATOR DRAWER
+         ======================================================== -->
+    <dialog id="modernNavModal" class="modern-nav-dialog" aria-label="Course Chapter Navigator">
+      <div class="nav-dialog-backdrop" id="dialogBackdrop"></div>
+      <div class="nav-dialog-container">
+        <!-- Dialog Header -->
+        <div class="dialog-header">
+          <div class="header-info">
+            <div class="header-eyebrow">
+              <span class="eyebrow-icon">{sectorIcon}</span>
+              <span class="eyebrow-text">{sectorTitle} TRACK</span>
+              <span class="eyebrow-badge">{sectionGroups.length} SECTIONS</span>
+            </div>
+            <h2 class="header-heading">Course Chapters &amp; Structure</h2>
+          </div>
+          <button type="button" class="dialog-close-btn" id="closeModernNavBtn" aria-label="Close chapter explorer">✕</button>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="dialog-search-bar">
+          <div class="search-input-wrapper">
+            <span class="search-magnifier">🔍</span>
+            <input
+              type="text"
+              id="modernChapterSearchInput"
+              class="search-input"
+              placeholder="Search chapters by keyword (e.g. payment, purchaseflow, csv, stock)..."
+              autocomplete="off"
+            />
+            <button type="button" id="clearSearchInputBtn" class="clear-btn" style="display:none;" aria-label="Clear search">✕</button>
+          </div>
+          <div class="search-feedback">
+            <span id="searchMatchCountText" class="match-count">{totalLessons} chapters available</span>
+            <span class="search-hint"><kbd>ESC</kbd> to close</span>
+          </div>
+        </div>
+
+        <!-- Collapsible Section Accordions -->
+        <div class="sections-accordion-list" id="sectionsAccordionList">
+          {sectionGroups.map((group) => {
+            const isCurrentlyActiveSection = group.isCurrentSection;
+            return (
+              <div
+                class={`section-accordion-item ${isCurrentlyActiveSection ? 'is-open is-active-section' : ''}`}
+                data-section-key={group.key}
+              >
+                <!-- Section Accordion Header -->
+                <button
+                  type="button"
+                  class="accordion-trigger-btn"
+                  aria-expanded={isCurrentlyActiveSection ? 'true' : 'false'}
+                >
+                  <div class="trigger-left">
+                    <span class="section-icon">{group.icon}</span>
+                    <span class="section-name">{group.title}</span>
+                  </div>
+                  <div class="trigger-right">
+                    <span class="section-count">{group.lessons.length}</span>
+                    <span class="accordion-arrow">▾</span>
+                  </div>
+                </button>
+
+                <!-- Section Chapters Grid -->
+                <div class="accordion-content-panel">
+                  {(() => {
+                    const distinctSubTags = Array.from(new Set(group.lessons.map(l => l.subTag).filter(Boolean))) as string[];
+                    if (distinctSubTags.length > 2) {
+                      return (
+                        <div class="subtag-filter-bar">
+                          <button type="button" class="subtag-chip active" data-filter="all">
+                            All ({group.lessons.length})
+                          </button>
+                          {distinctSubTags.map((tag) => {
+                            const count = group.lessons.filter(l => l.subTag === tag).length;
+                            return (
+                              <button type="button" class="subtag-chip" data-filter={tag.toLowerCase()}>
+                                {tag} ({count})
+                              </button>
+                            );
+                          })}
+                        </div>
+                      );
+                    }
+                    return null;
+                  })()}
+                  <div class="chapters-grid">
+                    {group.lessons.map((lesson) => {
+                      const isCurrentChapter = lesson.globalIndex === currentIndex;
+                      return (
+                        <a
+                          href={lesson.href}
+                          class={`chapter-nav-card ${isCurrentChapter ? 'active-chapter' : ''}`}
+                          data-title={lesson.cleanTitle.toLowerCase()}
+                          data-subtag={(lesson.subTag || '').toLowerCase()}
+                          data-index={lesson.globalIndex + 1}
+                        >
+                          <div class="card-meta-row">
+                            <span class="chapter-number">#{lesson.globalIndex + 1}</span>
+                            {lesson.subTag && <span class="module-tag">{lesson.subTag}</span>}
+                            {isCurrentChapter && <span class="active-dot">● CURRENT</span>}
+                          </div>
+                          <div class="chapter-label-text">{lesson.cleanTitle}</div>
+                        </a>
+                      );
+                    })}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+
+          <div id="noMatchContainer" class="no-match-state" style="display:none;">
+            <div class="no-match-icon">🔍</div>
+            <div class="no-match-title">No chapters found</div>
+            <div class="no-match-sub">Try searching with a different term.</div>
+          </div>
+        </div>
+      </div>
+    </dialog>
   </nav>
 )}
 
-<style>
+<script>
+  // Modern Chapter Navigator Script
+  const navModal = document.getElementById('modernNavModal') as HTMLDialogElement | null;
+  const openBtn = document.getElementById('openModernNavBtn');
+  const closeBtn = document.getElementById('closeModernNavBtn');
+  const backdrop = document.getElementById('dialogBackdrop');
+  const searchInput = document.getElementById('modernChapterSearchInput') as HTMLInputElement | null;
+  const clearBtn = document.getElementById('clearSearchInputBtn');
+  const matchText = document.getElementById('searchMatchCountText');
+  const noMatchBox = document.getElementById('noMatchContainer');
+  const accordionItems = document.querySelectorAll('.section-accordion-item');
+  const chapterCards = document.querySelectorAll('.chapter-nav-card');
+
+  function openModal() {
+    if (navModal && typeof navModal.showModal === 'function') {
+      navModal.showModal();
+      document.body.classList.add('nav-modal-open');
+
+      // Make sure the section with active chapter is open and scrolled into view
+      const activeItem = navModal.querySelector('.section-accordion-item.is-active-section') as HTMLElement | null;
+      if (activeItem) {
+        accordionItems.forEach(other => {
+          if (other !== activeItem) {
+            other.classList.remove('is-open');
+            other.querySelector('.accordion-trigger-btn')?.setAttribute('aria-expanded', 'false');
+          }
+        });
+        activeItem.classList.add('is-open');
+        activeItem.querySelector('.accordion-trigger-btn')?.setAttribute('aria-expanded', 'true');
+
+        // Scroll active card into view within the modal list
+        const activeCard = activeItem.querySelector('.chapter-nav-card.active-chapter') as HTMLElement | null;
+        if (activeCard) {
+          setTimeout(() => {
+            activeCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }, 120);
+        }
+      }
+
+      setTimeout(() => {
+        searchInput?.focus();
+      }, 50);
+    }
+  }
+
+  function closeModal() {
+    if (navModal) {
+      navModal.close();
+      document.body.classList.remove('nav-modal-open');
+    }
+  }
+
+  openBtn?.addEventListener('click', openModal);
+  closeBtn?.addEventListener('click', closeModal);
+  backdrop?.addEventListener('click', closeModal);
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navModal?.open) {
+      closeModal();
+    }
+  });
+
+  // Accordion Toggle Behavior (Single open section keeps list compact)
+  accordionItems.forEach(item => {
+    const trigger = item.querySelector('.accordion-trigger-btn');
+    trigger?.addEventListener('click', () => {
+      const wasOpen = item.classList.contains('is-open');
+      if (!wasOpen) {
+        accordionItems.forEach(other => {
+          if (other !== item) {
+            other.classList.remove('is-open');
+            other.querySelector('.accordion-trigger-btn')?.setAttribute('aria-expanded', 'false');
+          }
+        });
+        item.classList.add('is-open');
+        trigger.setAttribute('aria-expanded', 'true');
+
+        // Scroll the newly opened section into comfortable view
+        setTimeout(() => {
+          item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }, 80);
+      } else {
+        item.classList.remove('is-open');
+        trigger.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
+
+  // In-section subtag filter chips
+  document.querySelectorAll('.subtag-chip').forEach(chip => {
+    chip.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const parentPanel = chip.closest('.accordion-content-panel');
+      if (!parentPanel) return;
+
+      const filterVal = (chip.getAttribute('data-filter') || 'all').toLowerCase();
+      parentPanel.querySelectorAll('.subtag-chip').forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+
+      parentPanel.querySelectorAll('.chapter-nav-card').forEach(card => {
+        const cardTag = (card.getAttribute('data-subtag') || '').toLowerCase();
+        if (filterVal === 'all' || cardTag === filterVal) {
+          (card as HTMLElement).style.display = 'flex';
+        } else {
+          (card as HTMLElement).style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // Real-time Search Filtering
+  function filterChapters() {
+    const query = (searchInput?.value || '').trim().toLowerCase();
+    let totalMatches = 0;
+
+    if (clearBtn) {
+      clearBtn.style.display = query.length > 0 ? 'inline-flex' : 'none';
+    }
+
+    if (!query) {
+      // Reset view: restore original open/collapsed states
+      accordionItems.forEach(item => {
+        const isCurrentSec = item.classList.contains('is-active-section');
+        item.classList.toggle('is-open', isCurrentSec);
+        const trigger = item.querySelector('.accordion-trigger-btn');
+        trigger?.setAttribute('aria-expanded', isCurrentSec ? 'true' : 'false');
+        (item as HTMLElement).style.display = 'block';
+
+        item.querySelectorAll('.chapter-nav-card').forEach(card => {
+          (card as HTMLElement).style.display = 'flex';
+        });
+      });
+
+      if (matchText) {
+        matchText.textContent = `${chapterCards.length} chapters available`;
+      }
+      if (noMatchBox) noMatchBox.style.display = 'none';
+      return;
+    }
+
+    // When searching: Expand sections that contain matching cards
+    accordionItems.forEach(item => {
+      let groupMatchCount = 0;
+      const cards = item.querySelectorAll('.chapter-nav-card');
+
+      cards.forEach(card => {
+        const title = card.getAttribute('data-title') || '';
+        const tag = card.getAttribute('data-subtag') || '';
+        const idx = card.getAttribute('data-index') || '';
+
+        const isMatch = title.includes(query) || tag.includes(query) || idx === query;
+        if (isMatch) {
+          (card as HTMLElement).style.display = 'flex';
+          groupMatchCount++;
+          totalMatches++;
+        } else {
+          (card as HTMLElement).style.display = 'none';
+        }
+      });
+
+      if (groupMatchCount > 0) {
+        (item as HTMLElement).style.display = 'block';
+        item.classList.add('is-open');
+        const trigger = item.querySelector('.accordion-trigger-btn');
+        trigger?.setAttribute('aria-expanded', 'true');
+      } else {
+        (item as HTMLElement).style.display = 'none';
+      }
+    });
+
+    if (matchText) {
+      matchText.textContent = `${totalMatches} chapters found`;
+    }
+    if (noMatchBox) {
+      noMatchBox.style.display = totalMatches === 0 ? 'block' : 'none';
+    }
+  }
+
+  searchInput?.addEventListener('input', filterChapters);
+
+  clearBtn?.addEventListener('click', () => {
+    if (searchInput) {
+      searchInput.value = '';
+      searchInput.focus();
+      filterChapters();
+    }
+  });
+
+  // Jump to first matching chapter on Enter
+  searchInput?.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      const firstMatch = document.querySelector('.chapter-nav-card:not([style*="display: none"])') as HTMLAnchorElement | null;
+      if (firstMatch && firstMatch.href) {
+        window.location.href = firstMatch.href;
+      }
+    }
+  });
+</script>
+
+<style is:global>
+  /* Base Container */
   .sector-pagination {
     margin: 2rem auto 1.5rem;
     max-width: 920px;
@@ -306,13 +1184,13 @@ const paginationItems = totalLessons > 0 ? getPaginationItems(currentIndex >= 0 
   .header-left-meta {
     display: flex;
     align-items: center;
-    gap: 0.85rem;
+    gap: 0.65rem;
     flex-wrap: wrap;
   }
 
   @media (max-width: 640px) {
     .header-left-meta {
-      justify-content: space-between;
+      justify-content: flex-start;
       width: 100%;
     }
   }
@@ -321,46 +1199,45 @@ const paginationItems = totalLessons > 0 ? getPaginationItems(currentIndex >= 0 
     display: inline-flex;
     align-items: center;
     gap: 0.45rem;
-    background: var(--sl-color-hairline);
-    padding: 0.3rem 0.75rem;
+    background: var(--sl-color-hairline, #f1f5f9);
+    padding: 0.35rem 0.85rem;
     border-radius: 9999px;
     font-size: 0.82rem;
     font-weight: 600;
-    color: var(--sl-color-gray-1);
-    border: 1px solid var(--sl-color-hairline);
+    color: var(--sl-color-gray-1, #0f172a);
+    border: 1px solid var(--sl-color-hairline, #e2e8f0);
+    text-decoration: none !important;
+    transition: all 0.2s ease;
+  }
+
+  .sector-badge:hover {
+    border-color: var(--sl-sector-primary, #ff5b00);
   }
 
   .sector-icon {
     font-size: 0.95rem;
   }
 
-  .progress-info {
+  /* Current Module Chip */
+  .current-module-chip {
     display: inline-flex;
     align-items: center;
-    gap: 0.45rem;
-    font-size: 0.85rem;
-    color: var(--sl-color-gray-3);
-    font-weight: 500;
-  }
-
-  .lesson-counter {
-    color: var(--sl-color-gray-1);
+    gap: 0.35rem;
+    background: var(--sl-sector-card-bg, rgba(16, 185, 129, 0.08));
+    color: var(--sl-sector-primary, #10b981);
+    border: 1px solid var(--sl-sector-primary, #10b981);
+    padding: 0.3rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.78rem;
     font-weight: 600;
-  }
-
-  .progress-divider {
-    color: var(--sl-color-gray-4);
-  }
-
-  .progress-percent {
-    color: var(--sl-sector-primary, #ff5b00);
-    font-weight: 600;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
   }
 
   .header-right-actions {
     display: flex;
     align-items: center;
-    gap: 0.65rem;
+    gap: 0.55rem;
     flex-wrap: wrap;
   }
 
@@ -372,56 +1249,82 @@ const paginationItems = totalLessons > 0 ? getPaginationItems(currentIndex >= 0 
     }
   }
 
-  /* Chapter Quick Selector */
-  .chapter-jump-wrapper {
-    position: relative;
-  }
-
-  @media (max-width: 640px) {
-    .chapter-jump-wrapper {
-      flex: 1;
-      min-width: 0;
-    }
-  }
-
-  .chapter-select {
+  /* Modern Chapter Trigger Button (Replaces ugly native select) */
+  .modern-chapter-trigger-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--sl-color-bg, #ffffff);
+    color: var(--sl-color-gray-1, #0f172a);
+    border: 1.5px solid var(--sl-color-hairline, #e2e8f0);
+    padding: 0.45rem 0.95rem;
+    border-radius: 10px;
     font-family: 'Poppins', sans-serif;
     font-size: 0.82rem;
-    font-weight: 500;
-    color: var(--sl-color-gray-2);
-    background: var(--sl-color-bg);
-    border: 1px solid var(--sl-color-hairline);
-    padding: 0.45rem 2rem 0.45rem 0.85rem;
-    border-radius: 8px;
+    font-weight: 600;
     cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
     max-width: 280px;
-    width: 100%;
-    text-overflow: ellipsis;
-    outline: none;
-    transition: all 0.2s ease;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
   }
 
   @media (max-width: 640px) {
-    .chapter-select {
-      max-width: 100%;
-      font-size: 16px !important; /* CRITICAL: Prevents iOS Safari from auto-zooming on focus */
-      min-height: 44px;
-      padding: 0.55rem 2rem 0.55rem 0.85rem;
+    .modern-chapter-trigger-btn {
+      flex: 1;
+      max-width: none;
+      min-height: 42px;
     }
   }
 
-  .chapter-select:hover,
-  .chapter-select:focus {
+  .modern-chapter-trigger-btn:hover {
     border-color: var(--sl-sector-primary, #ff5b00);
-    color: var(--sl-color-gray-1);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px var(--sl-sector-glow, rgba(0, 0, 0, 0.08));
+  }
+
+  .btn-title-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 190px;
+  }
+
+  @media (max-width: 640px) {
+    .btn-title-truncate {
+      max-width: 180px;
+    }
+  }
+
+  .btn-dropdown-arrow {
+    font-size: 0.75rem;
+    color: var(--sl-color-gray-4, #94a3b8);
+    transition: transform 0.2s ease;
+  }
+
+  .switch-track-btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--sl-color-gray-2, #334155);
+    background: var(--sl-color-hairline, #f1f5f9);
+    border: 1px solid var(--sl-color-hairline, #e2e8f0);
+    padding: 0.45rem 0.85rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+  }
+
+  .switch-track-btn:hover {
+    background: var(--sl-color-gray-1, #0f172a);
+    color: #ffffff;
   }
 
   /* Progress Bar */
   .progress-track {
     width: 100%;
     height: 4px;
-    background: var(--sl-color-hairline);
+    background: var(--sl-color-hairline, #e2e8f0);
     border-radius: 9999px;
     overflow: hidden;
   }
@@ -433,7 +1336,7 @@ const paginationItems = totalLessons > 0 ? getPaginationItems(currentIndex >= 0 
     transition: width 0.3s ease;
   }
 
-  /* Numbered Pagination Row */
+  /* Numbered Page Pills */
   .numbered-pagination {
     display: flex;
     align-items: center;
@@ -450,14 +1353,6 @@ const paginationItems = totalLessons > 0 ? getPaginationItems(currentIndex >= 0 
     display: none;
   }
 
-  @media (max-width: 480px) {
-    .numbered-pagination {
-      gap: 0.2rem;
-      justify-content: flex-start;
-      padding: 0.35rem 0.25rem;
-    }
-  }
-
   .numbered-pills-list {
     display: flex;
     align-items: center;
@@ -465,12 +1360,6 @@ const paginationItems = totalLessons > 0 ? getPaginationItems(currentIndex >= 0 
     flex-wrap: nowrap;
     justify-content: center;
     flex-shrink: 0;
-  }
-
-  @media (max-width: 480px) {
-    .numbered-pills-list {
-      gap: 0.2rem;
-    }
   }
 
   .page-pill {
@@ -481,8 +1370,8 @@ const paginationItems = totalLessons > 0 ? getPaginationItems(currentIndex >= 0 
     height: 34px;
     padding: 0 0.45rem;
     border-radius: 8px;
-    background: var(--sl-color-hairline);
-    color: var(--sl-color-gray-2);
+    background: var(--sl-color-hairline, #f1f5f9);
+    color: var(--sl-color-gray-2, #334155);
     font-size: 0.82rem;
     font-weight: 600;
     text-decoration: none !important;
@@ -491,21 +1380,10 @@ const paginationItems = totalLessons > 0 ? getPaginationItems(currentIndex >= 0 
     flex-shrink: 0;
   }
 
-  @media (max-width: 480px) {
-    .page-pill {
-      min-width: 29px;
-      height: 30px;
-      padding: 0 0.2rem;
-      font-size: 0.74rem;
-      border-radius: 6px;
-    }
-  }
-
   .page-pill:hover:not(.ellipsis):not(.disabled) {
     background: var(--sl-sector-primary, #ff5b00);
     color: #ffffff !important;
     transform: translateY(-1px);
-    box-shadow: 0 2px 8px var(--sl-sector-glow, rgba(255, 91, 0, 0.3));
   }
 
   .page-pill.active {
@@ -516,32 +1394,16 @@ const paginationItems = totalLessons > 0 ? getPaginationItems(currentIndex >= 0 
 
   .page-pill.ellipsis {
     background: transparent;
-    color: var(--sl-color-gray-4);
+    color: var(--sl-color-gray-4, #94a3b8);
     cursor: default;
-    min-width: 16px;
-    flex-shrink: 0;
   }
 
-  .page-pill.nav-arrow {
-    font-size: 0.75rem;
-    background: var(--sl-color-hairline);
-    flex-shrink: 0;
-  }
-
-  @media (max-width: 480px) {
-    .page-pill.nav-arrow {
-      min-width: 30px;
-      height: 30px;
-    }
-  }
-
-  .page-pill.disabled {
+  .nav-arrow.disabled {
     opacity: 0.35;
     cursor: not-allowed;
-    pointer-events: none;
   }
 
-  /* Cards Grid */
+  /* Prev/Next Cards Grid */
   .cards-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -561,20 +1423,13 @@ const paginationItems = totalLessons > 0 ? getPaginationItems(currentIndex >= 0 
     align-items: center;
     gap: 0.85rem;
     padding: 0.95rem 1.15rem;
-    background: var(--sl-color-bg);
-    border: 1px solid var(--sl-color-hairline);
+    background: var(--sl-color-bg, #ffffff);
+    border: 1px solid var(--sl-color-hairline, #e2e8f0);
     border-radius: 12px;
     text-decoration: none !important;
     color: inherit !important;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
     transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-  }
-
-  @media (min-width: 640px) {
-    .lesson-card {
-      gap: 1rem;
-      padding: 1.15rem 1.35rem;
-    }
   }
 
   .lesson-card:hover:not(.disabled-card) {
@@ -589,7 +1444,7 @@ const paginationItems = totalLessons > 0 ? getPaginationItems(currentIndex >= 0 
 
   .disabled-card {
     opacity: 0.55;
-    background: var(--sl-color-hairline);
+    background: var(--sl-color-hairline, #f1f5f9);
     cursor: default;
   }
 
@@ -605,8 +1460,8 @@ const paginationItems = totalLessons > 0 ? getPaginationItems(currentIndex >= 0 
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    background: var(--sl-color-hairline);
-    color: var(--sl-color-gray-1);
+    background: var(--sl-color-hairline, #f1f5f9);
+    color: var(--sl-color-gray-1, #0f172a);
     flex-shrink: 0;
     transition: all 0.2s ease;
   }
@@ -617,13 +1472,8 @@ const paginationItems = totalLessons > 0 ? getPaginationItems(currentIndex >= 0 
   }
 
   .muted-arrow {
-    color: var(--sl-color-gray-4);
+    color: var(--sl-color-gray-4, #94a3b8);
     font-size: 0.85rem;
-  }
-
-  .celebration-arrow {
-    font-size: 1.1rem;
-    background: transparent;
   }
 
   .card-content {
@@ -642,18 +1492,18 @@ const paginationItems = totalLessons > 0 ? getPaginationItems(currentIndex >= 0 
     font-size: 0.7rem;
     font-weight: 700;
     letter-spacing: 0.06em;
-    color: var(--sl-color-gray-4);
+    color: var(--sl-color-gray-4, #94a3b8);
     margin-bottom: 0.25rem;
   }
 
   .lesson-card:hover:not(.disabled-card) .card-label {
-    color: #ff5b00;
+    color: var(--sl-sector-primary, #ff5b00);
   }
 
   .card-title {
     font-size: 0.92rem;
     font-weight: 600;
-    color: var(--sl-color-gray-1);
+    color: var(--sl-color-gray-1, #0f172a);
     line-height: 1.35;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -663,22 +1513,557 @@ const paginationItems = totalLessons > 0 ? getPaginationItems(currentIndex >= 0 
     max-width: 100%;
   }
 
-  @media (min-width: 640px) {
-    .card-title {
-      font-size: 0.95rem;
-      white-space: nowrap;
-      display: block;
+  /* ========================================================
+     MODERN CHAPTER NAVIGATOR MODAL (FIXED & FULLY STYLED)
+     ======================================================== */
+  .modern-nav-dialog {
+    position: fixed !important;
+    inset: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    max-width: 100vw !important;
+    max-height: 100vh !important;
+    background: transparent !important;
+    border: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    z-index: 99999 !important;
+    box-sizing: border-box !important;
+  }
+
+  .modern-nav-dialog:not([open]) {
+    display: none !important;
+  }
+
+  .modern-nav-dialog::backdrop {
+    background: transparent !important;
+  }
+
+  .nav-dialog-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(2, 6, 23, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    z-index: 1;
+  }
+
+  .nav-dialog-container {
+    position: relative;
+    z-index: 2;
+    background: var(--sl-color-bg, #ffffff);
+    border: 1px solid var(--sl-color-hairline, #e2e8f0);
+    border-radius: 20px;
+    box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.1);
+    width: 94vw;
+    max-width: 820px;
+    height: 86vh;
+    max-height: 86vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--sl-color-gray-1, #0f172a);
+    box-sizing: border-box;
+    animation: modalPopIn 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  @keyframes modalPopIn {
+    from {
+      opacity: 0;
+      transform: scale(0.96) translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1) translateY(0);
     }
   }
 
-  .sr-only {
+  /* Dialog Header */
+  .dialog-header {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.15rem 1.5rem;
+    border-bottom: 1px solid var(--sl-color-hairline, #e2e8f0);
+    background: var(--sl-color-bg, #ffffff);
+    box-sizing: border-box;
+  }
+
+  .header-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .header-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--sl-sector-primary, #ff5b00);
+  }
+
+  .eyebrow-badge {
+    background: var(--sl-sector-card-bg, rgba(255, 91, 0, 0.1));
+    color: var(--sl-sector-primary, #ff5b00);
+    padding: 0.1rem 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.68rem;
+    font-weight: 700;
+    border: 1px solid var(--sl-sector-primary, #ff5b00);
+  }
+
+  .header-heading {
+    font-size: 1.22rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--sl-color-gray-1, #0f172a);
+    letter-spacing: -0.01em;
+  }
+
+  .dialog-close-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--sl-color-hairline, #f1f5f9);
+    color: var(--sl-color-gray-3, #64748b);
+    border: none;
+    font-size: 0.95rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+  }
+
+  .dialog-close-btn:hover {
+    background: var(--sl-sector-primary, #ff5b00);
+    color: #ffffff;
+  }
+
+  /* Search Bar */
+  .dialog-search-bar {
+    flex-shrink: 0;
+    padding: 0.85rem 1.5rem;
+    background: var(--sl-color-bg, #ffffff);
+    border-bottom: 1px solid var(--sl-color-hairline, #e2e8f0);
+    box-sizing: border-box;
+  }
+
+  .search-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .search-magnifier {
     position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
+    left: 1rem;
+    font-size: 0.95rem;
+    pointer-events: none;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 0.72rem 2.5rem 0.72rem 2.85rem;
+    font-family: inherit;
+    font-size: 0.9rem;
+    border-radius: 12px;
+    border: 1.5px solid var(--sl-color-hairline, #e2e8f0);
+    background: var(--sl-color-hairline, #f8fafc);
+    color: var(--sl-color-gray-1, #0f172a);
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+  }
+
+  .search-input:focus {
+    border-color: var(--sl-sector-primary, #ff5b00);
+    background: var(--sl-color-bg, #ffffff);
+    box-shadow: 0 0 0 3px var(--sl-sector-glow, rgba(255, 91, 0, 0.2));
+  }
+
+  .clear-btn {
+    position: absolute;
+    right: 0.85rem;
+    background: transparent;
+    border: none;
+    color: var(--sl-color-gray-4, #94a3b8);
+    font-size: 0.9rem;
+    cursor: pointer;
+    padding: 0.25rem;
+  }
+
+  .search-feedback {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.45rem;
+    font-size: 0.75rem;
+    color: var(--sl-color-gray-3, #64748b);
+  }
+
+  .match-count {
+    font-weight: 600;
+    color: var(--sl-sector-primary, #ff5b00);
+  }
+
+  .search-hint kbd {
+    background: var(--sl-color-hairline, #f1f5f9);
+    padding: 0.1rem 0.35rem;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    border: 1px solid var(--sl-color-hairline, #e2e8f0);
+  }
+
+  /* Accordion List Container - Single Unified Modal Scroller */
+  .sections-accordion-list {
+    flex: 1 1 auto;
+    min-height: 0; /* CRITICAL: Enables clean flex child overflow scroll */
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 1.15rem 1.5rem 4rem; /* 4rem bottom padding so bottom cards never touch dialog border */
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    box-sizing: border-box;
+  }
+
+  /* Accordion Item */
+  .section-accordion-item {
+    flex-shrink: 0; /* CRITICAL: Never squish accordion headers */
+    width: 100%;
+    border: 1.5px solid var(--sl-color-hairline, #e2e8f0);
+    border-radius: 14px;
+    background: var(--sl-color-bg, #ffffff);
     overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .section-accordion-item.is-active-section {
+    border-color: var(--sl-sector-primary, #ff5b00);
+  }
+
+  .section-accordion-item.is-open {
+    border-color: var(--sl-sector-primary, #ff5b00);
+    box-shadow: 0 4px 16px var(--sl-sector-glow, rgba(0, 0, 0, 0.06));
+  }
+
+  /* Accordion Trigger Button */
+  .accordion-trigger-btn {
+    width: 100%;
+    min-height: 52px; /* CRITICAL: Always full clickable tap target */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.85rem 1.15rem;
+    background: var(--sl-color-hairline, #f8fafc);
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--sl-color-gray-1, #0f172a);
+    text-align: left;
+    user-select: none;
+    box-sizing: border-box;
+    transition: background 0.15s ease;
+  }
+
+  .accordion-trigger-btn:hover {
+    background: var(--sl-color-hairline, #e2e8f0);
+  }
+
+  .section-accordion-item.is-open .accordion-trigger-btn {
+    background: var(--sl-sector-card-bg, rgba(255, 91, 0, 0.05));
+    border-bottom: 1px solid var(--sl-color-hairline, #e2e8f0);
+  }
+
+  .trigger-left {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    min-width: 0;
+  }
+
+  .section-icon {
+    font-size: 1.15rem;
+    flex-shrink: 0;
+  }
+
+  .section-name {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--sl-color-gray-1, #0f172a);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .trigger-right {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    flex-shrink: 0;
+  }
+
+  .section-count {
+    background: var(--sl-color-bg, #ffffff);
+    color: var(--sl-color-gray-3, #64748b);
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 0.15rem 0.55rem;
+    border-radius: 9999px;
+    border: 1px solid var(--sl-color-hairline, #e2e8f0);
+  }
+
+  .accordion-arrow {
+    font-size: 0.8rem;
+    color: var(--sl-color-gray-4, #94a3b8);
+    transition: transform 0.2s ease;
+  }
+
+  .section-accordion-item.is-open .accordion-arrow {
+    transform: rotate(180deg);
+  }
+
+  /* Content Panel - Unified Clean Grid (No nested scrollbar!) */
+  .accordion-content-panel {
+    display: none;
+    padding: 1.15rem 1.15rem 1.75rem;
+    background: var(--sl-color-bg, #ffffff);
+    box-sizing: border-box;
+  }
+
+  .section-accordion-item.is-open .accordion-content-panel {
+    display: block;
+  }
+
+  /* SubTag Filter Chips inside Content Panel */
+  .subtag-filter-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    overflow-x: auto;
+    padding-bottom: 0.75rem;
+    margin-bottom: 0.85rem;
+    border-bottom: 1px solid var(--sl-color-hairline, #e2e8f0);
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .subtag-filter-bar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .subtag-chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.28rem 0.65rem;
+    border-radius: 9999px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    background: var(--sl-color-hairline, #f1f5f9);
+    color: var(--sl-color-gray-2, #334155);
+    border: 1px solid var(--sl-color-hairline, #e2e8f0);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.15s ease;
+  }
+
+  .subtag-chip:hover {
+    border-color: var(--sl-sector-primary, #ff5b00);
+    color: var(--sl-sector-primary, #ff5b00);
+  }
+
+  .subtag-chip.active {
+    background: var(--sl-sector-primary, #ff5b00);
+    color: #ffffff !important;
+    border-color: var(--sl-sector-primary, #ff5b00);
+  }
+
+  /* Chapters Grid inside Section */
+  .chapters-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.65rem;
+  }
+
+  @media (min-width: 600px) {
+    .chapters-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+    }
+  }
+
+  .chapter-nav-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.45rem;
+    padding: 0.85rem 1.05rem;
+    min-height: 74px; /* Uniform height ensures cards never feel cramped */
+    background: var(--sl-color-bg, #ffffff);
+    border: 1px solid var(--sl-color-hairline, #e2e8f0);
+    border-radius: 12px;
+    text-decoration: none !important;
+    color: var(--sl-color-gray-1, #0f172a) !important;
+    box-sizing: border-box;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .chapter-nav-card:hover {
+    border-color: var(--sl-sector-primary, #ff5b00);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--sl-sector-glow, rgba(0, 0, 0, 0.08));
+  }
+
+  .chapter-nav-card.active-chapter {
+    border: 1.5px solid var(--sl-sector-primary, #ff5b00);
+    background: var(--sl-sector-card-bg, rgba(255, 91, 0, 0.05));
+    box-shadow: 0 2px 10px var(--sl-sector-glow, rgba(255, 91, 0, 0.2));
+  }
+
+  .card-meta-row {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    flex-wrap: wrap;
+  }
+
+  .chapter-number {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--sl-color-gray-3, #64748b);
+    background: var(--sl-color-hairline, #f1f5f9);
+    padding: 0.1rem 0.4rem;
+    border-radius: 5px;
+  }
+
+  .module-tag {
+    font-size: 0.68rem;
+    font-weight: 600;
+    color: var(--sl-sector-primary, #ff5b00);
+    background: var(--sl-sector-card-bg, rgba(255, 91, 0, 0.08));
+    padding: 0.08rem 0.48rem;
+    border-radius: 9999px;
+    white-space: nowrap;
+  }
+
+  .active-dot {
+    margin-left: auto;
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: var(--sl-sector-primary, #ff5b00);
+    letter-spacing: 0.04em;
+  }
+
+  .chapter-label-text {
+    font-size: 0.88rem;
+    font-weight: 600;
+    line-height: 1.35;
+    color: var(--sl-color-gray-1, #0f172a);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  /* No match state */
+  .no-match-state {
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .no-match-icon {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    opacity: 0.7;
+  }
+
+  .no-match-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--sl-color-gray-1, #0f172a);
+    margin-bottom: 0.25rem;
+  }
+
+  .no-match-sub {
+    font-size: 0.82rem;
+    color: var(--sl-color-gray-3, #64748b);
+  }
+
+  /* Dark Mode Enhancements */
+  :root[data-theme='dark'] .nav-dialog-container {
+    background: #0b0f19 !important;
+    border-color: rgba(255, 255, 255, 0.12) !important;
+    color: #f1f5f9 !important;
+    box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.08) !important;
+  }
+
+  :root[data-theme='dark'] .dialog-header,
+  :root[data-theme='dark'] .dialog-search-bar,
+  :root[data-theme='dark'] .section-accordion-item,
+  :root[data-theme='dark'] .accordion-content-panel {
+    background: #0b0f19 !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+  }
+
+  :root[data-theme='dark'] .accordion-trigger-btn {
+    background: #131927 !important;
+    color: #f1f5f9 !important;
+  }
+
+  :root[data-theme='dark'] .accordion-trigger-btn:hover {
+    background: #1a2336 !important;
+  }
+
+  :root[data-theme='dark'] .chapter-nav-card {
+    background: #131927 !important;
+    border-color: rgba(255, 255, 255, 0.08) !important;
+    color: #f1f5f9 !important;
+  }
+
+  :root[data-theme='dark'] .chapter-nav-card:hover {
+    background: #1c263c !important;
+  }
+
+  :root[data-theme='dark'] .search-input {
+    background: #131927 !important;
+    border-color: rgba(255, 255, 255, 0.12) !important;
+    color: #f1f5f9 !important;
+  }
+
+  :root[data-theme='dark'] .search-input:focus {
+    background: #0b0f19 !important;
+  }
+
+  :root[data-theme='dark'] .subtag-chip {
+    background: #131927 !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+    color: #cbd5e1 !important;
+  }
+
+  :root[data-theme='dark'] .chapter-label-text,
+  :root[data-theme='dark'] .header-heading,
+  :root[data-theme='dark'] .section-name {
+    color: #f1f5f9 !important;
+  }
+
+  :root[data-theme='dark'] .section-count,
+  :root[data-theme='dark'] .chapter-number {
+    background: #1e293b !important;
+    color: #94a3b8 !important;
+    border-color: rgba(255, 255, 255, 0.08) !important;
   }
 </style>

@@ -295,6 +295,25 @@ html[data-theme="dark"][data-sector="toeic"] {
   --sl-sector-card-bg: rgba(34, 211, 238, 0.08);
 }
 
+/* 12. Java Enterprise */
+html[data-sector="java"] {
+  --sl-sector-primary: #ea580c;
+  --sl-sector-link: #ea580c;
+  --sl-sector-link-hover: #c2410c;
+  --sl-sector-glow: rgba(234, 88, 12, 0.35);
+  --sl-sector-row-hover: rgba(234, 88, 12, 0.06);
+  --sl-sector-card-bg: rgba(234, 88, 12, 0.04);
+}
+:root[data-theme="dark"] html[data-sector="java"],
+html[data-theme="dark"][data-sector="java"] {
+  --sl-sector-primary: #fb923c;
+  --sl-sector-link: #fb923c;
+  --sl-sector-link-hover: #fdba74;
+  --sl-sector-glow: rgba(251, 146, 60, 0.45);
+  --sl-sector-row-hover: rgba(251, 146, 60, 0.1);
+  --sl-sector-card-bg: rgba(251, 146, 60, 0.08);
+}
+
 /* =========================================================
    CORE RESPONSIVE RESET & VIEWPORT SAFETY (IPHONE & PC)
    ========================================================= */
@@ -602,7 +621,7 @@ main:has(.devlab-hero-wrapper) > .content-panel:first-child {
 /* =========================================================
    MARKDOWN CONTENT LINKS & HOVER (NEVER TURN WHITE ON HOVER)
    ========================================================= */
-.sl-markdown-content a:not(:where(.not-content *)) {
+.sl-markdown-content a:not(:where(.not-content *)):not(.track-pill):not(.catalog-card):not(.btn-black):not(.btn-video) {
   color: var(--sl-sector-link, var(--klook-orange)) !important;
   text-decoration: underline !important;
   text-decoration-color: transparent !important;
@@ -612,13 +631,13 @@ main:has(.devlab-hero-wrapper) > .content-panel:first-child {
 }
 
 /* Hover & Focus state: Keep sector identity, luminous & distinct underline */
-.sl-markdown-content a:hover:not(:where(.not-content *)),
-.sl-markdown-content a:focus-visible:not(:where(.not-content *)) {
+.sl-markdown-content a:hover:not(:where(.not-content *)):not(.track-pill):not(.catalog-card):not(.btn-black):not(.btn-video),
+.sl-markdown-content a:focus-visible:not(:where(.not-content *)):not(.track-pill):not(.catalog-card):not(.btn-black):not(.btn-video) {
   color: var(--sl-sector-link-hover, #ff782e) !important;
   text-decoration-color: currentColor !important;
 }
 
-:root[data-theme='dark'] .sl-markdown-content a:hover:not(:where(.not-content *)) {
+:root[data-theme='dark'] .sl-markdown-content a:hover:not(:where(.not-content *)):not(.track-pill):not(.catalog-card):not(.btn-black):not(.btn-video) {
   text-shadow: 0 0 12px var(--sl-sector-glow, rgba(255, 109, 26, 0.45));
 }
 
@@ -1229,158 +1248,262 @@ header.header {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  padding: 0.4rem 0.85rem;
-  background: var(--sl-color-hairline);
+  padding: 0.42rem 0.95rem;
+  background: var(--sl-color-bg);
+  border: 1px solid var(--sl-color-hairline);
   color: var(--sl-color-gray-2) !important;
   font-family: 'Poppins', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   font-weight: 600;
   border-radius: 9999px;
   text-decoration: none !important;
+  text-decoration-color: transparent !important;
   white-space: nowrap;
   flex-shrink: 0;
   scroll-snap-align: start;
-  transition: all 0.15s ease;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
-.track-pill:hover {
-  background: var(--klook-orange);
+.sl-markdown-content a.track-pill,
+.track-pill {
+  text-decoration: none !important;
+  text-decoration-color: transparent !important;
+}
+
+.track-pill:hover,
+.sl-markdown-content a.track-pill:hover {
+  background: var(--klook-orange) !important;
+  border-color: var(--klook-orange) !important;
   color: #ffffff !important;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(255, 91, 0, 0.35);
+  text-decoration: none !important;
+  text-shadow: none !important;
 }
 
+/* Java Enterprise */
+.track-pill-java {
+  background: rgba(234, 88, 12, 0.08) !important;
+  color: #ea580c !important;
+  border: 1px solid rgba(234, 88, 12, 0.3) !important;
+}
+.track-pill-java:hover,
+.sl-markdown-content a.track-pill-java:hover {
+  background: #ea580c !important;
+  border-color: #ea580c !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(234, 88, 12, 0.35);
+  transform: translateY(-2px);
+  text-decoration: none !important;
+  text-shadow: none !important;
+}
+
+/* Japanese Grammar */
 .track-pill-highlight,
 .track-pill-grammar {
-  background: rgba(220, 38, 38, 0.1) !important;
+  background: rgba(220, 38, 38, 0.08) !important;
   color: #dc2626 !important;
   border: 1px solid rgba(220, 38, 38, 0.3) !important;
 }
-
 .track-pill-highlight:hover,
-.track-pill-grammar:hover {
+.track-pill-grammar:hover,
+.sl-markdown-content a.track-pill-highlight:hover,
+.sl-markdown-content a.track-pill-grammar:hover {
   background: #dc2626 !important;
+  border-color: #dc2626 !important;
   color: #ffffff !important;
-  box-shadow: 0 4px 14px rgba(220, 38, 38, 0.3);
+  box-shadow: 0 4px 14px rgba(220, 38, 38, 0.35);
+  transform: translateY(-2px);
+  text-decoration: none !important;
+  text-shadow: none !important;
 }
 
+/* Japanese Vocab */
 .track-pill-vocab {
-  background: rgba(2, 132, 199, 0.1) !important;
+  background: rgba(2, 132, 199, 0.08) !important;
   color: #0284c7 !important;
   border: 1px solid rgba(2, 132, 199, 0.3) !important;
 }
-
-.track-pill-vocab:hover {
+.track-pill-vocab:hover,
+.sl-markdown-content a.track-pill-vocab:hover {
   background: #0284c7 !important;
+  border-color: #0284c7 !important;
   color: #ffffff !important;
-  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.3);
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35);
+  transform: translateY(-2px);
+  text-decoration: none !important;
+  text-shadow: none !important;
 }
 
+/* Japanese Kanji */
 .track-pill-kanji {
-  background: rgba(225, 29, 72, 0.1) !important;
+  background: rgba(225, 29, 72, 0.08) !important;
   color: #e11d48 !important;
   border: 1px solid rgba(225, 29, 72, 0.3) !important;
 }
-
-.track-pill-kanji:hover {
+.track-pill-kanji:hover,
+.sl-markdown-content a.track-pill-kanji:hover {
   background: #e11d48 !important;
+  border-color: #e11d48 !important;
   color: #ffffff !important;
-  box-shadow: 0 4px 14px rgba(225, 29, 72, 0.3);
+  box-shadow: 0 4px 14px rgba(225, 29, 72, 0.35);
+  transform: translateY(-2px);
+  text-decoration: none !important;
+  text-shadow: none !important;
 }
 
+/* AWS Cloud */
 .track-pill-aws {
-  background: rgba(245, 158, 11, 0.1) !important;
-  color: #f59e0b !important;
+  background: rgba(245, 158, 11, 0.08) !important;
+  color: #d97706 !important;
   border: 1px solid rgba(245, 158, 11, 0.3) !important;
 }
-
-.track-pill-aws:hover {
-  background: #f59e0b !important;
+.track-pill-aws:hover,
+.sl-markdown-content a.track-pill-aws:hover {
+  background: #d97706 !important;
+  border-color: #d97706 !important;
   color: #ffffff !important;
-  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.3);
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);
+  transform: translateY(-2px);
+  text-decoration: none !important;
+  text-shadow: none !important;
 }
 
+/* PHP Core */
 .track-pill-php {
-  background: rgba(124, 58, 237, 0.1) !important;
+  background: rgba(124, 58, 237, 0.08) !important;
   color: #7c3aed !important;
   border: 1px solid rgba(124, 58, 237, 0.3) !important;
 }
-
-.track-pill-php:hover {
+.track-pill-php:hover,
+.sl-markdown-content a.track-pill-php:hover {
   background: #7c3aed !important;
+  border-color: #7c3aed !important;
   color: #ffffff !important;
-  box-shadow: 0 4px 14px rgba(124, 58, 237, 0.3);
+  box-shadow: 0 4px 14px rgba(124, 58, 237, 0.35);
+  transform: translateY(-2px);
+  text-decoration: none !important;
+  text-shadow: none !important;
 }
 
+/* Modern JavaScript */
 .track-pill-js {
-  background: rgba(202, 138, 4, 0.1) !important;
-  color: #ca8a04 !important;
+  background: rgba(202, 138, 4, 0.08) !important;
+  color: #b45309 !important;
   border: 1px solid rgba(202, 138, 4, 0.3) !important;
 }
-
-.track-pill-js:hover {
+.track-pill-js:hover,
+.sl-markdown-content a.track-pill-js:hover {
   background: #ca8a04 !important;
+  border-color: #ca8a04 !important;
   color: #ffffff !important;
-  box-shadow: 0 4px 14px rgba(202, 138, 4, 0.3);
+  box-shadow: 0 4px 14px rgba(202, 138, 4, 0.35);
+  transform: translateY(-2px);
+  text-decoration: none !important;
+  text-shadow: none !important;
 }
 
+/* Laravel */
 .track-pill-laravel {
-  background: rgba(239, 68, 68, 0.1) !important;
+  background: rgba(239, 68, 68, 0.08) !important;
   color: #ef4444 !important;
   border: 1px solid rgba(239, 68, 68, 0.3) !important;
 }
-
-.track-pill-laravel:hover {
+.track-pill-laravel:hover,
+.sl-markdown-content a.track-pill-laravel:hover {
   background: #ef4444 !important;
+  border-color: #ef4444 !important;
   color: #ffffff !important;
-  box-shadow: 0 4px 14px rgba(239, 68, 68, 0.3);
+  box-shadow: 0 4px 14px rgba(239, 68, 68, 0.35);
+  transform: translateY(-2px);
+  text-decoration: none !important;
+  text-shadow: none !important;
 }
 
+/* MySQL */
 .track-pill-mysql {
-  background: rgba(0, 117, 143, 0.1) !important;
+  background: rgba(0, 117, 143, 0.08) !important;
   color: #00758f !important;
   border: 1px solid rgba(0, 117, 143, 0.3) !important;
 }
-
-.track-pill-mysql:hover {
+.track-pill-mysql:hover,
+.sl-markdown-content a.track-pill-mysql:hover {
   background: #00758f !important;
+  border-color: #00758f !important;
   color: #ffffff !important;
-  box-shadow: 0 4px 14px rgba(0, 117, 143, 0.3);
+  box-shadow: 0 4px 14px rgba(0, 117, 143, 0.35);
+  transform: translateY(-2px);
+  text-decoration: none !important;
+  text-shadow: none !important;
 }
 
+/* Docker & DevOps */
 .track-pill-devops {
-  background: rgba(14, 165, 233, 0.1) !important;
-  color: #0ea5e9 !important;
+  background: rgba(14, 165, 233, 0.08) !important;
+  color: #0284c7 !important;
   border: 1px solid rgba(14, 165, 233, 0.3) !important;
 }
-
-.track-pill-devops:hover {
+.track-pill-devops:hover,
+.sl-markdown-content a.track-pill-devops:hover {
   background: #0ea5e9 !important;
+  border-color: #0ea5e9 !important;
   color: #ffffff !important;
-  box-shadow: 0 4px 14px rgba(14, 165, 233, 0.3);
+  box-shadow: 0 4px 14px rgba(14, 165, 233, 0.35);
+  transform: translateY(-2px);
+  text-decoration: none !important;
+  text-shadow: none !important;
 }
 
+/* EC-CUBE */
 .track-pill-eccube {
-  background: rgba(16, 185, 129, 0.1) !important;
-  color: #10b981 !important;
+  background: rgba(16, 185, 129, 0.08) !important;
+  color: #059669 !important;
   border: 1px solid rgba(16, 185, 129, 0.3) !important;
 }
-
-.track-pill-eccube:hover {
+.track-pill-eccube:hover,
+.sl-markdown-content a.track-pill-eccube:hover {
   background: #10b981 !important;
+  border-color: #10b981 !important;
   color: #ffffff !important;
-  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3);
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35);
+  transform: translateY(-2px);
+  text-decoration: none !important;
+  text-shadow: none !important;
 }
 
+/* TOEIC */
 .track-pill-toeic {
-  background: rgba(8, 145, 178, 0.1) !important;
+  background: rgba(8, 145, 178, 0.08) !important;
   color: #0891b2 !important;
   border: 1px solid rgba(8, 145, 178, 0.3) !important;
 }
-
-.track-pill-toeic:hover {
+.track-pill-toeic:hover,
+.sl-markdown-content a.track-pill-toeic:hover {
   background: #0891b2 !important;
+  border-color: #0891b2 !important;
   color: #ffffff !important;
-  box-shadow: 0 4px 14px rgba(8, 145, 178, 0.3);
+  box-shadow: 0 4px 14px rgba(8, 145, 178, 0.35);
+  transform: translateY(-2px);
+  text-decoration: none !important;
+  text-shadow: none !important;
+}
+
+/* Networking */
+.track-pill-net {
+  background: rgba(2, 132, 199, 0.08) !important;
+  color: #0284c7 !important;
+  border: 1px solid rgba(2, 132, 199, 0.3) !important;
+}
+.track-pill-net:hover,
+.sl-markdown-content a.track-pill-net:hover {
+  background: #0284c7 !important;
+  border-color: #0284c7 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35);
+  transform: translateY(-2px);
+  text-decoration: none !important;
+  text-shadow: none !important;
 }
 
 /* Catalog Grid: Fluid columns for all screen sizes */
@@ -1412,6 +1535,13 @@ header.header {
   .catalog-card:not(:nth-child(3n)) {
     border-right: var(--devlab-border);
   }
+}
+
+.catalog-card,
+.sl-markdown-content .catalog-card,
+.catalog-card *,
+.sl-markdown-content .catalog-card * {
+  text-decoration: none !important;
 }
 
 .catalog-card {
@@ -1450,7 +1580,10 @@ header.header {
   text-transform: uppercase;
   color: var(--klook-orange);
   margin-bottom: 0.5rem;
-  display: block;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.45rem;
 }
 
 .catalog-card h3 {
@@ -1503,12 +1636,19 @@ header.header {
 }
 .tag-badge-new {
   background: #dc2626;
-  color: #ffffff;
+  color: #ffffff !important;
   font-size: 0.62rem;
   font-weight: 700;
-  padding: 0.1rem 0.4rem;
+  padding: 0.16rem 0.55rem;
   border-radius: 9999px;
   letter-spacing: 0.04em;
+  white-space: nowrap !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  line-height: 1 !important;
+  vertical-align: middle;
+  flex-shrink: 0;
 }
 .footer-action-japanese {
   color: #dc2626 !important;
@@ -1517,6 +1657,27 @@ header.header {
 }
 .card-highlight-japanese:hover .footer-action-japanese {
   color: #b91c1c !important;
+  transform: translateX(2px);
+}
+
+/* 1.1 Java Enterprise */
+.card-highlight-java {
+  background: linear-gradient(180deg, rgba(234, 88, 12, 0.04) 0%, transparent 100%);
+  border-left: 3px solid #ea580c;
+}
+.tag-java {
+  color: #ea580c !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+.footer-action-java {
+  color: #ea580c !important;
+  font-weight: 700;
+  transition: all 0.15s ease;
+}
+.card-highlight-java:hover .footer-action-java {
+  color: #c2410c !important;
   transform: translateX(2px);
 }
 

@@ -133,7 +133,7 @@
               showImages: false,
               showSubResults: true,
               translations: {
-                placeholder: 'Type to search 398+ lessons, code & topics...',
+                placeholder: 'Type to search 515+ lessons, code & topics...',
                 zero_results: 'No matching lessons found for "[SEARCH_TERM]"',
               },
             });
@@ -157,45 +157,57 @@
   }
 
   .search-trigger-btn {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
     height: 38px;
     width: 38px;
     padding: 0;
+    box-sizing: border-box;
     background: var(--sl-color-bg);
     border: 1px solid var(--sl-color-hairline);
-    border-radius: 8px;
+    border-radius: 9999px;
     color: var(--sl-color-gray-3);
     font-family: 'Poppins', sans-serif;
     font-size: 0.82rem;
     font-weight: 500;
     cursor: pointer;
-    transition: all 0.2s ease;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
     flex-shrink: 0;
   }
 
   @media (min-width: 640px) {
     .search-trigger-btn {
       width: auto;
-      height: 2.25rem;
-      padding: 0 0.85rem;
+      height: 38px;
+      padding: 0 0.95rem;
       border-radius: 9999px;
     }
   }
 
   .search-trigger-btn:hover {
     border-color: #ff5b00;
+    background: rgba(255, 91, 0, 0.05);
     color: var(--sl-color-gray-1);
     transform: translateY(-1px);
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 8px rgba(255, 91, 0, 0.15);
+  }
+
+  .search-trigger-btn:hover .search-icon {
+    color: #ff5b00;
+  }
+
+  .search-trigger-btn:hover .search-shortcut {
+    background: rgba(255, 91, 0, 0.12);
+    color: #ff5b00;
   }
 
   .search-icon {
     flex-shrink: 0;
     color: var(--sl-color-gray-3);
+    transition: color 0.18s ease;
   }
 
   .search-placeholder {

@@ -30,107 +30,214 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
             </svg>
           </button>
 
-          <!-- Rich Mega Dropdown Menu -->
+          <!-- Rich Mega Dropdown Menu (3 Balanced Columns) -->
           <div class="mega-menu" role="menu" aria-labelledby="coursesDropdownBtn">
             <div class="mega-menu-inner">
+              <!-- Column 1: Software Engineering -->
               <div class="menu-column">
-                <div class="column-header">SOFTWARE ENGINEERING</div>
-                <a href="/php/01_variables/" class="course-menu-item">
+                <div class="column-header">
+                  <div class="col-header-left">
+                    <span class="col-header-icon">💻</span>
+                    <span class="col-header-text">SOFTWARE ENGINEERING</span>
+                  </div>
+                  <span class="col-header-pill">5 TRACKS</span>
+                </div>
+
+                <a href="/php/00_overview/" class="course-menu-item item-php">
                   <div class="item-icon-box php-bg">🐘</div>
                   <div class="item-text">
-                    <span class="item-title">PHP Core & Patterns</span>
-                    <span class="item-desc">PHP 8.x, OOP, MVC & GoF Design Patterns</span>
+                    <div class="item-title-row">
+                      <span class="item-title">PHP Core &amp; Patterns</span>
+                      <span class="item-badge badge-php">24 Ch</span>
+                    </div>
+                    <span class="item-desc">3 Sections • PHP 8.x, OOP, MVC &amp; GoF</span>
                   </div>
+                  <span class="item-hover-arrow">→</span>
                 </a>
-                <a href="/javascript/01_introduction_and_runtime/" class="course-menu-item">
+
+                <a href="/javascript/00_overview/" class="course-menu-item item-js">
                   <div class="item-icon-box js-bg">⚡</div>
                   <div class="item-text">
-                    <span class="item-title">Modern JavaScript</span>
-                    <span class="item-desc">ES6+, V8 Engine, Async/Await & Closures</span>
+                    <div class="item-title-row">
+                      <span class="item-title">Modern JavaScript</span>
+                      <span class="item-badge badge-js">13 Ch</span>
+                    </div>
+                    <span class="item-desc">2 Sections • ES6+, V8 Engine &amp; Async</span>
                   </div>
+                  <span class="item-hover-arrow">→</span>
                 </a>
-                <a href="/laravel/01_intro_and_request_lifecycle/" class="course-menu-item">
+
+                <a href="/laravel/00_overview/" class="course-menu-item item-laravel">
                   <div class="item-icon-box laravel-bg">🔺</div>
                   <div class="item-text">
-                    <span class="item-title">Laravel Enterprise</span>
-                    <span class="item-desc">IoC Container, Eloquent, Queues & APIs</span>
+                    <div class="item-title-row">
+                      <span class="item-title">Laravel Enterprise</span>
+                      <span class="item-badge badge-laravel">20 Ch</span>
+                    </div>
+                    <span class="item-desc">3 Sections • IoC, Eloquent, Queues &amp; APIs</span>
                   </div>
+                  <span class="item-hover-arrow">→</span>
                 </a>
-                <a href="/mysql/00_beginner_mysql_core_concepts_and_real_work_guide/" class="course-menu-item">
+
+                <a href="/mysql/00_overview/" class="course-menu-item item-mysql">
                   <div class="item-icon-box mysql-bg">🗄️</div>
                   <div class="item-text">
-                    <span class="item-title">MySQL Architecture</span>
-                    <span class="item-desc">InnoDB, B-Tree Indexes & Query Optimization</span>
+                    <div class="item-title-row">
+                      <span class="item-title">MySQL Architecture</span>
+                      <span class="item-badge badge-mysql">21 Ch</span>
+                    </div>
+                    <span class="item-desc">3 Sections • InnoDB, Indexing &amp; HA</span>
                   </div>
+                  <span class="item-hover-arrow">→</span>
+                </a>
+
+                <a href="/java/00_overview/" class="course-menu-item item-java">
+                  <div class="item-icon-box java-bg">☕</div>
+                  <div class="item-text">
+                    <div class="item-title-row">
+                      <span class="item-title">Java Enterprise &amp; Spring</span>
+                      <span class="item-badge badge-java">15 Ch</span>
+                    </div>
+                    <span class="item-desc">3 Sections • JVM, OOP Deep, Concurrency &amp; Spring</span>
+                  </div>
+                  <span class="item-hover-arrow">→</span>
                 </a>
               </div>
 
+              <!-- Column 2: Cloud, DevOps & Infrastructure -->
               <div class="menu-column">
-                <div class="column-header">PRODUCTION & SPECIALIZATIONS</div>
-                <a href="/devops/01_docker_core/01-docker-fundamentals-and-architecture/" class="course-menu-item">
+                <div class="column-header">
+                  <div class="col-header-left">
+                    <span class="col-header-icon">☁️</span>
+                    <span class="col-header-text">CLOUD, DEVOPS &amp; CMS</span>
+                  </div>
+                  <span class="col-header-pill">4 TRACKS</span>
+                </div>
+
+                <a href="/devops/00_overview/" class="course-menu-item item-devops">
                   <div class="item-icon-box devops-bg">🐳</div>
                   <div class="item-text">
-                    <span class="item-title">Docker & DevOps Cloud</span>
-                    <span class="item-desc">Containers, Compose, Kubernetes & CI/CD</span>
+                    <div class="item-title-row">
+                      <span class="item-title">Docker &amp; DevOps Cloud</span>
+                      <span class="item-badge badge-devops">46 Ch</span>
+                    </div>
+                    <span class="item-desc">2 Sections • K8s, Helm Charts &amp; GitOps</span>
                   </div>
-                </a>
-                <a href="/eccube/01_basics/01-introduction/01-what-is-ec-cube/" class="course-menu-item">
-                  <div class="item-icon-box eccube-bg">🛍️</div>
-                  <div class="item-text">
-                    <span class="item-title">EC-CUBE 4 Enterprise</span>
-                    <span class="item-desc">Symfony, Doctrine & Japanese Client Tasks</span>
-                  </div>
-                </a>
-                <a href="/toeic/00_study_plan_roadmap/01_score_breakdown_and_strategy/" class="course-menu-item">
-                  <div class="item-icon-box toeic-bg">🎯</div>
-                  <div class="item-text">
-                    <span class="item-title">TOEIC Exam 800+ Hub</span>
-                    <span class="item-desc">Grammar Secrets, 800 Vocab & Real Exams</span>
-                  </div>
-                </a>
-                <a href="/japanese-grammar/00_n1_overview_and_strategy/01_n1_exam_structure_and_study_guide/" class="course-menu-item">
-                  <div class="item-icon-box japanese-bg">⛩️</div>
-                  <div class="item-text">
-                    <span class="item-title">Japanese N1 Grammar</span>
-                    <span class="item-desc">N1 Grammar Rules, Romaji, Burmese &amp; Star Questions</span>
-                  </div>
-                </a>
-                <a href="/japanese-vocab/01_high_frequency_verbs/" class="course-menu-item">
-                  <div class="item-icon-box vocab-bg">📖</div>
-                  <div class="item-text">
-                    <span class="item-title">Japanese N1 Vocab (570+)</span>
-                    <span class="item-desc">570+ Verbs, Nouns, Adjectives, 四字熟語 &amp; Mimetics</span>
-                  </div>
-                </a>
-                <a href="/japanese-kanji/00_n1_kanji_overview_and_strategy/" class="course-menu-item">
-                  <div class="item-icon-box kanji-bg">🈸</div>
-                  <div class="item-text">
-                    <span class="item-title">Japanese N1 Kanji</span>
-                    <span class="item-desc">N1 Kanji, Burmese &amp; Romaji, Radicals, Ateji &amp; Genba Kanji</span>
-                  </div>
-                </a>
-                <a href="/aws/00_overview/" class="course-menu-item">
-                  <div class="item-icon-box aws-bg">☁️</div>
-                  <div class="item-text">
-                    <span class="item-title">AWS Cloud &amp; DevOps Labs</span>
-                    <span class="item-desc">VPC, EC2, ECS, Lambda, Terraform, SAA-C03 &amp; Genba Labs (Burmese)</span>
-                  </div>
-                </a>
-                <a href="/networking/00_overview/" class="course-menu-item">
-                  <div class="item-icon-box" style="background: rgba(14, 165, 233, 0.15); color: #0284c7;">🌐</div>
-                  <div class="item-text">
-                    <span class="item-title">Networking &amp; Cloud Automation</span>
-                    <span class="item-desc">Basic Networking, CIDR, VLSM &amp; Terraform Automation (Burmese)</span>
-                  </div>
+                  <span class="item-hover-arrow">→</span>
                 </a>
 
-                <div class="menu-footer-callout">
-                  <a href="/roadmaps/" class="callout-link">
-                    <span>🗺️ Explore Full Career Roadmaps</span>
-                    <span>→</span>
-                  </a>
-                </div>
+                <a href="/aws/00_overview/" class="course-menu-item item-aws">
+                  <div class="item-icon-box aws-bg">☁️</div>
+                  <div class="item-text">
+                    <div class="item-title-row">
+                      <span class="item-title">AWS Cloud &amp; DevOps Labs</span>
+                      <span class="item-badge badge-aws">48 Labs</span>
+                    </div>
+                    <span class="item-desc">4 Sections • SAA-C03 &amp; Real Work Labs</span>
+                  </div>
+                  <span class="item-hover-arrow">→</span>
+                </a>
+
+                <a href="/networking/00_overview/" class="course-menu-item item-net">
+                  <div class="item-icon-box net-bg">🌐</div>
+                  <div class="item-text">
+                    <div class="item-title-row">
+                      <span class="item-title">Networking &amp; Automation</span>
+                      <span class="item-badge badge-net">6 Ch</span>
+                    </div>
+                    <span class="item-desc">1 Section • CIDR, VLSM &amp; Terraform VPC</span>
+                  </div>
+                  <span class="item-hover-arrow">→</span>
+                </a>
+
+                <a href="/eccube/00_overview/" class="course-menu-item item-eccube">
+                  <div class="item-icon-box eccube-bg">🛍️</div>
+                  <div class="item-text">
+                    <div class="item-title-row">
+                      <span class="item-title">EC-CUBE 4 Enterprise</span>
+                      <span class="item-badge badge-eccube">217 Ch</span>
+                    </div>
+                    <span class="item-desc">5 Sections • Symfony, DB &amp; 17 Modules</span>
+                  </div>
+                  <span class="item-hover-arrow">→</span>
+                </a>
               </div>
+
+              <!-- Column 3: Languages & Certifications -->
+              <div class="menu-column">
+                <div class="column-header">
+                  <div class="col-header-left">
+                    <span class="col-header-icon">⛩️</span>
+                    <span class="col-header-text">LANGUAGES &amp; EXAMS</span>
+                  </div>
+                  <span class="col-header-pill">4 TRACKS</span>
+                </div>
+
+                <a href="/japanese-grammar/00_n1_overview_and_strategy/01_n1_exam_structure_and_study_guide/" class="course-menu-item item-jg">
+                  <div class="item-icon-box japanese-bg">⛩️</div>
+                  <div class="item-text">
+                    <div class="item-title-row">
+                      <span class="item-title">Japanese N1 Grammar</span>
+                      <span class="item-badge badge-jg">10 Ch</span>
+                    </div>
+                    <span class="item-desc">3 Sections • N1 Rules, Romaji &amp; Star</span>
+                  </div>
+                  <span class="item-hover-arrow">→</span>
+                </a>
+
+                <a href="/japanese-vocab/01_high_frequency_verbs/" class="course-menu-item item-jv">
+                  <div class="item-icon-box vocab-bg">📖</div>
+                  <div class="item-text">
+                    <div class="item-title-row">
+                      <span class="item-title">Japanese N1 Vocab (570+)</span>
+                      <span class="item-badge badge-jv">570+ Vocab</span>
+                    </div>
+                    <span class="item-desc">2 Sections • Verbs, Nouns &amp; IT Lexicon</span>
+                  </div>
+                  <span class="item-hover-arrow">→</span>
+                </a>
+
+                <a href="/japanese-kanji/00_n1_kanji_overview_and_strategy/" class="course-menu-item item-jk">
+                  <div class="item-icon-box kanji-bg">🈸</div>
+                  <div class="item-text">
+                    <div class="item-title-row">
+                      <span class="item-title">Japanese N1 Kanji</span>
+                      <span class="item-badge badge-jk">10 Ch</span>
+                    </div>
+                    <span class="item-desc">2 Sections • Radicals, Ateji &amp; Tests</span>
+                  </div>
+                  <span class="item-hover-arrow">→</span>
+                </a>
+
+                <a href="/toeic/00_study_plan_roadmap/01_score_breakdown_and_strategy/" class="course-menu-item item-toeic">
+                  <div class="item-icon-box toeic-bg">🎯</div>
+                  <div class="item-text">
+                    <div class="item-title-row">
+                      <span class="item-title">TOEIC Exam 800+ Hub</span>
+                      <span class="item-badge badge-toeic">75 Tests</span>
+                    </div>
+                    <span class="item-desc">7 Sections • 10-Week Plan &amp; 800 Vocab</span>
+                  </div>
+                  <span class="item-hover-arrow">→</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="menu-footer-callout">
+              <a href="/roadmaps/" class="callout-link">
+                <span class="callout-link-left">
+                  <span class="callout-icon">🗺️</span>
+                  <span>Explore Full Career Roadmaps</span>
+                </span>
+                <span class="callout-arrow">→</span>
+              </a>
+              <a href="/curriculum/" class="callout-link">
+                <span class="callout-link-left">
+                  <span class="callout-icon">📋</span>
+                  <span>Complete 515+ Curriculum Index</span>
+                </span>
+                <span class="callout-arrow">→</span>
+              </a>
             </div>
           </div>
         </div>
@@ -170,25 +277,172 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
   <!-- Mobile Dropdown Drawer -->
   <div class="mobile-drawer" id="mobileDrawer">
     <div class="mobile-drawer-inner">
-      <div class="mobile-section-title">ALL LEARNING TRACKS</div>
-      <div class="mobile-track-list">
-        <a href="/japanese-grammar/00_n1_overview_and_strategy/01_n1_exam_structure_and_study_guide/" class="mobile-nav-item mobile-item-highlight">⛩️ Japanese N1 Grammar <span class="nav-new-pill">NEW</span></a>
-        <a href="/japanese-vocab/01_high_frequency_verbs/" class="mobile-nav-item mobile-item-vocab">📖 Japanese N1 Vocab (570+) <span class="nav-new-pill" style="background:#0284c7;">NEW</span></a>
-        <a href="/japanese-kanji/00_n1_kanji_overview_and_strategy/" class="mobile-nav-item mobile-item-kanji">🈸 Japanese N1 Kanji <span class="nav-new-pill" style="background:#e11d48;">NEW</span></a>
-        <a href="/aws/00_overview/" class="mobile-nav-item mobile-item-aws">☁️ AWS Cloud &amp; DevOps Labs <span class="nav-new-pill" style="background:#f59e0b;">NEW</span></a>
-        <a href="/networking/00_overview/" class="mobile-nav-item" style="border-left: 3px solid #0284c7;">🌐 Networking &amp; Cloud Automation <span class="nav-new-pill" style="background:#0284c7;">NEW</span></a>
-        <a href="/toeic/00_study_plan_roadmap/01_score_breakdown_and_strategy/" class="mobile-nav-item mobile-item-toeic">🎯 TOEIC Exam 800+ Prep</a>
-        <a href="/php/01_variables/" class="mobile-nav-item mobile-item-php">🐘 PHP Core & Architecture</a>
-        <a href="/javascript/01_introduction_and_runtime/" class="mobile-nav-item mobile-item-js">⚡ Modern JavaScript (ES6+ to V8)</a>
-        <a href="/laravel/01_intro_and_request_lifecycle/" class="mobile-nav-item mobile-item-laravel">🔺 Laravel Enterprise Architecture</a>
-        <a href="/mysql/00_beginner_mysql_core_concepts_and_real_work_guide/" class="mobile-nav-item mobile-item-mysql">🗄️ MySQL Production Database</a>
-        <a href="/devops/01_docker_core/01-docker-fundamentals-and-architecture/" class="mobile-nav-item mobile-item-devops">🐳 Docker & DevOps Cloud</a>
-        <a href="/eccube/01_basics/01-introduction/01-what-is-ec-cube/" class="mobile-nav-item mobile-item-eccube">🛍️ EC-CUBE 4 Special Enterprise</a>
-        <a href="/roadmaps/" class="mobile-nav-item">🗺️ Engineering Career Roadmaps</a>
-        <a href="/curriculum/" class="mobile-nav-item">📋 Complete Curriculum Index</a>
+      <!-- Section 1: Software Engineering -->
+      <div class="mobile-section-group">
+        <div class="mobile-section-title">
+          <span class="mobile-sec-name">💻 SOFTWARE ENGINEERING</span>
+          <span class="mobile-section-pill">5 TRACKS</span>
+        </div>
+        <div class="mobile-track-list">
+          <a href="/php/00_overview/" class="mobile-card-item mobile-item-php">
+            <span class="mobile-card-icon php-bg">🐘</span>
+            <div class="mobile-card-info">
+              <span class="mobile-card-title">PHP Core &amp; Patterns</span>
+              <span class="mobile-card-sub">24 Chapters • OOP, MVC &amp; GoF</span>
+            </div>
+            <span class="mobile-card-badge badge-php">24 Ch</span>
+          </a>
+
+          <a href="/javascript/00_overview/" class="mobile-card-item mobile-item-js">
+            <span class="mobile-card-icon js-bg">⚡</span>
+            <div class="mobile-card-info">
+              <span class="mobile-card-title">Modern JavaScript</span>
+              <span class="mobile-card-sub">13 Chapters • ES6+, V8 &amp; Async</span>
+            </div>
+            <span class="mobile-card-badge badge-js">13 Ch</span>
+          </a>
+
+          <a href="/laravel/00_overview/" class="mobile-card-item mobile-item-laravel">
+            <span class="mobile-card-icon laravel-bg">🔺</span>
+            <div class="mobile-card-info">
+              <span class="mobile-card-title">Laravel Enterprise</span>
+              <span class="mobile-card-sub">20 Chapters • IoC, Queues &amp; APIs</span>
+            </div>
+            <span class="mobile-card-badge badge-laravel">20 Ch</span>
+          </a>
+
+          <a href="/mysql/00_overview/" class="mobile-card-item mobile-item-mysql">
+            <span class="mobile-card-icon mysql-bg">🗄️</span>
+            <div class="mobile-card-info">
+              <span class="mobile-card-title">MySQL Architecture</span>
+              <span class="mobile-card-sub">21 Chapters • InnoDB &amp; Indexes</span>
+            </div>
+            <span class="mobile-card-badge badge-mysql">21 Ch</span>
+          </a>
+
+          <a href="/java/00_overview/" class="mobile-card-item mobile-item-java">
+            <span class="mobile-card-icon java-bg">☕</span>
+            <div class="mobile-card-info">
+              <span class="mobile-card-title">Java Enterprise &amp; Spring</span>
+              <span class="mobile-card-sub">15 Chapters • JVM, OOP &amp; Concurrency</span>
+            </div>
+            <span class="mobile-card-badge badge-java">15 Ch</span>
+          </a>
+        </div>
       </div>
+
+      <!-- Section 2: Cloud, DevOps & CMS -->
+      <div class="mobile-section-group">
+        <div class="mobile-section-title">
+          <span class="mobile-sec-name">☁️ CLOUD, DEVOPS &amp; CMS</span>
+          <span class="mobile-section-pill">4 TRACKS</span>
+        </div>
+        <div class="mobile-track-list">
+          <a href="/devops/00_overview/" class="mobile-card-item mobile-item-devops">
+            <span class="mobile-card-icon devops-bg">🐳</span>
+            <div class="mobile-card-info">
+              <span class="mobile-card-title">Docker &amp; DevOps Cloud</span>
+              <span class="mobile-card-sub">46 Chapters • K8s &amp; CI/CD</span>
+            </div>
+            <span class="mobile-card-badge badge-devops">46 Ch</span>
+          </a>
+
+          <a href="/aws/00_overview/" class="mobile-card-item mobile-item-aws">
+            <span class="mobile-card-icon aws-bg">☁️</span>
+            <div class="mobile-card-info">
+              <span class="mobile-card-title">AWS Cloud &amp; DevOps Labs</span>
+              <span class="mobile-card-sub">48 Chapters • SAA Real Labs</span>
+            </div>
+            <span class="mobile-card-badge badge-aws">48 Labs</span>
+          </a>
+
+          <a href="/networking/00_overview/" class="mobile-card-item mobile-item-net">
+            <span class="mobile-card-icon net-bg">🌐</span>
+            <div class="mobile-card-info">
+              <span class="mobile-card-title">Networking &amp; Automation</span>
+              <span class="mobile-card-sub">6 Chapters • CIDR &amp; Terraform</span>
+            </div>
+            <span class="mobile-card-badge badge-net">6 Ch</span>
+          </a>
+
+          <a href="/eccube/00_overview/" class="mobile-card-item mobile-item-eccube">
+            <span class="mobile-card-icon eccube-bg">🛍️</span>
+            <div class="mobile-card-info">
+              <span class="mobile-card-title">EC-CUBE 4 Enterprise</span>
+              <span class="mobile-card-sub">217 Chapters • Symfony &amp; DB</span>
+            </div>
+            <span class="mobile-card-badge badge-eccube">217 Ch</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Section 3: Languages & Certifications -->
+      <div class="mobile-section-group">
+        <div class="mobile-section-title">
+          <span class="mobile-sec-name">⛩️ LANGUAGES &amp; EXAMS</span>
+          <span class="mobile-section-pill">4 TRACKS</span>
+        </div>
+        <div class="mobile-track-list">
+          <a href="/japanese-grammar/00_n1_overview_and_strategy/01_n1_exam_structure_and_study_guide/" class="mobile-card-item mobile-item-jg">
+            <span class="mobile-card-icon japanese-bg">⛩️</span>
+            <div class="mobile-card-info">
+              <span class="mobile-card-title">Japanese N1 Grammar</span>
+              <span class="mobile-card-sub">10 Chapters • N1 Rules &amp; Star</span>
+            </div>
+            <span class="mobile-card-badge badge-jg">10 Ch</span>
+          </a>
+
+          <a href="/japanese-vocab/01_high_frequency_verbs/" class="mobile-card-item mobile-item-jv">
+            <span class="mobile-card-icon vocab-bg">📖</span>
+            <div class="mobile-card-info">
+              <span class="mobile-card-title">Japanese N1 Vocab (570+)</span>
+              <span class="mobile-card-sub">570+ Words • Verbs &amp; IT</span>
+            </div>
+            <span class="mobile-card-badge badge-jv">570+</span>
+          </a>
+
+          <a href="/japanese-kanji/00_n1_kanji_overview_and_strategy/" class="mobile-card-item mobile-item-jk">
+            <span class="mobile-card-icon kanji-bg">🈸</span>
+            <div class="mobile-card-info">
+              <span class="mobile-card-title">Japanese N1 Kanji</span>
+              <span class="mobile-card-sub">10 Chapters • Radicals &amp; Tests</span>
+            </div>
+            <span class="mobile-card-badge badge-jk">10 Ch</span>
+          </a>
+
+          <a href="/toeic/00_study_plan_roadmap/01_score_breakdown_and_strategy/" class="mobile-card-item mobile-item-toeic">
+            <span class="mobile-card-icon toeic-bg">🎯</span>
+            <div class="mobile-card-info">
+              <span class="mobile-card-title">TOEIC Exam 800+ Hub</span>
+              <span class="mobile-card-sub">75 Tests • 10-Week Roadmap</span>
+            </div>
+            <span class="mobile-card-badge badge-toeic">75 Ch</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Nav Links -->
+      <div class="mobile-quick-links">
+        <a href="/roadmaps/" class="mobile-quick-link">
+          <span class="quick-link-left">
+            <span>🗺️</span>
+            <span>Engineering Roadmaps</span>
+          </span>
+          <span class="quick-link-arrow">→</span>
+        </a>
+        <a href="/curriculum/" class="mobile-quick-link">
+          <span class="quick-link-left">
+            <span>📋</span>
+            <span>Complete 515+ Curriculum</span>
+          </span>
+          <span class="quick-link-arrow">→</span>
+        </a>
+      </div>
+
       <div class="mobile-actions">
-        <button type="button" class="mobile-cta-btn" id="mobileOpenTrackModalBtn">Start Learning ↗ (Choose Track)</button>
+        <button type="button" class="mobile-cta-btn" id="mobileOpenTrackModalBtn">
+          Choose Learning Track ↗
+        </button>
       </div>
     </div>
   </div>
@@ -205,9 +459,131 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
       </div>
 
       <div class="track-modal-body">
-        <!-- Group 1: Certifications & Languages -->
+        <!-- Group 1: Software & Database Engineering (4 tracks, 2x2 grid) -->
         <div class="modal-group-title">
-          <span>⛩️ LANGUAGES &amp; CERTIFICATIONS</span>
+          <span>💻 SOFTWARE &amp; DATABASE ENGINEERING</span>
+          <span class="modal-group-pill">5 CORE TRACKS</span>
+        </div>
+        <div class="modal-tracks-grid">
+          <a href="/php/00_overview/" class="track-select-card card-featured-php">
+            <div class="card-icon-part">🐘</div>
+            <div class="card-info-part">
+              <div class="card-top-row">
+                <span class="card-name">PHP Core &amp; Patterns</span>
+                <span class="badge-new-pulse" style="background:#7c3aed; color:#fff;">24 CH</span>
+              </div>
+              <p class="card-sub">3 Sections • 24 Chapters • PHP 8.x, OOP, MVC, GoF Patterns &amp; Enterprise Caching</p>
+            </div>
+            <div class="card-action-part" style="color:#7c3aed;">Start PHP →</div>
+          </a>
+
+          <a href="/javascript/00_overview/" class="track-select-card card-featured-js">
+            <div class="card-icon-part">⚡</div>
+            <div class="card-info-part">
+              <div class="card-top-row">
+                <span class="card-name">Modern JavaScript (ES6+ to V8)</span>
+                <span class="badge-new-pulse" style="background:#ca8a04; color:#fff;">13 CH</span>
+              </div>
+              <p class="card-sub">2 Sections • 13 Chapters • V8 Engine, Event Loop, Closures, Promises &amp; Async/Await</p>
+            </div>
+            <div class="card-action-part" style="color:#ca8a04;">Start JS →</div>
+          </a>
+
+          <a href="/laravel/00_overview/" class="track-select-card card-featured-laravel">
+            <div class="card-icon-part">🔺</div>
+            <div class="card-info-part">
+              <div class="card-top-row">
+                <span class="card-name">Laravel Enterprise Architecture</span>
+                <span class="badge-new-pulse" style="background:#ef4444; color:#fff;">20 CH</span>
+              </div>
+              <p class="card-sub">3 Sections • 20 Chapters • IoC Container, Eloquent, Queues, Sanctum &amp; Cloud Scaling</p>
+            </div>
+            <div class="card-action-part" style="color:#ef4444;">Start Laravel →</div>
+          </a>
+
+          <a href="/mysql/00_overview/" class="track-select-card card-featured-mysql">
+            <div class="card-icon-part">🗄️</div>
+            <div class="card-info-part">
+              <div class="card-top-row">
+                <span class="card-name">MySQL Production Database</span>
+                <span class="badge-new-pulse" style="background:#00758f; color:#fff;">21 CH</span>
+              </div>
+              <p class="card-sub">3 Sections • 21 Chapters • InnoDB Internals, Indexing, EXPLAIN, HA &amp; Partitioning</p>
+            </div>
+            <div class="card-action-part" style="color:#00758f;">Start MySQL →</div>
+          </a>
+
+          <a href="/java/00_overview/" class="track-select-card card-featured-java">
+            <div class="card-icon-part">☕</div>
+            <div class="card-info-part">
+              <div class="card-top-row">
+                <span class="card-name">Java Enterprise Architecture</span>
+                <span class="badge-new-pulse" style="background:#ea580c; color:#fff;">15 CH</span>
+              </div>
+              <p class="card-sub">3 Sections • 15 Chapters • JVM Memory, OOP Deep Dive, Concurrency &amp; Spring Boot</p>
+            </div>
+            <div class="card-action-part" style="color:#ea580c;">Start Java →</div>
+          </a>
+        </div>
+
+        <!-- Group 2: Cloud, DevOps & Infrastructure (4 tracks, 2x2 grid) -->
+        <div class="modal-group-title" style="margin-top: 1.25rem;">
+          <span>☁️ CLOUD, DEVOPS &amp; INFRASTRUCTURE</span>
+          <span class="modal-group-pill">PRODUCTION GRADE</span>
+        </div>
+        <div class="modal-tracks-grid">
+          <a href="/aws/00_overview/" class="track-select-card card-featured-aws">
+            <div class="card-icon-part">☁️</div>
+            <div class="card-info-part">
+              <div class="card-top-row">
+                <span class="card-name">AWS Cloud &amp; DevOps Labs</span>
+                <span class="badge-new-pulse" style="background:#f59e0b; color:#fff;">48 LABS</span>
+              </div>
+              <p class="card-sub">4 Sections • 48 Chapters • VPC, EC2, ECS, Terraform, SAA-C03 &amp; Japanese Genba IT Labs</p>
+            </div>
+            <div class="card-action-part" style="color:#f59e0b;">Start AWS →</div>
+          </a>
+
+          <a href="/devops/00_overview/" class="track-select-card card-featured-devops">
+            <div class="card-icon-part">🐳</div>
+            <div class="card-info-part">
+              <div class="card-top-row">
+                <span class="card-name">Docker &amp; DevOps Cloud</span>
+                <span class="badge-new-pulse" style="background:#0ea5e9; color:#fff;">46 CH</span>
+              </div>
+              <p class="card-sub">2 Sections • 46 Chapters • Multi-stage, Compose, Kubernetes, Helm Charts &amp; GitOps</p>
+            </div>
+            <div class="card-action-part" style="color:#0ea5e9;">Start DevOps →</div>
+          </a>
+
+          <a href="/eccube/00_overview/" class="track-select-card card-featured-eccube">
+            <div class="card-icon-part">🛍️</div>
+            <div class="card-info-part">
+              <div class="card-top-row">
+                <span class="card-name">EC-CUBE 4 Special Enterprise</span>
+                <span class="badge-new-pulse" style="background:#10b981; color:#fff;">217 CH</span>
+              </div>
+              <p class="card-sub">5 Sections • 217 Lessons • Symfony Architecture, DB Internals, 40 Tasks &amp; 17 Requirements</p>
+            </div>
+            <div class="card-action-part" style="color:#10b981;">Start EC-CUBE →</div>
+          </a>
+
+          <a href="/networking/00_overview/" class="track-select-card" style="border: 1px solid rgba(14, 165, 233, 0.35); background: rgba(14, 165, 233, 0.05);">
+            <div class="card-icon-part">🌐</div>
+            <div class="card-info-part">
+              <div class="card-top-row">
+                <span class="card-name">Networking &amp; Cloud Automation</span>
+                <span class="badge-new-pulse" style="background:#0284c7; color:#fff;">6 GUIDES</span>
+              </div>
+              <p class="card-sub">1 Section • 6 Chapters • OSI 7 Layers, TCP/IP, CIDR/VLSM Math &amp; Terraform Automation</p>
+            </div>
+            <div class="card-action-part" style="color:#0284c7;">Start Network →</div>
+          </a>
+        </div>
+
+        <!-- Group 3: Languages & High-Income Certifications (4 tracks, 2x2 grid) -->
+        <div class="modal-group-title" style="margin-top: 1.25rem;">
+          <span>⛩️ LANGUAGES &amp; HIGH-INCOME CERTIFICATIONS</span>
           <span class="modal-group-pill">HIGH DEMAND</span>
         </div>
         <div class="modal-tracks-grid">
@@ -218,7 +594,7 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
                 <span class="card-name">Japanese N1 Grammar</span>
                 <span class="badge-new-pulse">N1 GRAMMAR</span>
               </div>
-              <p class="card-sub">N1 Grammar Rules (Burmese &amp; Romaji), Time, Cause, Limits, Concession, Archaic Forms &amp; Star Questions</p>
+              <p class="card-sub">3 Sections • 10 Chapters • N1 Grammar Rules, Romaji, Burmese &amp; Star Questions</p>
             </div>
             <div class="card-action-part">Start Grammar →</div>
           </a>
@@ -230,7 +606,7 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
                 <span class="card-name">Japanese N1 Vocab (570+)</span>
                 <span class="badge-new-pulse" style="background:#0284c7;">570+ VOCAB</span>
               </div>
-              <p class="card-sub">High-Freq Verbs, Nouns, Adjectives, Adverbs, 四字熟語, Onomatopoeia, Confusing Nuances &amp; IT Lexicon</p>
+              <p class="card-sub">2 Sections • 10 Chapters • High-Freq Verbs, Nouns, 四字熟語, Mimetics &amp; IT Lexicon</p>
             </div>
             <div class="card-action-part" style="color:#0284c7;">Start Vocab →</div>
           </a>
@@ -239,24 +615,12 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
             <div class="card-icon-part">🈸</div>
             <div class="card-info-part">
               <div class="card-top-row">
-                <span class="card-name">Japanese N1 Kanji (Burmese &amp; Romaji)</span>
+                <span class="card-name">Japanese N1 Kanji</span>
                 <span class="badge-new-pulse" style="background:#e11d48;">N1 KANJI</span>
               </div>
-              <p class="card-sub">High-Freq Kanji, Radicals, Ateji, Yojijukugo, IT Genba Kanji &amp; JLPT Exam Reading Tests</p>
+              <p class="card-sub">2 Sections • 10 Chapters • Radicals, Ateji Special Readings, Yojijukugo &amp; Real Tests</p>
             </div>
             <div class="card-action-part" style="color:#e11d48;">Start Kanji →</div>
-          </a>
-
-          <a href="/aws/00_overview/" class="track-select-card card-featured-aws">
-            <div class="card-icon-part">☁️</div>
-            <div class="card-info-part">
-              <div class="card-top-row">
-                <span class="card-name">AWS Cloud &amp; DevOps Labs</span>
-                <span class="badge-new-pulse" style="background:#f59e0b; color:#fff;">REAL LABS</span>
-              </div>
-              <p class="card-sub">47 In-Depth Labs • VPC, IAM, EC2, RDS, Fargate, SAA-C03, Terraform &amp; Japanese Genba IT Scenarios</p>
-            </div>
-            <div class="card-action-part" style="color:#f59e0b;">Start AWS →</div>
           </a>
 
           <a href="/toeic/00_study_plan_roadmap/01_score_breakdown_and_strategy/" class="track-select-card card-featured-toeic">
@@ -266,78 +630,15 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
                 <span class="card-name">TOEIC Exam 800+ Hub</span>
                 <span class="badge-subtle">800+ SCORE</span>
               </div>
-              <p class="card-sub">10-Week Roadmap, 10s Grammar Secrets, Essential 800 Vocab &amp; 26 Real Exam Simulations</p>
+              <p class="card-sub">7 Sections • 75 Chapters • 10-Week Roadmap, 10s Grammar Secrets &amp; 26 Simulation Tests</p>
             </div>
             <div class="card-action-part" style="color:#0891b2;">Start TOEIC →</div>
-          </a>
-        </div>
-
-        <!-- Group 2: Software Engineering Tracks -->
-        <div class="modal-group-title" style="margin-top: 1.25rem;">
-          <span>💻 SOFTWARE ENGINEERING &amp; CLOUD ARCHITECTURE</span>
-        </div>
-        <div class="modal-tracks-grid grid-compact">
-          <a href="/php/01_variables/" class="track-select-card card-featured-php">
-            <div class="card-icon-part">🐘</div>
-            <div class="card-info-part">
-              <div class="card-name">PHP Core &amp; Patterns</div>
-              <p class="card-sub">14 Chapters • PHP 8.x, OOP, MVC &amp; GoF Patterns</p>
-            </div>
-            <div class="card-action-part" style="color:#7c3aed;">Start →</div>
-          </a>
-          <a href="/javascript/01_introduction_and_runtime/" class="track-select-card card-featured-js">
-            <div class="card-icon-part">⚡</div>
-            <div class="card-info-part">
-              <div class="card-name">Modern JavaScript</div>
-              <p class="card-sub">13 Chapters • V8 Engine, Event Loop, Async/Await</p>
-            </div>
-            <div class="card-action-part" style="color:#ca8a04;">Start →</div>
-          </a>
-          <a href="/laravel/01_intro_and_request_lifecycle/" class="track-select-card card-featured-laravel">
-            <div class="card-icon-part">🔺</div>
-            <div class="card-info-part">
-              <div class="card-name">Laravel Enterprise</div>
-              <p class="card-sub">20 Chapters • IoC, Eloquent, Queues, Security</p>
-            </div>
-            <div class="card-action-part" style="color:#ef4444;">Start →</div>
-          </a>
-          <a href="/mysql/00_beginner_mysql_core_concepts_and_real_work_guide/" class="track-select-card card-featured-mysql">
-            <div class="card-icon-part">🗄️</div>
-            <div class="card-info-part">
-              <div class="card-name">MySQL Production</div>
-              <p class="card-sub">21 Chapters • InnoDB, Indexing, EXPLAIN, HA</p>
-            </div>
-            <div class="card-action-part" style="color:#00758f;">Start →</div>
-          </a>
-          <a href="/devops/01_docker_core/01-docker-fundamentals-and-architecture/" class="track-select-card card-featured-devops">
-            <div class="card-icon-part">🐳</div>
-            <div class="card-info-part">
-              <div class="card-name">Docker &amp; DevOps Cloud</div>
-              <p class="card-sub">30+ Modules • Multi-stage, Compose, Kubernetes</p>
-            </div>
-            <div class="card-action-part" style="color:#0ea5e9;">Start →</div>
-          </a>
-          <a href="/networking/00_overview/" class="track-select-card" style="border: 1px solid rgba(14, 165, 233, 0.3);">
-            <div class="card-icon-part">🌐</div>
-            <div class="card-info-part">
-              <div class="card-name">Networking &amp; Cloud Automation</div>
-              <p class="card-sub">OSI 7 Layers, TCP/IP, CIDR/VLSM Math &amp; Terraform VPC</p>
-            </div>
-            <div class="card-action-part" style="color:#0284c7;">Start →</div>
-          </a>
-          <a href="/eccube/01_basics/01-introduction/01-what-is-ec-cube/" class="track-select-card card-featured-eccube">
-            <div class="card-icon-part">🛍️</div>
-            <div class="card-info-part">
-              <div class="card-name">EC-CUBE 4 Enterprise</div>
-              <p class="card-sub">60+ Modules • Symfony, Doctrine, 40+ Client Tasks</p>
-            </div>
-            <div class="card-action-part" style="color:#10b981;">Start →</div>
           </a>
         </div>
       </div>
 
       <div class="track-modal-footer">
-        <a href="/curriculum/" class="modal-footer-link">📋 Complete 420+ Curriculum Index →</a>
+        <a href="/curriculum/" class="modal-footer-link">📋 Complete 515+ Curriculum Index →</a>
         <a href="/roadmaps/" class="modal-footer-link">🗺️ Engineering Roadmaps →</a>
       </div>
     </div>
@@ -346,7 +647,7 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
 <script is:inline>
   (function() {
     function detectSector() {
-      var m = window.location.pathname.match(/\/(japanese-grammar|japanese-vocab|japanese-kanji|aws|php|javascript|laravel|mysql|devops|eccube|toeic)\b/);
+      var m = window.location.pathname.match(/\/(japanese-grammar|japanese-vocab|japanese-kanji|aws|php|javascript|laravel|mysql|devops|eccube|toeic|java)\b/);
       if (m) {
         document.documentElement.setAttribute('data-sector', m[1]);
       } else {
@@ -455,10 +756,19 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
   .learnstack-navbar {
     width: 100%;
     height: 4.25rem;
-    background: var(--sl-color-bg);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--sl-color-hairline);
-    position: relative;
+    position: sticky;
+    top: 0;
     z-index: 100;
+    transition: background 0.2s ease, border-color 0.2s ease;
+  }
+
+  :root[data-theme='dark'] .learnstack-navbar {
+    background: rgba(15, 23, 42, 0.92);
+    border-bottom-color: rgba(255, 255, 255, 0.08);
   }
 
   .nav-container {
@@ -500,6 +810,15 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
     color: var(--sl-color-gray-1) !important;
     font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
     min-width: 0;
+    transition: all 0.2s ease;
+  }
+
+  .brand-link:hover .brand-title {
+    color: #ff5b00;
+  }
+
+  .brand-link:hover .brand-icon {
+    transform: scale(1.08);
   }
 
   .brand-icon {
@@ -507,6 +826,7 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
   .brand-title {
@@ -515,6 +835,7 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
     letter-spacing: -0.03em;
     color: var(--sl-color-gray-1);
     white-space: nowrap;
+    transition: color 0.18s ease;
   }
 
   @media (min-width: 640px) {
@@ -537,7 +858,7 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
   .desktop-nav {
     display: none;
     align-items: center;
-    gap: clamp(0.85rem, 1.5vw, 1.5rem);
+    gap: clamp(0.5rem, 1.2vw, 1rem);
   }
 
   @media (min-width: 900px) {
@@ -552,26 +873,29 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
   }
 
   .dropdown-trigger {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 0.4rem;
+    height: 38px;
+    box-sizing: border-box;
     background: transparent;
-    border: none;
+    border: 1px solid transparent;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
     font-size: 0.92rem;
     font-weight: 600;
     color: var(--sl-color-gray-2);
-    padding: 0.5rem 0.75rem;
-    border-radius: 8px;
-    transition: all 0.2s ease;
+    padding: 0 0.85rem;
+    border-radius: 9999px;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
   .dropdown-trigger:hover,
   .nav-dropdown-wrapper.is-open .dropdown-trigger,
   .nav-dropdown-wrapper:hover .dropdown-trigger {
-    color: #ff5b00;
-    background: var(--sl-color-hairline);
+    color: #ff5b00 !important;
+    background: rgba(255, 91, 0, 0.08);
+    border-color: rgba(255, 91, 0, 0.18);
   }
 
   .chevron-icon {
@@ -587,20 +911,21 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
   .mega-menu {
     position: absolute;
     top: calc(100% + 0.5rem);
-    left: 0;
-    width: min(660px, calc(100vw - 2.5rem));
-    max-width: 660px;
+    left: clamp(-160px, calc(100vw - 180px - 880px), 0px);
+    width: 860px;
+    max-width: calc(100vw - 2rem);
     background: var(--sl-color-bg);
     border: 1px solid var(--sl-color-hairline);
     border-radius: 14px;
-    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.25), 0 0 1px 1px rgba(0, 0, 0, 0.06);
-    padding: 1.5rem;
+    box-shadow: 0 20px 45px -12px rgba(0, 0, 0, 0.28), 0 0 1px 1px rgba(0, 0, 0, 0.08);
+    padding: 1.15rem 1.25rem;
     opacity: 0;
     visibility: hidden;
     transform: translateY(8px);
     transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
     pointer-events: none;
     z-index: 200;
+    box-sizing: border-box;
   }
 
   .nav-dropdown-wrapper:hover .mega-menu,
@@ -613,43 +938,116 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
 
   .mega-menu-inner {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    width: 100%;
+    box-sizing: border-box;
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: 900px) {
     .mega-menu {
+      width: min(640px, calc(100vw - 2rem));
       padding: 1rem;
     }
     .mega-menu-inner {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 1fr;
       gap: 1rem;
     }
   }
 
+  @media (max-width: 580px) {
+    .mega-menu-inner {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .menu-column {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
   .column-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-family: 'Poppins', sans-serif;
+    margin-bottom: 0.5rem;
+    padding: 0 0.35rem;
+    min-width: 0;
+  }
+
+  .col-header-left {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    min-width: 0;
+  }
+
+  .col-header-icon {
+    font-size: 0.95rem;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+
+  .col-header-text {
     font-size: 0.72rem;
     font-weight: 700;
-    letter-spacing: 0.06em;
-    color: var(--sl-color-gray-4);
-    margin-bottom: 0.75rem;
-    padding-left: 0.5rem;
+    letter-spacing: 0.05em;
+    color: var(--sl-color-gray-3);
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .col-header-pill {
+    font-size: 0.58rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    padding: 0.12rem 0.45rem;
+    border-radius: 9999px;
+    background: var(--sl-color-hairline);
+    color: var(--sl-color-gray-3);
+    border: 1px solid var(--sl-color-hairline);
+    white-space: nowrap;
+    flex-shrink: 0;
   }
 
   .course-menu-item {
     display: flex;
     align-items: center;
-    gap: 0.85rem;
-    padding: 0.65rem 0.75rem;
+    gap: 0.65rem;
+    padding: 0.5rem 0.6rem;
     border-radius: 10px;
     text-decoration: none !important;
-    transition: background 0.15s ease;
+    transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    border: 1px solid transparent;
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .course-menu-item:hover {
-    background: var(--sl-color-hairline);
+    transform: translateX(3px);
   }
+
+  /* Beautiful card-specific hover tints and borders */
+  .item-php:hover { background: rgba(124, 58, 237, 0.08) !important; border-color: rgba(124, 58, 237, 0.25) !important; }
+  .item-js:hover { background: rgba(202, 138, 4, 0.08) !important; border-color: rgba(202, 138, 4, 0.25) !important; }
+  .item-laravel:hover { background: rgba(239, 68, 68, 0.08) !important; border-color: rgba(239, 68, 68, 0.25) !important; }
+  .item-mysql:hover { background: rgba(0, 117, 143, 0.08) !important; border-color: rgba(0, 117, 143, 0.25) !important; }
+  .item-devops:hover { background: rgba(14, 165, 233, 0.08) !important; border-color: rgba(14, 165, 233, 0.25) !important; }
+  .item-aws:hover { background: rgba(245, 158, 11, 0.08) !important; border-color: rgba(245, 158, 11, 0.25) !important; }
+  .item-net:hover { background: rgba(2, 132, 199, 0.08) !important; border-color: rgba(2, 132, 199, 0.25) !important; }
+  .item-eccube:hover { background: rgba(16, 185, 129, 0.08) !important; border-color: rgba(16, 185, 129, 0.25) !important; }
+  .item-jg:hover { background: rgba(220, 38, 38, 0.08) !important; border-color: rgba(220, 38, 38, 0.25) !important; }
+  .item-jv:hover { background: rgba(2, 132, 199, 0.08) !important; border-color: rgba(2, 132, 199, 0.25) !important; }
+  .item-jk:hover { background: rgba(225, 29, 72, 0.08) !important; border-color: rgba(225, 29, 72, 0.25) !important; }
+  .item-toeic:hover { background: rgba(8, 145, 178, 0.08) !important; border-color: rgba(8, 145, 178, 0.25) !important; }
+  .item-java:hover { background: rgba(234, 88, 12, 0.08) !important; border-color: rgba(234, 88, 12, 0.25) !important; }
 
   .item-icon-box {
     width: 36px;
@@ -661,33 +1059,93 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
     font-size: 1.15rem;
     flex-shrink: 0;
     background: var(--sl-color-hairline);
+    transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .course-menu-item:hover .item-icon-box {
+    transform: scale(1.1) translateY(-1px);
   }
 
   .item-text {
     display: flex;
     flex-direction: column;
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .item-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.35rem;
+    width: 100%;
+    min-width: 0;
   }
 
   .item-title {
     font-family: 'Poppins', sans-serif;
-    font-size: 0.88rem;
+    font-size: 0.84rem;
     font-weight: 600;
     color: var(--sl-color-gray-1);
+    line-height: 1.25;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: color 0.15s ease;
+  }
+
+  .item-badge {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.6rem;
+    font-weight: 700;
+    padding: 0.1rem 0.35rem;
+    border-radius: 4px;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+    flex-shrink: 0;
     line-height: 1.3;
   }
 
-  .course-menu-item:hover .item-title {
-    color: #ff5b00;
+  .item-hover-arrow {
+    font-size: 0.85rem;
+    color: var(--sl-color-gray-4);
+    opacity: 0;
+    transform: translateX(-4px);
+    transition: all 0.18s ease;
+    flex-shrink: 0;
+    font-weight: 600;
   }
+
+  .course-menu-item:hover .item-hover-arrow {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .item-php:hover .item-hover-arrow { color: #7c3aed; }
+  .item-js:hover .item-hover-arrow { color: #ca8a04; }
+  .item-laravel:hover .item-hover-arrow { color: #ef4444; }
+  .item-mysql:hover .item-hover-arrow { color: #00758f; }
+  .item-devops:hover .item-hover-arrow { color: #0ea5e9; }
+  .item-aws:hover .item-hover-arrow { color: #f59e0b; }
+  .item-net:hover .item-hover-arrow { color: #0284c7; }
+  .item-eccube:hover .item-hover-arrow { color: #10b981; }
+  .item-jg:hover .item-hover-arrow { color: #dc2626; }
+  .item-jv:hover .item-hover-arrow { color: #0284c7; }
+  .item-jk:hover .item-hover-arrow { color: #e11d48; }
+  .item-toeic:hover .item-hover-arrow { color: #0891b2; }
+  .item-java:hover .item-hover-arrow { color: #ea580c; }
 
   .course-menu-item[href*="/japanese-grammar/"]:hover .item-title { color: #dc2626 !important; }
   .course-menu-item[href*="/japanese-vocab/"]:hover .item-title { color: #0284c7 !important; }
   .course-menu-item[href*="/japanese-kanji/"]:hover .item-title { color: #e11d48 !important; }
   .course-menu-item[href*="/aws/"]:hover .item-title { color: #f59e0b !important; }
+  .course-menu-item[href*="/networking/"]:hover .item-title { color: #0284c7 !important; }
   .course-menu-item[href*="/php/"]:hover .item-title { color: #7c3aed !important; }
   .course-menu-item[href*="/javascript/"]:hover .item-title { color: #ca8a04 !important; }
   .course-menu-item[href*="/laravel/"]:hover .item-title { color: #ef4444 !important; }
   .course-menu-item[href*="/mysql/"]:hover .item-title { color: #00758f !important; }
+  .course-menu-item[href*="/java/"]:hover .item-title { color: #ea580c !important; }
   .course-menu-item[href*="/devops/"]:hover .item-title { color: #0ea5e9 !important; }
   .course-menu-item[href*="/eccube/"]:hover .item-title { color: #10b981 !important; }
   .course-menu-item[href*="/toeic/"]:hover .item-title { color: #0891b2 !important; }
@@ -696,34 +1154,77 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
   :root[data-theme='dark'] .course-menu-item[href*="/japanese-vocab/"]:hover .item-title { color: #38bdf8 !important; }
   :root[data-theme='dark'] .course-menu-item[href*="/japanese-kanji/"]:hover .item-title { color: #fb7185 !important; }
   :root[data-theme='dark'] .course-menu-item[href*="/aws/"]:hover .item-title { color: #fbbf24 !important; }
+  :root[data-theme='dark'] .course-menu-item[href*="/networking/"]:hover .item-title { color: #38bdf8 !important; }
   :root[data-theme='dark'] .course-menu-item[href*="/php/"]:hover .item-title { color: #a78bfa !important; }
   :root[data-theme='dark'] .course-menu-item[href*="/javascript/"]:hover .item-title { color: #facc15 !important; }
   :root[data-theme='dark'] .course-menu-item[href*="/laravel/"]:hover .item-title { color: #f87171 !important; }
   :root[data-theme='dark'] .course-menu-item[href*="/mysql/"]:hover .item-title { color: #38bdf8 !important; }
+  :root[data-theme='dark'] .course-menu-item[href*="/java/"]:hover .item-title { color: #fb923c !important; }
   :root[data-theme='dark'] .course-menu-item[href*="/devops/"]:hover .item-title { color: #38bdf8 !important; }
   :root[data-theme='dark'] .course-menu-item[href*="/eccube/"]:hover .item-title { color: #34d399 !important; }
   :root[data-theme='dark'] .course-menu-item[href*="/toeic/"]:hover .item-title { color: #22d3ee !important; }
 
+  /* Badges */
+  .badge-php { background: rgba(124, 58, 237, 0.12); color: #7c3aed; }
+  .badge-js { background: rgba(202, 138, 4, 0.12); color: #b45309; }
+  .badge-laravel { background: rgba(239, 68, 68, 0.12); color: #dc2626; }
+  .badge-mysql { background: rgba(0, 117, 143, 0.12); color: #00758f; }
+  .badge-java { background: rgba(234, 88, 12, 0.12); color: #c2410c; }
+  .badge-devops { background: rgba(14, 165, 233, 0.12); color: #0284c7; }
+  .badge-aws { background: rgba(245, 158, 11, 0.15); color: #d97706; }
+  .badge-net { background: rgba(2, 132, 199, 0.12); color: #0284c7; }
+  .badge-eccube { background: rgba(16, 185, 129, 0.12); color: #059669; }
+  .badge-jg { background: rgba(220, 38, 38, 0.12); color: #dc2626; }
+  .badge-jv { background: rgba(2, 132, 199, 0.12); color: #0284c7; }
+  .badge-jk { background: rgba(225, 29, 72, 0.12); color: #e11d48; }
+  .badge-toeic { background: rgba(8, 145, 178, 0.12); color: #0891b2; }
+
+  :root[data-theme='dark'] .badge-php { color: #a78bfa; background: rgba(124, 58, 237, 0.2); }
+  :root[data-theme='dark'] .badge-js { color: #fbbf24; background: rgba(202, 138, 4, 0.2); }
+  :root[data-theme='dark'] .badge-laravel { color: #f87171; background: rgba(239, 68, 68, 0.2); }
+  :root[data-theme='dark'] .badge-mysql { color: #38bdf8; background: rgba(0, 117, 143, 0.25); }
+  :root[data-theme='dark'] .badge-java { color: #fb923c; background: rgba(234, 88, 12, 0.2); }
+  :root[data-theme='dark'] .badge-devops { color: #38bdf8; background: rgba(14, 165, 233, 0.2); }
+  :root[data-theme='dark'] .badge-aws { color: #fbbf24; background: rgba(245, 158, 11, 0.2); }
+  :root[data-theme='dark'] .badge-net { color: #38bdf8; background: rgba(2, 132, 199, 0.2); }
+  :root[data-theme='dark'] .badge-eccube { color: #34d399; background: rgba(16, 185, 129, 0.2); }
+  :root[data-theme='dark'] .badge-jg { color: #f87171; background: rgba(220, 38, 38, 0.2); }
+  :root[data-theme='dark'] .badge-jv { color: #38bdf8; background: rgba(2, 132, 199, 0.2); }
+  :root[data-theme='dark'] .badge-jk { color: #fb7185; background: rgba(225, 29, 72, 0.2); }
+  :root[data-theme='dark'] .badge-toeic { color: #22d3ee; background: rgba(8, 145, 178, 0.2); }
+
+  /* Backgrounds */
   .php-bg { background: rgba(124, 58, 237, 0.12) !important; border: 1px solid rgba(124, 58, 237, 0.25) !important; }
   .js-bg { background: rgba(202, 138, 4, 0.12) !important; border: 1px solid rgba(202, 138, 4, 0.25) !important; }
   .laravel-bg { background: rgba(239, 68, 68, 0.12) !important; border: 1px solid rgba(239, 68, 68, 0.25) !important; }
   .mysql-bg { background: rgba(0, 117, 143, 0.12) !important; border: 1px solid rgba(0, 117, 143, 0.25) !important; }
+  .java-bg { background: rgba(234, 88, 12, 0.12) !important; border: 1px solid rgba(234, 88, 12, 0.25) !important; }
   .devops-bg { background: rgba(14, 165, 233, 0.12) !important; border: 1px solid rgba(14, 165, 233, 0.25) !important; }
+  .aws-bg { background: rgba(245, 158, 11, 0.15) !important; border: 1px solid rgba(245, 158, 11, 0.25) !important; }
+  .net-bg { background: rgba(2, 132, 199, 0.12) !important; border: 1px solid rgba(2, 132, 199, 0.25) !important; }
   .eccube-bg { background: rgba(16, 185, 129, 0.12) !important; border: 1px solid rgba(16, 185, 129, 0.25) !important; }
   .toeic-bg { background: rgba(8, 145, 178, 0.12) !important; border: 1px solid rgba(8, 145, 178, 0.25) !important; }
   .japanese-bg { background: rgba(220, 38, 38, 0.12) !important; border: 1px solid rgba(220, 38, 38, 0.25) !important; }
   .vocab-bg { background: rgba(2, 132, 199, 0.12) !important; border: 1px solid rgba(2, 132, 199, 0.25) !important; }
+  .kanji-bg { background: rgba(225, 29, 72, 0.12) !important; border: 1px solid rgba(225, 29, 72, 0.25) !important; }
 
   .item-desc {
     font-family: 'Poppins', sans-serif;
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     color: var(--sl-color-gray-3);
     line-height: 1.25;
     margin-top: 0.15rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .menu-footer-callout {
-    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 0.85rem;
     padding-top: 0.75rem;
     border-top: 1px solid var(--sl-color-hairline);
   }
@@ -732,43 +1233,78 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 0.5rem;
     font-family: 'Poppins', sans-serif;
-    font-size: 0.82rem;
+    font-size: 0.78rem;
     font-weight: 600;
     color: #ff5b00 !important;
     text-decoration: none !important;
-    padding: 0.4rem 0.5rem;
-    border-radius: 6px;
+    padding: 0.45rem 0.75rem;
+    border-radius: 8px;
+    background: rgba(255, 91, 0, 0.05);
+    border: 1px solid rgba(255, 91, 0, 0.15);
+    transition: all 0.18s ease;
   }
 
   .callout-link:hover {
-    text-decoration: underline !important;
+    background: rgba(255, 91, 0, 0.12);
+    border-color: rgba(255, 91, 0, 0.35);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(255, 91, 0, 0.12);
+  }
+
+  .callout-link-left {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .callout-icon {
+    font-size: 0.88rem;
+  }
+
+  .callout-arrow {
+    transition: transform 0.15s ease;
+  }
+
+  .callout-link:hover .callout-arrow {
+    transform: translateX(3px);
   }
 
   .nav-direct-link {
     font-family: 'Poppins', sans-serif;
     font-size: 0.92rem;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--sl-color-gray-2);
     text-decoration: none !important;
-    transition: color 0.15s ease;
+    height: 38px;
+    box-sizing: border-box;
+    padding: 0 0.85rem;
+    border-radius: 9999px;
+    border: 1px solid transparent;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    display: inline-flex;
+    align-items: center;
   }
 
   .nav-direct-link:hover {
-    color: #ff5b00;
+    color: #ff5b00 !important;
+    background: rgba(255, 91, 0, 0.08);
+    border-color: rgba(255, 91, 0, 0.18);
+    transform: translateY(-1px);
   }
 
   /* Right Action Elements */
   .nav-right {
     display: flex;
     align-items: center;
-    gap: 0.4rem;
+    gap: 0.5rem;
     flex-shrink: 0;
   }
 
   @media (min-width: 640px) {
     .nav-right {
-      gap: 0.75rem;
+      gap: 0.65rem;
     }
   }
 
@@ -792,83 +1328,131 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
   .theme-box :global(label) {
     --sl-select-width: auto;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    border: 1px solid var(--sl-color-hairline);
-    background: var(--sl-color-bg);
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 38px !important;
+    box-sizing: border-box !important;
+    border-radius: 9999px !important;
+    border: 1px solid var(--sl-color-hairline) !important;
+    background: var(--sl-color-bg) !important;
     cursor: pointer;
-    transition: all 0.15s ease;
+    padding: 0 0.75rem !important;
+    gap: 0.35rem !important;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
   }
 
   .theme-box :global(label:hover) {
-    border-color: #ff5b00;
+    border-color: #ff5b00 !important;
+    background: rgba(255, 91, 0, 0.05) !important;
+    box-shadow: 0 2px 8px rgba(255, 91, 0, 0.15);
+    transform: translateY(-1px);
+  }
+
+  .theme-box :global(label:hover .label-icon),
+  .theme-box :global(label:hover .caret),
+  .theme-box :global(label:hover select) {
+    color: #ff5b00 !important;
+  }
+
+  .theme-box :global(.label-icon) {
+    position: static !important;
+    transform: none !important;
+    inset-inline-start: auto !important;
+    width: 16px !important;
+    height: 16px !important;
+    margin: 0 !important;
+    color: var(--sl-color-gray-3);
+    pointer-events: none;
+    flex-shrink: 0;
+    transition: color 0.18s ease;
+  }
+
+  .theme-box :global(.caret) {
+    position: static !important;
+    transform: none !important;
+    inset-inline-end: auto !important;
+    width: 14px !important;
+    height: 14px !important;
+    margin: 0 !important;
+    color: var(--sl-color-gray-3);
+    pointer-events: none;
+    flex-shrink: 0;
+    transition: color 0.18s ease;
+  }
+
+  .theme-box :global(select) {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.84rem;
+    font-weight: 500;
+    color: var(--sl-color-gray-2);
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    cursor: pointer;
+    padding: 0 0.15rem !important;
+    margin: 0 !important;
+    width: auto !important;
+    height: 100% !important;
+    appearance: none;
+    -webkit-appearance: none;
+    transition: color 0.18s ease;
   }
 
   @media (max-width: 640px) {
     .theme-box :global(label) {
-      width: 38px;
-      height: 38px;
-      padding: 0;
-      margin: 0;
+      width: 38px !important;
+      height: 38px !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      justify-content: center !important;
+      border-radius: 9999px !important;
     }
     .theme-box :global(.label-icon) {
-      width: 18px;
-      height: 18px;
-      margin: 0;
+      width: 18px !important;
+      height: 18px !important;
+      margin: 0 !important;
       color: var(--sl-color-gray-2);
-      pointer-events: none;
     }
     .theme-box :global(.caret) {
       display: none !important;
     }
     .theme-box :global(select) {
-      position: absolute;
-      inset: 0;
+      position: absolute !important;
+      inset: 0 !important;
       width: 100% !important;
       height: 100% !important;
-      opacity: 0;
-      padding: 0;
-      margin: 0;
+      opacity: 0 !important;
+      padding: 0 !important;
+      margin: 0 !important;
       cursor: pointer;
-      -webkit-appearance: none;
-      appearance: none;
     }
   }
 
-  @media (min-width: 641px) {
-    .theme-box :global(label) {
-      padding: 0.35rem 0.5rem 0.35rem 0.6rem;
-      gap: 0.35rem;
-    }
-    .theme-box :global(select) {
-      font-family: 'Poppins', sans-serif;
-      font-size: 0.82rem;
-      font-weight: 500;
-      color: var(--sl-color-gray-2);
-      background: transparent;
-      border: none;
-      cursor: pointer;
-      outline: none;
-    }
-  }
-
+  /* Start Learning CTA Button: Modern Gradient, No Gray Outlines */
   .nav-cta-btn {
     display: none;
     align-items: center;
     justify-content: center;
-    padding: 0.55rem 1.35rem;
-    background: #ff5b00;
+    gap: 0.35rem;
+    height: 38px;
+    box-sizing: border-box;
+    padding: 0 1.25rem;
+    background: linear-gradient(135deg, #ff6b1a 0%, #ff5b00 100%);
     color: #ffffff !important;
+    border: none !important;
+    outline: none !important;
     border-radius: 9999px;
     font-family: 'Poppins', sans-serif;
     font-size: 0.88rem;
     font-weight: 600;
     text-decoration: none !important;
-    box-shadow: 0 4px 12px rgba(255, 91, 0, 0.28);
-    transition: all 0.2s ease;
+    box-shadow: 0 4px 14px rgba(255, 91, 0, 0.32);
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
     white-space: nowrap;
+    cursor: pointer;
   }
 
   @media (min-width: 640px) {
@@ -878,9 +1462,14 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
   }
 
   .nav-cta-btn:hover {
-    background: #e65100;
-    transform: translateY(-1px);
-    box-shadow: 0 6px 16px rgba(255, 91, 0, 0.4);
+    background: linear-gradient(135deg, #ff7a2e 0%, #ea5200 100%);
+    transform: translateY(-1.5px);
+    box-shadow: 0 6px 18px rgba(255, 91, 0, 0.45);
+  }
+
+  .nav-cta-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(255, 91, 0, 0.25);
   }
 
   /* Mobile toggle */
@@ -890,7 +1479,7 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
     justify-content: center;
     background: transparent;
     border: 1px solid var(--sl-color-hairline);
-    border-radius: 8px;
+    border-radius: 9999px;
     width: 38px;
     height: 38px;
     cursor: pointer;
@@ -925,6 +1514,7 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
   .mobile-toggle-btn:hover {
     color: #ff5b00;
     border-color: #ff5b00;
+    background: var(--sl-color-hairline);
   }
 
   /* Mobile Drawer with iPhone Safe Area & Smooth Scrolling */
@@ -941,8 +1531,8 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
     overscroll-behavior: contain;
     background: var(--sl-color-bg);
     border-bottom: 1px solid var(--sl-color-hairline);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.18);
-    padding: 1.25rem 1rem max(2rem, env(safe-area-inset-bottom, 24px));
+    box-shadow: 0 16px 40px rgba(0,0,0,0.22);
+    padding: 1.15rem 1rem max(2rem, env(safe-area-inset-bottom, 24px));
     z-index: 150;
   }
 
@@ -956,41 +1546,155 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
     display: block;
   }
 
+  .mobile-section-group {
+    margin-bottom: 1.25rem;
+  }
+
   .mobile-section-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-family: 'Poppins', sans-serif;
     font-size: 0.72rem;
     font-weight: 700;
     letter-spacing: 0.05em;
     color: var(--sl-color-gray-4);
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.6rem;
+    padding: 0 0.25rem;
+  }
+
+  .mobile-section-pill {
+    font-size: 0.58rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    padding: 0.12rem 0.45rem;
+    border-radius: 9999px;
+    background: var(--sl-color-hairline);
+    color: var(--sl-color-gray-3);
+    border: 1px solid var(--sl-color-hairline);
   }
 
   .mobile-track-list {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.45rem;
   }
 
-  .mobile-nav-item {
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.95rem;
-    font-weight: 500;
-    color: var(--sl-color-gray-1);
-    text-decoration: none !important;
-    padding: 0.7rem 0.85rem;
-    min-height: 44px;
+  .mobile-card-item {
     display: flex;
     align-items: center;
-    border-radius: 8px;
+    gap: 0.75rem;
+    padding: 0.65rem 0.85rem;
+    min-height: 52px;
+    border-radius: 12px;
     background: var(--sl-color-hairline);
+    border: 1px solid transparent;
+    text-decoration: none !important;
+    transition: all 0.15s ease;
   }
 
-  .mobile-nav-item:hover {
-    color: #ff5b00;
+  .mobile-card-item:hover,
+  .mobile-card-item:active {
+    background: var(--sl-color-bg);
+    border-color: rgba(255, 91, 0, 0.3);
+    transform: scale(0.99);
+  }
+
+  .mobile-card-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem;
+    flex-shrink: 0;
+  }
+
+  .mobile-card-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .mobile-card-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--sl-color-gray-1);
+    line-height: 1.25;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .mobile-card-sub {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.72rem;
+    color: var(--sl-color-gray-3);
+    line-height: 1.2;
+    margin-top: 0.1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .mobile-card-badge {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.62rem;
+    font-weight: 700;
+    padding: 0.12rem 0.45rem;
+    border-radius: 6px;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .mobile-quick-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.65rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--sl-color-hairline);
+  }
+
+  .mobile-quick-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.65rem 0.85rem;
+    border-radius: 10px;
+    background: rgba(255, 91, 0, 0.06);
+    border: 1px solid rgba(255, 91, 0, 0.18);
+    color: #ff5b00 !important;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-decoration: none !important;
+  }
+
+  .mobile-quick-link:active {
+    background: rgba(255, 91, 0, 0.14);
+  }
+
+  .quick-link-left {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
+  .quick-link-arrow {
+    transition: transform 0.15s ease;
+  }
+
+  .mobile-quick-link:hover .quick-link-arrow {
+    transform: translateX(3px);
   }
 
   .mobile-actions {
-    margin-top: 1.25rem;
+    margin-top: 1.15rem;
   }
 
   .mobile-cta-btn {
@@ -999,8 +1703,8 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
     justify-content: center;
     width: 100%;
     padding: 0.75rem;
-    min-height: 44px;
-    background: #ff5b00;
+    min-height: 46px;
+    background: linear-gradient(135deg, #ff6b1a 0%, #ff5b00 100%);
     color: #ffffff !important;
     border-radius: 9999px;
     font-family: 'Poppins', sans-serif;
@@ -1008,7 +1712,14 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
     font-weight: 600;
     text-decoration: none !important;
     border: none;
+    outline: none;
     cursor: pointer;
+    box-shadow: 0 4px 14px rgba(255, 91, 0, 0.32);
+    transition: all 0.2s ease;
+  }
+
+  .mobile-cta-btn:active {
+    transform: scale(0.98);
   }
 
   /* Nav Japanese Highlight */
@@ -1272,6 +1983,15 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
     box-shadow: 0 8px 24px -6px rgba(0, 117, 143, 0.25);
   }
 
+  .card-featured-java {
+    background: rgba(234, 88, 12, 0.05);
+    border: 1.5px solid rgba(234, 88, 12, 0.35);
+  }
+  .card-featured-java:hover {
+    border-color: #ea580c;
+    box-shadow: 0 8px 24px -6px rgba(234, 88, 12, 0.25);
+  }
+
   .card-featured-devops {
     background: rgba(14, 165, 233, 0.05);
     border: 1.5px solid rgba(14, 165, 233, 0.35);
@@ -1381,6 +2101,14 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
   }
   .mobile-item-eccube:hover { background: rgba(16, 185, 129, 0.18) !important; }
 
+  .mobile-item-java {
+    background: rgba(234, 88, 12, 0.08) !important;
+    border: 1px solid rgba(234, 88, 12, 0.25) !important;
+    color: #ea580c !important;
+    font-weight: 600 !important;
+  }
+  .mobile-item-java:hover { background: rgba(234, 88, 12, 0.18) !important; }
+
   .card-icon-part {
     font-size: 1.65rem;
     flex-shrink: 0;
@@ -1419,6 +2147,7 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
   .card-featured-js:hover .card-name { color: #ca8a04; }
   .card-featured-laravel:hover .card-name { color: #ef4444; }
   .card-featured-mysql:hover .card-name { color: #00758f; }
+  .card-featured-java:hover .card-name { color: #ea580c; }
   .card-featured-devops:hover .card-name { color: #0ea5e9; }
   .card-featured-eccube:hover .card-name { color: #10b981; }
 

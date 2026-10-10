@@ -40,8 +40,18 @@
     },
     {
       "source": "/eccube",
-      "destination": "/eccube/01_basics/01-introduction/01-what-is-ec-cube/",
+      "destination": "/eccube/00_overview/",
       "permanent": false
+    },
+    {
+      "source": "/eccube/requirements",
+      "destination": "/eccube/requirements/readme/",
+      "permanent": false
+    },
+    {
+      "source": "/eccube/(03_order_management|04_payment|05_shipping|06_customer_management|07_security|08_campaign_coupon|api-integration|auth-permission|customization-list|email-management|event-subscriber|favorite-wishlist|line-marketing|performance|product-management|sales-reports|search-filter)/:path*",
+      "destination": "/eccube/requirements/$1/:path*",
+      "permanent": true
     },
     {
       "source": "/toeic",

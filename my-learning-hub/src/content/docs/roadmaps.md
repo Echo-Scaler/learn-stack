@@ -26,11 +26,11 @@ graph LR
 ```
 
 ### အဆင့်ဆင့် လေ့လာရမည့် အစီအစဉ်:
-1. **Frontend & Runtime Core**: [Modern JavaScript Track](/javascript/01_introduction_and_runtime/) မှ ES6+, Closures, Async/Await, DOM Manipulation နှင့် Event Loop ကို အရင်ဆုံး ကျွမ်းကျင်အောင် လေ့ကျင့်ပါ။
-2. **Backend Fundamentals**: [PHP Core & Design Patterns Track](/php/01_variables/) မှ PHP 8.x Features, OOP Architecture, MVC Pattern နှင့် Database PDO ဆက်သွယ်မှုများကို လေ့လာပါ။
-3. **Database Engineering**: [MySQL Production Database Track](/mysql/00_beginner_mysql_core_concepts_and_real_work_guide/) မှ InnoDB Engine, B-Tree Indexing, EXPLAIN Query Plan နှင့် ACID Transactions များကို စနစ်တကျ ရေးဆွဲပါ။
-4. **Enterprise Framework**: [Laravel Track](/laravel/01_intro_and_request_lifecycle/) မှ Service Container, Eloquent ORM, Sanctum RESTful API, Redis Caching နှင့် Async Queues များကို လေ့လာပါ။
-5. **Containerization**: [Docker Core Track](/devops/01_docker_core/01-docker-fundamentals-and-architecture/) ဖြင့် LEMP Production Stack ပြင်ဆင်ပြီး Cloud ပေါ်သို့ တင်ပါ။
+1. **Frontend & Runtime Core**: [Modern JavaScript Track](/javascript/00_overview/) မှ ES6+, Closures, Async/Await, DOM Manipulation နှင့် Event Loop ကို အရင်ဆုံး ကျွမ်းကျင်အောင် လေ့ကျင့်ပါ။
+2. **Backend Fundamentals**: [PHP Core & Design Patterns Track](/php/00_overview/) မှ PHP 8.x Features, OOP Architecture, MVC Pattern နှင့် Database PDO ဆက်သွယ်မှုများကို လေ့လာပါ။
+3. **Database Engineering**: [MySQL Production Database Track](/mysql/00_overview/) မှ InnoDB Engine, B-Tree Indexing, EXPLAIN Query Plan နှင့် ACID Transactions များကို စနစ်တကျ ရေးဆွဲပါ။
+4. **Enterprise Framework**: [Laravel Track](/laravel/00_overview/) မှ Service Container, Eloquent ORM, Sanctum RESTful API, Redis Caching နှင့် Async Queues များကို လေ့လာပါ။
+5. **Containerization**: [Docker & DevOps Track](/devops/00_overview/) ဖြင့် LEMP Production Stack ပြင်ဆင်ပြီး Cloud ပေါ်သို့ တင်ပါ။
 
 ---
 
@@ -40,17 +40,18 @@ graph LR
 
 ```mermaid
 graph LR
-    A[1. PHP OOP & Symfony Basics] --> B[2. EC-CUBE 4 Architecture]
-    B --> C[3. Event Subscribers & Hooks]
-    C --> D[4. 40+ Real Client Tasks]
-    D --> E[5. Performance & Payment Integration]
+    A["1. Core Basics & Symfony"] --> B["2. DB Internals & Tasks"]
+    B --> C["3. 40 Client Production Tasks"]
+    C --> D["4. Twig & Template Engine"]
+    D --> E["5. 17 Client Requirements Hub"]
 ```
 
-### အဆင့်ဆင့် လေ့လာရမည့် အစီအစဉ်:
-1. **Prerequisites**: [PHP OOP & Design Patterns](/php/04_oop_and_objects/) နှင့် [MySQL Database](/mysql/00_beginner_mysql_core_concepts_and_real_work_guide/)။
-2. **EC-CUBE Core Architecture**: [EC-CUBE Introduction](/eccube/01_basics/01-introduction/01-what-is-ec-cube/) မှ Symfony Controller, Doctrine ORM, Twig Template Hierarchy ကို လေ့လာပါ။
-3. **Customization Mastery**: [Event Subscribers & Hooks](/eccube/01_basics/06-backend-customization/02-event-subscribers-hookpoints/) ဖြင့် Core Code မထိခိုက်စေဘဲ Feature အသစ်များ ထည့်သွင်းခြင်း။
-4. **Client Work Practice**: EC-CUBE တွင် ဂျပန် Client များ အပ်နှံလေ့ရှိသော Task ၄၀ ကျော် (Delivery Leadtime, Points, Multi-tax, CSV Export) ကို လက်တွေ့ ဖြေရှင်းပါ။
+### အဆင့်ဆင့် လေ့လာရမည့် အစီအစဉ် (5 Stages):
+1. **Prerequisites & Core Architecture**: [PHP OOP](/php/04_oop_and_objects/) နှင့် [EC-CUBE Architecture Overview](/eccube/00_overview/) မှ Symfony Controller, Doctrine ORM, DI Container ကို လေ့လာပါ။
+2. **Work Tasks & Database Internals**: [Work Tasks & Database Architecture](/eccube/10_work_tasks_and_database/readme/) မှ Product, Checkout, Order, Delivery, Payment သံသရာနှင့် `PurchaseFlow` Engine ကို မျက်စိထဲ မြင်အောင် ကြည့်ပါ။
+3. **40 Real-World Client Tasks**: [40 Client Tasks Complete Index](/eccube/02_client_tasks/01_display_product_code/) တွင် ဂျပန် Client များ အပ်နှံလေ့ရှိသော Task ၄၀ ကျော် (Delivery Fee Zero, Point Rules, Multi-tax, CSV Export) ကို လက်တွေ့ ဖြေရှင်းပါ။
+4. **Twig & Template Design Customization**: [Template Engine & UI/UX Optimization](/eccube/09_template_design/00-course-overview-and-roadmap/01-course-overview-and-roadmap/) ဖြင့် Layout Frame နှင့် Twig Blocks များကို လေ့လာပါ။
+5. **17 Client Requirements Master Hub**: [17 Client Requirements Master Hub](/eccube/requirements/readme/) တွင် Order, Payment, Shipping, Search/Filter, Wishlist, LINE Marketing, Security, Performance စသည့် မော်ဂျူး ၁၇ ခုကို လက်တွေ့ တည်ဆောက်ပါ။
 
 ---
 
@@ -136,5 +137,47 @@ graph TD
 4. **Week 7 - 8**: [Level 6-9 Labs](/aws/02_beginner_to_advanced_real_work/06_level6_lambda_apigateway_dynamodb/) မှတစ်ဆင့် Serverless (Lambda + API Gateway + DynamoDB)၊ Event-Driven SQS/SNS နှင့် Terraform IaC အသုံးပြု၍ Infrastructure အားလုံးကို Code ဖြင့် အလိုအလျောက် Deploy ပြုလုပ်ပါ။
 5. **Week 9 - 10**: [Japanese Workplace IT Tickets](/aws/02_beginner_to_advanced_real_work/11_level11_japanese_workplace_it_and_tickets/) (လက်တွေ့ လုပ်ငန်းခွင်သုံး 障害対応 မေးခွန်း ၂၅ ခု) နှင့် [Troubleshooting Runbook](/aws/02_beginner_to_advanced_real_work/12_level12_production_troubleshooting_runbook/) ကို အသုံးပြု၍ Production Incident ဖြေရှင်းနည်းများကို လေ့ကျင့်ပါ။
 6. **Week 11 - 12**: [SAA Solutions Architect Phases](/aws/03_saa_solutions_architect_real_work/00_phase0_foundations_cloud_networking_linux/) နှင့် [SAA-C03 Practice Exams 01-07](/aws/04_saa_c03_practice_exams/exam_set_01_security_iam/) စာမေးပွဲမေးခွန်းများကို မြန်မာလို အသေးစိတ်ရှင်းလင်းချက်များနှင့်အတူ ဖြေဆိုအောင်မြင်အောင် ပြင်ဆင်ပါ။
+
+---
+
+## 🌐 Roadmap 7: Enterprise Networking & Cloud Infrastructure Automation
+
+ကွန်ရက်အခြေခံ သဘောတရားများ၊ Packet Flow၊ CIDR/VLSM တွက်ချက်နည်းများမှသည် AWS Production VPC နှင့် Terraform IaC ဖြင့် အလိုအလျောက် တည်ဆောက်ခြင်း အထိ:
+
+```mermaid
+graph LR
+    A[1. OSI 7 Layers & TCP/IP] --> B[2. IPv4, CIDR & VLSM Math]
+    B --> C[3. Protocols DNS, DHCP, NAT, BGP]
+    C --> D[4. AWS VPC Multi-Tier Design]
+    D --> E[5. Terraform IaC Network Automation]
+```
+
+### အဓိက အဆင့်များ:
+1. **Stage 1**: [OSI 7 Layers vs TCP/IP Suite](/networking/01_osi_model_and_tcp_ip_layers/) မှတစ်ဆင့် Data Encapsulation, Packet Headers, 3-Way Handshake နှင့် MTU သဘောတရားများကို လေ့လာပါ။
+2. **Stage 2**: [IPv4 Subnetting & VLSM Calculation](/networking/02_ip_addressing_subnetting_cidr_vlsm/) တွင် Subnet Mask၊ Slash Notation (/16 to /32) နှင့် Largest-to-Smallest Host Requirement အလိုက် ခွဲခြမ်းတွက်ချက်နည်းကို လက်တွေ့လေ့ကျင့်ပါ။
+3. **Stage 3**: [Core Network Protocols & Services](/networking/03_core_network_protocols_dns_dhcp_nat_bgp/) မှတစ်ဆင့် Recursive DNS Resolution၊ DHCP DORA၊ Source/Destination NAT နှင့် BGP Routing ကို နားလည်အောင် လေ့လာပါ။
+4. **Stage 4**: [AWS Cloud Networking Architecture](/networking/04_aws_cloud_networking_architecture/) တွင် Multi-AZ Production VPC၊ Route Tables၊ NAT Gateways နှင့် Security Groups / NACLs Defense-in-Depth ကို ဒီဇိုင်းဆွဲပါ။
+5. **Stage 5**: [Terraform IaC VPC Automation Lab](/networking/05_terraform_iac_vpc_automation_lab/) ဖြင့် Multi-Tier VPC အားလုံးကို Code ဖြင့် Declarative နည်းလမ်းဖြင့် Deploy ပြုလုပ်ပါ။
+
+---
+
+## ☕ Roadmap 8: Enterprise Java & Spring Boot Backend Engineer (0 to 4-Year Mid/Senior)
+
+Java Core, JVM Memory Model, အဆင့်မြင့် OOP, Concurrency နှင့် Spring Boot Enterprise Microservices တည်ဆောက်နိုင်မည့် ပြည့်စုံသော Roadmap:
+
+```mermaid
+graph TD
+    A[1. JVM Internals & Syntax] --> B[2. Stack vs Heap & Memory Model]
+    B --> C[3. Deep OOP Masterclass Encapsulation, Inheritance, Polymorphism]
+    C --> D[4. Collections, Generics & Streams API]
+    D --> E[5. Concurrency, ThreadPool & GoF Patterns]
+    E --> F[6. HikariCP, JPA & Spring Boot REST APIs]
+```
+
+### အဓိက အဆင့်များ:
+1. **Stage 1 (Foundations & Memory)**: [Java Basics & JVM Architecture](/java/01_java_basics_and_syntax/) နှင့် [Methods, Stack vs Heap & Pass-by-Value](/java/02_methods_and_memory_stack_heap/) ကို စတင်လေ့လာပါ။
+2. **Stage 2 (OOP Masterclass)**: [Constructors & Object Lifecycle](/java/03_oop_classes_objects_constructors/)၊ [Encapsulation & Records](/java/04_oop_encapsulation_access_modifiers/)၊ [Inheritance & Polymorphism](/java/05_oop_inheritance_and_polymorphism/) နှင့် [Interfaces & Abstraction](/java/06_oop_abstraction_and_interfaces/) ကို လက်တွေ့ Production Code နမူနာများဖြင့် ကျွမ်းကျင်အောင် တည်ဆောက်ပါ။
+3. **Stage 3 (Core Collections & Modern Java)**: [SCP & Wrapper Caching](/java/07_strings_and_wrapper_classes/)၊ [Exception Handling](/java/08_exception_handling_best_practices/)၊ [Collections Deep Dive (HashMap Internals)](/java/09_collections_framework_deep_dive/)၊ [Generics & PECS Rule](/java/10_generics_and_type_safety/) နှင့် [Lambdas & Stream Pipelines](/java/11_java8_lambdas_and_streams/) ကို လေ့လာပါ။
+4. **Stage 4 (Enterprise Architecture & Concurrency)**: [Multithreading & Concurrency](/java/12_multithreading_and_concurrency/) (Thread Pools, Race Conditions, CompletableFuture)၊ [GoF Design Patterns](/java/13_design_patterns_in_java/) နှင့် [Database (HikariCP, JPA) & Spring Boot Architecture](/java/14_enterprise_database_and_spring_boot/) သို့ တက်လှမ်းပါ။
 
 </div>

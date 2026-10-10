@@ -209,20 +209,22 @@ for (const entry of ecCubeEntries) {
     targetSubdir = '01_basics';
   } else if (entry.name === 'ec-cube-30-client-tasks') {
     targetSubdir = '02_client_tasks';
-  } else if (entry.name === 'ec-cube-order-management') {
-    targetSubdir = '03_order_management';
-  } else if (entry.name === 'ec-cube-payment') {
-    targetSubdir = '04_payment';
-  } else if (entry.name === 'ec-cube-shipping') {
-    targetSubdir = '05_shipping';
-  } else if (entry.name === 'ec-cube-customer-management') {
-    targetSubdir = '06_customer_management';
-  } else if (entry.name === 'ec-cube-security') {
-    targetSubdir = '07_security';
-  } else if (entry.name === 'ec-cube-campaign-coupon') {
-    targetSubdir = '08_campaign_coupon';
   } else if (entry.name === 'ec-cube-template-course') {
     targetSubdir = '09_template_design';
+  } else if (entry.name === 'ec-cube-order-management') {
+    targetSubdir = 'requirements/03_order_management';
+  } else if (entry.name === 'ec-cube-payment') {
+    targetSubdir = 'requirements/04_payment';
+  } else if (entry.name === 'ec-cube-shipping') {
+    targetSubdir = 'requirements/05_shipping';
+  } else if (entry.name === 'ec-cube-customer-management') {
+    targetSubdir = 'requirements/06_customer_management';
+  } else if (entry.name === 'ec-cube-security') {
+    targetSubdir = 'requirements/07_security';
+  } else if (entry.name === 'ec-cube-campaign-coupon') {
+    targetSubdir = 'requirements/08_campaign_coupon';
+  } else {
+    targetSubdir = 'requirements/' + targetSubdir;
   }
 
   copyDirectory(path.join(ecCubeDir, entry.name), path.join(DOCS_DIR, 'eccube', targetSubdir), 'eccube');
