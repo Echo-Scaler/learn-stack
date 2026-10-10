@@ -24,6 +24,16 @@
       "permanent": false
     },
     {
+      "source": "/networking",
+      "destination": "/networking/00_overview/",
+      "permanent": false
+    },
+    {
+      "source": "/java",
+      "destination": "/java/00_overview/",
+      "permanent": false
+    },
+    {
       "source": "/laravel",
       "destination": "/laravel/00_overview/",
       "permanent": false
