@@ -26,7 +26,7 @@ Master modern software engineering, cloud architecture, and high-income language
 </div>
 <div class="hero-guarantee">
 <span class="asterisk-red">✱</span>
-<span>515+ Production lessons, AWS Real Labs, Japanese N1 Mastery &amp; senior IQ architecture</span>
+<span>520+ Production lessons, AWS Real Labs, Japanese N1 Mastery &amp; senior IQ architecture</span>
 </div>
 </div>
 
@@ -94,11 +94,11 @@ Master modern software engineering, cloud architecture, and high-income language
 <div class="avatar-circle">Dev</div>
 <div class="avatar-circle">Pro</div>
 </div>
-<div class="stat-number">515+</div>
+<div class="stat-number">520+</div>
 <div class="stat-label">Production Lessons</div>
 </div>
 <div class="stat-cell">
-<div class="stat-number">180+</div>
+<div class="stat-number">185+</div>
 <div class="stat-label">In-Depth Topics</div>
 </div>
 <div class="stat-cell">
@@ -132,7 +132,7 @@ Master modern software engineering, cloud architecture, and high-income language
 <p class="catalog-sub">Select your learning path from beginner syntax to enterprise architecture &amp; language mastery.</p>
 </div>
 <div class="track-filter-bar">
-<a href="/java/00_overview/" class="track-pill track-pill-java">☕ Java (15 Ch)</a>
+<a href="/java/00_overview/" class="track-pill track-pill-java">☕ Java (20 Ch)</a>
 <a href="/php/00_overview/" class="track-pill track-pill-php">🐘 PHP (24 Ch)</a>
 <a href="/javascript/00_overview/" class="track-pill track-pill-js">⚡ JavaScript (13 Ch)</a>
 <a href="/laravel/00_overview/" class="track-pill track-pill-laravel">🔺 Laravel (20 Ch)</a>
@@ -297,10 +297,10 @@ Master modern software engineering, cloud architecture, and high-income language
 <div>
 <span class="catalog-card-tag tag-java">Track 13 • Enterprise Backend <span class="tag-badge-new" style="background:#ea580c;">ENTERPRISE</span></span>
 <h3>Java Enterprise Architecture &amp; Spring Boot</h3>
-<p>JVM Memory Internals (Stack vs Heap)၊ OOP Masterclass၊ Concurrency &amp; Thread Pools၊ GoF Patterns၊ HikariCP Connection Pooling နှင့် Spring Boot REST Microservices (မြန်မာဘာသာ အပြည့်အစုံ)။</p>
+<p>JVM Memory Internals၊ OOP Masterclass၊ Concurrency၊ GoF Patterns၊ HikariCP နှင့် 5-Level Developer Curriculum (Core, SQL/JPA, Spring Boot, Pro Tools, Production/Docker) (မြန်မာဘာသာ အပြည့်အစုံ)။</p>
 </div>
 <div class="catalog-card-footer">
-<span>15 In-Depth Modules (3 Sections)</span>
+<span>20 In-Depth Modules (4 Sections)</span>
 <span class="footer-action-java">Start Java ↗</span>
 </div>
 </a>

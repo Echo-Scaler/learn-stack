@@ -573,7 +573,7 @@ function classifyLesson(href: string, courseName: string) {
         subTag
       };
     }
-    if (num >= 9) {
+    if (num >= 9 && num <= 14) {
       let subTag = 'Enterprise Engineering';
       if (num === 9) subTag = 'Collections Internals';
       else if (num === 10) subTag = 'Generics & PECS';
@@ -586,6 +586,21 @@ function classifyLesson(href: string, courseName: string) {
         sectionTitle: '3. Advanced Concurrency, Patterns & Spring',
         sectionIcon: '🚀',
         badge: '4-YEAR SENIOR',
+        subTag
+      };
+    }
+    if (num >= 15) {
+      let subTag = 'Industry Masterclass';
+      if (num === 15) subTag = 'Level 1: Core & NIO File IO';
+      else if (num === 16) subTag = 'Level 2: SQL, ACID & JPA';
+      else if (num === 17) subTag = 'Level 3: Spring Boot REST';
+      else if (num === 18) subTag = 'Level 4: Git, Maven & Tests';
+      else if (num === 19) subTag = 'Level 5: Docker & Prod Ops';
+      return {
+        sectionKey: 'java_masterclass',
+        sectionTitle: '4. 5-Level Industry Masterclass',
+        sectionIcon: '⭐',
+        badge: 'PRODUCTION READY',
         subTag
       };
     }

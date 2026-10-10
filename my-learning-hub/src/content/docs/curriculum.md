@@ -1,13 +1,13 @@
 ---
 title: Complete Engineering Curriculum
-description: Overview of all 13 tracks, 515+ lessons, chapter breakdown, and competencies
+description: Overview of all 13 tracks, 520+ lessons, chapter breakdown, and competencies
 ---
 
 <div class="curriculum-container">
 
 <div class="curriculum-intro">
   <p class="lead-text">
-    LearnStack တွင် ပါဝင်သော သင်ရိုးညွှန်းတမ်းအားလုံး (စုစုပေါင်း <strong>၅၁၅ ခန်း</strong>၊ ၁၃ ခုသော အထူးပြု Track များ) ၏ ကဏ္ဍအလိုက် အသေးစိတ် မာတိကာနှင့် လေ့လာရမည့် ခေါင်းစဉ်များ ဖြစ်ပါသည်။
+    LearnStack တွင် ပါဝင်သော သင်ရိုးညွှန်းတမ်းအားလုံး (စုစုပေါင်း <strong>၅၂၀ ခန်း</strong>၊ ၁၃ ခုသော အထူးပြု Track များ) ၏ ကဏ္ဍအလိုက် အသေးစိတ် မာတိကာနှင့် လေ့လာရမည့် ခေါင်းစဉ်များ ဖြစ်ပါသည်။
   </p>
 </div>
 
@@ -304,7 +304,7 @@ description: Overview of all 13 tracks, 515+ lessons, chapter breakdown, and com
 ---
 
 ## ☕ 13. Java Enterprise Architecture Track
-- **စုစုပေါင်း အခန်းရေ**: ၁၅ ခန်း (3 Sections)
+- **စုစုပေါင်း အခန်းရေ**: ၂၀ ခန်း (4 Sections)
 - **အဆင့်**: Beginner မှ 4-Year Mid/Senior Enterprise Engineer အဆင့်ထိ
 - **လေ့လာရန်ကြာချိန်**: ၄ ပတ် မှ ၆ ပတ်
 - **အဓိက ခေါင်းစဉ်များ**:
@@ -326,6 +326,12 @@ description: Overview of all 13 tracks, 515+ lessons, chapter breakdown, and com
     - [12. Multithreading & Concurrency (Thread Safety, volatile, ThreadPool, CompletableFuture)](/java/12_multithreading_and_concurrency/)
     - [13. Gang of Four (GoF) Design Patterns in Java (Singleton, Builder, Strategy, Observer)](/java/13_design_patterns_in_java/)
     - [14. Enterprise Database Integration & Spring Boot Architecture (HikariCP, JPA, REST APIs)](/java/14_enterprise_database_and_spring_boot/)
+  - **Section 4: 5-Level Industry Masterclass & Production Readiness**:
+    - [15. Level 1 — Core Java & File Handling (Loops, OOP, Exceptions, Java NIO.2 Files.lines, CSV Parser)](/java/15_level1_core_java_and_file_handling/)
+    - [16. Level 2 — SQL, Database & JPA Internals (ACID, Joins, Indexing, JDBC vs JPA vs Hibernate vs Spring Data JPA)](/java/16_level2_sql_database_and_jpa_internals/)
+    - [17. Level 3 — Spring Boot Backend Development (IoC, DI, Multi-profile YAML, REST API, Validation, Security)](/java/17_level3_spring_boot_backend_development/)
+    - [18. Level 4 — Professional Dev Tools & Workflow (Git Branching/Rebase, Maven Scopes, JUnit 5, Mockito, SLF4J, Postman)](/java/18_level4_professional_dev_tools_workflow/)
+    - [19. Level 5 — Production, Docker & Troubleshooting (JWT, Multi-stage Docker, GitHub Actions, Heap Tuning, jstack/jcmd)](/java/19_level5_production_security_docker_troubleshooting/)
 
 </div>
 
