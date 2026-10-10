@@ -652,7 +652,7 @@ function classifyLesson(href: string, courseName: string) {
     }
   }
 
-  // 9. Linux Server Engineering Track
+  // 9. Linux Server Engineering Track (9 Phases, 18 Lessons)
   if (courseName === 'Linux Server Engineering' || courseName === 'Linux' || normHref.includes('/linux/')) {
     const num = parseInt(clean.match(/(\d+)/)?.[1] || '0', 10);
     if (clean.includes('00_overview') || num <= 4) {
@@ -666,16 +666,93 @@ function classifyLesson(href: string, courseName: string) {
         sectionKey: 'linux_fundamentals',
         sectionTitle: 'Phase 1: Linux Fundamentals',
         sectionIcon: '🐧',
-        badge: 'LINUX BASICS',
+        badge: 'FUNDAMENTALS',
         subTag
       };
     }
+    if (num <= 7) {
+      let subTag = 'Processes & Systemd';
+      if (num === 5) subTag = 'Processes & Resources';
+      else if (num === 6) subTag = 'Systemd & Journalctl';
+      else if (num === 7) subTag = 'Cron & Storage Mounts';
+      return {
+        sectionKey: 'linux_sysadmin',
+        sectionTitle: 'Phase 2: Processes & SysAdmin',
+        sectionIcon: '⚙️',
+        badge: 'SYSADMIN',
+        subTag
+      };
+    }
+    if (num <= 10) {
+      let subTag = 'Production Networking';
+      if (num === 8) subTag = 'TCP/IP & DNS';
+      else if (num === 9) subTag = 'SSH & Network Tools';
+      else if (num === 10) subTag = 'Firewalls & TLS';
+      return {
+        sectionKey: 'linux_networking',
+        sectionTitle: 'Phase 3: Networking & Firewalls',
+        sectionIcon: '🌐',
+        badge: 'NETWORKING',
+        subTag
+      };
+    }
+    if (num <= 12) {
+      let subTag = 'Server Administration';
+      if (num === 11) subTag = 'Provisioning & Bastion';
+      else if (num === 12) subTag = 'Hardening & Backups';
+      return {
+        sectionKey: 'linux_hardening',
+        sectionTitle: 'Phase 4: Server Admin & Hardening',
+        sectionIcon: '🛡️',
+        badge: 'HARDENING',
+        subTag
+      };
+    }
+    if (num <= 14) {
+      let subTag = 'Web Servers & Deploy';
+      if (num === 13) subTag = 'Nginx & Reverse Proxy';
+      else if (num === 14) subTag = 'PHP-FPM, Java & MySQL';
+      return {
+        sectionKey: 'linux_webservers',
+        sectionTitle: 'Phase 5: Web Servers & Deployment',
+        sectionIcon: '🚀',
+        badge: 'WEB SERVERS',
+        subTag
+      };
+    }
+    if (num === 15) {
+      return {
+        sectionKey: 'linux_scripting',
+        sectionTitle: 'Phase 6: Shell Scripting & Automation',
+        sectionIcon: '📜',
+        badge: 'AUTOMATION',
+        subTag: 'Bash Scripting'
+      };
+    }
+    if (num === 16) {
+      return {
+        sectionKey: 'linux_containers',
+        sectionTitle: 'Phase 7: Docker, DevOps & Cloud',
+        sectionIcon: '🐳',
+        badge: 'CONTAINERS',
+        subTag: 'Docker & Cloud'
+      };
+    }
+    if (num === 17) {
+      return {
+        sectionKey: 'linux_observability',
+        sectionTitle: 'Phase 8: Monitoring & Incident Response',
+        sectionIcon: '🩺',
+        badge: 'OBSERVABILITY',
+        subTag: 'Triage & RCA'
+      };
+    }
     return {
-      sectionKey: 'linux_sysadmin',
-      sectionTitle: 'Phase 2: System Administration',
-      sectionIcon: '⚙️',
-      badge: 'SYSADMIN',
-      subTag: 'Server Operations'
+      sectionKey: 'linux_capstone',
+      sectionTitle: 'Phase 9: Real-World Enterprise Projects',
+      sectionIcon: '🏆',
+      badge: 'CAPSTONE',
+      subTag: 'Enterprise Server'
     };
   }
 

@@ -1,9 +1,9 @@
 ---
-title: Linux Server Engineering Roadmap (0 to 4-Year Level)
+title: Linux Server Engineering Roadmap
 description: Linux Server Administrator & Senior DevOps Engineer အဆင့်အထိ အခြေခံမှ စတင်လေ့လာနိုင်မည့် ၉ ပိုင်းပါ ပြည့်စုံသော သင်ရိုးလမ်းညွှန် (မြန်မာဘာသာ)
 ---
 
-# 🐧 Linux Server Engineering Master Roadmap (0 to 4-Year Professional Level)
+# 🐧 Linux Server Engineering Master Roadmap 
 
 မင်္ဂလာပါ! ကျွန်ုပ်သည် သင်၏ **Senior Linux Server Engineer & Technical Mentor** ဖြစ်ပါသည်။ ဤသင်ရိုးညွှန်းတမ်းသည် Linux ကို အခြေခံ လုံးဝမရှိသေးသူ (Absolute Beginner) မှသည် လုပ်ငန်းခွင် ၃ နှစ် မှ ၄ နှစ် လုပ်သက်ရှိသော **Professional Linux System Administrator / DevOps Engineer** တစ်ဦးကဲ့သို့ စနစ်တကျ တွေးခေါ်လုပ်ကိုင်နိုင်စေရန် ရည်ရွယ်၍ ရေးဆွဲထားခြင်း ဖြစ်ပါသည်။
 
@@ -70,7 +70,32 @@ description: Linux Server Administrator & Senior DevOps Engineer အဆင့်
 
 ---
 
-## 💻 ၃။ Mac အသုံးပြုသူများအတွက် စမ်းသပ်ရန် Lab Environment
+## 📚 ၃။ သင်ရိုးမာတိကာ အပြည့်အစုံ (All 18 Complete Lessons)
+
+| Phase | အခန်း | အကြောင်းအရာ | ဖတ်ရှုရန် Link |
+| :--- | :--- | :--- | :--- |
+| **Phase 1** | Lesson 01 | Linux Intro, Architecture, Kernel & Mac Lab Setup | [ဖတ်ရှုရန်](/linux/01_phase1_lesson1_linux_intro_and_mac_lab/) |
+| **Phase 1** | Lesson 02 | Filesystem Hierarchy (FHS) & Navigation | [ဖတ်ရှုရန်](/linux/02_filesystem_hierarchy_and_navigation/) |
+| **Phase 1** | Lesson 03 | Permissions, Ownership, Users & sudo | [ဖတ်ရှုရန်](/linux/03_file_permissions_ownership_and_sudo/) |
+| **Phase 1** | Lesson 04 | Package Management (apt), PATH & Env | [ဖတ်ရှုရန်](/linux/04_package_management_and_environment_variables/) |
+| **Phase 2** | Lesson 05 | Process Management (PID, Signals, top, htop) | [ဖတ်ရှုရန်](/linux/05_process_management_and_system_resources/) |
+| **Phase 2** | Lesson 06 | systemd Services, Daemons & journalctl | [ဖတ်ရှုရန်](/linux/06_systemd_services_and_journalctl_logging/) |
+| **Phase 2** | Lesson 07 | Cron Jobs, Storage, Disks, Partitions & fstab | [ဖတ်ရှုရန်](/linux/07_cron_jobs_storage_disks_and_mounts/) |
+| **Phase 3** | Lesson 08 | Networking (CIDR, TCP/UDP, DNS, curl, dig) | [ဖတ်ရှုရန်](/linux/08_network_fundamentals_and_dns/) |
+| **Phase 3** | Lesson 09 | SSH Hardening & Tooling (ss, ip, nc, rsync) | [ဖတ်ရှုရန်](/linux/09_ssh_hardening_and_network_tooling/) |
+| **Phase 3** | Lesson 10 | Firewalls (UFW), TLS/HTTPS Certificates | [ဖတ်ရှုရန်](/linux/10_firewalls_ufw_nftables_and_tls/) |
+| **Phase 4** | Lesson 11 | Ubuntu Server Provisioning & SSH Bastion | [ဖတ်ရှုရန်](/linux/11_ubuntu_server_provisioning_and_remote_ops/) |
+| **Phase 4** | Lesson 12 | Security Hardening, Logrotate & Backups | [ဖတ်ရှုရန်](/linux/12_security_hardening_logrotate_and_backups/) |
+| **Phase 5** | Lesson 13 | Nginx Architecture, Reverse Proxy & SSL | [ဖတ်ရှုရန်](/linux/13_nginx_architecture_reverse_proxy_and_ssl/) |
+| **Phase 5** | Lesson 14 | PHP-FPM, Java JAR Deployment & Zero-Downtime | [ဖတ်ရှုရန်](/linux/14_application_deployment_php_java_and_databases/) |
+| **Phase 6** | Lesson 15 | Bash Scripting, Pipes, grep, sed & awk | [ဖတ်ရှုရန်](/linux/15_bash_scripting_pipes_and_automation/) |
+| **Phase 7** | Lesson 16 | Docker Containers, Compose & Cloud VMs | [ဖတ်ရှုရန်](/linux/16_docker_devops_containers_and_cloud_vm/) |
+| **Phase 8** | Lesson 17 | Production Observability, Alerting & RCA | [ဖတ်ရှုရန်](/linux/17_monitoring_observability_and_incident_response/) |
+| **Phase 9** | Lesson 18 | Enterprise Production Server Capstone Project | [ဖတ်ရှုရန်](/linux/18_enterprise_production_server_capstone_project/) |
+
+---
+
+## 💻 ၄။ Mac အသုံးပြုသူများအတွက် စမ်းသပ်ရန် Lab Environment
 
 သင်သည် **macOS (MacBook/Mac Mini)** ကို အသုံးပြုနေသဖြင့် အောက်ပါအချက်များကို ဦးစွာ သတိပြုရပါမည် -
 

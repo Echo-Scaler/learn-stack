@@ -26,7 +26,7 @@ Master modern software engineering, cloud architecture, and high-income language
 </div>
 <div class="hero-guarantee">
 <span class="asterisk-red">✱</span>
-<span>529+ Production lessons, AWS Real Labs, Japanese N1 Mastery &amp; senior IQ architecture</span>
+<span>546+ Production lessons, AWS Real Labs, Japanese N1 Mastery &amp; senior IQ architecture</span>
 </div>
 </div>
 
@@ -94,7 +94,7 @@ Master modern software engineering, cloud architecture, and high-income language
 <div class="avatar-circle">Dev</div>
 <div class="avatar-circle">Pro</div>
 </div>
-<div class="stat-number">529+</div>
+<div class="stat-number">546+</div>
 <div class="stat-label">Production Lessons</div>
 </div>
 <div class="stat-cell">

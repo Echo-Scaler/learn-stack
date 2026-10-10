@@ -1,13 +1,13 @@
 ---
 title: Complete Engineering Curriculum
-description: Overview of all 15 tracks, 529+ lessons, chapter breakdown, and competencies
+description: Overview of all 15 tracks, 546+ lessons, chapter breakdown, and competencies
 ---
 
 <div class="curriculum-container">
 
 <div class="curriculum-intro">
   <p class="lead-text">
-    LearnStack တွင် ပါဝင်သော သင်ရိုးညွှန်းတမ်းအားလုံး (စုစုပေါင်း <strong>၅၂၉ ခန်း</strong>၊ ၁၅ ခုသော အထူးပြု Track များ) ၏ ကဏ္ဍအလိုက် အသေးစိတ် မာတိကာနှင့် လေ့လာရမည့် ခေါင်းစဉ်များ ဖြစ်ပါသည်။
+    LearnStack တွင် ပါဝင်သော သင်ရိုးညွှန်းတမ်းအားလုံး (စုစုပေါင်း <strong>၅၄၆ ခန်း</strong>၊ ၁၅ ခုသော အထူးပြု Track များ) ၏ ကဏ္ဍအလိုက် အသေးစိတ် မာတိကာနှင့် လေ့လာရမည့် ခေါင်းစဉ်များ ဖြစ်ပါသည်။
   </p>
 </div>
 
@@ -354,13 +354,39 @@ description: Overview of all 15 tracks, 529+ lessons, chapter breakdown, and com
 ---
 
 ## 🐧 15. Linux Server Engineering Track
-- **စုစုပေါင်း အခန်းရေ**: ၂ ခန်း (Phase 1 စတင်လေ့လာခြင်း)
-- **အဆင့်**: Absolute Beginner မှ 3–4 Years Professional Linux System Administrator အဆင့်ထိ
-- **လေ့လာရန်ကြာချိန်**: ၂ ပတ် မှ ၄ ပတ်
+- **စုစုပေါင်း အခန်းရေ**: ၁၈ ခန်း + Roadmap Overview (9 Phases)
+- **အဆင့်**: Absolute Beginner မှ 3–4 Years Professional Linux System Administrator / DevOps Engineer အဆင့်ထိ
+- **လေ့လာရန်ကြာချိန်**: ၄ ပတ် မှ ၆ ပတ်
 - **အဓိက ခေါင်းစဉ်များ**:
+  - **Overview & Roadmap**:
+    - [00. Linux Server Engineering Roadmap & Lab Setup](/linux/00_overview/)
   - **Phase 1: Linux Fundamentals**:
-    - [00. Linux Server Engineering Roadmap (0 to 4-Year Level)](/linux/00_overview/)
-    - [01. Phase 1 Lesson 1: Linux Introduction, Architecture & Mac Lab Setup](/linux/01_phase1_lesson1_linux_intro_and_mac_lab/)
+    - [01. Linux Introduction, Architecture, Kernel & Mac Lab Setup](/linux/01_phase1_lesson1_linux_intro_and_mac_lab/)
+    - [02. Filesystem Hierarchy (/, /etc, /var, /usr, /opt) & Navigation](/linux/02_filesystem_hierarchy_and_navigation/)
+    - [03. File Permissions, Ownership, Users, Groups & sudo Privilege](/linux/03_file_permissions_ownership_and_sudo/)
+    - [04. Package Management (apt), Environment Variables & PATH](/linux/04_package_management_and_environment_variables/)
+  - **Phase 2: Processes & System Administration**:
+    - [05. Process Management (PID, signals, ps, top, htop, kill, free, df)](/linux/05_process_management_and_system_resources/)
+    - [06. systemd, Services, Daemons & journalctl Log Analysis](/linux/06_systemd_services_and_journalctl_logging/)
+    - [07. Cron Scheduled Tasks, Storage, Disks, Partitions & Mounts](/linux/07_cron_jobs_storage_disks_and_mounts/)
+  - **Phase 3: Production Networking & Firewalls**:
+    - [08. Network Fundamentals (IP, Subnetting, TCP/UDP, Ports, Sockets, DNS)](/linux/08_network_fundamentals_and_dns/)
+    - [09. SSH Hardening & Network Tooling (ss, ip, dig, curl, nc, traceroute)](/linux/09_ssh_hardening_and_network_tooling/)
+    - [10. Firewalls (UFW/nftables), TLS/HTTPS Certificates & Diagnostics](/linux/10_firewalls_ufw_nftables_and_tls/)
+  - **Phase 4: Server Administration & Hardening**:
+    - [11. Ubuntu Server Provisioning, SSH Bastion & Remote Ops](/linux/11_ubuntu_server_provisioning_and_remote_ops/)
+    - [12. Security Hardening, Logrotate, Backup Automation & Runbooks](/linux/12_security_hardening_logrotate_and_backups/)
+  - **Phase 5: Web Servers & Application Deployment**:
+    - [13. Nginx Architecture, Reverse Proxy, Upstreams & SSL Offloading](/linux/13_nginx_architecture_reverse_proxy_and_ssl/)
+    - [14. PHP-FPM, Java JAR Deployment, MySQL Connection & Zero-Downtime](/linux/14_application_deployment_php_java_and_databases/)
+  - **Phase 6: Shell Scripting & Automation**:
+    - [15. Bash Scripting (Pipes, Redirection, Exit Codes, grep, sed, awk)](/linux/15_bash_scripting_pipes_and_automation/)
+  - **Phase 7: Docker, DevOps & Cloud**:
+    - [16. Containerization (Docker, Compose), Cloud VM & CI/CD Pipelines](/linux/16_docker_devops_containers_and_cloud_vm/)
+  - **Phase 8: Monitoring, Reliability & Incident Response**:
+    - [17. Production Observability, Alerting, Security & Disaster Recovery](/linux/17_monitoring_observability_and_incident_response/)
+  - **Phase 9: Real-World Enterprise Projects**:
+    - [18. End-to-End Enterprise Production Server Capstone Project](/linux/18_enterprise_production_server_capstone_project/)
 
 </div>
 
