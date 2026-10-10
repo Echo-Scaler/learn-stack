@@ -19,12 +19,14 @@ const courses = [
 	{ label: 'Networking & Cloud Automation', directory: 'networking' },
 	{ label: 'Java', directory: 'java' },
 	{ label: 'Git & GitHub Enterprise', directory: 'git' },
+	{ label: 'Linux Server Engineering', directory: 'linux' },
 ];
 
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://my-learning-hub-kyaw-wai-yans-projects.vercel.app',
 	redirects: {
+		'/linux/': '/linux/00_overview/',
 		'/git/': '/git/00_overview/',
 		'/java/': '/java/00_overview/',
 		'/networking/': '/networking/00_overview/',

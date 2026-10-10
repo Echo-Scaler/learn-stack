@@ -29,6 +29,11 @@
       "permanent": false
     },
     {
+      "source": "/linux",
+      "destination": "/linux/00_overview/",
+      "permanent": false
+    },
+    {
       "source": "/git",
       "destination": "/git/00_overview/",
       "permanent": false

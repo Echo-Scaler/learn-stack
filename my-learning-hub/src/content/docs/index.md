@@ -26,7 +26,7 @@ Master modern software engineering, cloud architecture, and high-income language
 </div>
 <div class="hero-guarantee">
 <span class="asterisk-red">✱</span>
-<span>527+ Production lessons, AWS Real Labs, Japanese N1 Mastery &amp; senior IQ architecture</span>
+<span>529+ Production lessons, AWS Real Labs, Japanese N1 Mastery &amp; senior IQ architecture</span>
 </div>
 </div>
 
@@ -94,19 +94,21 @@ Master modern software engineering, cloud architecture, and high-income language
 <div class="avatar-circle">Dev</div>
 <div class="avatar-circle">Pro</div>
 </div>
-<div class="stat-number">527+</div>
+<div class="stat-number">529+</div>
 <div class="stat-label">Production Lessons</div>
 </div>
 <div class="stat-cell">
-<div class="stat-number">190+</div>
+<div class="stat-number">192+</div>
 <div class="stat-label">In-Depth Topics</div>
 </div>
 <div class="stat-cell">
-<div class="stat-number">14 Tracks</div>
+<div class="stat-number">15 Tracks</div>
 <div class="stat-label">Beginner to Senior Level</div>
 </div>
 <div class="stat-cell">
 <div class="tech-brands-list">
+<span style="color:#eab308; font-weight:700;">Linux</span>
+<span>•</span>
 <span>PHP</span>
 <span>•</span>
 <span>Laravel</span>
@@ -134,6 +136,7 @@ Master modern software engineering, cloud architecture, and high-income language
 <p class="catalog-sub">Select your learning path from beginner syntax to enterprise architecture &amp; language mastery.</p>
 </div>
 <div class="track-filter-bar">
+<a href="/linux/00_overview/" class="track-pill track-pill-linux">🐧 Linux Server</a>
 <a href="/git/00_overview/" class="track-pill track-pill-git">🐙 Git &amp; GitHub (7 Ch)</a>
 <a href="/java/00_overview/" class="track-pill track-pill-java">☕ Java (20 Ch)</a>
 <a href="/php/00_overview/" class="track-pill track-pill-php">🐘 PHP (24 Ch)</a>
@@ -317,6 +320,18 @@ Master modern software engineering, cloud architecture, and high-income language
 <div class="catalog-card-footer">
 <span>7 In-Depth Modules (3 Sections)</span>
 <span style="color:#f05032; font-weight:700;">Start Git ↗</span>
+</div>
+</a>
+
+<a href="/linux/00_overview/" class="catalog-card card-highlight-linux">
+<div>
+<span class="catalog-card-tag tag-linux" style="color:#eab308; font-weight:700;">Track 15 • System Administration <span class="tag-badge-new" style="background:#eab308; color:#000;">SYSADMIN &amp; DEVOPS</span></span>
+<h3>Linux Server Engineering (0 to 4-Year)</h3>
+<p>Linux Kernel &amp; Architecture၊ Mac Virtual Lab (Multipass)၊ Filesystem Hierarchy၊ File Permissions &amp; sudo၊ systemd Daemons၊ Nginx Web Server၊ Bash Automation နှင့် 3–4 Years Professional Mentorship (မြန်မာဘာသာ အပြည့်အစုံ)။</p>
+</div>
+<div class="catalog-card-footer">
+<span>9 Phases • 3–4 Year Mentorship</span>
+<span style="color:#eab308; font-weight:700;">Start Linux ↗</span>
 </div>
 </a>
 </div>

@@ -87,6 +87,8 @@ const sectorIcons: Record<string, string> = {
   'Java': '☕',
   'Git & GitHub Enterprise': '🐙',
   'Git': '🐙',
+  'Linux Server Engineering': '🐧',
+  'Linux': '🐧',
 };
 const sectorIcon = sectorIcons[sectorTitle] || '📚';
 
@@ -648,6 +650,33 @@ function classifyLesson(href: string, courseName: string) {
         subTag
       };
     }
+  }
+
+  // 9. Linux Server Engineering Track
+  if (courseName === 'Linux Server Engineering' || courseName === 'Linux' || normHref.includes('/linux/')) {
+    const num = parseInt(clean.match(/(\d+)/)?.[1] || '0', 10);
+    if (clean.includes('00_overview') || num <= 4) {
+      let subTag = 'Linux Fundamentals';
+      if (clean.includes('00_overview')) subTag = 'Course Roadmap';
+      else if (num === 1) subTag = 'Intro & Mac Lab';
+      else if (num === 2) subTag = 'Filesystem Hierarchy';
+      else if (num === 3) subTag = 'Permissions & sudo';
+      else if (num === 4) subTag = 'APT & Environment';
+      return {
+        sectionKey: 'linux_fundamentals',
+        sectionTitle: 'Phase 1: Linux Fundamentals',
+        sectionIcon: '🐧',
+        badge: 'LINUX BASICS',
+        subTag
+      };
+    }
+    return {
+      sectionKey: 'linux_sysadmin',
+      sectionTitle: 'Phase 2: System Administration',
+      sectionIcon: '⚙️',
+      badge: 'SYSADMIN',
+      subTag: 'Server Operations'
+    };
   }
 
   // Default fallback

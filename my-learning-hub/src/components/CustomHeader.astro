@@ -111,8 +111,20 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
                     <span class="col-header-icon">☁️</span>
                     <span class="col-header-text">CLOUD, DEVOPS &amp; CMS</span>
                   </div>
-                  <span class="col-header-pill">5 TRACKS</span>
+                  <span class="col-header-pill">6 TRACKS</span>
                 </div>
+
+                <a href="/linux/00_overview/" class="course-menu-item item-linux">
+                  <div class="item-icon-box linux-bg">🐧</div>
+                  <div class="item-text">
+                    <div class="item-title-row">
+                      <span class="item-title">Linux Server Engineering</span>
+                      <span class="item-badge badge-linux">9 Phases</span>
+                    </div>
+                    <span class="item-desc">0 to 4-Year Mentorship • SysAdmin &amp; Ops</span>
+                  </div>
+                  <span class="item-hover-arrow">→</span>
+                </a>
 
                 <a href="/git/00_overview/" class="course-menu-item item-git">
                   <div class="item-icon-box git-bg">🐙</div>
@@ -347,9 +359,18 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
       <div class="mobile-section-group">
         <div class="mobile-section-title">
           <span class="mobile-sec-name">☁️ CLOUD, DEVOPS &amp; CMS</span>
-          <span class="mobile-section-pill">5 TRACKS</span>
+          <span class="mobile-section-pill">6 TRACKS</span>
         </div>
         <div class="mobile-track-list">
+          <a href="/linux/00_overview/" class="mobile-card-item mobile-item-linux">
+            <span class="mobile-card-icon linux-bg">🐧</span>
+            <div class="mobile-card-info">
+              <span class="mobile-card-title">Linux Server Engineering</span>
+              <span class="mobile-card-sub">9 Phases • 0 to 4-Year Mentorship</span>
+            </div>
+            <span class="mobile-card-badge badge-linux">9 Phases</span>
+          </a>
+
           <a href="/git/00_overview/" class="mobile-card-item mobile-item-git">
             <span class="mobile-card-icon git-bg">🐙</span>
             <div class="mobile-card-info">
@@ -612,6 +633,18 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
             </div>
             <div class="card-action-part" style="color:#f05032;">Start Git →</div>
           </a>
+
+          <a href="/linux/00_overview/" class="track-select-card card-featured-linux">
+            <div class="card-icon-part">🐧</div>
+            <div class="card-info-part">
+              <div class="card-top-row">
+                <span class="card-name">Linux Server Engineering</span>
+                <span class="badge-new-pulse" style="background:#eab308; color:#000;">SYSADMIN</span>
+              </div>
+              <p class="card-sub">9 Phases • 0 to 4-Year Mentorship • Kernel, Services, Nginx &amp; Hardening</p>
+            </div>
+            <div class="card-action-part" style="color:#eab308;">Start Linux →</div>
+          </a>
         </div>
 
         <!-- Group 3: Languages & High-Income Certifications (4 tracks, 2x2 grid) -->
@@ -680,7 +713,7 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
 <script is:inline>
   (function() {
     function detectSector() {
-      var m = window.location.pathname.match(/\/(japanese-grammar|japanese-vocab|japanese-kanji|aws|php|javascript|laravel|mysql|devops|eccube|toeic|java|git)\b/);
+      var m = window.location.pathname.match(/\/(japanese-grammar|japanese-vocab|japanese-kanji|aws|php|javascript|laravel|mysql|devops|eccube|toeic|java|git|linux)\b/);
       if (m) {
         document.documentElement.setAttribute('data-sector', m[1]);
       } else {
@@ -1180,6 +1213,7 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
   .course-menu-item[href*="/mysql/"]:hover .item-title { color: #00758f !important; }
   .course-menu-item[href*="/java/"]:hover .item-title { color: #ea580c !important; }
   .course-menu-item[href*="/git/"]:hover .item-title { color: #f05032 !important; }
+  .course-menu-item[href*="/linux/"]:hover .item-title { color: #ca8a04 !important; }
   .course-menu-item[href*="/devops/"]:hover .item-title { color: #0ea5e9 !important; }
   .course-menu-item[href*="/eccube/"]:hover .item-title { color: #10b981 !important; }
   .course-menu-item[href*="/toeic/"]:hover .item-title { color: #0891b2 !important; }
@@ -1195,6 +1229,7 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
   :root[data-theme='dark'] .course-menu-item[href*="/mysql/"]:hover .item-title { color: #38bdf8 !important; }
   :root[data-theme='dark'] .course-menu-item[href*="/java/"]:hover .item-title { color: #fb923c !important; }
   :root[data-theme='dark'] .course-menu-item[href*="/git/"]:hover .item-title { color: #ff6b4a !important; }
+  :root[data-theme='dark'] .course-menu-item[href*="/linux/"]:hover .item-title { color: #facc15 !important; }
   :root[data-theme='dark'] .course-menu-item[href*="/devops/"]:hover .item-title { color: #38bdf8 !important; }
   :root[data-theme='dark'] .course-menu-item[href*="/eccube/"]:hover .item-title { color: #34d399 !important; }
   :root[data-theme='dark'] .course-menu-item[href*="/toeic/"]:hover .item-title { color: #22d3ee !important; }
@@ -1206,6 +1241,7 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
   .badge-mysql { background: rgba(0, 117, 143, 0.12); color: #00758f; }
   .badge-java { background: rgba(234, 88, 12, 0.12); color: #c2410c; }
   .badge-git { background: rgba(240, 80, 50, 0.12); color: #d0381e; }
+  .badge-linux { background: rgba(234, 179, 8, 0.15); color: #a16207; }
   .badge-devops { background: rgba(14, 165, 233, 0.12); color: #0284c7; }
   .badge-aws { background: rgba(245, 158, 11, 0.15); color: #d97706; }
   .badge-net { background: rgba(2, 132, 199, 0.12); color: #0284c7; }
@@ -1221,6 +1257,7 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
   :root[data-theme='dark'] .badge-mysql { color: #38bdf8; background: rgba(0, 117, 143, 0.25); }
   :root[data-theme='dark'] .badge-java { color: #fb923c; background: rgba(234, 88, 12, 0.2); }
   :root[data-theme='dark'] .badge-git { color: #ff6b4a; background: rgba(240, 80, 50, 0.2); }
+  :root[data-theme='dark'] .badge-linux { color: #facc15; background: rgba(234, 179, 8, 0.2); }
   :root[data-theme='dark'] .badge-devops { color: #38bdf8; background: rgba(14, 165, 233, 0.2); }
   :root[data-theme='dark'] .badge-aws { color: #fbbf24; background: rgba(245, 158, 11, 0.2); }
   :root[data-theme='dark'] .badge-net { color: #38bdf8; background: rgba(2, 132, 199, 0.2); }
@@ -1237,6 +1274,7 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
   .mysql-bg { background: rgba(0, 117, 143, 0.12) !important; border: 1px solid rgba(0, 117, 143, 0.25) !important; }
   .java-bg { background: rgba(234, 88, 12, 0.12) !important; border: 1px solid rgba(234, 88, 12, 0.25) !important; }
   .git-bg { background: rgba(240, 80, 50, 0.12) !important; border: 1px solid rgba(240, 80, 50, 0.25) !important; }
+  .linux-bg { background: rgba(234, 179, 8, 0.15) !important; border: 1px solid rgba(234, 179, 8, 0.3) !important; }
   .devops-bg { background: rgba(14, 165, 233, 0.12) !important; border: 1px solid rgba(14, 165, 233, 0.25) !important; }
   .aws-bg { background: rgba(245, 158, 11, 0.15) !important; border: 1px solid rgba(245, 158, 11, 0.25) !important; }
   .net-bg { background: rgba(2, 132, 199, 0.12) !important; border: 1px solid rgba(2, 132, 199, 0.25) !important; }
@@ -2049,6 +2087,16 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
   }
   .card-featured-git:hover .card-name { color: #f05032; }
 
+  .card-featured-linux {
+    background: rgba(234, 179, 8, 0.05);
+    border: 1.5px solid rgba(234, 179, 8, 0.35);
+  }
+  .card-featured-linux:hover {
+    border-color: #eab308;
+    box-shadow: 0 8px 24px -6px rgba(234, 179, 8, 0.25);
+  }
+  .card-featured-linux:hover .card-name { color: #ca8a04; }
+
   .card-featured-eccube {
     background: rgba(16, 185, 129, 0.05);
     border: 1.5px solid rgba(16, 185, 129, 0.35);
@@ -2164,6 +2212,14 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
     font-weight: 600 !important;
   }
   .mobile-item-git:hover { background: rgba(240, 80, 50, 0.18) !important; }
+
+  .mobile-item-linux {
+    background: rgba(234, 179, 8, 0.08) !important;
+    border: 1px solid rgba(234, 179, 8, 0.25) !important;
+    color: #ca8a04 !important;
+    font-weight: 600 !important;
+  }
+  .mobile-item-linux:hover { background: rgba(234, 179, 8, 0.18) !important; }
 
   .card-icon-part {
     font-size: 1.65rem;

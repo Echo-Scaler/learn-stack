@@ -1,13 +1,13 @@
 ---
 title: Complete Engineering Curriculum
-description: Overview of all 14 tracks, 527+ lessons, chapter breakdown, and competencies
+description: Overview of all 15 tracks, 529+ lessons, chapter breakdown, and competencies
 ---
 
 <div class="curriculum-container">
 
 <div class="curriculum-intro">
   <p class="lead-text">
-    LearnStack တွင် ပါဝင်သော သင်ရိုးညွှန်းတမ်းအားလုံး (စုစုပေါင်း <strong>၅၂၇ ခန်း</strong>၊ ၁၄ ခုသော အထူးပြု Track များ) ၏ ကဏ္ဍအလိုက် အသေးစိတ် မာတိကာနှင့် လေ့လာရမည့် ခေါင်းစဉ်များ ဖြစ်ပါသည်။
+    LearnStack တွင် ပါဝင်သော သင်ရိုးညွှန်းတမ်းအားလုံး (စုစုပေါင်း <strong>၅၂၉ ခန်း</strong>၊ ၁၅ ခုသော အထူးပြု Track များ) ၏ ကဏ္ဍအလိုက် အသေးစိတ် မာတိကာနှင့် လေ့လာရမည့် ခေါင်းစဉ်များ ဖြစ်ပါသည်။
   </p>
 </div>
 
@@ -350,6 +350,17 @@ description: Overview of all 14 tracks, 527+ lessons, chapter breakdown, and com
   - **Section 3: Team Flow, Enterprise & Disaster Recovery**:
     - [05. Team Collaboration, GitHub Workflow & Branching Models](/git/05_team_collaboration_and_github_flow/)
     - [06. Disaster Recovery, Advanced Git Tools & Troubleshooting](/git/06_disaster_recovery_and_advanced_tools/)
+
+---
+
+## 🐧 15. Linux Server Engineering Track
+- **စုစုပေါင်း အခန်းရေ**: ၂ ခန်း (Phase 1 စတင်လေ့လာခြင်း)
+- **အဆင့်**: Absolute Beginner မှ 3–4 Years Professional Linux System Administrator အဆင့်ထိ
+- **လေ့လာရန်ကြာချိန်**: ၂ ပတ် မှ ၄ ပတ်
+- **အဓိက ခေါင်းစဉ်များ**:
+  - **Phase 1: Linux Fundamentals**:
+    - [00. Linux Server Engineering Roadmap (0 to 4-Year Level)](/linux/00_overview/)
+    - [01. Phase 1 Lesson 1: Linux Introduction, Architecture & Mac Lab Setup](/linux/01_phase1_lesson1_linux_intro_and_mac_lab/)
 
 </div>
 
