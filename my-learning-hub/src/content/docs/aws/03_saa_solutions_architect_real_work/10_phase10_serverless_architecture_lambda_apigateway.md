@@ -121,6 +121,3 @@ Lambda ကို Asynchronous (ဥပမာ S3 Event သို့မဟုတ်
 1. Lambda သည် **အလိုအလျောက် ၂ ကြိမ် ထပ်မံ ကြိုးစားသည် (2 Automatic Retries)**။
 2. ၃ ကြိမ်စလုံး မအောင်မြင်ပါက အဆိုပါ ပျက်စီးသွားသော Message ကို စွန့်ပစ်မည့်အစား **Amazon SQS Dead-Letter Queue (DLQ)** သို့ ထည့်သွင်းပေးသည်။
 3. DevOps အင်ဂျင်နီယာများသည် DLQ ထဲမှ Message များကို စစ်ဆေး၍ Bug ပြင်ပြီးနောက် ပြန်လည် Replay ပြုလုပ်နိုင်သည်။
-
----
-*နောက်အခန်းသို့ ဆက်လက်လေ့လာရန်:* [11_Phase11_Application_Integration_and_Workflows.md](file:///Users/kyawwaiyan/Documents/my-Home-tech/AWS-Most-Used-Feature/aws_saa_solutions_architect_real_work/11_Phase11_Application_Integration_and_Workflows.md)

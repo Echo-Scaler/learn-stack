@@ -55,6 +55,3 @@ Topic နှင့် Service တိုင်းအတွက် အောက်�
 | Terraform (IaC) | CI/CD (GitHub Actions / CodePipeline) | Well-Architected     |
 +-------------------------------------------------------------------------------+
 ```
-
----
-*နောက်အခန်းသို့ သွားရန်:* [01_Level1_Cloud_Fundamentals_and_Networking.md](file:///Users/kyawwaiyan/Documents/my-Home-tech/AWS-Most-Used-Feature/aws_beginner_to_advanced_real_work/01_Level1_Cloud_Fundamentals_and_Networking.md)

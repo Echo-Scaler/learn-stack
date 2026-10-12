@@ -912,4 +912,4 @@ S3 = better for larger objects (> 1KB), per-operation overhead too high for tiny
 >
 > **Score:** ___/100
 >
-> ➡️ **Next:** [Exam Set 05 — Databases (Q401-Q500)](./Exam_Set_05_Database.md)
+> ➡️ **Next:** [Exam Set 05 — Databases (Q401-Q500)](/aws/04_saa_c03_practice_exams/exam_set_05_database/)

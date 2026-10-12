@@ -310,6 +310,3 @@ EC2, Lambda, ECS များမှ S3, DynamoDB သို့ ချိတ်ဆ
 
 ### Exam Rule:
 အကယ်၍ Application Code ကို မပြင်ဆင်ဘဲ Linux Filesystem အတိုင်း Mount ချိတ်ဆက်ပြီး Read/Write လုပ်လိုပါက **Amazon EFS** ဖြစ်ပြီး၊ REST API (`GetObject`/`PutObject`) ဖြင့် လှမ်းခေါ်လိုပါက **Amazon S3** ဖြစ်သည်။
-
----
-*သင်ရိုးမာတိကာသို့ ပြန်သွားရန်:* [README.md](file:///Users/kyawwaiyan/Documents/my-Home-tech/AWS-Most-Used-Feature/aws_saa_solutions_architect_real_work/README.md)

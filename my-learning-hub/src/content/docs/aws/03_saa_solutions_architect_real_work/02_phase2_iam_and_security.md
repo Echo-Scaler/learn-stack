@@ -112,6 +112,3 @@ IAM သည် AWS ရှိ Resource များသို့ မည်သူက
 |                                                                                   |
 +-----------------------------------------------------------------------------------+
 ```
-
----
-*နောက်အခန်းသို့ ဆက်လက်လေ့လာရန်:* [03_Phase3_VPC_and_Networking.md](file:///Users/kyawwaiyan/Documents/my-Home-tech/AWS-Most-Used-Feature/aws_saa_solutions_architect_real_work/03_Phase3_VPC_and_Networking.md)

@@ -166,6 +166,3 @@ echo "fs-0123456789abcdef0:/ /var/www/html/uploads efs _netdev,tls 0 0" | sudo t
 |  - Compliance 7-10 years archival with zero access   |  **S3 Glacier Deep Archive**     |
 +------------------------------------------------------+----------------------------------+
 ```
-
----
-*နောက်အခန်းသို့ ဆက်လက်လေ့လာရန်:* [07_Phase7_Databases_RDS_Aurora_DynamoDB.md](file:///Users/kyawwaiyan/Documents/my-Home-tech/AWS-Most-Used-Feature/aws_saa_solutions_architect_real_work/07_Phase7_Databases_RDS_Aurora_DynamoDB.md)

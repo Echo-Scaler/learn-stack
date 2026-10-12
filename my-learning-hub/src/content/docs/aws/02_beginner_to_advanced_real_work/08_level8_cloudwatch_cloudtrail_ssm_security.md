@@ -109,6 +109,3 @@ aws cloudwatch put-metric-alarm \
   --evaluation-periods 1 \
   --alarm-actions arn:aws:sns:ap-northeast-1:123456789012:slack-alert-topic
 ```
-
----
-*နောက်အခန်းသို့ သွားရန်:* [09_Level9_Terraform_CICD_GitHubActions.md](file:///Users/kyawwaiyan/Documents/my-Home-tech/AWS-Most-Used-Feature/aws_beginner_to_advanced_real_work/09_Level9_Terraform_CICD_GitHubActions.md)

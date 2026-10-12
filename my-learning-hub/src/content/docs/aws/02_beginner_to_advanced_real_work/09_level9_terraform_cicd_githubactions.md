@@ -180,6 +180,3 @@ jobs:
         cluster: prod-fargate-cluster
         wait-for-service-stability: true
 ```
-
----
-*နောက်အခန်းသို့ သွားရန်:* [10_Level10_HA_DR_Cost_WellArchitected.md](file:///Users/kyawwaiyan/Documents/my-Home-tech/AWS-Most-Used-Feature/aws_beginner_to_advanced_real_work/10_Level10_HA_DR_Cost_WellArchitected.md)

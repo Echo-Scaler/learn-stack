@@ -107,6 +107,3 @@ Architect တစ်ဦးအနေဖြင့် စနစ်တစ်ခု �
 |                                                                                   |
 +-----------------------------------------------------------------------------------+
 ```
-
----
-*နောက်အခန်းသို့ ဆက်လက်လေ့လာရန်:* [09_Phase9_Resilient_Architecture_and_Decoupling.md](file:///Users/kyawwaiyan/Documents/my-Home-tech/AWS-Most-Used-Feature/aws_saa_solutions_architect_real_work/09_Phase9_Resilient_Architecture_and_Decoupling.md)

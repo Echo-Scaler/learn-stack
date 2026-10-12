@@ -11,6 +11,11 @@
       "permanent": true
     },
     {
+      "source": "/aws/01_networking_and_security/:match*",
+      "destination": "/networking/01_networking_and_security/:match*",
+      "permanent": true
+    },
+    {
       "source": "/aws",
       "destination": "/aws/00_overview/",
       "permanent": false

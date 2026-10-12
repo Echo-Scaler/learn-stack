@@ -296,6 +296,3 @@ aws ssm send-command \
 |                                                                                   |
 +-----------------------------------------------------------------------------------+
 ```
-
----
-*သင်ရိုးမာတိကာသို့ ပြန်သွားရန်:* [README.md](file:///Users/kyawwaiyan/Documents/my-Home-tech/AWS-Most-Used-Feature/aws_saa_solutions_architect_real_work/README.md)

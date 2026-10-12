@@ -134,6 +134,3 @@ Partition Key တစ်ခုတည်းသို့သာ Traffic အားလ
 Shopping Cart Sessions သို့မဟုတ် Verification OTP Codes များကို ဖျက်ပစ်ရန်အတွက် Script ရေးပြီး Cron job ပတ်စရာ မလိုပါ:
 1. Item ထဲတွင် `TimeToLive` attribute (Unix Epoch Timestamp) ထည့်သွင်းထားသည်။
 2. DynamoDB က အဆိုပါ အချိန်ရောက်ပါက **Background မှ အလိုအလျောက် ဖျက်ပစ်ပေးသည် (Database Capacity RCU/WCU မကုန်ပါ - လုံးဝ အခမဲ့!)**။
-
----
-*နောက်အခန်းသို့ ဆက်လက်လေ့လာရန်:* [08_Phase8_Performance_Architecture_Caching_CloudFront.md](file:///Users/kyawwaiyan/Documents/my-Home-tech/AWS-Most-Used-Feature/aws_saa_solutions_architect_real_work/08_Phase8_Performance_Architecture_Caching_CloudFront.md)

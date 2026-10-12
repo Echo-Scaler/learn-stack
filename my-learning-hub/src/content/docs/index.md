@@ -144,8 +144,8 @@ Master modern software engineering, cloud architecture, and high-income language
 <a href="/laravel/00_overview/" class="track-pill track-pill-laravel">🔺 Laravel (20 Ch)</a>
 <a href="/mysql/00_overview/" class="track-pill track-pill-mysql">🗄️ MySQL (21 Ch)</a>
 <a href="/devops/00_overview/" class="track-pill track-pill-devops">🐳 Docker &amp; DevOps (46 Ch)</a>
-<a href="/aws/00_overview/" class="track-pill track-pill-aws">☁️ AWS Labs (48 Labs)</a>
-<a href="/networking/00_overview/" class="track-pill track-pill-net">🌐 Networking (6 Ch)</a>
+<a href="/aws/00_overview/" class="track-pill track-pill-aws">☁️ AWS Labs (41 Labs)</a>
+<a href="/networking/00_overview/" class="track-pill track-pill-net">🌐 Networking (12 Ch)</a>
 <a href="/eccube/00_overview/" class="track-pill track-pill-eccube">🛍️ EC-CUBE 4 (217 Ch)</a>
 <a href="/japanese-grammar/00_n1_overview_and_strategy/01_n1_exam_structure_and_study_guide/" class="track-pill track-pill-grammar">⛩️ N1 Grammar (10 Lessons)</a>
 <a href="/japanese-vocab/01_high_frequency_verbs/" class="track-pill track-pill-vocab">📖 N1 Vocab (570+ Words)</a>
@@ -270,7 +270,7 @@ Master modern software engineering, cloud architecture, and high-income language
 <p>Production Cloud Architecture၊ VPC၊ IAM၊ EC2၊ ALB၊ RDS Aurora၊ ECS Fargate၊ Lambda Serverless၊ Terraform CI/CD၊ SAA-C03 Real-World Scenarios နှင့် ဂျပန် IT လုပ်ငန်းခွင်သုံး 障害対応 Runbooks များ (မြန်မာဘာသာ လက်တွေ့ Lab အပြည့်အစုံ)။</p>
 </div>
 <div class="catalog-card-footer">
-<span>48 Chapters &amp; SAA-C03 Exams (4 Sections)</span>
+<span>41 Chapters &amp; SAA-C03 Exams (3 Sections)</span>
 <span class="footer-action-aws">Start AWS Labs ↗</span>
 </div>
 </a>
@@ -291,10 +291,10 @@ Master modern software engineering, cloud architecture, and high-income language
 <div>
 <span class="catalog-card-tag" style="background: rgba(14, 165, 233, 0.15); color: #0284c7; border: 1px solid rgba(14, 165, 233, 0.3);">Track 12 • Networking &amp; Automation <span class="tag-badge-new" style="background:#0284c7;">NEW</span></span>
 <h3>Enterprise Networking &amp; Cloud Automation</h3>
-<p>OSI 7 Layers vs TCP/IP၊ Packet Flow၊ DNS/DHCP/NAT၊ IPv4 &amp; CIDR Notation (/16 to /32)၊ VLSM အကြီးဆုံးမှ အသေးဆုံးသို့ Subnetting တွက်ချက်နည်း၊ AWS VPC Multi-Tier Architecture နှင့် Terraform IaC အလိုအလျောက် တည်ဆောက်ခြင်း လမ်းညွှန်။</p>
+<p>ကွန်ရက်အခြေခံ (IP, TCP/UDP, DNS, HTTP/S, NAT, SG, NACL, IAM)၊ OSI 7 Layers၊ Subnetting (CIDR/VLSM Math)၊ AWS VPC Multi-Tier Architecture နှင့် Terraform IaC အလိုအလျောက် တည်ဆောက်ခြင်း လမ်းညွှန်။</p>
 </div>
 <div class="catalog-card-footer">
-<span>6 In-Depth Guides</span>
+<span>12 In-Depth Chapters (2 Sections)</span>
 <span style="color:#0284c7; font-weight:700;">Start Networking ↗</span>
 </div>
 </a>

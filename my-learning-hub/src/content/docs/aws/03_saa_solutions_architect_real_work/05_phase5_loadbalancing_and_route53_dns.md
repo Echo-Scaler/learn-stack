@@ -146,6 +146,3 @@ Root Domain (Apex Domain - `example.com`) သို့မဟုတ် Subdomain 
 
 ### Split-View DNS (Private vs Public Hosted Zone)
 ကုမ္ပဏီအတွင်း စနစ်များအတွက် `internal.company.com` ကို သီးခြား Domain မဝယ်ဘဲ VPC အတွင်းမှသာ ခေါ်ဆိုနိုင်စေရန် **Route 53 Private Hosted Zone** ကို သက်ဆိုင်ရာ VPC ID နှင့် ချိတ်ဆက် အသုံးပြုသည်။ ပြင်ပ အင်တာနက်မှ မည်သို့မျှ ဖွင့်ကြည့်၍ မရနိုင်ပါ။
-
----
-*နောက်အခန်းသို့ ဆက်လက်လေ့လာရန်:* [06_Phase6_Storage_S3_EFS_and_Comparison.md](file:///Users/kyawwaiyan/Documents/my-Home-tech/AWS-Most-Used-Feature/aws_saa_solutions_architect_real_work/06_Phase6_Storage_S3_EFS_and_Comparison.md)

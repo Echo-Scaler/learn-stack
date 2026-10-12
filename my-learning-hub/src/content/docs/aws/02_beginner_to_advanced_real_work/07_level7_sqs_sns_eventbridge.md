@@ -101,6 +101,3 @@ aws sns subscribe --topic-arn $TOPIC_ARN --protocol sqs --notification-endpoint 
 # ၄။ SNS သို့ Message တစ်ခု စမ်းသပ် Publish လုပ်ခြင်း
 aws sns publish --topic-arn $TOPIC_ARN --message '{"order_id": "ORD-2026-999", "amount": 25000}'
 ```
-
----
-*နောက်အခန်းသို့ သွားရန်:* [08_Level8_CloudWatch_CloudTrail_SSM_Security.md](file:///Users/kyawwaiyan/Documents/my-Home-tech/AWS-Most-Used-Feature/aws_beginner_to_advanced_real_work/08_Level8_CloudWatch_CloudTrail_SSM_Security.md)

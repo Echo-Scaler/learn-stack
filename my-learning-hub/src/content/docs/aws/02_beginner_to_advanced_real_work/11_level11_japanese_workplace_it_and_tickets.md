@@ -921,6 +921,3 @@ SNSとLambdaを連携してHard Bounce発生アドレスを即座にデータベ
 ```
 - **ပြဿနာနောက်ခံ:** CloudFront က ALB Custom Origin သို့ HTTPS ဖြင့် ချိတ်ဆက်ရာတွင် ALB ပေါ်ရှိ ACM Certificate ၏ Domain Name နှင့် CloudFront Origin Domain Name ကွဲလွဲနေသဖြင့် SSL Handshake ပျက်စီးကာ 502 တက်ခြင်း။
 - **ဖြေရှင်းနည်း:** CloudFront Origin Domain Name ကို ALB DNS နာမည် အစား ACM Certificate ထဲတွင် ပါဝင်သော Custom CNAME Domain (ဥပမာ- `origin.example.com`) သို့ သတ်မှတ်ပေးပြီး Route 53 တွင် ALB သို့ ညွှန်းပေးပါ။
-
----
-*မူလမာတိကာသို့ ပြန်သွားရန်:* [README.md](file:///Users/kyawwaiyan/Documents/my-Home-tech/AWS-Most-Used-Feature/aws_beginner_to_advanced_real_work/README.md)

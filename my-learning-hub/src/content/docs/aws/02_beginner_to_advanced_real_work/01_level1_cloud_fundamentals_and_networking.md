@@ -146,6 +146,3 @@ Availability Zone A     Availability Zone C     Availability Zone D
    ထို AZ တည်ရှိရာ Data Center တွင် မီးပျက်ခြင်း၊ Hardware ပြဿနာဖြစ်ခြင်း သို့မဟုတ် Fiber Cable ပြတ်တောက်ပါက မိမိတို့ Web System တစ်ခုလုံး Down သွားမည် (Single Point of Failure - SPOF)။
 4. **Multi-AZ Architecture မဖြစ်မနေ လိုအပ်ပုံ:**  
    Production Web System များတွင် အနည်းဆုံး AZ ၂ ခု (ဥပမာ- `ap-northeast-1a` နှင့် `ap-northeast-1c`) တွင် Server နှင့် Database များကို ခွဲထားရမည်။ တစ်ဖက် AZ ပျက်ကျသော်လည်း အခြားတစ်ဖက် AZ ရှိ Server များက ဆက်လက် Run နေမည် ဖြစ်သည်။
-
----
-*နောက်အခန်းသို့ သွားရန်:* [02_Level2_IAM_VPC_EC2_EBS.md](file:///Users/kyawwaiyan/Documents/my-Home-tech/AWS-Most-Used-Feature/aws_beginner_to_advanced_real_work/02_Level2_IAM_VPC_EC2_EBS.md)

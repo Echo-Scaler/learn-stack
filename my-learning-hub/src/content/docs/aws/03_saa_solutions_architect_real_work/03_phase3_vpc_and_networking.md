@@ -122,6 +122,3 @@ Virtual Private Cloud (VPC) သည် AWS Cloud အတွင်း မိမိ�
 |                                                                                   |
 +-----------------------------------------------------------------------------------+
 ```
-
----
-*နောက်အခန်းသို့ ဆက်လက်လေ့လာရန်:* [04_Phase4_Compute_EC2_Storage_AutoScaling.md](file:///Users/kyawwaiyan/Documents/my-Home-tech/AWS-Most-Used-Feature/aws_saa_solutions_architect_real_work/04_Phase4_Compute_EC2_Storage_AutoScaling.md)

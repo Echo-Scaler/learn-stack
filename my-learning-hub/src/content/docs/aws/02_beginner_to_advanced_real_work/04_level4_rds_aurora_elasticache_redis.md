@@ -155,6 +155,3 @@ aws rds describe-db-instances \
   --query "DBInstances[0].[DBInstanceStatus,MultiAZ,Endpoint.Address]"
 ```
 Expected Output: Status သည် `available` ဖြစ်ရမည်ဖြစ်ပြီး MultiAZ သည် `true` ဖြစ်နေရမည်။
-
----
-*နောက်အခန်းသို့ သွားရန်:* [05_Level5_Docker_ECR_ECS_Fargate.md](file:///Users/kyawwaiyan/Documents/my-Home-tech/AWS-Most-Used-Feature/aws_beginner_to_advanced_real_work/05_Level5_Docker_ECR_ECS_Fargate.md)

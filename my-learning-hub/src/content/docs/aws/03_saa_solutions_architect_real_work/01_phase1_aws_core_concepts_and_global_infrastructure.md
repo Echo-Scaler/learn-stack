@@ -94,6 +94,3 @@ SAA-C03 စာမေးပွဲတွင်ရော Production တွင်ပ
 | **Amazon RDS** | Hardware, **OS Installation & OS Security Patching**, DB Engine Installation | **DB User Passwords, DB Optimization, Table Schema, Network Subnets, Encryption** |
 | **AWS Lambda** | Hardware, OS, Language Runtime, Scaling, Patching | **Application Code သီးသန့်, IAM Execution Role, Function Timeout/Memory settings** |
 | **Amazon S3** | Disk Storage, Hardware Replacement, 11 9's Durability | **Bucket Policy, S3 Block Public Access, Data Encryption, Object Versioning** |
-
----
-*နောက်အခန်းသို့ ဆက်လက်လေ့လာရန်:* [02_Phase2_IAM_and_Security.md](file:///Users/kyawwaiyan/Documents/my-Home-tech/AWS-Most-Used-Feature/aws_saa_solutions_architect_real_work/02_Phase2_IAM_and_Security.md)

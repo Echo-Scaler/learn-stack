@@ -102,6 +102,3 @@ Supporting Enterprise Services:
 - [x] **Zero Plain Text:** Passwords များကို Secrets Manager တွင် ထားရှိခြင်း။
 - [x] **Storage:** S3 Public Access အားလုံးကို Block ထားပြီး CloudFront OAC ဖြင့်သာ ဖတ်ခွင့်ပြုခြင်း။
 - [x] **Observability:** CloudWatch Container Insights နှင့် Alarms များ ဖွင့်ထားခြင်း။
-
----
-*နောက်အခန်းသို့ သွားရန်:* [14_AWS_CLI_Reference_and_Interview_Prep.md](file:///Users/kyawwaiyan/Documents/my-Home-tech/AWS-Most-Used-Feature/aws_beginner_to_advanced_real_work/14_AWS_CLI_Reference_and_Interview_Prep.md)

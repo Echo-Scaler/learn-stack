@@ -113,6 +113,3 @@ def lambda_handler(event, context):
         'body': json.dumps(response.get('Item', {'error': 'User not found'}))
     }
 ```
-
----
-*နောက်အခန်းသို့ သွားရန်:* [07_Level7_SQS_SNS_EventBridge.md](file:///Users/kyawwaiyan/Documents/my-Home-tech/AWS-Most-Used-Feature/aws_beginner_to_advanced_real_work/07_Level7_SQS_SNS_EventBridge.md)

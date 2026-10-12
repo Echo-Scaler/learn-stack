@@ -163,6 +163,3 @@ aws ecs create-service \
   --network-configuration "awsvpcConfiguration={subnets=[subnet-01234567891a,subnet-01234567891c],securityGroups=[sg-0123456789ecs],assignPublicIp=DISABLED}" \
   --load-balancers "targetGroupArn=arn:aws:elasticloadbalancing:ap-northeast-1:123456789012:targetgroup/prod-ecs-tg/abcdef,containerName=laravel-app,containerPort=80"
 ```
-
----
-*နောက်အခန်းသို့ သွားရန်:* [06_Level6_Lambda_APIGateway_DynamoDB.md](file:///Users/kyawwaiyan/Documents/my-Home-tech/AWS-Most-Used-Feature/aws_beginner_to_advanced_real_work/06_Level6_Lambda_APIGateway_DynamoDB.md)

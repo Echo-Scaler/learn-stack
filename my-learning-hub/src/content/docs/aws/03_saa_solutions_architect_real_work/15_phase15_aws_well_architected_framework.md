@@ -233,6 +233,3 @@ AWS Management Console တွင် **AWS Well-Architected Tool** ပါဝင�
 1. **Define Workload:** မိမိ System ၏ အမည်၊ Industry (FinTech, Retail, Healthcare) နှင့် Environment (Production) ကို သတ်မှတ်သည်။
 2. **Review Questions:** မဏ္ဍိုင် (၆) ရပ်အလိုက် AWS က မေးသော မေးခွန်းများကို ဖြေဆိုသည် (ဥပမာ - "How do you securely manage your database credentials?").
 3. **Generate Lens Report:** AWS က High Risk Issues (HRI) နှင့် Medium Risk Issues (MRI) များကို ခွဲခြားထုတ်ပေးပြီး တိုးတက်စေရန် အကြံပြုချက် (Improvement Plan) ကို PDF အဖြစ် ထုတ်ပေးသည်။
-
----
-*နောက်အခန်းသို့ ဆက်လက်လေ့လာရန်:* [16_Phase16_Architecture_Decision_Making_Real_Work.md](file:///Users/kyawwaiyan/Documents/my-Home-tech/AWS-Most-Used-Feature/aws_saa_solutions_architect_real_work/16_Phase16_Architecture_Decision_Making_Real_Work.md)

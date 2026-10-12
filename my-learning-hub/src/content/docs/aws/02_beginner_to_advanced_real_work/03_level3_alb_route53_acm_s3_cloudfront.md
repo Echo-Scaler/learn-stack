@@ -195,6 +195,3 @@ aws cloudfront create-origin-access-control \
   --origin-access-control-config \
     "Name=prod-s3-oac,Description=OAC-for-S3,SigningProtocol=sigv4,SigningBehavior=always,OriginAccessControlOriginType=s3"
 ```
-
----
-*နောက်အခန်းသို့ သွားရန်:* [04_Level4_RDS_Aurora_ElastiCache_Redis.md](file:///Users/kyawwaiyan/Documents/my-Home-tech/AWS-Most-Used-Feature/aws_beginner_to_advanced_real_work/04_Level4_RDS_Aurora_ElastiCache_Redis.md)

@@ -1438,4 +1438,4 @@ Architecture: On-premises → DX → DX Gateway → TGW (region A) ↔ TGW (regi
 > 
 > **Score Tracker:** ___/100
 > 
-> ➡️ **Next:** [Exam Set 03 — Compute & EC2 (Q201-Q300)](./Exam_Set_03_Compute_EC2_ASG.md)
+> ➡️ **Next:** [Exam Set 03 — Compute & EC2 (Q201-Q300)](/aws/04_saa_c03_practice_exams/exam_set_03_compute_ec2_asg/)

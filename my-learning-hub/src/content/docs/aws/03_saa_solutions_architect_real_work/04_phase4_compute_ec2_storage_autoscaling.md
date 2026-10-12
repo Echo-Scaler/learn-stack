@@ -176,6 +176,3 @@ Traffic နည်းသွား၍ Server ကို Terminate လုပ်တ�
 1. ASG က Server ကို Terminate မလုပ်သေးဘဲ `Terminating:Wait` အခြေအနေတွင် စက္ကန့် ၃၀၀ (၅ မိနစ်) ဆိုင်းငံ့ထားသည်။
 2. ALB က အဆိုပါ Server ဆီသို့ Request အသစ်များ မပို့တော့ဘဲ လက်ရှိ Request များ ပြီးဆုံးအောင် စောင့်ဆိုင်းပေးသည် (**Connection Draining / Deregistration Delay**).
 3. Server ပေါ်ရှိ Log ဖိုင်များကို S3 သို့ အပြီးသတ် Upload တင်ပြီးမှသာ Server ကို အပြီးတိုင် ဖျက်ပစ်သည်။
-
----
-*နောက်အခန်းသို့ ဆက်လက်လေ့လာရန်:* [05_Phase5_LoadBalancing_and_Route53_DNS.md](file:///Users/kyawwaiyan/Documents/my-Home-tech/AWS-Most-Used-Feature/aws_saa_solutions_architect_real_work/05_Phase5_LoadBalancing_and_Route53_DNS.md)

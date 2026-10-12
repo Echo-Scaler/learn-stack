@@ -240,17 +240,11 @@ description: Overview of all 15 tracks, 546+ lessons, chapter breakdown, and com
 ---
 
 ## ☁️ 10. AWS Cloud & DevOps Master Real Labs Track
-- **စုစုပေါင်း အခန်းရေ**: ၄၇ ခန်း (Foundations, 15 Level Labs, 18 SAA Phases, 7 Exam Sets)
+- **စုစုပေါင်း အခန်းရေ**: ၄၁ ခန်း (15 Level Labs, 18 SAA Phases, 7 Exam Sets)
 - **အဆင့်**: Beginner မှ Senior Cloud / Solutions Architect အထိ (မြန်မာဘာသာ လက်တွေ့ အသေးစိတ်)
 - **အဓိက ခေါင်းစဉ်များ**:
   - **Track Overview**: [AWS Production Master Overview & Global Infrastructure](/aws/00_overview/)
-  - **Module 1: Networking & Security Foundations**:
-    - [01. IP Addressing, CIDR & Port Fundamentals](/aws/01_networking_and_security/01_ip_addressing_and_ports/)
-    - [02. Transport & Web Protocols (TCP, UDP, DNS, HTTP, HTTPS)](/aws/01_networking_and_security/02_protocols_tcp_udp_dns_http_https/)
-    - [03. Network Security & Isolation (NAT, SG, NACL, VPC Peering)](/aws/01_networking_and_security/03_network_security_and_isolation/)
-    - [04. Identity & Data Protection (IAM Least Privilege, KMS, Secrets)](/aws/01_networking_and_security/04_identity_and_data_protection/)
-    - [05. Operations, Logging & Backup (CloudWatch, CloudTrail, S3 Glacier)](/aws/01_networking_and_security/05_operations_logging_monitoring_backup_audit/)
-  - **Module 2: 15-Level Production Real-Work Labs**:
+  - **Module 1: 15-Level Production Real-Work Labs**:
     - [Level 1: Cloud Fundamentals & Networking](/aws/02_beginner_to_advanced_real_work/01_level1_cloud_fundamentals_and_networking/)
     - [Level 2: IAM, VPC & EC2 Core Infrastructure](/aws/02_beginner_to_advanced_real_work/02_level2_iam_vpc_ec2_ebs/)
     - [Level 3: ALB, Auto Scaling, Route 53, ACM, S3, CloudFront](/aws/02_beginner_to_advanced_real_work/03_level3_alb_route53_acm_s3_cloudfront/)
@@ -265,9 +259,9 @@ description: Overview of all 15 tracks, 546+ lessons, chapter breakdown, and com
     - [Level 12: Production Troubleshooting Runbook (障害対応マニュアル)](/aws/02_beginner_to_advanced_real_work/12_level12_production_troubleshooting_runbook/)
     - [Level 13: Capstone Project — Production Laravel EC Site Deployment on AWS](/aws/02_beginner_to_advanced_real_work/13_final_capstone_laravel_production_project/)
     - [Level 14: AWS CLI Complete Reference Cheatsheet & Tech Interview Prep](/aws/02_beginner_to_advanced_real_work/14_aws_cli_reference_and_interview_prep/)
-  - **Module 3: SAA Solutions Architect Real-Work Architecture Phases**:
+  - **Module 2: SAA Solutions Architect Real-Work Architecture Phases**:
     - [Phase 0-17: Solutions Architect Master Guide (VPC, Resilient Decoupling, SAA Decision Making)](/aws/03_saa_solutions_architect_real_work/00_phase0_foundations_cloud_networking_linux/)
-  - **Module 4: SAA-C03 Real Exam Practice Sets**:
+  - **Module 3: SAA-C03 Real Exam Practice Sets**:
     - [Exam Sets 01-07: Real Exam Simulations with In-Depth Burmese Explanations](/aws/04_saa_c03_practice_exams/exam_set_01_security_iam/)
 
 ---
@@ -290,16 +284,24 @@ description: Overview of all 15 tracks, 546+ lessons, chapter breakdown, and com
 ---
 
 ## 🌐 12. Networking & Cloud Automation Track
-- **စုစုပေါင်း အခန်းရေ**: ၆ ခန်း (1 Section)
+- **စုစုပေါင်း အခန်းရေ**: ၁၂ ခန်း (2 Sections: Foundations & Security ၆ ခန်း + Subnetting, Cloud VPC & IaC Automation ၆ ခန်း)
 - **အဆင့်**: Network Foundations မှ AWS VPC Architecture & Terraform IaC အထိ
-- **လေ့လာရန်ကြာချိန်**: ၁ ပတ် မှ ၂ ပတ်
+- **လေ့လာရန်ကြာချိန်**: ၂ ပတ် မှ ၃ ပတ်
 - **အဓိက ခေါင်းစဉ်များ**:
-  - [00. Networking & Cloud Automation Overview](/networking/00_overview/)
-  - [01. OSI 7 Layers vs TCP/IP Protocol Suite & Packet Encapsulation](/networking/01_osi_model_and_tcp_ip_layers/)
-  - [02. IPv4 Architecture, Subnetting, CIDR Notation & VLSM Calculation](/networking/02_ip_addressing_subnetting_cidr_vlsm/)
-  - [03. Core Network Services & Protocols (DNS, DHCP, NAT, BGP, ARP, ICMP)](/networking/03_core_network_protocols_dns_dhcp_nat_bgp/)
-  - [04. AWS Cloud Networking Architecture (VPC, Subnets, IGW, NAT GW, Transit GW)](/networking/04_aws_cloud_networking_architecture/)
-  - [05. Terraform IaC VPC Automation Lab (Multi-AZ Production Cloud Network)](/networking/05_terraform_iac_vpc_automation_lab/)
+  - **Module 1: Networking & Security Foundations**:
+    - [01. IP Addressing, CIDR & Port Fundamentals](/networking/01_networking_and_security/01_ip_addressing_and_ports/)
+    - [02. Transport & Web Protocols (TCP, UDP, DNS, HTTP, HTTPS)](/networking/01_networking_and_security/02_protocols_tcp_udp_dns_http_https/)
+    - [03. Network Security & Isolation (NAT, SG, NACL, VPC Peering)](/networking/01_networking_and_security/03_network_security_and_isolation/)
+    - [04. Identity & Data Protection (IAM Least Privilege, KMS, Secrets)](/networking/01_networking_and_security/04_identity_and_data_protection/)
+    - [05. Operations, Logging & Backup (CloudWatch, CloudTrail, S3 Glacier)](/networking/01_networking_and_security/05_operations_logging_monitoring_backup_audit/)
+    - [Master Guide: Networking & Security Foundations](/networking/01_networking_and_security/networking_and_security_foundations_burmese/)
+  - **Module 2: Subnetting, Cloud VPC & Terraform IaC Automation**:
+    - [00. Networking & Cloud Automation Overview](/networking/00_overview/)
+    - [01. Basic Networking Fundamentals (OSI & TCP/IP)](/networking/01_basic_networking_fundamentals/)
+    - [02. IPv4, Subnetting & CIDR Notation](/networking/02_ipv4_cidr_and_subnetting/)
+    - [03. VLSM (Variable Length Subnet Masking) Calculation](/networking/03_vlsm_variable_length_subnet_masking/)
+    - [04. Cloud VPC Infrastructure Networking Design](/networking/04_cloud_infrastructure_networking_design/)
+    - [05. Cloud Infrastructure Automation (Terraform IaC Lab)](/networking/05_cloud_infrastructure_automation_preparation/)
 
 ---
 

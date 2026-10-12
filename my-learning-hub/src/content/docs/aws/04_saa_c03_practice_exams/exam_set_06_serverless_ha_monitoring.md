@@ -1383,4 +1383,4 @@ description: "Note: ဤ Set တွင် Q501–Q700 (200 မေးခွန်�
 > **Score Section B (HA & Monitoring):** ___/100
 > **Total:** ___/200
 >
-> ➡️ **Next:** [Exam Set 07 — Cost, Networking & Mixed Final (Q701-Q1000+)](./Exam_Set_07_Cost_Network_Mixed.md)
+> ➡️ **Next:** [Exam Set 07 — Cost, Networking & Mixed Final (Q701-Q1000+)](/aws/04_saa_c03_practice_exams/exam_set_07_cost_network_mixed/)

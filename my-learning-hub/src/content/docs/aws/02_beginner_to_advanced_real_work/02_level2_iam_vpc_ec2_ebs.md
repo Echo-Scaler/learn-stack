@@ -198,6 +198,3 @@ EC2 Instance တွင် တပ်ဆင်အသုံးပြုရသော
 1. **gp3 (General Purpose SSD - စံထားအကြံပြုချက်):** Japan Production အများစုတွင် 90% အသုံးပြုသည်။ ကုန်ကျစရိတ် အသက်သာဆုံးဖြစ်ပြီး Disk Size ကို တိုးစရာမလိုဘဲ IOPS (Input/Output Per Second) နှင့် Throughput (MB/s) ကို လိုသလို သီးခြား မြှင့်တင်နိုင်သည်။
 2. **io2 (Provisioned IOPS SSD):** အလွန်ပြင်းထန်သော I/O လိုအပ်သည့် Enterprise Oracle/SQL Server Database များအတွက် သုံးသည်။ စရိတ်ကြီးသည်။
 3. **EBS Snapshot:** EBS Disk တစ်ခုလုံးကို S3 ပေါ်သို့ Incremental Backup အဖြစ် Point-in-time သိမ်းဆည်းပေးသော စနစ်။ Disaster ဖြစ်ပါက Snapshot မှ EBS Volume အသစ် ချက်ချင်း ပြန်ဆောက်နိုင်သည်။
-
----
-*နောက်အခန်းသို့ သွားရန်:* [03_Level3_ALB_Route53_ACM_S3_CloudFront.md](file:///Users/kyawwaiyan/Documents/my-Home-tech/AWS-Most-Used-Feature/aws_beginner_to_advanced_real_work/03_Level3_ALB_Route53_ACM_S3_CloudFront.md)

@@ -78,6 +78,3 @@ description: "Architect Perspective: အရာအားလုံးသည် အ
 |                                                                                   |
 +-----------------------------------------------------------------------------------+
 ```
-
----
-*နောက်အခန်းသို့ ဆက်လက်လေ့လာရန်:* [14_Phase14_Cost_Optimization_and_FinOps.md](file:///Users/kyawwaiyan/Documents/my-Home-tech/AWS-Most-Used-Feature/aws_saa_solutions_architect_real_work/14_Phase14_Cost_Optimization_and_FinOps.md)

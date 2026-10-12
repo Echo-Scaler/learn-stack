@@ -195,28 +195,17 @@ function classifyLesson(href: string, courseName: string) {
     }
   }
 
-  // 2. AWS Cloud Track (4 Core Sections, 48 chapters)
+  // 2. AWS Cloud Track (3 Core Sections, 42 chapters)
   if (courseName === 'AWS Cloud & DevOps' || normHref.includes('/aws/')) {
-    if (normHref.includes('/00_overview/') || normHref.includes('/01_networking_and_security/')) {
-      let subTag = 'Networking Foundations';
-      if (normHref.includes('/00_overview/')) subTag = 'Course Roadmap';
-      else if (normHref.includes('/networking_and_security_foundations_burmese')) subTag = 'Comprehensive Guide';
-      return {
-        sectionKey: 'aws_net',
-        sectionTitle: '1. Networking & Security Foundations',
-        sectionIcon: '🌐',
-        badge: 'NET & SEC',
-        subTag
-      };
-    }
-    if (normHref.includes('/02_beginner_to_advanced_real_work/')) {
+    if (normHref.includes('/00_overview/') || normHref.includes('/02_beginner_to_advanced_real_work/')) {
       let subTag = 'Production Real Work';
-      if (normHref.includes('/00_course_overview')) subTag = 'Lab Overview';
+      if (normHref.includes('/00_overview/')) subTag = 'Course Roadmap';
+      else if (normHref.includes('/00_course_overview')) subTag = 'Lab Overview';
       else if (normHref.includes('/11_level11') || normHref.includes('/12_level12')) subTag = 'Genba Operations';
       else if (normHref.includes('/13_final') || normHref.includes('/14_aws_cli')) subTag = 'Capstone & CLI';
       return {
         sectionKey: 'aws_labs',
-        sectionTitle: '2. 15-Level Production Real-Work Labs',
+        sectionTitle: '1. 15-Level Production Real-Work Labs',
         sectionIcon: '🛠️',
         badge: '15 LABS',
         subTag
@@ -228,7 +217,7 @@ function classifyLesson(href: string, courseName: string) {
       else if (normHref.includes('/15_phase15') || normHref.includes('/16_phase16') || normHref.includes('/17_phase17')) subTag = 'Well-Architected & Decision';
       return {
         sectionKey: 'aws_saa',
-        sectionTitle: '3. SAA Solutions Architect Phases',
+        sectionTitle: '2. SAA Solutions Architect Phases',
         sectionIcon: '🏛️',
         badge: 'SAA ARCH',
         subTag
@@ -237,7 +226,7 @@ function classifyLesson(href: string, courseName: string) {
     if (normHref.includes('/04_saa_c03_practice_exams/')) {
       return {
         sectionKey: 'aws_exams',
-        sectionTitle: '4. SAA-C03 Real Exam Practice Sets',
+        sectionTitle: '3. SAA-C03 Real Exam Practice Sets',
         sectionIcon: '📝',
         badge: 'EXAM SETS',
         subTag: 'Practice Exams'
@@ -448,18 +437,34 @@ function classifyLesson(href: string, courseName: string) {
     }
   }
 
-  // 8. Networking Track (1 Section, 6 chapters)
+  // 8. Networking Track (2 Sections, 12 chapters)
   if (courseName === 'Networking & Cloud Automation' || normHref.includes('/networking/')) {
-    let subTag = 'Networking Foundations';
+    if (normHref.includes('/01_networking_and_security/') || clean.includes('01_ip_addressing') || clean.includes('02_protocols') || clean.includes('03_network_security') || clean.includes('04_identity') || clean.includes('05_operations') || clean.includes('networking_and_security')) {
+      let subTag = 'Networking Foundations';
+      if (clean.includes('01_ip_addressing')) subTag = 'IP & Ports';
+      else if (clean.includes('02_protocols')) subTag = 'TCP/UDP & DNS';
+      else if (clean.includes('03_network_security')) subTag = 'Isolation & VPC';
+      else if (clean.includes('04_identity')) subTag = 'IAM & Data Protection';
+      else if (clean.includes('05_operations')) subTag = 'Logging & Audit';
+      else if (clean.includes('networking_and_security_foundations')) subTag = 'Master Guide';
+      return {
+        sectionKey: 'net_foundations',
+        sectionTitle: '1. Networking & Security Foundations',
+        sectionIcon: '🌐',
+        badge: 'FOUNDATIONS',
+        subTag
+      };
+    }
+    let subTag = 'Cloud & Subnetting';
     if (clean.includes('00_overview')) subTag = 'Course Roadmap';
     else if (clean.includes('01_basic')) subTag = 'OSI & TCP/IP';
-    else if (clean.includes('02_ipv4') || clean.includes('03_vlsm')) subTag = 'CIDR & VLSM Subnetting';
-    else if (clean.includes('04_cloud') || clean.includes('05_cloud')) subTag = 'VPC & Terraform Automation';
+    else if (clean.includes('02_ipv4') || clean.includes('03_vlsm')) subTag = 'CIDR & VLSM Math';
+    else if (clean.includes('04_cloud') || clean.includes('05_cloud')) subTag = 'VPC & Terraform IaC';
     return {
       sectionKey: 'net_core',
-      sectionTitle: '1. Foundations, CIDR & Automation',
-      sectionIcon: '🌐',
-      badge: 'NETWORKING',
+      sectionTitle: '2. Subnetting, Cloud VPC & IaC Automation',
+      sectionIcon: '⚡',
+      badge: 'AUTOMATION',
       subTag
     };
   }
@@ -542,7 +547,10 @@ function classifyLesson(href: string, courseName: string) {
 
   // 6. Networking & Cloud Automation
   if (courseName === 'Networking & Cloud Automation' || normHref.includes('/networking/')) {
-    return { sectionKey: 'net_core', sectionTitle: 'Networking & Cloud Automation', sectionIcon: '🌐', badge: 'NETWORKING', subTag: 'Cloud Networking' };
+    if (normHref.includes('/01_networking_and_security/')) {
+      return { sectionKey: 'net_foundations', sectionTitle: '1. Networking & Security Foundations', sectionIcon: '🌐', badge: 'FOUNDATIONS', subTag: 'Foundations' };
+    }
+    return { sectionKey: 'net_core', sectionTitle: '2. Subnetting, Cloud VPC & IaC Automation', sectionIcon: '⚡', badge: 'AUTOMATION', subTag: 'Cloud Networking' };
   }
 
   // 7. Java Enterprise Track (3 Sections, 15 chapters)
@@ -1258,7 +1266,12 @@ const cleanCurrentTitle = currentEnrichedLesson ? currentEnrichedLesson.cleanTit
         const tag = card.getAttribute('data-subtag') || '';
         const idx = card.getAttribute('data-index') || '';
 
-        const isMatch = title.includes(query) || tag.includes(query) || idx === query;
+        const cleanQuery = query.startsWith('#') ? query.slice(1).trim() : query;
+        const isMatch = title.includes(query) || 
+                        tag.includes(query) || 
+                        idx === query || 
+                        (cleanQuery !== '' && idx === cleanQuery) ||
+                        ('#' + idx) === query;
         if (isMatch) {
           (card as HTMLElement).style.display = 'flex';
           groupMatchCount++;

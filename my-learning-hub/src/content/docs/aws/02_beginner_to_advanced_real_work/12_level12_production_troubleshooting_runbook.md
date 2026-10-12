@@ -123,6 +123,3 @@ User များ ပုံတင်သည့်အခါ သို့မဟု�
 2. **Bucket Policy:** S3 Bucket Policy တွင် `Deny` Statement တစ်ခုခု ရေးမိထားခြင်း ရှိမရှိ စစ်ပါ။
 3. **IAM Role Permissions:** EC2 သို့မဟုတ် ECS Task Role တွင် ထို S3 Bucket ဆီသို့ `s3:GetObject`, `s3:PutObject`, `s3:ListBucket` ခွင့်ပြုထားသော Policy ရှိမရှိ စစ်ပါ။
 4. **KMS Key Permission:** S3 Bucket ကို Custom KMS Key (CMK) ဖြင့် Encrypt လုပ်ထားပါက User/Role တွင် ထို KMS Key အား အသုံးပြုခွင့် (`kms:Decrypt`, `kms:GenerateDataKey`) ရှိရမည် (KMS Key Policy တွင် ခွင့်ပြုရမည်)။
-
----
-*နောက်အခန်းသို့ သွားရန်:* [13_Final_Capstone_Laravel_Production_Project.md](file:///Users/kyawwaiyan/Documents/my-Home-tech/AWS-Most-Used-Feature/aws_beginner_to_advanced_real_work/13_Final_Capstone_Laravel_Production_Project.md)

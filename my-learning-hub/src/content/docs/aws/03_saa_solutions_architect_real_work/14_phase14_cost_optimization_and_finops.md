@@ -171,6 +171,3 @@ aws ec2 describe-volumes \
 # ၄။ မလိုအပ်သော Volume ကို အပြီးတိုင် ဖျက်ပစ်ခြင်း
 aws ec2 delete-volume --volume-id vol-0123456789abcdef0
 ```
-
----
-*သင်ရိုးမာတိကာသို့ ပြန်သွားရန်:* [README.md](file:///Users/kyawwaiyan/Documents/my-Home-tech/AWS-Most-Used-Feature/aws_saa_solutions_architect_real_work/README.md)

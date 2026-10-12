@@ -268,6 +268,3 @@ aws budgets create-budget \
 ### Verification & စစ်ဆေးခြင်း:
 1. AWS Console -> **AWS Budgets** သို့ သွားပါ။
 2. `Monthly-Cost-Alert-50USD` ပေါ်လာပြီး လက်ရှိ အသုံးပြုမှု ရာခိုင်နှုန်း (Bar chart) ဖြင့် ပြသနေသည်ကို စစ်ဆေးပါ။
-
----
-*နောက်အခန်းသို့ သွားရန်:* [11_Level11_Japanese_Workplace_IT_and_Tickets.md](file:///Users/kyawwaiyan/Documents/my-Home-tech/AWS-Most-Used-Feature/aws_beginner_to_advanced_real_work/11_Level11_Japanese_Workplace_IT_and_Tickets.md)

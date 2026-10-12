@@ -139,6 +139,3 @@ AWS EC2 Server အများစုသည် Amazon Linux သို့မဟု
 - `journalctl -u nginx -n 50 --no-pager`: Nginx ၏ နောက်ဆုံး Log စာကြောင်း ၅၀ ကို ကြည့်ရှုသည်။
 - `curl -I https://example.com`: Website တစ်ခု၏ HTTP Response Header (200 OK, 404, 502) ကို စစ်ဆေးသည်။
 - `ssh -i my-key.pem ec2-user@<PUBLIC-IP>`: EC2 Linux Server ထဲသို့ Secure Shell ဖြင့် Remote Login ဝင်ရောက်သည်။
-
----
-*နောက်အခန်းသို့ ဆက်လက်လေ့လာရန်:* [01_Phase1_AWS_Core_Concepts_and_Global_Infrastructure.md](file:///Users/kyawwaiyan/Documents/my-Home-tech/AWS-Most-Used-Feature/aws_saa_solutions_architect_real_work/01_Phase1_AWS_Core_Concepts_and_Global_Infrastructure.md)

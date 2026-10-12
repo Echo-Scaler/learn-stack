@@ -1516,4 +1516,4 @@ Each question format: English Q → 4 choices → Answer + Brief Burmese explana
 >
 > **Score:** ___/100
 >
-> ➡️ **Next:** [Exam Set 04 — Storage & S3 (Q301-Q400)](./Exam_Set_04_Storage_S3.md)
+> ➡️ **Next:** [Exam Set 04 — Storage & S3 (Q301-Q400)](/aws/04_saa_c03_practice_exams/exam_set_04_storage_s3/)

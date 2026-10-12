@@ -132,7 +132,7 @@ graph TD
 ```
 
 ### အဓိက အဆင့်များ:
-1. **Week 1 - 2**: [Networking & Security Foundations](/aws/01_networking_and_security/01_ip_addressing_and_ports/) ရှိ IP, Subnetting, CIDR, TCP/UDP, DNS, HTTP/S နှင့် Security Groups/NACL ကွာခြားချက်များကို လက်တွေ့လေ့လာပါ။
+1. **Week 1 - 2**: [Networking & Security Foundations](/networking/01_networking_and_security/01_ip_addressing_and_ports/) ရှိ IP, Subnetting, CIDR, TCP/UDP, DNS, HTTP/S နှင့် Security Groups/NACL ကွာခြားချက်များကို လက်တွေ့လေ့လာပါ။
 2. **Week 3 - 4**: [Level 1-3 Labs](/aws/02_beginner_to_advanced_real_work/02_level2_iam_vpc_ec2_ebs/) မှတစ်ဆင့် Multi-AZ VPC၊ Public/Private Subnets၊ NAT Gateway၊ EC2 Auto Scaling နှင့် ALB (Application Load Balancer) ဖွဲ့စည်းမှုကို တည်ဆောက်ပါ။
 3. **Week 5 - 6**: [Level 4-5 Labs](/aws/02_beginner_to_advanced_real_work/04_level4_rds_aurora_elasticache_redis/) ရှိ Multi-AZ RDS MySQL၊ Aurora Cluster၊ ElastiCache Redis နှင့် Dockerized ECS Fargate Container Deployment ကို Hands-on လေ့ကျင့်ပါ။
 4. **Week 7 - 8**: [Level 6-9 Labs](/aws/02_beginner_to_advanced_real_work/06_level6_lambda_apigateway_dynamodb/) မှတစ်ဆင့် Serverless (Lambda + API Gateway + DynamoDB)၊ Event-Driven SQS/SNS နှင့် Terraform IaC အသုံးပြု၍ Infrastructure အားလုံးကို Code ဖြင့် အလိုအလျောက် Deploy ပြုလုပ်ပါ။

@@ -109,6 +109,3 @@ description: "Architect Perspective: ဤအပိုင်းသည် စာမ
 |                                                                                   |
 +-----------------------------------------------------------------------------------+
 ```
-
----
-*နောက်အခန်းသို့ ဆက်လက်လေ့လာရန်:* [17_Phase17_SAA_Service_Comparison_Training.md](file:///Users/kyawwaiyan/Documents/my-Home-tech/AWS-Most-Used-Feature/aws_saa_solutions_architect_real_work/17_Phase17_SAA_Service_Comparison_Training.md)
