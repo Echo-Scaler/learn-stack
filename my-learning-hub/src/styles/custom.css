@@ -314,6 +314,60 @@ html[data-theme="dark"][data-sector="java"] {
   --sl-sector-card-bg: rgba(251, 146, 60, 0.08);
 }
 
+html[data-sector="networking"] {
+  --sl-sector-primary: #0284c7;
+  --sl-sector-link: #0284c7;
+  --sl-sector-link-hover: #0369a1;
+  --sl-sector-glow: rgba(2, 132, 199, 0.35);
+  --sl-sector-row-hover: rgba(2, 132, 199, 0.06);
+  --sl-sector-card-bg: rgba(2, 132, 199, 0.04);
+}
+:root[data-theme="dark"] html[data-sector="networking"],
+html[data-theme="dark"][data-sector="networking"] {
+  --sl-sector-primary: #38bdf8;
+  --sl-sector-link: #38bdf8;
+  --sl-sector-link-hover: #7dd3fc;
+  --sl-sector-glow: rgba(56, 189, 248, 0.45);
+  --sl-sector-row-hover: rgba(56, 189, 248, 0.1);
+  --sl-sector-card-bg: rgba(56, 189, 248, 0.08);
+}
+
+html[data-sector="linux"] {
+  --sl-sector-primary: #ca8a04;
+  --sl-sector-link: #ca8a04;
+  --sl-sector-link-hover: #a16207;
+  --sl-sector-glow: rgba(202, 138, 4, 0.35);
+  --sl-sector-row-hover: rgba(202, 138, 4, 0.06);
+  --sl-sector-card-bg: rgba(202, 138, 4, 0.04);
+}
+:root[data-theme="dark"] html[data-sector="linux"],
+html[data-theme="dark"][data-sector="linux"] {
+  --sl-sector-primary: #facc15;
+  --sl-sector-link: #facc15;
+  --sl-sector-link-hover: #fde047;
+  --sl-sector-glow: rgba(250, 204, 21, 0.45);
+  --sl-sector-row-hover: rgba(250, 204, 21, 0.1);
+  --sl-sector-card-bg: rgba(250, 204, 21, 0.08);
+}
+
+html[data-sector="git"] {
+  --sl-sector-primary: #ea580c;
+  --sl-sector-link: #ea580c;
+  --sl-sector-link-hover: #c2410c;
+  --sl-sector-glow: rgba(234, 88, 12, 0.35);
+  --sl-sector-row-hover: rgba(234, 88, 12, 0.06);
+  --sl-sector-card-bg: rgba(234, 88, 12, 0.04);
+}
+:root[data-theme="dark"] html[data-sector="git"],
+html[data-theme="dark"][data-sector="git"] {
+  --sl-sector-primary: #f97316;
+  --sl-sector-link: #f97316;
+  --sl-sector-link-hover: #fb923c;
+  --sl-sector-glow: rgba(249, 115, 22, 0.45);
+  --sl-sector-row-hover: rgba(249, 115, 22, 0.1);
+  --sl-sector-card-bg: rgba(249, 115, 22, 0.08);
+}
+
 /* =========================================================
    CORE RESPONSIVE RESET & VIEWPORT SAFETY (IPHONE & PC)
    ========================================================= */

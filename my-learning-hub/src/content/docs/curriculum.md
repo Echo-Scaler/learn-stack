@@ -7,7 +7,7 @@ description: Overview of all 15 tracks, 546+ lessons, chapter breakdown, and com
 
 <div class="curriculum-intro">
   <p class="lead-text">
-    LearnStack တွင် ပါဝင်သော သင်ရိုးညွှန်းတမ်းအားလုံး (စုစုပေါင်း <strong>၅၄၆ ခန်း</strong>၊ ၁၅ ခုသော အထူးပြု Track များ) ၏ ကဏ္ဍအလိုက် အသေးစိတ် မာတိကာနှင့် လေ့လာရမည့် ခေါင်းစဉ်များ ဖြစ်ပါသည်။
+    LearnStack တွင် ပါဝင်သော သင်ရိုးညွှန်းတမ်းအားလုံး (စုစုပေါင်း <strong>၆၄၃ ခန်း</strong>၊ ၁၅ ခုသော အထူးပြု Track များ) ၏ ကဏ္ဍအလိုက် အသေးစိတ် မာတိကာနှင့် လေ့လာရမည့် ခေါင်းစဉ်များ ဖြစ်ပါသည်။
   </p>
 </div>
 
@@ -194,14 +194,19 @@ description: Overview of all 15 tracks, 546+ lessons, chapter breakdown, and com
 ---
 
 ## 🎯 7. TOEIC Exam Preparation Hub Track
-- **စုစုပေါင်း အခန်းရေ**: ၇၅ ခန်း (Study Plans, Grammar Secrets, 800 Vocab, Real Exams)
+- **စုစုပေါင်း အခန်းရေ**: ၁၀၆ ခန်း (Roadmap, Priority 1-3 Grammar, Connectors, Masterclass A-I, 800 Vocab, Real Exams)
 - **အဆင့်**: Target 800+ Score
 - **အဓိက ခေါင်းစဉ်များ**:
   - [01. 800+ Score Breakdown & Test Strategy](/toeic/00_study_plan_roadmap/01_score_breakdown_and_strategy/)
   - [02. 10-Week December Study Schedule](/toeic/00_study_plan_roadmap/02_10_week_december_study_schedule/)
-  - [03. Part 5 & 6 Grammar Secrets (12 Chapters)](/toeic/01_grammar_mastery/01_parts_of_speech_secrets/)
-  - [04. Essential Business Vocabulary 800 (12 Sectors)](/toeic/03_essential_vocabulary_800/01_corporate_management_and_hr/)
-  - [05. 26 Real Exam Grammar Simulation Tests](/toeic/05_grammar_real_exam/01_grammar_real_exam_test1/)
+  - [03. TOEIC Grammar Mastery Master Overview](/toeic/01_grammar_mastery/00_grammar_master_overview/)
+  - [04. Priority 1: Essential Grammar (10 Lessons)](/toeic/01_grammar_mastery/01_priority1_essential_grammar/01_parts_of_speech/)
+  - [05. Priority 2: High-Value TOEIC Grammar (10 Lessons)](/toeic/01_grammar_mastery/02_priority2_high_value_grammar/11_relative_clauses/)
+  - [06. Priority 3: Advanced Accuracy (7 Lessons)](/toeic/01_grammar_mastery/03_priority3_advanced_accuracy/21_reduced_relative_clauses/)
+  - [07. Sentence Connectors & Transition Patterns (5 Lessons)](/toeic/01_grammar_mastery/04_sentence_connectors_and_transitions/01_contrast_and_concession/)
+  - [08. Advanced Masterclass Structures (Sections A to I)](/toeic/01_grammar_mastery/05_advanced_masterclass_structures/01_section_a_advanced_contrast_and_concession/)
+  - [09. Essential Business Vocabulary 800 (12 Sectors)](/toeic/03_essential_vocabulary_800/01_corporate_management_and_hr/)
+  - [10. 26 Real Exam Grammar Simulation Tests](/toeic/05_grammar_real_exam/01_grammar_real_exam_test1/)
 
 ---
 
@@ -284,24 +289,23 @@ description: Overview of all 15 tracks, 546+ lessons, chapter breakdown, and com
 ---
 
 ## 🌐 12. Networking & Cloud Automation Track
-- **စုစုပေါင်း အခန်းရေ**: ၁၂ ခန်း (2 Sections: Foundations & Security ၆ ခန်း + Subnetting, Cloud VPC & IaC Automation ၆ ခန်း)
-- **အဆင့်**: Network Foundations မှ AWS VPC Architecture & Terraform IaC အထိ
-- **လေ့လာရန်ကြာချိန်**: ၂ ပတ် မှ ၃ ပတ်
+- **စုစုပေါင်း အခန်းရေ**: ၄၅ ခန်း (12 Dedicated Modules & Production Labs)
+- **အဆင့်**: Network Foundations မှ AWS VPC Architecture, IaC Terraform & DevOps CI/CD အထိ
+- **လေ့လာရန်ကြာချိန်**: ၃ ပတ် မှ ၄ ပတ်
 - **အဓိက ခေါင်းစဉ်များ**:
-  - **Module 1: Networking & Security Foundations**:
-    - [01. IP Addressing, CIDR & Port Fundamentals](/networking/01_networking_and_security/01_ip_addressing_and_ports/)
-    - [02. Transport & Web Protocols (TCP, UDP, DNS, HTTP, HTTPS)](/networking/01_networking_and_security/02_protocols_tcp_udp_dns_http_https/)
-    - [03. Network Security & Isolation (NAT, SG, NACL, VPC Peering)](/networking/01_networking_and_security/03_network_security_and_isolation/)
-    - [04. Identity & Data Protection (IAM Least Privilege, KMS, Secrets)](/networking/01_networking_and_security/04_identity_and_data_protection/)
-    - [05. Operations, Logging & Backup (CloudWatch, CloudTrail, S3 Glacier)](/networking/01_networking_and_security/05_operations_logging_monitoring_backup_audit/)
-    - [Master Guide: Networking & Security Foundations](/networking/01_networking_and_security/networking_and_security_foundations_burmese/)
-  - **Module 2: Subnetting, Cloud VPC & Terraform IaC Automation**:
-    - [00. Networking & Cloud Automation Overview](/networking/00_overview/)
-    - [01. Basic Networking Fundamentals (OSI & TCP/IP)](/networking/01_basic_networking_fundamentals/)
-    - [02. IPv4, Subnetting & CIDR Notation](/networking/02_ipv4_cidr_and_subnetting/)
-    - [03. VLSM (Variable Length Subnet Masking) Calculation](/networking/03_vlsm_variable_length_subnet_masking/)
-    - [04. Cloud VPC Infrastructure Networking Design](/networking/04_cloud_infrastructure_networking_design/)
-    - [05. Cloud Infrastructure Automation (Terraform IaC Lab)](/networking/05_cloud_infrastructure_automation_preparation/)
+  - [00. Networking & Cloud Automation Track Master Guide](/networking/00_overview/)
+  - [Module 01: Core Networking & Protocols (8 Lessons)](/networking/01_core_networking_and_protocols/01_what_is_a_network_and_client_server/)
+  - [Module 02: Linux Network Administration & Troubleshooting (5 Lessons)](/networking/02_linux_network_and_sysadmin/01_network_interfaces_and_ip_commands/)
+  - [Module 03: AWS Cloud Networking & VPC Architecture (6 Lessons)](/networking/03_aws_cloud_networking_and_vpc/01_vpc_fundamentals_and_subnets/)
+  - [Module 04: Cloud Architecture & High Availability (5 Lessons)](/networking/04_cloud_architecture_and_system_design/01_high_availability_and_multi_az/)
+  - [Module 05: Cloud Automation with Infrastructure as Code (5 Lessons)](/networking/05_cloud_automation_iac_terraform/01_iac_fundamentals_and_terraform_core/)
+  - [Module 06: Configuration Management & Ansible (4 Lessons)](/networking/06_configuration_management_and_ansible/01_bash_scripting_and_cron_jobs/)
+  - [Module 07: CI/CD & Cloud Deployment Pipelines (4 Lessons)](/networking/07_cicd_and_cloud_deployment_pipelines/01_git_workflows_and_ci_cd_concepts/)
+  - [Module 08: Cloud Security, IAM & Governance (3 Lessons)](/networking/08_cloud_security_iam_and_governance/01_iam_core_and_least_privilege/)
+  - [Module 09: Monitoring, Observability & Incident Response (3 Lessons)](/networking/09_monitoring_observability_and_incident_response/01_cloudwatch_and_health_checks/)
+  - [Module 10: Cloud Cost Optimization & FinOps (3 Lessons)](/networking/10_cloud_cost_optimization_finops/01_aws_pricing_and_instance_types/)
+  - [Module 11: Hands-on Production Projects & Capstone Labs (4 Labs)](/networking/11_hands_on_production_projects/01_project1_aws_network_setup/)
+  - [Module 12: Career Level Matrix & Study Guide (Junior to Lead)](/networking/12_career_level_and_learning_matrix/01_level_matrix_and_study_guide/)
 
 ---
 

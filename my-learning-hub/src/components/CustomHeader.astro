@@ -770,7 +770,7 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
 <script is:inline>
   (function() {
     function detectSector() {
-      var m = window.location.pathname.match(/\/(japanese-grammar|japanese-vocab|japanese-kanji|aws|php|javascript|laravel|mysql|devops|eccube|toeic|java|git|linux)\b/);
+      var m = window.location.pathname.match(/\/(japanese-grammar|japanese-vocab|japanese-kanji|aws|php|javascript|laravel|mysql|devops|eccube|toeic|java|git|linux|networking)\b/);
       if (m) {
         document.documentElement.setAttribute('data-sector', m[1]);
       } else {

@@ -26,7 +26,7 @@ Master modern software engineering, cloud architecture, and high-income language
 </div>
 <div class="hero-guarantee">
 <span class="asterisk-red">✱</span>
-<span>546+ Production lessons, AWS Real Labs, Japanese N1 Mastery &amp; senior IQ architecture</span>
+<span>643+ Production lessons, AWS Real Labs, Japanese N1 Mastery &amp; senior IQ architecture</span>
 </div>
 </div>
 
@@ -94,7 +94,7 @@ Master modern software engineering, cloud architecture, and high-income language
 <div class="avatar-circle">Dev</div>
 <div class="avatar-circle">Pro</div>
 </div>
-<div class="stat-number">546+</div>
+<div class="stat-number">643+</div>
 <div class="stat-label">Production Lessons</div>
 </div>
 <div class="stat-cell">
@@ -145,12 +145,12 @@ Master modern software engineering, cloud architecture, and high-income language
 <a href="/mysql/00_overview/" class="track-pill track-pill-mysql">🗄️ MySQL (21 Ch)</a>
 <a href="/devops/00_overview/" class="track-pill track-pill-devops">🐳 Docker &amp; DevOps (46 Ch)</a>
 <a href="/aws/00_overview/" class="track-pill track-pill-aws">☁️ AWS Labs (41 Labs)</a>
-<a href="/networking/00_overview/" class="track-pill track-pill-net">🌐 Networking (12 Ch)</a>
+<a href="/networking/00_overview/" class="track-pill track-pill-net">🌐 Networking (12 Modules)</a>
 <a href="/eccube/00_overview/" class="track-pill track-pill-eccube">🛍️ EC-CUBE 4 (217 Ch)</a>
 <a href="/japanese-grammar/00_n1_overview_and_strategy/01_n1_exam_structure_and_study_guide/" class="track-pill track-pill-grammar">⛩️ N1 Grammar (10 Lessons)</a>
 <a href="/japanese-vocab/01_high_frequency_verbs/" class="track-pill track-pill-vocab">📖 N1 Vocab (570+ Words)</a>
 <a href="/japanese-kanji/00_n1_kanji_overview_and_strategy/" class="track-pill track-pill-kanji">🈸 N1 Kanji (10 Modules)</a>
-<a href="/toeic/00_study_plan_roadmap/01_score_breakdown_and_strategy/" class="track-pill track-pill-toeic">🎯 TOEIC 800+ (75 Ch)</a>
+<a href="/toeic/00_study_plan_roadmap/01_score_breakdown_and_strategy/" class="track-pill track-pill-toeic">🎯 TOEIC 800+ (106 Ch)</a>
 </div>
 </div>
 
@@ -234,7 +234,7 @@ Master modern software engineering, cloud architecture, and high-income language
 <p>၁၀ ပတ်အတွင်း အမှတ် ၈၀၀ ကျော်ရယူနိုင်မည့် Study Roadmap၊ ၁၀ စက္ကန့် သဒ္ဒါ လျှို့ဝှက်ချက်များ၊ Essential Vocab 800 နှင့် Real Exam Simulations။</p>
 </div>
 <div class="catalog-card-footer">
-<span>75 Tests &amp; Guides (7 Sections)</span>
+<span>106 Tests &amp; Guides (8 Sections)</span>
 <span class="footer-action-toeic">Start Program ↗</span>
 </div>
 </a>
@@ -294,7 +294,7 @@ Master modern software engineering, cloud architecture, and high-income language
 <p>ကွန်ရက်အခြေခံ (IP, TCP/UDP, DNS, HTTP/S, NAT, SG, NACL, IAM)၊ OSI 7 Layers၊ Subnetting (CIDR/VLSM Math)၊ AWS VPC Multi-Tier Architecture နှင့် Terraform IaC အလိုအလျောက် တည်ဆောက်ခြင်း လမ်းညွှန်။</p>
 </div>
 <div class="catalog-card-footer">
-<span>12 In-Depth Chapters (2 Sections)</span>
+<span>12 Dedicated Modules (45 Lessons &amp; Labs)</span>
 <span style="color:#0284c7; font-weight:700;">Start Networking ↗</span>
 </div>
 </a>
