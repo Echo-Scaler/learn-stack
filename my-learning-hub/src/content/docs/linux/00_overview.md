@@ -92,6 +92,10 @@ description: Linux Server Administrator & Senior DevOps Engineer အဆင့်
 | **Phase 7** | Lesson 16 | Docker Containers, Compose & Cloud VMs | [ဖတ်ရှုရန်](/linux/16_docker_devops_containers_and_cloud_vm/) |
 | **Phase 8** | Lesson 17 | Production Observability, Alerting & RCA | [ဖတ်ရှုရန်](/linux/17_monitoring_observability_and_incident_response/) |
 | **Phase 9** | Lesson 18 | Enterprise Production Server Capstone Project | [ဖတ်ရှုရန်](/linux/18_enterprise_production_server_capstone_project/) |
+| **Level Map** | Lesson 19 | Mid Level vs Advanced Level Roadmap | [ဖတ်ရှုရန်](/linux/19_level_map_mid_vs_advanced_roadmap/) |
+| **🟡 Mid Labs** | Lesson 20 | Mid Level Real-Work Labs (M1-M8) | [ဖတ်ရှုရန်](/linux/20_mid_level_real_work_labs/) |
+| **🔴 Advanced Labs** | Lesson 21 | Advanced Level Real-Work Labs (A1-A10) | [ဖတ်ရှုရန်](/linux/21_advanced_level_real_work_labs/) |
+| **⚫ Pro Labs** | Lesson 22 | Pro Level Real-Work Labs (P1-P10) | [ဖတ်ရှုရန်](/linux/22_pro_level_real_work_labs/) |
 
 ---
 

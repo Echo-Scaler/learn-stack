@@ -28,6 +28,8 @@ description: "> ကျွမ်းကျင် Docker Instructor တစ်ယေ
 | **08** | [Lifecycle, Debugging & Security](/devops/01_docker_core/08-lifecycle-debugging-and-security/) | Container States, Logs, Exec, Top, Stats, Non-root User, Security |
 | **09** | [Workflow, Optimization & Best Practices](/devops/01_docker_core/09-dev-workflow-production-optimization-best-practices/) | Dev Workflow, Production Setup, Image Optimization, Best Practices |
 | **10** | [Real-World Laravel Project Setup](/devops/01_docker_core/10-real-world-laravel-docker-project/) | အဆင်သင့် Run နိုင်သော Nginx + PHP 8.3 + MySQL + Redis + Mailpit Stack |
+| **11** | [Docker & Docker Hub Step-by-Step (Beginner to DevOps)](/devops/01_docker_core/11-docker-and-docker-hub-step-by-step-for-devops/) | Install, Dockerfile, Docker Hub Push/Pull/Token, Compose, GitHub Actions CI/CD, Deploy, Troubleshooting |
+| **12** | [Docker, CI/CD & Monitoring Real-Work Labs (D1-D10)](/devops/01_docker_core/12-docker-cicd-monitoring-troubleshooting-real-work-labs/) | Production Dockerfile, Compose Stack, GitHub Actions CI, SSH CD + Rollback, Prometheus/Grafana/Loki, Alerting, Troubleshooting Clinic, Blue/Green |
 | **🚀 ADV** | [**Advanced Docker & Kubernetes (K8s)**](/devops/01_docker_core/advanced-docker-kubernetes-production/README/) | **DevOps Production Guide:** Kubernetes, Swarm, Ingress, PV/PVC, HPA, Helm, GitOps (ArgoCD & GitHub Actions), Monitoring |
 
 ---

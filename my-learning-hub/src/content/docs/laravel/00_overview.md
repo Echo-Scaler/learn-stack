@@ -51,6 +51,16 @@ description: "1. [၁။ Laravel ဆိုတာဘာလဲနှင့် Requ
 | **17** | **AWS Cloud Integration** | [17_aws_cloud_integration.md](/laravel/17_aws_cloud_integration/) | AWS S3 Public/Private Media, Pre-signed Temporary URLs, AWS SES Bulk Mail, SQS Queues, CloudFront CDN |
 | **18** | **Task Scheduling & WebSockets** | [18_task_scheduling_and_realtime.md](/laravel/18_task_scheduling_and_realtime/) | Laravel Task Scheduling (Cron Jobs), `withoutOverlapping()`, Real-time WebSockets, Laravel Reverb |
 | **19** | **🛡️⚡ Security & Performance Mastery** | [19_security_and_performance_mastery.md](/laravel/19_security_and_performance_mastery/) | SQLi, XSS, CSRF, Mass Assignment, N+1 Query Problem, Indexing, Caching, Chunking & Production Optimization |
+| **20** | **🎨 Blade Deep Dive** | [20_blade_deep_dive_layouts_sections_stacks_components.md](/laravel/20_blade_deep_dive_layouts_sections_stacks_components/) | `@extends`, `@yield`, `@section/@show/@parent`, `@stack/@push/@prepend`, Components, Slots, Props |
+| **21** | **🛡️ Middleware, Guards & Authorization** | [21_middleware_guards_providers_and_authorization.md](/laravel/21_middleware_guards_providers_and_authorization/) | 6 Middleware Types, Custom Middleware, Guards & Providers, Multi-Auth, Gates, Policies, Roles/Permissions |
+| **22** | **🔑 Sanctum, Breeze & API Tokens** | [22_sanctum_breeze_and_api_tokens_complete_guide.md](/laravel/22_sanctum_breeze_and_api_tokens_complete_guide/) | SPA Cookie vs Mobile Bearer Token, Breeze 5 Stacks, Abilities, Expiration, Multi-device, curl/Postman |
+| **23** | **🌐 API Management (Beginner to Pro)** | [23_api_management_beginner_to_professional.md](/laravel/23_api_management_beginner_to_professional/) | RESTful URL Design, API Versioning, Pagination, Filtering, Rate Limiting, Idempotency, Caching, Webhooks |
+| **24** | **📋 Request Validation & API Resources** | [24_validation_form_requests_and_api_resources.md](/laravel/24_validation_form_requests_and_api_resources/) | Form Requests, Custom Rules, Complex Arrays/Files, Eloquent Resources, Conditional Fields, N+1 Prevention |
+| **25** | **🏛️ Eloquent Model & Database Design (データベース設計)** | [25_eloquent_model_mastery_and_database_design.md](/laravel/25_eloquent_model_mastery_and_database_design/) | Model Settings, Casts, Scopes, Observers, Database Design (1NF-3NF), Composite Indexes, Soft Deletes |
+| **26** | **⚡ Queues, Jobs, Events & Notifications** | [26_queues_jobs_events_and_notifications_in_depth.md](/laravel/26_queues_jobs_events_and_notifications_in_depth/) | Async Architecture, Exponential Backoff, Idempotency, Batching, Chaining, Horizon, Multi-Channel Notifications |
+| **27** | **🔍 Debugging, Error Triage & Observability** | [27_debugging_error_troubleshooting_and_observability.md](/laravel/27_debugging_error_troubleshooting_and_observability/) | 500 Error Emergency Triage, Log Channels, Stack Traces, Slow Queries (`DB::listen`, EXPLAIN), Telescope, Pulse |
+| **28** | **☁️ Production Architecture, AWS, Docker & Load Balancers** | [28_production_architecture_aws_docker_and_load_balancers.md](/laravel/28_production_architecture_aws_docker_and_load_balancers/) | Stateless Architecture (Redis/S3), AWS ALB, TrustProxies, Multi-Stage Dockerfile, Supervisor, Zero-Downtime Deploy |
+
 
 ---
 
