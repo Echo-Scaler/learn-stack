@@ -184,5 +184,3 @@ DELETE FROM products WHERE id = 1;
 | **No `SELECT *`** | လိုအပ်သော Columns များကိုသာ သီးခြား ခေါ်ယူထားသလား? | [ ] |
 | **Safe Update Check** | `UPDATE` နှင့် `DELETE` တိုင်းတွင် `WHERE` clause သေချာ ထည့်ထားသလား? | [ ] |
 | **Truncate Caution** | `TRUNCATE` သည် Rollback ပြန်ခေါ်မရကြောင်း သတိပြုမိသလား? | [ ] |
-
-နောက်သင်ခန်းစာ [04_filtering_sorting_and_pagination.md](/mysql/04_filtering_sorting_and_pagination/) တွင် သန်းပေါင်းများစွာသော ဒေတာများထဲမှ လိုရာကို အတိအကျ စစ်ထုတ်ရှာဖွေပေးနိုင်သည့် `WHERE`, `LIKE`, `IN`, `ORDER BY` နှင့် Pagination လုပ်ဆောင်ပုံကို လေ့လာပါမည်။

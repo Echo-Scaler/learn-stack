@@ -818,5 +818,3 @@ class AuthApiTest extends TestCase
 | 8 | Breeze Blade တွင် GitHub ပုံစံ "Personal Access Tokens" စာမျက်နှာရေး |
 | 9 | Login ကို `RateLimiter::for('login', ...)` (Email+IP အလိုက်) ဖြင့် ကာကွယ် ([23](/laravel/23_api_management_beginner_to_professional/)) |
 | 10 | Token + Policy ပေါင်း - Token Ability ရှိသော်လည်း သူများ Order ကြည့်လျှင် 403/404 Test |
-
-နောက်သင်ခန်းစာ: [23. API Management - Beginner to Professional](/laravel/23_api_management_beginner_to_professional/)

@@ -353,7 +353,3 @@ Customer → Checkout → [MyPaymentMethod::apply()]
 - [ ] `PluginManager::enable()` တွင် Payment record ထည့်ပြီးကြောင်း
 - [ ] Admin ထဲတွင် Payment Method မြင်ရကြောင်း
 - [ ] Test payment flow လုပ်ဆောင်ကြောင်း
-
----
-
-> ➡️ **နောက်တစ်ဆင့်**: [07 - Shipping Customization](/eccube/requirements/customization-list/07_shipping_customization/)

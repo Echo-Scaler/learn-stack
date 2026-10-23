@@ -1515,5 +1515,3 @@ Each question format: English Q → 4 choices → Answer + Brief Burmese explana
 > **Domain 3: High-Performing + Domain 4: Cost-Optimized ✅**
 >
 > **Score:** ___/100
->
-> ➡️ **Next:** [Exam Set 04 — Storage & S3 (Q301-Q400)](/aws/04_saa_c03_practice_exams/exam_set_04_storage_s3/)

@@ -134,5 +134,3 @@ WHERE status = 'paid';
 | **ထိပ်တန်း Top N Per Group ရွေးထုတ်ရန်** | `DENSE_RANK() OVER (PARTITION BY ...)` + CTE |
 | **ယမန်နေ့ သို့မဟုတ် ယခင်လ ဒေတာနှင့် နှိုင်းယှဉ်ရန်** | `LAG(col, 1) OVER (...)` |
 | **ဘဏ်စာရင်း ရှင်းတမ်း (Running Balance)** | `SUM(amount) OVER (ORDER BY date)` |
-
-နောက်သင်ခန်းစာ [09_views_and_generated_columns.md](/mysql/09_views_and_generated_columns/) တွင် Complex Query များကို အလွယ်တကူ သိမ်းဆည်းနိုင်သော Database Views များနှင့် Auto-computed Generated Columns များအကြောင်းကို လေ့လာပါမည်။

@@ -166,5 +166,3 @@ LIMIT 10;
 | **Counting Rows** | `NULL` မကျန်စေရန် အလုံးစုံ ရေတွက်မှုအတွက် `COUNT(*)` ကို သုံးသလား? | [ ] |
 | **WHERE vs HAVING** | Group မဖွဲ့မီ စစ်ထုတ်နိုင်သော Filter များကို `HAVING` တွင် မထည့်ဘဲ `WHERE` ထဲ ထည့်ထားသလား? | [ ] |
 | **Full Group By Rule** | `SELECT` ထဲရှိ ကော်လံများသည် `GROUP BY` ထဲတွင် ပါဝင်မှု ရှိသလား? | [ ] |
-
-နောက်သင်ခန်းစာ [06_joins_and_relational_queries.md](/mysql/06_joins_and_relational_queries/) တွင် ဇယားများစွာကို အတူတကွ ချိတ်ဆက်မေးမြန်းနိုင်သည့် `INNER JOIN`, `LEFT JOIN`, `RIGHT JOIN`, `CROSS JOIN` များကို ဆက်လက်လေ့လာပါမည်။

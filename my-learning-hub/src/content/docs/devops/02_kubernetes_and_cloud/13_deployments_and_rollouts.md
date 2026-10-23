@@ -195,5 +195,3 @@ kubectl autoscale deployment/enterprise-web-app --min=3 --max=10 --cpu-percent=7
 | **High Availability** | Replicas ကို အနည်းဆုံး ၂ လုံး သို့မဟုတ် ၃ လုံး ထားရှိသလား? | [ ] |
 | **Health Probes** | `livenessProbe` နှင့် `readinessProbe` ထည့်သွင်းထားသလား? | [ ] |
 | **Rolling Update Strategy** | `maxUnavailable: 0` ဖြင့် Zero-Downtime ဖြစ်အောင် စီစဉ်ထားသလား? | [ ] |
-
-နောက်သင်ခန်းစာ [14_k8s_services_and_networking.md](/devops/02_kubernetes_and_cloud/14_k8s_services_and_networking/) တွင် Pod များ၏ ပြောင်းလဲနေသော IP များကို တည်ငြိမ်စွာ ချိတ်ဆက်ပေးမည့် Kubernetes Services အကြောင်းကို လေ့လာပါမည်။

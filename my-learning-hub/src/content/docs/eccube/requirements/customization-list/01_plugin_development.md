@@ -246,7 +246,3 @@ bin/console cache:clear --env=prod
 | Plugin မမြင်ရပါ | `bin/console cache:clear` ပြန်လုပ်ပါ |
 | Namespace error | Folder name နှင့် `composer.json` ရှိ `code` ကို ညှိပါ |
 | Class not found | `composer dump-autoload` ပြုလုပ်ပါ |
-
----
-
-> ➡️ **နောက်တစ်ဆင့်**: [02 - Template Customization](/eccube/requirements/customization-list/02_template_customization/)

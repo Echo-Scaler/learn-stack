@@ -160,5 +160,3 @@ StatefulSet တွင် **`volumeClaimTemplates`** ပါဝင်ပြီး�
 | **Access Mode မှန်ကန်မှု** | Database အတွက် `ReadWriteOnce (RWO)` ရွေးချယ်ထားသလား? | [ ] |
 | **Claim Status** | `kubectl get pvc` တွင် `Bound` ဖြစ်မဖြစ် သေချာစစ်ဆေးပြီးပြီလား? | [ ] |
 | **Stateful Data** | Database အတွက် StatefulSet သုံးထားသလား? | [ ] |
-
-နောက်သင်ခန်းစာ [18_helm_package_manager.md](/devops/02_kubernetes_and_cloud/18_helm_package_manager/) တွင် Kubernetes YAML ဖိုင် ဒါဇင်ပေါင်းများစွာကို Package တစ်ခုတည်းအဖြစ် လွယ်ကူစွာ စီမံပေးနိုင်သည့် Helm Package Manager အကြောင်းကို လေ့လာပါမည်။

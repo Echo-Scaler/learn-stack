@@ -467,7 +467,3 @@ bin/console debug:container Plugin\\MyPlugin\\Service\\PointService
 # Console commands စစ်ဆေးပါ
 bin/console list my-plugin
 ```
-
----
-
-> ➡️ **နောက်တစ်ဆင့်**: [12 - Security & Access Control](/eccube/requirements/customization-list/12_security_access_control/)

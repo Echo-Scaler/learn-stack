@@ -197,5 +197,3 @@ Git Repository ထဲသို့ Secret များကို Commit တင်�
 | **Database Password, API Keys, Tokens** | `Secret` |
 | **Configuration ဖိုင်တစ်ခုလုံး ထည့်သွင်းရန်** | `Volume Mount` (`mountPath`) |
 | **Git Repository ထဲ Secret များ မပါသွားစေရန်** | `.gitignore` သို့မဟုတ် `SealedSecrets` သုံးပါ |
-
-နောက်သင်ခန်းစာ [17_persistent_volumes_and_storage.md](/devops/02_kubernetes_and_cloud/17_persistent_volumes_and_storage/) တွင် Pod များ သေဆုံးသော်လည်း Database Data များ Cloud Disk ပေါ်တွင် အမြဲတည်တံ့စေမည့် PV, PVC & StorageClasses အကြောင်းကို လေ့လာပါမည်။

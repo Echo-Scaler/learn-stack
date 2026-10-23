@@ -230,7 +230,3 @@ bin/console cache:clear --env=prod
 # သို့မဟုတ်
 bin/console cache:clear
 ```
-
----
-
-> ➡️ **နောက်တစ်ဆင့်**: [03 - Entity & Repository](/eccube/requirements/customization-list/03_entity_repository/)

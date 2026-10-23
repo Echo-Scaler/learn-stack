@@ -200,5 +200,3 @@ services:
 | **Memory & CPU Limits** | Container တစ်ခုချင်းစီအတွက် Memory & CPU Limit သတ်မှတ်ထားသလား? | [ ] |
 | **Drop Capabilities** | မလိုအပ်သော Linux Capabilities များကို `cap-drop: ALL` ဖြင့် ဖြုတ်ချထားသလား? | [ ] |
 | **No Secrets in Dockerfile** | API Keys နှင့် Passwords များကို Dockerfile ထဲတွင် Hardcode မထည့်ထားဘူး မဟုတ်လား? | [ ] |
-
-နောက်သင်ခန်းစာ [09_docker_cicd_and_registries.md](/devops/02_kubernetes_and_cloud/09_docker_cicd_and_registries/) တွင် Docker Image များကို GitHub Actions ဖြင့် Build လုပ်၍ Docker Hub / AWS ECR သို့ အလိုအလျောက် Push ပြုလုပ်သည့် CI/CD Pipeline ကို လေ့လာပါမည်။

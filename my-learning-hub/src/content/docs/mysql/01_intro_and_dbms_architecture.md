@@ -168,5 +168,3 @@ SELECT DATABASE();
 | **Relational Model** | Primary Key (PK) နှင့် Foreign Key (FK) ၏ အရေးပါပုံကို သဘောပေါက်ခြင်း |
 | **Storage Engine** | Production တွင် Transaction နှင့် Row-level locking ရရှိသော InnoDB ကိုသာ သုံးရမည်ကို သိရှိခြင်း |
 | **UTF8MB4 Encoding** | မြန်မာစာနှင့် Emojis များ မပျက်စီးစေရန် `utf8mb4` character set သုံးရမည်ကို သိရှိခြင်း |
-
-နောက်သင်ခန်းစာ [02_datatypes_and_table_schema_design.md](/mysql/02_datatypes_and_table_schema_design/) တွင် MySQL ၏ Data Types များနှင့် ဇယားများ စနစ်တကျ ရေးဆွဲတည်ဆောက်ပုံကို ဆက်လက် လေ့လာပါမည်။

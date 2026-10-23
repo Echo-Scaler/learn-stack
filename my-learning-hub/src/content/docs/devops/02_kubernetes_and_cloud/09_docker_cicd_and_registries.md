@@ -177,5 +177,3 @@ jobs:
 | **Multi-Architecture Ready** | Mac နှင့် Linux Server ပေါ်တွင် အလုပ်လုပ်စေရန် `docker buildx` ဖြင့် build ထားသလား? | [ ] |
 | **Automated CI/CD** | Developer လက်ဖြင့် Push မလုပ်ဘဲ GitHub Actions မှ လုံခြုံစွာ build & push လုပ်သလား? | [ ] |
 | **Secure Credentials** | Registry Password များကို GitHub Secrets ထဲတွင် ထည့်သွင်းထားသလား? | [ ] |
-
-နောက်သင်ခန်းစာ [10_why_orchestration_swarm_vs_k8s.md](/devops/02_kubernetes_and_cloud/10_why_orchestration_swarm_vs_k8s/) တွင် Single-Server Docker မှ Multi-Server Kubernetes သို့ ကူးပြောင်းရခြင်း အကြောင်းအရင်းများကို ဆက်လက် လေ့လာပါမည်။

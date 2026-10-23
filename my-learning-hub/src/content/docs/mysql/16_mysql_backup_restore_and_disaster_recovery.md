@@ -145,5 +145,3 @@ echo "Backup completed successfully!"
 | **Binary Logging** | Point-in-time recovery အတွက် `log_bin = ON` ဖြစ်နေသလား? | [ ] |
 | **Offsite Storage** | Backup ဖိုင်များကို Server ပေါ်တွင်သာ မထားဘဲ AWS S3 ကဲ့သို့ Cloud Storage သို့ ရွှေ့ပြောင်းထားသလား? | [ ] |
 | **Restore Drill** | Backup ဖိုင်များသည် အမှန်တကယ် ပြန် Restore လုပ်၍ ရ/မရ လစဉ် စမ်းသပ်စစ်ဆေးသလား? | [ ] |
-
-နောက်သင်ခန်းစာ [17_replication_high_availability_and_clustering.md](/mysql/17_replication_high_availability_and_clustering/) တွင် Database Server တစ်ခု ပျက်သွားသော်လည်း အရန် Server မှ ချက်ချင်း အစားထိုးနိုင်သည့် Master-Slave Replication အကြောင်းကို လေ့လာပါမည်။

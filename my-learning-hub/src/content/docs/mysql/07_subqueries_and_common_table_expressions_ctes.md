@@ -149,5 +149,3 @@ SELECT * FROM CategoryPath;
 | **ဆက်စပ် ဒေတာ ရှိ/မရှိ စစ်ဆေးရန်** | `IN` အစား `EXISTS` ကို ဦးစားပေးသုံးပါ |
 | **Nested Subqueries များ ရှုပ်ထွေးလာပါက** | ရှင်းလင်းသော `WITH ... AS` (CTE) သို့ ပြောင်းလဲပါ |
 | **Tree / Hierarchy / Organization Charts** | `WITH RECURSIVE` ကို အသုံးပြုပါ |
-
-နောက်သင်ခန်းစာ [08_window_functions_and_analytical_queries.md](/mysql/08_window_functions_and_analytical_queries/) တွင် ခေတ်သစ် MySQL 8.0 ၏ အစွမ်းထက်ဆုံး Feature တစ်ခုဖြစ်သော Window Functions (`ROW_NUMBER`, `RANK`, `DENSE_RANK`, `LEAD`, `LAG`) အကြောင်းကို ဆက်လက်လေ့လာပါမည်။

@@ -233,5 +233,3 @@ docker rm demo-web
 | CPU / Memory Monitoring ကြည့်ရန် | `docker stats` |
 | Container ကို ရပ်ရန်နှင့် ဖျက်ရန် | `docker stop <id> && docker rm <id>` |
 | မသုံးတော့သော Cache အားလုံးရှင်းရန် | `docker system prune -f` |
-
-နောက်သင်ခန်းစာ [03_dockerfile_deep_dive.md](/devops/02_kubernetes_and_cloud/03_dockerfile_deep_dive/) တွင် ကိုယ်ပိုင် Custom Docker Image များ တည်ဆောက်ရန် Dockerfile ညွှန်ကြားချက်များ (Instructions) ကို အသေးစိတ် ဆက်လက်လေ့လာပါမည်။

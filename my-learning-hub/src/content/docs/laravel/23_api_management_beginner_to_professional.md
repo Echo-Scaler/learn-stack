@@ -1114,5 +1114,3 @@ class DeprecatedApi
  ✅ Timeout/Retry/Circuit (ပြင်ပ API)
  ✅ Docs (OpenAPI) + Tests + Monitoring
 ```
-
-နောက်သင်ခန်းစာ: [24. Validation, Form Requests & API Resources](/laravel/24_validation_form_requests_and_api_resources/)

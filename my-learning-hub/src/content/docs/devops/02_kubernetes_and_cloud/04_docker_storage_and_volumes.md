@@ -200,5 +200,3 @@ Bind Mount ဖြင့် Development လုပ်သည့်အခါ Host OS
 | **Local Source Code Live Edit (Hot-Reload)** | `Bind Mount` (`-v $(pwd):/var/www/html`) |
 | **Temporary Secret Token / In-Memory Session** | `tmpfs Mount` (`--tmpfs /tmp`) |
 | **Scheduled Database Backup** | Temporary Container + `tar` archiving |
-
-နောက်သင်ခန်းစာ [05_docker_networking.md](/devops/02_kubernetes_and_cloud/05_docker_networking/) တွင် Container အချင်းချင်း တစ်ခုနှင့်တစ်ခု အမည်ဖြင့် ခေါ်ဆိုဆက်သွယ်နိုင်သည့် Docker Networking စနစ်ကို ဆက်လက်လေ့လာပါမည်။

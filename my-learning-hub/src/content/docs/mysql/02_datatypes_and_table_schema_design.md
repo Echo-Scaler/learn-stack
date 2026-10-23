@@ -187,5 +187,3 @@ CREATE TABLE order_items (
 | **Time Tracking** | စာရင်းအသစ်နှင့် ပြင်ဆင်ချိန်အတွက် `created_at` နှင့် `updated_at` ထည့်ထားသလား? | [ ] |
 | **Foreign Keys** | စည်းမဲ့ကမ်းမဲ့ မဖျက်နိုင်စေရန် `ON DELETE RESTRICT` ကို ဦးစားပေးထားသလား? | [ ] |
 | **Data Integrity** | အနှုတ်လက္ခဏာ မဖြစ်စေရန် `UNSIGNED` သို့မဟုတ် `CHECK (price >= 0)` သုံးထားသလား? | [ ] |
-
-နောက်သင်ခန်းစာ [03_crud_and_sql_essentials.md](/mysql/03_crud_and_sql_essentials/) တွင် အဆိုပါ ဇယားများထဲသို့ ဒေတာများ ထည့်သွင်းခြင်း၊ ပြင်ဆင်ခြင်း၊ ဖျက်ခြင်းဆိုင်ရာ CRUD Operations များကို လက်တွေ့ ဆက်လက်လေ့လာပါမည်။

@@ -935,5 +935,3 @@ RDS Proxy = connection pooling → Lambda connects to Proxy (fast) → Proxy reu
 > ## 🎯 Set 05 Complete! — Databases (Q401–Q500)
 >
 > **Score:** ___/100
->
-> ➡️ **Next:** [Exam Set 06 — Serverless, High Availability & Monitoring (Q501-Q700)](/aws/04_saa_c03_practice_exams/exam_set_06_serverless_ha_monitoring/)

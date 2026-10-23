@@ -241,5 +241,3 @@ kubectl port-forward pod/my-first-pod 8080:80
 | **Resources (Requests & Limits)** | Pod တိုင်းတွင် Memory / CPU Request & Limit အမြဲ ထည့်သွင်းထားရပါမည်။ |
 | **Port Forwarding** | `kubectl port-forward` သည် Development စမ်းသပ်ရန်သာ ဖြစ်ပြီး Production အတွက် `Service` နှင့် `Ingress` သုံးရပါမည်။ |
 | **Debugging Habit** | Error တက်ပါက ပထမဆုံး `kubectl describe pod` နှင့် `kubectl logs` ကို အရင် စစ်ဆေးပါ။ |
-
-နောက်သင်ခန်းစာ [13_deployments_and_rollouts.md](/devops/02_kubernetes_and_cloud/13_deployments_and_rollouts/) တွင် Production ၌ Pod များကို အလိုအလျောက် ပွားများပေးခြင်း၊ Self-healing လုပ်ပေးခြင်းနှင့် Zero-Downtime Rolling Update ပြုလုပ်ပေးသည့် Deployments အကြောင်းကို ဆက်လက်လေ့လာပါမည်။

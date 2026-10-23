@@ -386,7 +386,3 @@ class MailService
 ```ini
 MAILER_URL=smtp://username:password@smtp.mailtrap.io:2525
 ```
-
----
-
-> ➡️ **နောက်တစ်ဆင့်**: [09 - Form Extension](/eccube/requirements/customization-list/09_form_extension/)

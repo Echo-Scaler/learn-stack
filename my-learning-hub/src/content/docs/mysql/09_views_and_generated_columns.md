@@ -125,5 +125,3 @@ Virtual Column ပေါ်တွင် **Database Index တင်ထားန�
 | **View Security** | ပြင်ပ Reporting အဖွဲ့များအတွက် Password ကော်လံများကို View ဖြင့် ဖုံးကွယ်ထားသလား? | [ ] |
 | **View Performance** | View ပေါ်တွင် ထပ်မံ View ဆင့်ကဲ မလုပ်ရန် သတိပြုမိသလား? (Nested Views များသည် နှေးကွေးတတ်သည်) | [ ] |
 | **Generated Columns** | အမြဲတမ်း တွက်ချက်ရသော ဖော်မြူလာများအတွက် Generated Column သုံးထားသလား? | [ ] |
-
-နောက်သင်ခန်းစာ [10_stored_procedures_and_functions.md](/mysql/10_stored_procedures_and_functions/) တွင် Database အတွင်း၌ Programming Logic များကို တိုက်ရိုက် ရေးဆွဲ run ပေးနိုင်သော Stored Procedures & Functions အကြောင်းကို လေ့လာပါမည်။

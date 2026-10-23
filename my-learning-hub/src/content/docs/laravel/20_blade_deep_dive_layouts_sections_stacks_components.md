@@ -896,5 +896,3 @@ Success / Error / Warning ကို `partials/flash` ဖြင့် Layout တ�
 | `@pushOnce` | Duplicate မဖြစ် | Component JS |
 | Components + Slots | Reusable UI | Consistency, Dev Speed |
 | `@props/$attributes` | Component Config | Flexible UI |
-
-နောက်သင်ခန်းစာ: [21. Middleware, Guards, Providers & Authorization](/laravel/21_middleware_guards_providers_and_authorization/)

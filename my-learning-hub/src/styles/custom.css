@@ -143,8 +143,9 @@ html[data-theme="dark"][data-sector="japanese-kanji"] {
   --sl-sector-card-bg: rgba(251, 113, 133, 0.08);
 }
 
-/* 4. AWS Cloud */
-html[data-sector="aws"] {
+/* 4. AWS Cloud & AWS SAA */
+html[data-sector="aws"],
+html[data-sector="aws-saa"] {
   --sl-sector-primary: #f59e0b;
   --sl-sector-link: #d97706;
   --sl-sector-link-hover: #b45309;
@@ -153,7 +154,9 @@ html[data-sector="aws"] {
   --sl-sector-card-bg: rgba(245, 158, 11, 0.04);
 }
 :root[data-theme="dark"] html[data-sector="aws"],
-html[data-theme="dark"][data-sector="aws"] {
+html[data-theme="dark"][data-sector="aws"],
+:root[data-theme="dark"] html[data-sector="aws-saa"],
+html[data-theme="dark"][data-sector="aws-saa"] {
   --sl-sector-primary: #fbbf24;
   --sl-sector-link: #fbbf24;
   --sl-sector-link-hover: #fde68a;

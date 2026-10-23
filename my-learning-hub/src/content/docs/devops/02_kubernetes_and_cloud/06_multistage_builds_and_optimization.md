@@ -235,5 +235,3 @@ docker history <image_name_or_id>
 | **Multi-Stage Build သုံးခြင်း** | Build tools များနှင့် Final Runtime ကို သီးခြားခွဲထုတ်ခြင်း | Image Size 70% မှ 90% အထိ ကျဆင်းခြင်း |
 | **Alpine / Slim Base သုံးခြင်း** | မလိုအပ်သော Linux utilities များကို ဖယ်ရှားခြင်း | Attack Surface နည်းပါးပြီး လုံခြုံခြင်း |
 | **Virtual Build Deps ရှင်းခြင်း** | Extensions compile ပြီးသည်နှင့် Build libraries များကို ချက်ချင်း ဖျက်ခြင်း | Clean Image Size |
-
-နောက်သင်ခန်းစာ [07_docker_compose_mastery.md](/devops/02_kubernetes_and_cloud/07_docker_compose_mastery/) တွင် Container များစွာကို တစ်ပြိုင်နက် မောင်းနှင်စီမံနိုင်သည့် Docker Compose အကြောင်းကို ဆက်လက် လေ့လာပါမည်။

@@ -477,7 +477,3 @@ class TwoFactorService
 - [ ] Maintenance mode ကို test ပြုလုပ်ပြီးကြောင်း
 - [ ] Rate limiting ကို test ပြုလုပ်ပြီးကြောင်း
 - [ ] Security logs ကို စစ်ဆေးပြီးကြောင်း (`var/log/`)
-
----
-
-> 🎉 **သင်ခန်းစာ ၁၂ ခု ပြီးဆုံးပါပြီ!** [README.md](/eccube/requirements/customization-list/README/) ကို ပြန်ကြည့်ပါ။

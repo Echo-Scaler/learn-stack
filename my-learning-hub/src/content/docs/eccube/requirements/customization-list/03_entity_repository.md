@@ -361,7 +361,3 @@ $scalar = $qb->getQuery()->getSingleScalarResult(); // Single value (COUNT etc)
 - [ ] Migration ကို run ပြုလုပ်ပြီးကြောင်း
 - [ ] Database တွင် column ထည့်ပြီးကြောင်း (`SHOW COLUMNS FROM dtb_customer;`)
 - [ ] Cache clear ပြုလုပ်ပြီးကြောင်း
-
----
-
-> ➡️ **နောက်တစ်ဆင့်**: [04 - Admin Page Extension](/eccube/requirements/customization-list/04_admin_page_extension/)

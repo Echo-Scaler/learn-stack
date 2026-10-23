@@ -271,7 +271,77 @@ description: Overview of all 15 tracks, 546+ lessons, chapter breakdown, and com
 
 ---
 
-## 🈸 11. Japanese N1 Kanji Mastery Track
+## ☁️ 11. All in One Feature of SAA Track
+- **စုစုပေါင်း အခန်းရေ**: AWS Core Compute, Storage, Database, Networking, AI, Security, Scaling, Integration, Migration & Analytics Services ၅၀ ခု
+- **အဆင့်**: AWS SAA-C03 Real-World Production Architecture (မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်)
+- **အဓိက Feature ကဏ္ဍကြီးများ**:
+  - [Course Master Overview: Complete Architecture Blueprint](/aws-saa/00_overview/)
+  - **Part 1: Compute & Containers (Features 01 - 08)**:
+    - [Feature 01: Amazon EC2 (Elastic Compute Cloud) — ၁၁ ခန်း](/aws-saa/01_ec2/00_overview/)
+    - [Feature 02: Amazon ECS (Elastic Container Service) — ၇ ခန်း](/aws-saa/02_ecs/00_overview/)
+    - [Feature 03: Amazon ECR (Elastic Container Registry) — ၇ ခန်း](/aws-saa/03_ecr/00_overview/)
+    - [Feature 04: Amazon EKS (Elastic Kubernetes Service) — ၇ ခန်း](/aws-saa/04_eks/00_overview/)
+    - [Feature 05: AWS Elastic Beanstalk — ၆ ခန်း](/aws-saa/05_elastic_beanstalk/00_overview/)
+    - [Feature 06: AWS Lambda (Serverless Compute) — ၇ ခန်း](/aws-saa/06_lambda/00_overview/)
+    - [Feature 07: AWS Batch (Batch Computing Service) — ၅ ခန်း](/aws-saa/07_batch/00_overview/)
+    - [Feature 08: Amazon Lightsail (Easy-to-use VPS) — ၃ ခန်း](/aws-saa/08_lightsail/00_overview/)
+  - **Part 2: Storage Services (Features 09 - 12)**:
+    - [Feature 09: Amazon S3 (Simple Storage Service) — ၇ ခန်း](/aws-saa/09_s3/00_overview/)
+    - [Feature 10: Amazon EBS (Elastic Block Store) — ၅ ခန်း](/aws-saa/10_ebs/00_overview/)
+    - [Feature 11: Amazon EFS (Elastic File System) — ၄ ခန်း](/aws-saa/11_efs/00_overview/)
+    - [Feature 12: Amazon S3 Glacier (Ultra Low-Cost Archive) — ၃ ခန်း](/aws-saa/12_s3_glacier/00_overview/)
+  - **Part 3: Databases (Features 13 - 16)**:
+    - [Feature 13: Amazon RDS (Relational Database Service)](/aws-saa/13_rds/01_amazon_rds_master_guide/)
+    - [Feature 14: Amazon Aurora (Cloud-Native Relational DB)](/aws-saa/14_aurora/01_amazon_aurora_master_guide/)
+    - [Feature 15: Amazon DynamoDB (Single-Digit ms NoSQL)](/aws-saa/15_dynamodb/01_amazon_dynamodb_master_guide/)
+    - [Feature 16: Amazon ElastiCache (In-Memory Redis & Memcached)](/aws-saa/16_elasticache/01_amazon_elasticache_master_guide/)
+  - **Part 4: Networking & Content Delivery (Features 17 - 20)**:
+    - [Feature 17: Amazon VPC (Virtual Private Cloud)](/aws-saa/17_vpc/01_amazon_vpc_master_guide/)
+    - [Feature 18: Amazon Route 53 (Scalable Cloud DNS)](/aws-saa/18_route53/01_amazon_route53_master_guide/)
+    - [Feature 19: Amazon CloudFront (Global CDN)](/aws-saa/19_cloudfront/01_amazon_cloudfront_master_guide/)
+    - [Feature 20: Amazon API Gateway (Managed API Management)](/aws-saa/20_api_gateway/01_amazon_api_gateway_master_guide/)
+  - **Part 5: Machine Learning & AI (Features 21 - 23)**:
+    - [Feature 21: Amazon Bedrock (Generative AI with FMs & RAG)](/aws-saa/21_bedrock/01_amazon_bedrock_master_guide/)
+    - [Feature 22: Amazon SageMaker (End-to-End ML Platform)](/aws-saa/22_sagemaker/01_amazon_sagemaker_master_guide/)
+    - [Feature 23: Amazon Lex (Conversational Chatbots & Voicebots)](/aws-saa/23_lex/01_amazon_lex_master_guide/)
+  - **Part 6: Security, Identity, & Compliance (Features 24 - 27)**:
+    - [Feature 24: AWS IAM (Identity and Access Management)](/aws-saa/24_iam/01_aws_iam_master_guide/)
+    - [Feature 25: AWS KMS (Key Management Service & Envelope Encryption)](/aws-saa/25_kms/01_aws_kms_master_guide/)
+    - [Feature 26: Amazon Cognito (CIAM for Web & Mobile Apps)](/aws-saa/26_cognito/01_amazon_cognito_master_guide/)
+    - [Feature 27: AWS WAF (Web Application Firewall)](/aws-saa/27_waf/01_aws_waf_master_guide/)
+  - **Part 7: Management & Governance (Features 28 - 30)**:
+    - [Feature 28: Amazon CloudWatch (Metrics, Logs, Alarms & Observability)](/aws-saa/28_cloudwatch/01_amazon_cloudwatch_master_guide/)
+    - [Feature 29: AWS CloudTrail (User Activity & API Auditing)](/aws-saa/29_cloudtrail/01_aws_cloudtrail_master_guide/)
+    - [Feature 30: AWS CloudFormation (Declarative Infrastructure as Code)](/aws-saa/30_cloudformation/01_aws_cloudformation_master_guide/)
+  - **Part 8: Load Balancing, Gateways & Scaling (Features 31 - 38)**:
+    - [Feature 31: Amazon ALB (Application Load Balancer — Layer 7)](/aws-saa/31_alb/01_alb_master_guide/)
+    - [Feature 32: Amazon NLB (Network Load Balancer — Layer 4 Ultra-low Latency)](/aws-saa/32_nlb/01_nlb_master_guide/)
+    - [Feature 33: Amazon GWLB (Gateway Load Balancer — 3rd-Party Appliances)](/aws-saa/33_gwlb/01_gwlb_master_guide/)
+    - [Feature 34: Amazon CLB (Classic Load Balancer — Legacy EC2)](/aws-saa/34_clb/01_clb_master_guide/)
+    - [Feature 35: Amazon API Gateway Deep Dive (REST, HTTP & WebSocket APIs)](/aws-saa/35_api_gateway_deep_dive/01_api_gateway_deep_dive_master_guide/)
+    - [Feature 36: Internet Gateway (IGW — Scalable VPC Internet Transit)](/aws-saa/36_internet_gateway/01_internet_gateway_master_guide/)
+    - [Feature 37: AWS VPC Endpoint (Interface Endpoints & Gateway Endpoints)](/aws-saa/37_vpc_endpoint/01_vpc_endpoint_master_guide/)
+    - [Feature 38: AWS Auto Scaling (EC2 ASG, Predictive Scaling & Health Checks)](/aws-saa/38_auto_scaling/01_auto_scaling_master_guide/)
+  - **Part 9: Application Integration (Features 39 - 41)**:
+    - [Feature 39: Amazon SQS (Distributed Message Queuing Service)](/aws-saa/39_sqs/01_sqs_master_guide/)
+    - [Feature 40: Amazon SNS (Publish/Subscribe Notification Service)](/aws-saa/40_sns/01_sns_master_guide/)
+    - [Feature 41: Amazon EventBridge (Serverless Event Bus)](/aws-saa/41_eventbridge/01_eventbridge_master_guide/)
+  - **Part 10: Migration & Data Transfer (Features 42 - 44)**:
+    - [Feature 42: AWS DMS (Database Migration Service & CDC)](/aws-saa/42_dms/01_dms_master_guide/)
+    - [Feature 43: AWS DataSync (10x Accelerated Online File Transfer)](/aws-saa/43_datasync/01_datasync_master_guide/)
+    - [Feature 44: AWS Snow Family (Snowcone, Snowball Edge & Snowmobile)](/aws-saa/44_snow_family/01_snow_family_master_guide/)
+  - **Part 11: Analytics & Big Data (Features 45 - 49)**:
+    - [Feature 45: Amazon Redshift (Petabyte-Scale Cloud Data Warehouse)](/aws-saa/45_redshift/01_redshift_master_guide/)
+    - [Feature 46: Amazon Athena (Serverless Interactive SQL on S3)](/aws-saa/46_athena/01_athena_master_guide/)
+    - [Feature 47: AWS Glue (Serverless Spark ETL & Data Catalog)](/aws-saa/47_glue/01_glue_master_guide/)
+    - [Feature 48: Amazon Kinesis (Real-Time Streams & Data Firehose)](/aws-saa/48_kinesis/01_kinesis_master_guide/)
+    - [Feature 49: Amazon EMR (Big Data Processing with Hadoop & Spark)](/aws-saa/49_emr/01_emr_master_guide/)
+  - **Part 12: Business Applications & Messaging (Feature 50)**:
+    - [Feature 50: Amazon SES (High-Scalability Email Sending Service)](/aws-saa/50_ses/01_ses_master_guide/)
+
+---
+
+## 🈸 12. Japanese N1 Kanji Mastery Track
 - **စုစုပေါင်း အခန်းရေ**: ၁၀ ခန်း (Overview, High-Frequency, Politics, Psychology, Action & Nature, Radicals & Lookalikes, Ateji & Yojijukugo, IT Genba, Real Exam Tests)
 - **အဆင့်**: JLPT N1 Kanji & Reading Mastery (မြန်မာဘာသာ + Romaji အသေးစိတ် ရှင်းလင်းချက်)
 - **အဓိက ခေါင်းစဉ်များ**:
@@ -395,4 +465,3 @@ description: Overview of all 15 tracks, 546+ lessons, chapter breakdown, and com
     - [18. End-to-End Enterprise Production Server Capstone Project](/linux/18_enterprise_production_server_capstone_project/)
 
 </div>
-

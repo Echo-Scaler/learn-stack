@@ -2614,5 +2614,3 @@ All other services → Interface Endpoints (PrivateLink) = hourly cost
 > | 80-100 | Move to Set 02 |
 > | 60-79 | Review missed questions + Phase 02 IAM module |
 > | Below 60 | Re-read Phase 02 + Phase 03 VPC module first |
->
-> ➡️ **Next:** [Exam Set 02 — Networking & VPC (Q101-Q200)](/aws/04_saa_c03_practice_exams/exam_set_02_networking_vpc/)

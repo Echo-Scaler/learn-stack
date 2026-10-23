@@ -144,5 +144,3 @@ SHOW EVENTS;
 | **Audit Trails** | ငွေကြေး/အရေးကြီး အချက်အလက်များအတွက် `AFTER UPDATE` Trigger ဖြင့် Log သိမ်းသလား? | [ ] |
 | **Trigger Performance** | Trigger ထဲတွင် လေးလံသော Query များ မရေးရန် သတိပြုမိသလား? (Trigger ကြောင့် Main INSERT/UPDATE နှေးသွားနိုင်သည်) | [ ] |
 | **Event Scheduler** | `event_scheduler = ON` ဖွင့်ထားခြင်း ရှိ/မရှိ စစ်ဆေးပြီးပြီလား? | [ ] |
-
-နောက်သင်ခန်းစာ [12_transactions_acid_and_concurrency.md](/mysql/12_transactions_acid_and_concurrency/) တွင် ဘဏ်လုပ်ငန်းသုံး ငွေလွှဲပြောင်းမှုများ မမှားယွင်းစေရန် အာမခံပေးသည့် ACID Transactions, Locking များနှင့် Deadlocks အကြောင်းကို ဆက်လက်လေ့လာပါမည်။

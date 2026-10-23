@@ -171,5 +171,3 @@ docker run hello-world
 | **Architecture Concept** | Container သည် Host Kernel ကို မျှဝေသုံးစွဲပြီး VM ထက် ပေါ့ပါးကြောင်း သဘောပေါက်ပြီလား? | [ ] |
 | **Image vs Container** | Image သည် Read-Only Blueprint ဖြစ်ပြီး Container သည် Executable Instance ဖြစ်ကြောင်း နားလည်ပြီလား? | [ ] |
 | **Client-Daemon Separation** | CLI command များသည် Daemon သို့ REST API မှတစ်ဆင့် သွားကြောင်း သဘောပေါက်ပြီလား? | [ ] |
-
-နောက်သင်ခန်းစာ [02_docker_cli_essentials.md](/devops/02_kubernetes_and_cloud/02_docker_cli_essentials/) တွင် လုပ်ငန်းခွင်၌ နေ့စဉ် မဖြစ်မနေ အသုံးပြုရသော Docker CLI Commands များကို လက်တွေ့ ဆက်လက် လေ့လာပါမည်။

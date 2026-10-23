@@ -121,5 +121,3 @@ Lock မကျပါ၊ Undo Log မရေးရပါ၊ CPU 0% ဖြင့်
 | **Pruning Verification** | `EXPLAIN` တွင် သက်ဆိုင်ရာ Partition တစ်ခုတည်းကိုသာ ဖတ်ရှုကြောင်း စစ်ဆေးပြီးပြီလား? | [ ] |
 | **Future Partition** | အသစ်ဝင်လာမည့် ဒေတာများအတွက် `MAXVALUE` ထည့်ထားသလား? | [ ] |
 | **Instant Purge** | Log အဟောင်းများ ဖျက်ရန် `DELETE` အစား `DROP PARTITION` ကို အသုံးပြုသလား? | [ ] |
-
-နောက်သင်ခန်းစာ [16_mysql_backup_restore_and_disaster_recovery.md](/mysql/16_mysql_backup_restore_and_disaster_recovery/) တွင် Database ပျက်စီးသွားပါက မည်သည့် Data မျှ မဆုံးရှုံးစေရန် `mysqldump` နှင့် Binary Logs (Binlog) အသုံးပြုပုံကို လေ့လာပါမည်။

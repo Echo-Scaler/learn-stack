@@ -369,7 +369,3 @@ class ReportController extends AbstractController
 - [ ] Template ဖိုင်များ မှန်ကန်သော path တွင် ရှိကြောင်း
 - [ ] Cache clear ပြုလုပ်ပြီးကြောင်း
 - [ ] Admin sidebar တွင် Menu မြင်ရကြောင်း
-
----
-
-> ➡️ **နောက်တစ်ဆင့်**: [05 - Event & Hook System](/eccube/requirements/customization-list/05_event_hook_system/)

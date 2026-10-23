@@ -339,7 +339,3 @@ WHERE df.delivery_id = 1;  -- Delivery ID を変えてください
 - [ ] Checkout page に date picker が表示される
 - [ ] Order 確認 page に選択内容が表示される
 - [ ] Admin order detail に配送情報が表示される
-
----
-
-> ➡️ **နောက်တစ်ဆင့်**: [08 - Mail Template](/eccube/requirements/customization-list/08_mail_template/)

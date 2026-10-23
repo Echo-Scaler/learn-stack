@@ -1023,5 +1023,3 @@ public function test_role_middleware(): void
  AuthZ (Gate/Policy)    ─► "ခွင့်ရှိလား" ─► 403
  Middleware             ─► ထိုစစ်ဆေးချက်များကို Route များတွင် Reusable ဖြစ်စေသော "ကြားခံ"
 ```
-
-နောက်သင်ခန်းစာ: [22. Sanctum, Breeze & API Tokens](/laravel/22_sanctum_breeze_and_api_tokens_complete_guide/)

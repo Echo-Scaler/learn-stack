@@ -396,7 +396,3 @@ document.querySelectorAll('input[name*="plg_customer_type"]').forEach(radio => {
 - [ ] Cache clear 実施済みか
 - [ ] Form に新しい Field が表示されているか
 - [ ] Validation が正しく動作しているか
-
----
-
-> ➡️ **နောက်တစ်ဆင့်**: [10 - CSV Import/Export](/eccube/requirements/customization-list/10_csv_import_export/)

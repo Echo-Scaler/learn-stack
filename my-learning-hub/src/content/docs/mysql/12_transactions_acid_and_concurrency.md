@@ -143,5 +143,3 @@ MySQL InnoDB သည် Deadlock ကို အလိုအလျောက် ခ�
 | **Over-selling မဖြစ်စေရန်** | `SELECT ... FOR UPDATE` ဖြင့် Row-level exclusive lock ခတ်ပါ |
 | **MySQL Default Isolation** | `REPEATABLE READ` ဖြစ်ကြောင်း သဘောပေါက်ပါ |
 | **Deadlock Prevention** | Transaction များကို တိုတိုတုတ်တုတ်နှင့် အမြန်ဆုံး ပြီးအောင် စီမံပါ |
-
-နောက်သင်ခန်းစာ [13_indexing_deep_dive_and_query_optimization.md](/mysql/13_indexing_deep_dive_and_query_optimization/) တွင် သန်းပေါင်းများစွာသော Data များကို ၁ စက္ကန့်အတွင်း ရှာဖွေနိုင်သည့် B-Tree Indexing နှင့် `EXPLAIN ANALYZE` Query Optimization အကြောင်းကို လေ့လာပါမည်။

@@ -111,7 +111,7 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
                     <span class="col-header-icon">☁️</span>
                     <span class="col-header-text">CLOUD, DEVOPS &amp; CMS</span>
                   </div>
-                  <span class="col-header-pill">6 TRACKS</span>
+                  <span class="col-header-pill">7 TRACKS</span>
                 </div>
 
                 <a href="/linux/00_overview/" class="course-menu-item item-linux">
@@ -153,6 +153,18 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
                       <span class="item-badge badge-aws">41 Labs</span>
                     </div>
                     <span class="item-desc">3 Sections • SAA-C03 &amp; Real Work Labs</span>
+                  </div>
+                  <span class="item-hover-arrow">→</span>
+                </a>
+
+                <a href="/aws-saa/00_overview/" class="course-menu-item item-aws">
+                  <div class="item-icon-box aws-bg">☁️</div>
+                  <div class="item-text">
+                    <div class="item-title-row">
+                      <span class="item-title">All in One Feature of SAA</span>
+                      <span class="item-badge badge-aws">50 Features</span>
+                    </div>
+                    <span class="item-desc">12 Sectors • Compute, Storage, DB, Network, AI, Security, Analytics, Migration</span>
                   </div>
                   <span class="item-hover-arrow">→</span>
                 </a>
@@ -417,6 +429,15 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
             <span class="mobile-card-badge badge-aws">41 Labs</span>
           </a>
 
+          <a href="/aws-saa/00_overview/" class="mobile-card-item mobile-item-aws">
+            <span class="mobile-card-icon aws-bg">☁️</span>
+            <div class="mobile-card-info">
+              <span class="mobile-card-title">All in One Feature of SAA</span>
+              <span class="mobile-card-sub">12 Sectors • 50 Features • Compute, Storage, DB, AI, Analytics</span>
+            </div>
+            <span class="mobile-card-badge badge-aws">50 Features</span>
+          </a>
+
           <a href="/devops/00_overview/" class="mobile-card-item mobile-item-devops">
             <span class="mobile-card-icon devops-bg">🐳</span>
             <div class="mobile-card-info">
@@ -633,6 +654,18 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
             <div class="card-action-part" style="color:#f59e0b;">Start AWS →</div>
           </a>
 
+          <a href="/aws-saa/00_overview/" class="track-select-card card-featured-aws">
+            <div class="card-icon-part">☁️</div>
+            <div class="card-info-part">
+              <div class="card-top-row">
+                <span class="card-name">All in One Feature of SAA</span>
+                <span class="badge-new-pulse" style="background:#f59e0b; color:#fff;">50 FEATURES • 12 SECTORS</span>
+              </div>
+              <p class="card-sub">12 Sectors • 50 Core Services • Compute, Storage, DB, Network, AI, Security, Scaling, Migration, Analytics &amp; SES</p>
+            </div>
+            <div class="card-action-part" style="color:#f59e0b;">Start SAA →</div>
+          </a>
+
           <a href="/devops/00_overview/" class="track-select-card card-featured-devops">
             <div class="card-icon-part">🐳</div>
             <div class="card-info-part">
@@ -770,7 +803,7 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
 <script is:inline>
   (function() {
     function detectSector() {
-      var m = window.location.pathname.match(/\/(japanese-grammar|japanese-vocab|japanese-kanji|aws|php|javascript|laravel|mysql|devops|eccube|toeic|java|git|linux|networking)\b/);
+      var m = window.location.pathname.match(/\/(japanese-grammar|japanese-vocab|japanese-kanji|aws-ec2|aws-saa|aws|php|javascript|laravel|mysql|devops|eccube|toeic|java|git|linux|networking)\b/);
       if (m) {
         document.documentElement.setAttribute('data-sector', m[1]);
       } else {

@@ -163,5 +163,3 @@ docker network rm lab-network
 | **Database Host နေရာတွင် သုံးရန်** | IP Address မသုံးပါနှင့်၊ Container အမည် (`db-service`) ကိုသာ သုံးပါ |
 | **Security အရ Database Port ဖွင့်ခြင်း** | Database ကို အင်တာနက်ပြင်ပသို့ ပေးမသိစေရန် `-p 3306:3306` မသုံးပါနှင့် (Network ထဲမှ Application သာ ခေါ်ခွင့်ပေးပါ) |
 | **ပြင်ပ Client / Browser ဝင်ရောက်ရန်** | Web Server / Nginx ကိုသာ `-p 80:80` ဖြင့် Host Port ဖွင့်ပေးပါ |
-
-နောက်သင်ခန်းစာ [06_multistage_builds_and_optimization.md](/devops/02_kubernetes_and_cloud/06_multistage_builds_and_optimization/) တွင် Docker Image Size ကို 1GB မှ 50MB သို့ လျှော့ချပေးနိုင်သည့် Multi-Stage Builds နှင့် Production Optimization နည်းလမ်းများကို လေ့လာပါမည်။

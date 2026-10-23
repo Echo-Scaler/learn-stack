@@ -161,5 +161,3 @@ kubectl get endpoints
 | **Cluster ပြင်ပရှိ Third-Party API သို့ လမ်းလွှဲရန်** | `ExternalName` |
 
 သို့သော် Service တစ်ခုချင်းစီအတွက် LoadBalancer တစ်လုံးစီ ဆွဲယူသုံးစွဲပါက Cloud ကုန်ကျစရိတ် အလွန်ကြီးမားသွားပါမည်။
-
-ထို့ကြောင့် နောက်သင်ခန်းစာ [15_ingress_controllers_and_routing.md](/devops/02_kubernetes_and_cloud/15_ingress_controllers_and_routing/) တွင် LoadBalancer တစ်လုံးတည်းဖြင့် Domain ပေါင်းများစွာနှင့် HTTPS/SSL ကို စီမံနိုင်သော Ingress Controllers အကြောင်းကို ဆက်လက်လေ့လာပါမည်။

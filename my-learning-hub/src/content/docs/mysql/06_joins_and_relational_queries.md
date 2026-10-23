@@ -150,5 +150,3 @@ ORDER BY o.order_date DESC;
 | **မိဘ Data အကုန်လိုချင်ပြီး သားသမီး Data မရှိလျှင် NULL ပြလိုပါက** | `LEFT JOIN` |
 | **ဆက်စပ် Data လုံးဝ မရှိသူများကို ရှာရန် (Missing Data)** | `LEFT JOIN ... WHERE right.id IS NULL` |
 | **Index စစ်ဆေးမှု** | JOIN ပြုလုပ်သော Foreign Key columns များတွင် Index သေချာ တပ်ဆင်ထားရမည် |
-
-နောက်သင်ခန်းစာ [07_subqueries_and_common_table_expressions_ctes.md](/mysql/07_subqueries_and_common_table_expressions_ctes/) တွင် Complex SQL Logic များကို ရှင်းလင်းစွာ ရေးဆွဲနိုင်သည့် Subqueries များနှင့် CTEs (`WITH ... AS`) အကြောင်းကို ဆက်လက်လေ့လာပါမည်။

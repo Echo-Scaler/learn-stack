@@ -335,7 +335,3 @@ bin/console debug:event-dispatcher 'Product/detail.twig'
 # Service Container စစ်ဆေးပါ
 bin/console debug:container MyPlugin
 ```
-
----
-
-> ➡️ **နောက်တစ်ဆင့်**: [06 - Payment Method](/eccube/requirements/customization-list/06_payment_method/)

@@ -160,6 +160,3 @@ Kubernetes သို့ စတင်ကူးပြောင်းရာတွ�
 | **Orchestrator Role** | K8s သည် Self-healing, Auto-scaling, Rolling Update လုပ်ဆောင်ပေးကြောင်း နားလည်ခြင်း |
 | **Declarative Paradigm** | YAML ဖြင့် "Desired State" ကို ရေးသားပြီး K8s က အလိုအလျောက် ထိန်းကြောင်းပေးခြင်း |
 | **Swarm vs K8s** | Swarm သည် ရိုးရှင်းသော်လည်း Ecosystem နှင့် Auto-scaling ကြောင့် K8s က စံနှုန်းဖြစ်သွားကြောင်း သိရှိခြင်း |
-
-နောက်သင်ခန်းစာ [11_k8s_architecture_and_setup.md](/devops/02_kubernetes_and_cloud/11_k8s_architecture_and_setup/) တွင် Kubernetes ၏ အတွင်းပိုင်း ဗိသုကာလက်ရာ (Control Plane & Worker Nodes) နှင့် Local Machine တွင် K8s Cluster စတင်တပ်ဆင်ပုံကို လေ့လာပါမည်။
-

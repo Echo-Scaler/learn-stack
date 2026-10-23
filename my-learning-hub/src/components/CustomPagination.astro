@@ -83,6 +83,8 @@ const sectorIcons: Record<string, string> = {
   'Japanese N1 Vocabulary': '📖',
   'Japanese N1 Kanji': '🈸',
   'AWS Cloud & DevOps': '☁️',
+  'AWS ECS SAA Practice': '☁️',
+  'AWS SAA 800+ Practice Exam': '☁️',
   'Networking & Cloud Automation': '🌐',
   'Java': '☕',
   'Git & GitHub Enterprise': '🐙',
@@ -232,6 +234,200 @@ function classifyLesson(href: string, courseName: string) {
         subTag: 'Practice Exams'
       };
     }
+  }
+
+  // All in One Feature of SAA Track (Separated into 7 Core Sectors)
+  if (courseName === 'All in One Feature of SAA' || courseName === 'AWS ECS SAA Practice' || courseName === 'AWS SAA 800+ Practice Exam' || normHref.includes('/aws-saa/')) {
+    // Sector 2: Storage Services (Features 09 - 12)
+    if (normHref.includes('/09_s3/') || normHref.includes('/10_ebs/') || normHref.includes('/11_efs/') || normHref.includes('/12_s3_glacier/')) {
+      let subTag = 'Storage Service';
+      if (normHref.includes('/09_s3/')) subTag = 'Amazon S3';
+      else if (normHref.includes('/10_ebs/')) subTag = 'Amazon EBS';
+      else if (normHref.includes('/11_efs/')) subTag = 'Amazon EFS';
+      else if (normHref.includes('/12_s3_glacier/')) subTag = 'Amazon S3 Glacier';
+      return {
+        sectionKey: 'aws_saa_storage',
+        sectionTitle: '2. Storage Services',
+        sectionIcon: '💾',
+        badge: 'STORAGE',
+        subTag
+      };
+    }
+
+    // Sector 3: Databases (Features 13 - 16)
+    if (normHref.includes('/13_rds/') || normHref.includes('/14_aurora/') || normHref.includes('/15_dynamodb/') || normHref.includes('/16_elasticache/')) {
+      let subTag = 'Database Service';
+      if (normHref.includes('/13_rds/')) subTag = 'Amazon RDS';
+      else if (normHref.includes('/14_aurora/')) subTag = 'Amazon Aurora';
+      else if (normHref.includes('/15_dynamodb/')) subTag = 'Amazon DynamoDB';
+      else if (normHref.includes('/16_elasticache/')) subTag = 'Amazon ElastiCache';
+      return {
+        sectionKey: 'aws_saa_databases',
+        sectionTitle: '3. Database Services',
+        sectionIcon: '🗄️',
+        badge: 'DATABASES',
+        subTag
+      };
+    }
+
+    // Sector 4: Networking & Content Delivery (Features 17 - 20)
+    if (normHref.includes('/17_vpc/') || normHref.includes('/18_route53/') || normHref.includes('/19_cloudfront/') || normHref.includes('/20_api_gateway/')) {
+      let subTag = 'Networking & CDN';
+      if (normHref.includes('/17_vpc/')) subTag = 'Amazon VPC';
+      else if (normHref.includes('/18_route53/')) subTag = 'Amazon Route 53';
+      else if (normHref.includes('/19_cloudfront/')) subTag = 'Amazon CloudFront';
+      else if (normHref.includes('/20_api_gateway/')) subTag = 'Amazon API Gateway';
+      return {
+        sectionKey: 'aws_saa_networking',
+        sectionTitle: '4. Networking & Content Delivery',
+        sectionIcon: '🌐',
+        badge: 'NETWORKING',
+        subTag
+      };
+    }
+
+    // Sector 5: Machine Learning & AI (Features 21 - 23)
+    if (normHref.includes('/21_bedrock/') || normHref.includes('/22_sagemaker/') || normHref.includes('/23_lex/')) {
+      let subTag = 'Machine Learning & AI';
+      if (normHref.includes('/21_bedrock/')) subTag = 'Amazon Bedrock';
+      else if (normHref.includes('/22_sagemaker/')) subTag = 'Amazon SageMaker';
+      else if (normHref.includes('/23_lex/')) subTag = 'Amazon Lex';
+      return {
+        sectionKey: 'aws_saa_ai_ml',
+        sectionTitle: '5. Machine Learning & AI',
+        sectionIcon: '🤖',
+        badge: 'AI & ML',
+        subTag
+      };
+    }
+
+    // Sector 6: Security, Identity, & Compliance (Features 24 - 27)
+    if (normHref.includes('/24_iam/') || normHref.includes('/25_kms/') || normHref.includes('/26_cognito/') || normHref.includes('/27_waf/')) {
+      let subTag = 'Security & Compliance';
+      if (normHref.includes('/24_iam/')) subTag = 'AWS IAM';
+      else if (normHref.includes('/25_kms/')) subTag = 'AWS KMS';
+      else if (normHref.includes('/26_cognito/')) subTag = 'Amazon Cognito';
+      else if (normHref.includes('/27_waf/')) subTag = 'AWS WAF';
+      return {
+        sectionKey: 'aws_saa_security',
+        sectionTitle: '6. Security, Identity, & Compliance',
+        sectionIcon: '🛡️',
+        badge: 'SECURITY',
+        subTag
+      };
+    }
+
+    // Sector 7: Management & Governance (Features 28 - 30)
+    if (normHref.includes('/28_cloudwatch/') || normHref.includes('/29_cloudtrail/') || normHref.includes('/30_cloudformation/')) {
+      let subTag = 'Management & Governance';
+      if (normHref.includes('/28_cloudwatch/')) subTag = 'Amazon CloudWatch';
+      else if (normHref.includes('/29_cloudtrail/')) subTag = 'AWS CloudTrail';
+      else if (normHref.includes('/30_cloudformation/')) subTag = 'AWS CloudFormation';
+      return {
+        sectionKey: 'aws_saa_management',
+        sectionTitle: '7. Management & Governance',
+        sectionIcon: '⚙️',
+        badge: 'MANAGEMENT',
+        subTag
+      };
+    }
+
+    // Sector 8: Load Balancing, Gateways & Scaling (Features 31 - 38)
+    if (normHref.includes('/31_alb/') || normHref.includes('/32_nlb/') || normHref.includes('/33_gwlb/') || normHref.includes('/34_clb/') || normHref.includes('/35_api_gateway_deep_dive/') || normHref.includes('/36_internet_gateway/') || normHref.includes('/37_vpc_endpoint/') || normHref.includes('/38_auto_scaling/')) {
+      let subTag = 'Scaling & Gateways';
+      if (normHref.includes('/31_alb/')) subTag = 'Amazon ALB';
+      else if (normHref.includes('/32_nlb/')) subTag = 'Amazon NLB';
+      else if (normHref.includes('/33_gwlb/')) subTag = 'Amazon GWLB';
+      else if (normHref.includes('/34_clb/')) subTag = 'Classic LB (CLB)';
+      else if (normHref.includes('/35_api_gateway_deep_dive/')) subTag = 'API Gateway Deep Dive';
+      else if (normHref.includes('/36_internet_gateway/')) subTag = 'Internet Gateway (IGW)';
+      else if (normHref.includes('/37_vpc_endpoint/')) subTag = 'VPC Endpoint';
+      else if (normHref.includes('/38_auto_scaling/')) subTag = 'AWS Auto Scaling';
+      return {
+        sectionKey: 'aws_saa_gateways_scaling',
+        sectionTitle: '8. Load Balancing, Gateways & Scaling',
+        sectionIcon: '⚖️',
+        badge: 'ELB & SCALING',
+        subTag
+      };
+    }
+
+    // Sector 9: Application Integration (Features 39 - 41)
+    if (normHref.includes('/39_sqs/') || normHref.includes('/40_sns/') || normHref.includes('/41_eventbridge/')) {
+      let subTag = 'App Integration';
+      if (normHref.includes('/39_sqs/')) subTag = 'Amazon SQS';
+      else if (normHref.includes('/40_sns/')) subTag = 'Amazon SNS';
+      else if (normHref.includes('/41_eventbridge/')) subTag = 'Amazon EventBridge';
+      return {
+        sectionKey: 'aws_saa_app_integration',
+        sectionTitle: '9. Application Integration',
+        sectionIcon: '📬',
+        badge: 'INTEGRATION',
+        subTag
+      };
+    }
+
+    // Sector 10: Migration & Transfer Services (Features 42 - 44)
+    if (normHref.includes('/42_dms/') || normHref.includes('/43_datasync/') || normHref.includes('/44_snow_family/')) {
+      let subTag = 'Migration & Transfer';
+      if (normHref.includes('/42_dms/')) subTag = 'AWS DMS';
+      else if (normHref.includes('/43_datasync/')) subTag = 'AWS DataSync';
+      else if (normHref.includes('/44_snow_family/')) subTag = 'AWS Snow Family';
+      return {
+        sectionKey: 'aws_saa_migration',
+        sectionTitle: '10. Migration & Transfer Services',
+        sectionIcon: '🚚',
+        badge: 'MIGRATION',
+        subTag
+      };
+    }
+
+    // Sector 11: Analytics & Big Data Services (Features 45 - 49)
+    if (normHref.includes('/45_redshift/') || normHref.includes('/46_athena/') || normHref.includes('/47_glue/') || normHref.includes('/48_kinesis/') || normHref.includes('/49_emr/')) {
+      let subTag = 'Analytics & Big Data';
+      if (normHref.includes('/45_redshift/')) subTag = 'Amazon Redshift';
+      else if (normHref.includes('/46_athena/')) subTag = 'Amazon Athena';
+      else if (normHref.includes('/47_glue/')) subTag = 'AWS Glue';
+      else if (normHref.includes('/48_kinesis/')) subTag = 'Amazon Kinesis';
+      else if (normHref.includes('/49_emr/')) subTag = 'Amazon EMR';
+      return {
+        sectionKey: 'aws_saa_analytics',
+        sectionTitle: '11. Analytics & Big Data Services',
+        sectionIcon: '📊',
+        badge: 'ANALYTICS',
+        subTag
+      };
+    }
+
+    // Sector 12: Business Applications & Messaging (Feature 50)
+    if (normHref.includes('/50_ses/')) {
+      return {
+        sectionKey: 'aws_saa_business_apps',
+        sectionTitle: '12. Business Applications & Messaging',
+        sectionIcon: '✉️',
+        badge: 'BUSINESS APPS',
+        subTag: 'Amazon SES'
+      };
+    }
+
+    // Sector 1: Compute & Container Services (Features 01 - 08 + Master Overview)
+    let subTag = 'Compute & Containers';
+    if (normHref.includes('/00_overview/')) subTag = 'Master Blueprint';
+    else if (normHref.includes('/01_ec2/')) subTag = 'Amazon EC2';
+    else if (normHref.includes('/02_ecs/')) subTag = 'Amazon ECS';
+    else if (normHref.includes('/03_ecr/')) subTag = 'Amazon ECR';
+    else if (normHref.includes('/04_eks/')) subTag = 'Amazon EKS';
+    else if (normHref.includes('/05_elastic_beanstalk/')) subTag = 'Elastic Beanstalk';
+    else if (normHref.includes('/06_lambda/')) subTag = 'AWS Lambda';
+    else if (normHref.includes('/07_batch/')) subTag = 'AWS Batch';
+    else if (normHref.includes('/08_lightsail/')) subTag = 'Amazon Lightsail';
+    return {
+      sectionKey: 'aws_saa_compute',
+      sectionTitle: '1. Compute & Container Services',
+      sectionIcon: '🏛️',
+      badge: 'COMPUTE',
+      subTag
+    };
   }
 
   // 3. Docker & DevOps Track (2 Core Sections, 46 chapters)

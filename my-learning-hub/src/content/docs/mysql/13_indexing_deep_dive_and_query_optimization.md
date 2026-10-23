@@ -164,5 +164,3 @@ SELECT * FROM users WHERE phone_number = '09123456';
 | **Index ဘယ်နေရာ တင်သင့်သလဲ?** | `WHERE`, `JOIN ON`, `ORDER BY` တွင် မကြာခဏ ပါဝင်သော Columns များကို တင်ပါ |
 | **Index အများကြီး မတင်ရန် သတိပေးချက်** | Index များလွန်းပါက `INSERT`, `UPDATE` လုပ်တိုင်း Index များကို ပြန်ပြင်ရသဖြင့် ရေးသားမှု နှေးသွားသည် |
 | **Query Tuning** | Slow Query ဖြစ်ပါက `EXPLAIN ANALYZE` ဖြင့် `type: ALL` ဖြစ်နေခြင်း ရှိ/မရှိ စစ်ဆေးပါ |
-
-နောက်သင်ခန်းစာ [14_json_datatypes_and_nosql_in_mysql.md](/mysql/14_json_datatypes_and_nosql_in_mysql/) တွင် MySQL အား MongoDB ကဲ့သို့ Document Store အဖြစ် သုံးနိုင်သည့် Native JSON Data Types အကြောင်းကို လေ့လာပါမည်။

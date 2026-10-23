@@ -164,5 +164,3 @@ LIMIT 20;
 | **NULL Comparison** | `= NULL` မသုံးဘဲ `IS NULL` သုံးထားသလား? | [ ] |
 | **LIKE Optimization** | `LIKE '%keyword%'` (ရှေ့တွင် `%` ပါခြင်း) သည် Index မသုံးနိုင်ဘဲ Full Table Scan ဖြစ်စေကြောင်း သတိပြုမိသလား? | [ ] |
 | **Big Data Pagination** | ဒေတာ သန်းချီရှိသော ဇယားများတွင် `OFFSET` အစား Keyset Pagination (`WHERE id > last_id`) သုံးထားသလား? | [ ] |
-
-နောက်သင်ခန်းစာ [05_aggregate_functions_and_grouping.md](/mysql/05_aggregate_functions_and_grouping/) တွင် ဒေတာများကို ပေါင်းရုံးတွက်ချက်ပေးသည့် Aggregate Functions များနှင့် `GROUP BY`, `HAVING` အကြောင်းကို ဆက်လက်လေ့လာပါမည်။

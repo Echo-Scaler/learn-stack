@@ -203,5 +203,3 @@ docker run -d --name test-app -p 9000:9000 my-laravel-app:1.0.0
 | **Layer Caching Optimization** | Dependencies ဖိုင်များ (`composer.json`) ကို Source Code အပြည့် မကူးခင် ကြိုတင် run ထားသလား? | [ ] |
 | **Instruction ပုံစံ** | `CMD` တွင် Shell form မဟုတ်ဘဲ Exec form `["cmd", "arg"]` သုံးထားသလား? | [ ] |
 | **Cleanup on RUN** | Package manager ၏ cache များကို ရှင်းလင်းထားသလား? (`apk --no-cache` / `apt-get clean`) | [ ] |
-
-နောက်သင်ခန်းစာ [04_docker_storage_and_volumes.md](/devops/02_kubernetes_and_cloud/04_docker_storage_and_volumes/) တွင် Container ပျက်သွားသော်လည်း Data မပျောက်ပျက်စေရန် Docker Storage & Volumes စနစ်များကို ဆက်လက် လေ့လာပါမည်။

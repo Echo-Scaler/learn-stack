@@ -129,5 +129,3 @@ CREATE INDEX idx_tags ON product_catalogs ( (CAST(attributes->'$.tags' AS CHAR(5
 | **Dynamic / Polymorphic Attributes သိမ်းရန်** | Column ပေါင်းများစွာ မဆောက်ဘဲ `JSON` column သုံးပါ |
 | **Data ထုတ်ဖတ်ရန်** | Quote ရှင်းလင်းပြီးသား ရရှိစေရန် `->>` ကို သုံးပါ |
 | **JSON Performance Tuning** | မကြာခဏ `WHERE` စစ်ရသော JSON Key များကို Virtual Column ပြုလုပ်ပြီး Index တင်ပါ |
-
-နောက်သင်ခန်းစာ [15_partitioning_and_large_scale_data.md](/mysql/15_partitioning_and_large_scale_data/) တွင် သန်းပေါင်း ဆယ်နှင့်ချီသော Big Data များကို Disk ပေါ်တွင် အကန့်လိုက် ခွဲခြမ်းစီမံနိုင်သည့် Table Partitioning အကြောင်းကို လေ့လာပါမည်။

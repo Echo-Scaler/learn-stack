@@ -911,5 +911,3 @@ S3 = better for larger objects (> 1KB), per-operation overhead too high for tiny
 > ## 🎯 Set 04 Complete! — Storage & S3 (Q301–Q400)
 >
 > **Score:** ___/100
->
-> ➡️ **Next:** [Exam Set 05 — Databases (Q401-Q500)](/aws/04_saa_c03_practice_exams/exam_set_05_database/)

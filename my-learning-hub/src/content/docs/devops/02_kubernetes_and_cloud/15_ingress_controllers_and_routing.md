@@ -176,5 +176,3 @@ Ingress YAML တွင် `cert-manager.io/cluster-issuer: "letsencrypt-prod"` a
 | **Cost Optimization** | Service တိုင်းကို LoadBalancer မသုံးဘဲ Ingress ဖြင့် တစ်ခုတည်း ချုံ့ထားသလား? | [ ] |
 | **SSL Redirection** | HTTP မှ HTTPS သို့ အလိုအလျောက် Redirect annotation ထည့်ထားသလား? | [ ] |
 | **Upload Limit** | File upload များအတွက် `proxy-body-size` သတ်မှတ်ထားသလား? | [ ] |
-
-နောက်သင်ခန်းစာ [16_configmaps_and_secrets.md](/devops/02_kubernetes_and_cloud/16_configmaps_and_secrets/) တွင် Application ၏ Settings များနှင့် လျှို့ဝှက် Passwords များကို စနစ်တကျ ခွဲထုတ်သိမ်းဆည်းမည့် ConfigMaps & Secrets အကြောင်းကို ဆက်လက်လေ့လာပါမည်။

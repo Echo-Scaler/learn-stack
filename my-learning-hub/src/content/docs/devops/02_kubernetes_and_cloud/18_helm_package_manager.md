@@ -196,5 +196,3 @@ helm upgrade --install my-app ./my-laravel-chart -f values-prod.yaml
 | **ကိုယ်ပိုင် Microservices များ စီမံရန်** | Custom Helm Chart ဖန်တီးပြီး Templates သုံးပါ |
 | **Dev / Staging / Prod ခွဲခြားရန်** | `values-dev.yaml` နှင့် `values-prod.yaml` သီးခြားထားပါ |
 | **Version Rollback** | `helm rollback <release> <revision>` ဖြင့် စက္ကန့်ပိုင်းဖြင့် ပြန်ဆုတ်ပါ |
-
-နောက်သင်ခန်းစာ [19_rbac_security_and_hardening.md](/devops/02_kubernetes_and_cloud/19_rbac_security_and_hardening/) တွင် Cluster လုံခြုံရေး၊ Access Control (RBAC) နှင့် Network Policies အကြောင်းကို ဆက်လက်လေ့လာပါမည်။

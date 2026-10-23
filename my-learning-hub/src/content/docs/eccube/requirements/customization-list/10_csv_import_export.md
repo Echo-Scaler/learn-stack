@@ -442,7 +442,3 @@ public function exportOrderCsv(): StreamedResponse
 - [ ] BOM ပါ UTF-8 CSV ဖြစ်ကြောင်း (Excel ဖြင့် စစ်ဆေးပါ)
 - [ ] Import validation errors မှန်ကန်ကြောင်း
 - [ ] Large data set ဖြင့် Memory error မဖြစ်ကြောင်း
-
----
-
-> ➡️ **နောက်တစ်ဆင့်**: [11 - Service Class](/eccube/requirements/customization-list/11_service_class/)

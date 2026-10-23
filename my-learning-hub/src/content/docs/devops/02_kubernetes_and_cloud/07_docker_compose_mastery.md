@@ -277,5 +277,3 @@ IP Address များကို လုံးဝ စိုးရိမ်စရ�
 | **Data Persistence** | MySQL နှင့် Redis အတွက် Named Volumes များ ထည့်သွင်းထားသလား? | [ ] |
 | **Startup Order** | Database Crash မဖြစ်စေရန် `healthcheck` နှင့် `condition: service_healthy` သုံးထားသလား? | [ ] |
 | **One-Command Setup** | Developer အသစ်သည် `docker compose up -d` တစ်ချက်တည်းဖြင့် App စတင်နိုင်သလား? | [ ] |
-
-နောက်သင်ခန်းစာ [08_docker_security_and_hardening.md](/devops/02_kubernetes_and_cloud/08_docker_security_and_hardening/) တွင် Docker Container များကို Production ပေါ်တွင် လုံခြုံစိတ်ချစွာ Run နိုင်ရန် Container Hardening & Security နည်းလမ်းများကို လေ့လာပါမည်။

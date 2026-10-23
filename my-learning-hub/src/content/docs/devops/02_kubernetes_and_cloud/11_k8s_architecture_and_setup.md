@@ -167,5 +167,3 @@ Default အားဖြင့် `default`, `kube-system`, `kube-public`, `kube-
 | **`kube-scheduler`** | Pod ကို မည်သည့် Node တွင် တင်ရမည်ကို ဆုံးဖြတ်သူ |
 | **`kubelet`** | Node ပေါ်တွင် Container များ အမှန်တကယ် Run ပေးသူ |
 | **`kubectl`** | Developer များ Cluster အား ခိုင်းစေရန် သုံးသော CLI |
-
-နောက်သင်ခန်းစာ [12_pods_and_declarative_yaml.md](/devops/02_kubernetes_and_cloud/12_pods_and_declarative_yaml/) တွင် Kubernetes ၏ အခြေခံအကျဆုံး အယူအဆဖြစ်သော Pods များနှင့် YAML Manifest ရေးသားပုံကို လေ့လာပါမည်။

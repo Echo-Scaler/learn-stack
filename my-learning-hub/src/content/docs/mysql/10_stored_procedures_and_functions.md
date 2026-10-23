@@ -198,5 +198,3 @@ DELIMITER ;
 | **Delimiter Change** | Procedure မရေးမီ `DELIMITER //` ပြောင်းပြီး အဆုံးတွင် `DELIMITER ;` ပြန်ထားသလား? | [ ] |
 | **Function Deterministic** | Custom Function ရေးသည့်အခါ `DETERMINISTIC` ထည့်သွင်းထားသလား? | [ ] |
 | **Data Integrity** | အရေးကြီးသော ငွေကြေး/Stock လုပ်ငန်းများအတွက် Transaction (`START TRANSACTION`) နှင့် တွဲဖက်ထားသလား? | [ ] |
-
-နောက်သင်ခန်းစာ [11_triggers_and_event_scheduler.md](/mysql/11_triggers_and_event_scheduler/) တွင် Data အပြောင်းအလဲဖြစ်တိုင်း အလိုအလျောက် သတိပေးအလုပ်လုပ်သည့် Database Triggers များနှင့် Event Scheduler အကြောင်းကို လေ့လာပါမည်။
