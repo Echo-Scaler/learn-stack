@@ -91,6 +91,7 @@ const sectorIcons: Record<string, string> = {
   'Git': '🐙',
   'Linux Server Engineering': '🐧',
   'Linux': '🐧',
+  'Domain Knowledge': '🛒',
 };
 const sectorIcon = sectorIcons[sectorTitle] || '📚';
 
@@ -958,6 +959,217 @@ function classifyLesson(href: string, courseName: string) {
       badge: 'CAPSTONE',
       subTag: 'Enterprise Server'
     };
+  }
+
+  // 10. Domain Knowledge Track (E-Commerce & CMS Enterprise Sectors)
+  if (courseName === 'Domain Knowledge' || normHref.includes('/domain-knowledge/')) {
+    if (clean.includes('00_overview')) {
+      return {
+        sectionKey: 'domain_sec0',
+        sectionTitle: 'Sector 0: Domain Knowledge Master Blueprint',
+        sectionIcon: '🗺️',
+        badge: 'BLUEPRINT',
+        subTag: 'Master Roadmap'
+      };
+    }
+    if (clean.includes('01_business_models')) {
+      return {
+        sectionKey: 'domain_sec1',
+        sectionTitle: 'Sector 1: Business Models & Catalog Management',
+        sectionIcon: '🏬',
+        badge: 'CATALOG & SKU',
+        subTag: 'Business Models'
+      };
+    }
+    if (clean.includes('02_inventory_management')) {
+      return {
+        sectionKey: 'domain_sec2',
+        sectionTitle: 'Sector 2: Inventory & Stock Management',
+        sectionIcon: '📦',
+        badge: 'STOCK CONCURRENCY',
+        subTag: 'Stock & Locking'
+      };
+    }
+    if (clean.includes('03_shopping_cart')) {
+      return {
+        sectionKey: 'domain_sec3',
+        sectionTitle: 'Sector 3: Shopping Cart & Checkout Engine',
+        sectionIcon: '🛒',
+        badge: 'CART & CHECKOUT',
+        subTag: 'Cart & Idempotency'
+      };
+    }
+    if (clean.includes('04_order_management')) {
+      return {
+        sectionKey: 'domain_sec4',
+        sectionTitle: 'Sector 4: Order Management & State Machine',
+        sectionIcon: '📋',
+        badge: 'OMS STATE MACHINE',
+        subTag: 'OMS & State Machine'
+      };
+    }
+    if (clean.includes('05_payment_processing')) {
+      return {
+        sectionKey: 'domain_sec5',
+        sectionTitle: 'Sector 5: Payment Processing & Reconciliation',
+        sectionIcon: '💳',
+        badge: 'PAYMENT & FINANCE',
+        subTag: 'Webhooks & Reconciliation'
+      };
+    }
+    if (clean.includes('06_fulfillment_shipping')) {
+      return {
+        sectionKey: 'domain_sec6',
+        sectionTitle: 'Sector 6: Fulfillment, Logistics & 3PL',
+        sectionIcon: '🚚',
+        badge: 'LOGISTICS & 3PL',
+        subTag: '3PL & Returns'
+      };
+    }
+    if (clean.includes('07_marketing_analytics')) {
+      return {
+        sectionKey: 'domain_sec7',
+        sectionTitle: 'Sector 7: Marketing, Analytics & Retention',
+        sectionIcon: '📈',
+        badge: 'MARKETING & DATA',
+        subTag: 'Analytics & Growth'
+      };
+    }
+    if (clean.includes('08_technical_architecture')) {
+      return {
+        sectionKey: 'domain_sec8',
+        sectionTitle: 'Sector 8: Technical Architecture & Cloud DevOps',
+        sectionIcon: '🛡️',
+        badge: 'TECH ARCHITECTURE',
+        subTag: 'AWS & OWASP'
+      };
+    }
+    if (clean.includes('09_amazon_system')) {
+      return {
+        sectionKey: 'domain_sec9',
+        sectionTitle: 'Sector 9: Amazon System Architecture & Engineering',
+        sectionIcon: '🌐',
+        badge: 'AMAZON SCALE',
+        subTag: 'Amazon Engineering'
+      };
+    }
+    if (clean.includes('10_real_world_production')) {
+      return {
+        sectionKey: 'domain_sec10',
+        sectionTitle: 'Sector 10: Production Problems & Baymard Checkout UX',
+        sectionIcon: '🚨',
+        badge: 'PRODUCTION RESILIENCE',
+        subTag: 'Checkout Failures'
+      };
+    }
+    if (clean.includes('11_cms_architecture')) {
+      return {
+        sectionKey: 'domain_sec11',
+        sectionTitle: 'Sector 11: CMS Architecture & Editorial Workflow',
+        sectionIcon: '📝',
+        badge: 'CMS ARCHITECTURE',
+        subTag: 'Editorial Workflow'
+      };
+    }
+    if (clean.includes('12_cms_media')) {
+      return {
+        sectionKey: 'domain_sec12',
+        sectionTitle: 'Sector 12: Media Assets & Page Builders',
+        sectionIcon: '🎨',
+        badge: 'DAM & BUILDERS',
+        subTag: 'Media & SEO'
+      };
+    }
+    if (clean.includes('13_cms_advanced')) {
+      return {
+        sectionKey: 'domain_sec13',
+        sectionTitle: 'Sector 13: Content Versioning, Headless & Security',
+        sectionIcon: '⚡',
+        badge: 'HEADLESS & SECURITY',
+        subTag: 'Headless CMS'
+      };
+    }
+    if (clean.includes('14_cms_production')) {
+      return {
+        sectionKey: 'domain_sec14',
+        sectionTitle: 'Sector 14: Top 10 CMS Production Problems & Laravel',
+        sectionIcon: '🔧',
+        badge: 'CMS TROUBLESHOOTING',
+        subTag: 'CMS Troubleshooting'
+      };
+    }
+    if (clean.includes('15_pos_sales')) {
+      return {
+        sectionKey: 'domain_sec15',
+        sectionTitle: 'Sector 15: POS Sales & Order Management',
+        sectionIcon: '🧾',
+        badge: 'POS SALES',
+        subTag: 'Order Lifecycle'
+      };
+    }
+    if (clean.includes('16_pos_payment')) {
+      return {
+        sectionKey: 'domain_sec16',
+        sectionTitle: 'Sector 16: POS Payment & Cash Management',
+        sectionIcon: '💳',
+        badge: 'POS PAYMENT',
+        subTag: 'Cash Float & Split'
+      };
+    }
+    if (clean.includes('17_pos_product')) {
+      return {
+        sectionKey: 'domain_sec17',
+        sectionTitle: 'Sector 17: POS Product, Inventory & Recipe (BOM)',
+        sectionIcon: '📦',
+        badge: 'POS INVENTORY',
+        subTag: 'Stock & BOM Recipes'
+      };
+    }
+    if (clean.includes('18_pos_restaurant')) {
+      return {
+        sectionKey: 'domain_sec18',
+        sectionTitle: 'Sector 18: POS Restaurant Operations & Hardware',
+        sectionIcon: '🍽️',
+        badge: 'POS RESTAURANT',
+        subTag: 'Tables, KOT & KDS'
+      };
+    }
+    if (clean.includes('19_pos_reporting')) {
+      return {
+        sectionKey: 'domain_sec19',
+        sectionTitle: 'Sector 19: POS Reporting & Business Analytics',
+        sectionIcon: '📊',
+        badge: 'POS ANALYTICS',
+        subTag: 'Reports & Z-Report'
+      };
+    }
+    if (clean.includes('20_pos_employee')) {
+      return {
+        sectionKey: 'domain_sec20',
+        sectionTitle: 'Sector 20: POS Employee, Shifts & Store Management',
+        sectionIcon: '👥',
+        badge: 'POS SHIFTS',
+        subTag: 'RBAC & Shift Ledger'
+      };
+    }
+    if (clean.includes('21_pos_business')) {
+      return {
+        sectionKey: 'domain_sec21',
+        sectionTitle: 'Sector 21: POS Business Rules, Database & ERD',
+        sectionIcon: '📐',
+        badge: 'POS ARCHITECTURE',
+        subTag: '7 Core Rules & ERD'
+      };
+    }
+    if (clean.includes('22_pos_production')) {
+      return {
+        sectionKey: 'domain_sec22',
+        sectionTitle: 'Sector 22: Top 10 POS Problems & Laravel Solutions',
+        sectionIcon: '🛠️',
+        badge: 'POS RESILIENCE',
+        subTag: 'Laravel Solutions'
+      };
+    }
   }
 
   // Default fallback

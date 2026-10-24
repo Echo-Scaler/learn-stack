@@ -111,7 +111,7 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
                     <span class="col-header-icon">☁️</span>
                     <span class="col-header-text">CLOUD, DEVOPS &amp; CMS</span>
                   </div>
-                  <span class="col-header-pill">7 TRACKS</span>
+                  <span class="col-header-pill">8 TRACKS</span>
                 </div>
 
                 <a href="/linux/00_overview/" class="course-menu-item item-linux">
@@ -215,6 +215,18 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
                       <span class="item-badge badge-eccube">217 Ch</span>
                     </div>
                     <span class="item-desc">5 Sections • Symfony, DB &amp; 17 Modules</span>
+                  </div>
+                  <span class="item-hover-arrow">→</span>
+                </a>
+
+                <a href="/domain-knowledge/00_overview/" class="course-menu-item item-domain">
+                  <div class="item-icon-box domain-bg">🛒</div>
+                  <div class="item-text">
+                    <div class="item-title-row">
+                      <span class="item-title">Domain Knowledge (E-Com, CMS &amp; POS)</span>
+                      <span class="item-badge badge-domain">22 Ch</span>
+                    </div>
+                    <span class="item-desc">E-Commerce, Concurrency, CMS &amp; Restaurant POS</span>
                   </div>
                   <span class="item-hover-arrow">→</span>
                 </a>
@@ -478,6 +490,15 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
             </div>
             <span class="mobile-card-badge badge-eccube">217 Ch</span>
           </a>
+
+          <a href="/domain-knowledge/00_overview/" class="mobile-card-item mobile-item-domain">
+            <span class="mobile-card-icon domain-bg">🛒</span>
+            <div class="mobile-card-info">
+              <span class="mobile-card-title">Domain Knowledge (E-Com, CMS &amp; POS)</span>
+              <span class="mobile-card-sub">22 Chapters • E-Commerce, CMS &amp; Restaurant POS</span>
+            </div>
+            <span class="mobile-card-badge badge-domain">22 Ch</span>
+          </a>
         </div>
       </div>
 
@@ -707,6 +728,18 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
             <div class="card-action-part" style="color:#10b981;">Start EC-CUBE →</div>
           </a>
 
+          <a href="/domain-knowledge/00_overview/" class="track-select-card card-featured-domain">
+            <div class="card-icon-part">🛒</div>
+            <div class="card-info-part">
+              <div class="card-top-row">
+                <span class="card-name">E-Commerce &amp; CMS Domain Knowledge</span>
+                <span class="badge-new-pulse" style="background:#f59e0b; color:#fff;">14 CH</span>
+              </div>
+              <p class="card-sub">E-Commerce Concurrency, OMS, Amazon Engineering &amp; Enterprise CMS Architecture</p>
+            </div>
+            <div class="card-action-part" style="color:#d97706;">Start Domain →</div>
+          </a>
+
           <div class="modal-subgroup-label">
             <span class="modal-subgroup-text">🐧 SYSADMIN &amp; VERSION CONTROL</span>
             <span class="modal-subgroup-line"></span>
@@ -803,7 +836,7 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
 <script is:inline>
   (function() {
     function detectSector() {
-      var m = window.location.pathname.match(/\/(japanese-grammar|japanese-vocab|japanese-kanji|aws-ec2|aws-saa|aws|php|javascript|laravel|mysql|devops|eccube|toeic|java|git|linux|networking)\b/);
+      var m = window.location.pathname.match(/\/(japanese-grammar|japanese-vocab|japanese-kanji|aws-ec2|aws-saa|aws|php|javascript|laravel|mysql|devops|eccube|toeic|java|git|linux|networking|domain-knowledge)\b/);
       if (m) {
         document.documentElement.setAttribute('data-sector', m[1]);
       } else {
@@ -1281,6 +1314,7 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
   .item-aws:hover { background: rgba(245, 158, 11, 0.08) !important; border-color: rgba(245, 158, 11, 0.25) !important; }
   .item-net:hover { background: rgba(2, 132, 199, 0.08) !important; border-color: rgba(2, 132, 199, 0.25) !important; }
   .item-eccube:hover { background: rgba(16, 185, 129, 0.08) !important; border-color: rgba(16, 185, 129, 0.25) !important; }
+  .item-domain:hover { background: rgba(245, 158, 11, 0.08) !important; border-color: rgba(245, 158, 11, 0.25) !important; }
   .item-jg:hover { background: rgba(220, 38, 38, 0.08) !important; border-color: rgba(220, 38, 38, 0.25) !important; }
   .item-jv:hover { background: rgba(2, 132, 199, 0.08) !important; border-color: rgba(2, 132, 199, 0.25) !important; }
   .item-jk:hover { background: rgba(225, 29, 72, 0.08) !important; border-color: rgba(225, 29, 72, 0.25) !important; }
@@ -1368,6 +1402,7 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
   .item-aws:hover .item-hover-arrow { color: #f59e0b; }
   .item-net:hover .item-hover-arrow { color: #0284c7; }
   .item-eccube:hover .item-hover-arrow { color: #10b981; }
+  .item-domain:hover .item-hover-arrow { color: #f59e0b; }
   .item-jg:hover .item-hover-arrow { color: #dc2626; }
   .item-jv:hover .item-hover-arrow { color: #0284c7; }
   .item-jk:hover .item-hover-arrow { color: #e11d48; }
@@ -1388,6 +1423,7 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
   .course-menu-item[href*="/linux/"]:hover .item-title { color: #ca8a04 !important; }
   .course-menu-item[href*="/devops/"]:hover .item-title { color: #0ea5e9 !important; }
   .course-menu-item[href*="/eccube/"]:hover .item-title { color: #10b981 !important; }
+  .course-menu-item[href*="/domain-knowledge/"]:hover .item-title { color: #f59e0b !important; }
   .course-menu-item[href*="/toeic/"]:hover .item-title { color: #0891b2 !important; }
 
   :root[data-theme='dark'] .course-menu-item[href*="/japanese-grammar/"]:hover .item-title { color: #f87171 !important; }
@@ -1404,6 +1440,7 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
   :root[data-theme='dark'] .course-menu-item[href*="/linux/"]:hover .item-title { color: #facc15 !important; }
   :root[data-theme='dark'] .course-menu-item[href*="/devops/"]:hover .item-title { color: #38bdf8 !important; }
   :root[data-theme='dark'] .course-menu-item[href*="/eccube/"]:hover .item-title { color: #34d399 !important; }
+  :root[data-theme='dark'] .course-menu-item[href*="/domain-knowledge/"]:hover .item-title { color: #fbbf24 !important; }
   :root[data-theme='dark'] .course-menu-item[href*="/toeic/"]:hover .item-title { color: #22d3ee !important; }
 
   /* Badges */
@@ -1418,6 +1455,7 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
   .badge-aws { background: rgba(245, 158, 11, 0.15); color: #d97706; }
   .badge-net { background: rgba(2, 132, 199, 0.12); color: #0284c7; }
   .badge-eccube { background: rgba(16, 185, 129, 0.12); color: #059669; }
+  .badge-domain { background: rgba(245, 158, 11, 0.15); color: #d97706; }
   .badge-jg { background: rgba(220, 38, 38, 0.12); color: #dc2626; }
   .badge-jv { background: rgba(2, 132, 199, 0.12); color: #0284c7; }
   .badge-jk { background: rgba(225, 29, 72, 0.12); color: #e11d48; }
@@ -1434,6 +1472,7 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
   :root[data-theme='dark'] .badge-aws { color: #fbbf24; background: rgba(245, 158, 11, 0.2); }
   :root[data-theme='dark'] .badge-net { color: #38bdf8; background: rgba(2, 132, 199, 0.2); }
   :root[data-theme='dark'] .badge-eccube { color: #34d399; background: rgba(16, 185, 129, 0.2); }
+  :root[data-theme='dark'] .badge-domain { color: #fbbf24; background: rgba(245, 158, 11, 0.2); }
   :root[data-theme='dark'] .badge-jg { color: #f87171; background: rgba(220, 38, 38, 0.2); }
   :root[data-theme='dark'] .badge-jv { color: #38bdf8; background: rgba(2, 132, 199, 0.2); }
   :root[data-theme='dark'] .badge-jk { color: #fb7185; background: rgba(225, 29, 72, 0.2); }
@@ -1451,6 +1490,7 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
   .aws-bg { background: rgba(245, 158, 11, 0.15) !important; border: 1px solid rgba(245, 158, 11, 0.25) !important; }
   .net-bg { background: rgba(2, 132, 199, 0.12) !important; border: 1px solid rgba(2, 132, 199, 0.25) !important; }
   .eccube-bg { background: rgba(16, 185, 129, 0.12) !important; border: 1px solid rgba(16, 185, 129, 0.25) !important; }
+  .domain-bg { background: rgba(245, 158, 11, 0.15) !important; border: 1px solid rgba(245, 158, 11, 0.25) !important; }
   .toeic-bg { background: rgba(8, 145, 178, 0.12) !important; border: 1px solid rgba(8, 145, 178, 0.25) !important; }
   .japanese-bg { background: rgba(220, 38, 38, 0.12) !important; border: 1px solid rgba(220, 38, 38, 0.25) !important; }
   .vocab-bg { background: rgba(2, 132, 199, 0.12) !important; border: 1px solid rgba(2, 132, 199, 0.25) !important; }
@@ -2278,6 +2318,16 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
     box-shadow: 0 8px 24px -6px rgba(16, 185, 129, 0.25);
   }
 
+  .card-featured-domain {
+    background: rgba(245, 158, 11, 0.05);
+    border: 1.5px solid rgba(245, 158, 11, 0.35);
+  }
+  .card-featured-domain:hover {
+    border-color: #f59e0b;
+    box-shadow: 0 8px 24px -6px rgba(245, 158, 11, 0.25);
+  }
+  .card-featured-domain:hover .card-name { color: #f59e0b; }
+
   .kanji-bg {
     background: rgba(225, 29, 72, 0.15) !important;
     border: 1px solid rgba(225, 29, 72, 0.3);
@@ -2368,6 +2418,14 @@ import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
     font-weight: 600 !important;
   }
   .mobile-item-eccube:hover { background: rgba(16, 185, 129, 0.18) !important; }
+
+  .mobile-item-domain {
+    background: rgba(245, 158, 11, 0.08) !important;
+    border: 1px solid rgba(245, 158, 11, 0.25) !important;
+    color: #d97706 !important;
+    font-weight: 600 !important;
+  }
+  .mobile-item-domain:hover { background: rgba(245, 158, 11, 0.18) !important; }
 
   .mobile-item-java {
     background: rgba(234, 88, 12, 0.08) !important;

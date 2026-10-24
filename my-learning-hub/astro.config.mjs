@@ -21,12 +21,14 @@ const courses = [
 	{ label: 'Java', directory: 'java' },
 	{ label: 'Git & GitHub Enterprise', directory: 'git' },
 	{ label: 'Linux Server Engineering', directory: 'linux' },
+	{ label: 'Domain Knowledge', directory: 'domain-knowledge' },
 ];
 
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://my-learning-hub-kyaw-wai-yans-projects.vercel.app',
 	redirects: {
+		'/domain-knowledge/': '/domain-knowledge/00_overview/',
 		'/linux/': '/linux/00_overview/',
 		'/git/': '/git/00_overview/',
 		'/java/': '/java/00_overview/',
