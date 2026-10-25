@@ -3,7 +3,6 @@ title: Phase 7 Lesson 16 — Docker, DevOps Containers & Cloud VMs
 description: Virtual Machines vs Docker Containers, Docker Engine on Ubuntu, Volumes, Networks, Docker Compose Multi-container Stack, Restart Policies နှင့် Cloud VM (AWS EC2) (မြန်မာဘာသာ)
 ---
 
-# 🐳 Phase 7 — Lesson 16: Docker, DevOps Containers & Cloud VMs
 
 ခေတ်သစ် Cloud & DevOps လောကတွင် Application များကို Server ပေါ်တွင် တိုက်ရိုက် Bare-metal install လုပ်မည့်အစား **Docker Containers (ကွန်တိန်နာများ)** ဖြင့် ထုပ်ပိုးကာ သီးခြားခွဲထုတ်၍ Run လေ့ရှိပါသည်။
 

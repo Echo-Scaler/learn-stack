@@ -22,12 +22,14 @@ const courses = [
 	{ label: 'Git & GitHub Enterprise', directory: 'git' },
 	{ label: 'Linux Server Engineering', directory: 'linux' },
 	{ label: 'Domain Knowledge', directory: 'domain-knowledge' },
+	{ label: 'DevOps Engineer Guide', directory: 'devops-guide' },
 ];
 
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://my-learning-hub-kyaw-wai-yans-projects.vercel.app',
 	redirects: {
+		'/devops-guide/': '/devops-guide/00_overview/',
 		'/domain-knowledge/': '/domain-knowledge/00_overview/',
 		'/linux/': '/linux/00_overview/',
 		'/git/': '/git/00_overview/',

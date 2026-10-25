@@ -3,7 +3,6 @@ title: Phase 3 Lesson 8 — Network Fundamentals & DNS Resolution
 description: Linux Networking အခြေခံ, IP Addresses, Subnet Mask, CIDR (/24), TCP vs UDP, Ports & Sockets, DNS Resolution Flow (/etc/resolv.conf) နှင့် dig/ping/curl (မြန်မာဘာသာ)
 ---
 
-# 🌐 Phase 3 — Lesson 8: Network Fundamentals & DNS Resolution
 
 Linux Server များသည် ကမ္ဘာတစ်ဝှမ်းရှိ Client Users များ၊ Database Servers များနှင့် အခြား Microservices များနှင့် အင်တာနက်/Local Network မှတစ်ဆင့် အပြန်အလှန် ချိတ်ဆက်ဆက်သွယ်နေရပါသည်။
 

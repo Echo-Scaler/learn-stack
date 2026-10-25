@@ -3,7 +3,6 @@ title: Phase 2 Lesson 6 — systemd, Services & journalctl Logging
 description: Linux systemd Init System, Service Daemons, systemctl command များ, Custom Unit File ရေးသားနည်းနှင့် journalctl Log Analysis (မြန်မာဘာသာ)
 ---
 
-# 🤖 Phase 2 — Lesson 6: systemd, Services & journalctl Logging
 
 ခေတ်မီ Linux Server များတွင် Application တစ်ခုကို Background Daemon အဖြစ် ၂၄ နာရီ မနားတမ်း run ထားရန်နှင့် Server ပြန်ပွင့်လာတိုင်း (Auto-boot) အလိုအလျောက် ပွင့်လာစေရန် **`systemd` (System Daemon - PID 1)** ကို အသုံးပြုပါသည်။
 

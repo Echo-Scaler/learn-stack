@@ -3,7 +3,6 @@ title: Phase 5 Lesson 13 — Nginx Architecture, Reverse Proxy & SSL
 description: Nginx Event-driven Architecture, Master/Worker Processes, Reverse Proxy (proxy_pass), Upstream Load Balancing, Virtual Hosts နှင့် SSL Offloading (မြန်မာဘာသာ)
 ---
 
-# 🌐 Phase 5 — Lesson 13: Nginx Architecture, Reverse Proxy & SSL
 
 ခေတ်သစ် Web Infrastructure တွင် **Nginx (Engine-X)** သည် ကမ္ဘာပေါ်တွင် အသုံးအများဆုံး High-Performance Web Server & Reverse Proxy ဖြစ်ပါသည်။
 

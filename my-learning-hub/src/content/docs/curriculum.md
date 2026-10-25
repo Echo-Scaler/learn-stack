@@ -430,13 +430,12 @@ description: Overview of all 15 tracks, 546+ lessons, chapter breakdown, and com
 ---
 
 ## 🐧 15. Linux Server Engineering Track
-- **စုစုပေါင်း အခန်းရေ**: ၁၈ ခန်း + Roadmap Overview (9 Phases)
-- **အဆင့်**: Absolute Beginner မှ 3–4 Years Professional Linux System Administrator / DevOps Engineer အဆင့်ထိ
-- **လေ့လာရန်ကြာချိန်**: ၄ ပတ် မှ ၆ ပတ်
+- **စုစုပေါင်း အခန်းရေ**: ၂၂ ခန်း (9 Phases + Mid, Advanced & Pro Level Real-Work Labs)
+- **အဆင့်**: Beginner မှ Senior System Administrator & Production Engineer အထိ
+- **လေ့လာရန်ကြာချိန်**: ၆ ပတ် မှ ၈ ပတ်
 - **အဓိက ခေါင်းစဉ်များ**:
-  - **Overview & Roadmap**:
-    - [00. Linux Server Engineering Roadmap & Lab Setup](/linux/00_overview/)
-  - **Phase 1: Linux Fundamentals**:
+  - [00. Linux Server Engineering Roadmap](/linux/00_overview/)
+  - **Phase 1: Linux Foundations & Filesystem**:
     - [01. Linux Introduction, Architecture, Kernel & Mac Lab Setup](/linux/01_phase1_lesson1_linux_intro_and_mac_lab/)
     - [02. Filesystem Hierarchy (/, /etc, /var, /usr, /opt) & Navigation](/linux/02_filesystem_hierarchy_and_navigation/)
     - [03. File Permissions, Ownership, Users, Groups & sudo Privilege](/linux/03_file_permissions_ownership_and_sudo/)
@@ -463,10 +462,46 @@ description: Overview of all 15 tracks, 546+ lessons, chapter breakdown, and com
     - [17. Production Observability, Alerting, Security & Disaster Recovery](/linux/17_monitoring_observability_and_incident_response/)
   - **Phase 9: Real-World Enterprise Projects**:
     - [18. End-to-End Enterprise Production Server Capstone Project](/linux/18_enterprise_production_server_capstone_project/)
+    - [19. Mid Level vs Advanced Level Roadmap & Competency Matrix](/linux/19_level_map_mid_vs_advanced_roadmap/)
+    - [20. Mid Level Real-Work Labs (M1-M8 Hands-on Challenges)](/linux/20_mid_level_real_work_labs/)
+    - [21. Advanced Level Real-Work Labs (A1-A10 Production Cases)](/linux/21_advanced_level_real_work_labs/)
+    - [22. Pro Level Real-Work Labs (P1-P10 Mission-Critical Systems)](/linux/22_pro_level_real_work_labs/)
 
 ---
 
-## 🛒 16. E-Commerce, CMS & POS Domain Knowledge Track
+## 🚀 16. DevOps Engineer Master Track
+- **စုစုပေါင်း အခန်းရေ**: ၁၄ ဆင့်ပါ DevOps Modules + ၄ ခုသော Capstone Projects + Interview Prep & Glossary
+- **အဆင့်**: Beginner မှ Job-Ready Production DevOps Engineer & SRE အဆင့်ထိ
+- **လေ့လာရန်ကြာချိန်**: ၈ ပတ် မှ ၁၂ ပတ်
+- **အဓိက ခေါင်းစဉ်များ**:
+  - [00. DevOps Master Roadmap Overview](/devops-guide/00_overview/)
+  - [Step 01. Linux Fundamentals (Ubuntu, CLI, systemd)](/devops-guide/01-linux/readme/)
+  - [Step 02. Networking Fundamentals (DNS, HTTP/S, SSH, curl)](/devops-guide/02-networking/readme/)
+  - [Step 03. Git & GitHub Collaboration (Rebase, GitFlow)](/devops-guide/03-git/readme/)
+  - [Step 04. Bash Scripting & Automation (Cron, Healthchecks)](/devops-guide/04-bash-automation/readme/)
+  - [Step 05. Docker & Containers (Multi-stage, Compose)](/devops-guide/05-docker/readme/)
+  - [Step 06. CI/CD Pipeline (GitHub Actions, Automated Releases)](/devops-guide/06-cicd/readme/)
+  - [Step 07. Cloud Fundamentals & AWS Security](/devops-guide/07-aws-fundamentals/readme/)
+  - [Step 08. AWS Production Deployment (VPC, ALB, EC2, RDS)](/devops-guide/08-aws-deployment/readme/)
+  - [Step 09. Infrastructure as Code with Terraform](/devops-guide/09-terraform/readme/)
+  - [Step 10. Configuration Management with Ansible](/devops-guide/10-ansible/readme/)
+  - [Step 11. Monitoring & Logging (Prometheus, Grafana)](/devops-guide/11-monitoring-observability/readme/)
+  - [Step 12. DevSecOps (Trivy, IAM, Secrets Hardening)](/devops-guide/12-devsecops/readme/)
+  - [Step 13. Kubernetes (Minikube, K8s, Helm, EKS)](/devops-guide/13-kubernetes/readme/)
+  - [Step 14. Real-world Portfolio Capstone Projects Overview](/devops-guide/15-projects/readme/)
+    - [📌 Project A: Server Health & S3 Backup Monitor](/devops-guide/15-projects/project-a-specs/)
+    - [📌 Project B: Production Multi-Tier Docker Compose Stack](/devops-guide/15-projects/project-b-specs/)
+    - [📌 Project C: Enterprise CI/CD Pipeline with Rollback](/devops-guide/15-projects/project-c-specs/)
+    - [📌 Project D: AWS Multi-AZ Production Terraform IaC](/devops-guide/15-projects/project-d-specs/)
+  - **Prep & Resources**:
+    - [🎯 Scenario-Based Interview Preparation](/devops-guide/interview-preparation/readme/)
+    - [📖 DevOps Burmese Glossary (၆၀+ ဝေါဟာရများ)](/devops-guide/glossary/readme/)
+    - [⚡ 30-Day Starter Study Plan](/devops-guide/study-plan-30-days/)
+    - [🚀 90-Day Foundation Study Plan](/devops-guide/study-plan-90-days/)
+
+---
+
+## 🛒 17. E-Commerce, CMS & POS Domain Knowledge Track
 - **စုစုပေါင်း အခန်းရေ**: ၂၃ ခန်း (Master Blueprint + ၂၂ ခုသော အထူးပြု Domain Sectors)
 - **အဆင့်**: Intermediate မှ Senior Full-Stack & Solutions Architect အထိ
 - **လေ့လာရန်ကြာချိန်**: ၃ ပတ် မှ ၅ ပတ်

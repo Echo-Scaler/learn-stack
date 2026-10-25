@@ -3,7 +3,6 @@ title: Phase 2 Lesson 5 — Process Management & System Resources
 description: Linux Process Lifecycle, PID, signals (SIGTERM vs SIGKILL), ps aux, top, htop, kill, free -h, df -h နှင့် du -sh (မြန်မာဘာသာ)
 ---
 
-# ⚙️ Phase 2 — Lesson 5: Process Management & System Resources
 
 Linux Server ပေါ်တွင် Run နေသမျှ Application (Nginx, Java, Node.js, MySQL, Python) တိုင်းသည် **Process (လည်ပတ်နေသော ပရိုဂရမ်)** တစ်ခုစီ ဖြစ်ကြပါသည်။
 

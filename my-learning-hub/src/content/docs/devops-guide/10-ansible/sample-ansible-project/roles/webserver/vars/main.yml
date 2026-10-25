@@ -1,0 +1,7 @@
+---
+# vars for roles/webserver
+domain_name: "app.internal.example.com"
+http_port: 80
+app_upstream_port: 3000
+worker_processes: "auto"
+worker_connections: 1024

@@ -3,7 +3,6 @@ title: Phase 1 Lesson 4 — Package Management & Environment Variables
 description: Ubuntu Package Management (apt update, upgrade, install, purge), /etc/apt/sources.list, Environment Variables, $PATH သဘောတရားနှင့် ~/.bashrc (မြန်မာဘာသာ)
 ---
 
-# 📦 Phase 1 — Lesson 4: Package Management & Environment Variables
 
 Linux Server ပေါ်တွင် Software များ (ဥပမာ- Nginx, MySQL, Python, Git, Docker) ကို ထည့်သွင်းခြင်း၊ Update ပြုလုပ်ခြင်းနှင့် အမှိုက်များ ရှင်းလင်းခြင်းကို **Package Manager (`apt`)** ဖြင့် စီမံခန့်ခွဲရပါသည်။ ထို့အပြင် Application များ အလုပ်လုပ်ရာတွင် အသုံးပြုသော **Environment Variables (ပတ်ဝန်းကျင် ကိန်းရှင်များ)** နှင့် **`$PATH`** အလုပ်လုပ်ပုံကို နားလည်ထားရန် အရေးကြီးပါသည်။
 

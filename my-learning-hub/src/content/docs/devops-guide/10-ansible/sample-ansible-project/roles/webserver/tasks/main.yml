@@ -1,0 +1,39 @@
+---
+# tasks for roles/webserver
+- name: Update apt cache
+  ansible.builtin.apt:
+    update_cache: true
+    cache_valid_time: 3600
+
+- name: Install Nginx web server
+  ansible.builtin.apt:
+    name: nginx
+    state: present
+
+- name: Deploy dynamic Nginx configuration
+  ansible.builtin.template:
+    src: nginx.conf.j2
+    dest: /etc/nginx/sites-available/{{ domain_name }}.conf
+    owner: root
+    group: root
+    mode: '0644'
+  notify: Restart Nginx
+
+- name: Enable site configuration symlink
+  ansible.builtin.file:
+    src: /etc/nginx/sites-available/{{ domain_name }}.conf
+    dest: /etc/nginx/sites-enabled/{{ domain_name }}.conf
+    state: link
+  notify: Reload Nginx
+
+- name: Remove default Nginx site
+  ansible.builtin.file:
+    path: /etc/nginx/sites-enabled/default
+    state: absent
+  notify: Reload Nginx
+
+- name: Ensure Nginx service is running and enabled
+  ansible.builtin.service:
+    name: nginx
+    state: started
+    enabled: true

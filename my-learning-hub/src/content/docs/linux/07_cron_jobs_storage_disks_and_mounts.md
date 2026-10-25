@@ -3,7 +3,6 @@ title: Phase 2 Lesson 7 — Cron Jobs, Storage Disks, Mounts & fstab
 description: Linux Cron Scheduled Tasks, Crontab syntax (* * * * *), Block Devices (lsblk), Filesystem Format (ext4), Mounts နှင့် /etc/fstab အမြဲတမ်း ချိတ်ဆက်ခြင်း (မြန်မာဘာသာ)
 ---
 
-# ⏰ Phase 2 — Lesson 7: Cron Jobs, Storage Disks, Mounts & fstab
 
 Server တစ်ခုတွင် နေ့စဉ် Database Backup အလိုအလျောက် ရယူခြင်း၊ Log ဖိုင်များ ရှင်းလင်းခြင်း စသည့် အလုပ်များကို **Cron Daemon** ဖြင့် အချိန်ကိုက် စေခိုင်းရပါသည်။ ထို့အပြင် Cloud Server ပေါ်တွင် Hard Disk (SSD/EBS) အသစ်တစ်ခု ထပ်မံတပ်ဆင်ပါက ထို Disk ကို စနစ်ထဲသို့ **Format ရိုက်ခြင်း၊ Mount ပြုလုပ်ခြင်းနှင့် `/etc/fstab` ဖြင့် အမြဲတမ်း ချိတ်ဆက်ခြင်း** တို့ကို SysAdmin တိုင်း ကျွမ်းကျင်စွာ လုပ်ဆောင်နိုင်ရပါမည်။
 

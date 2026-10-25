@@ -3,7 +3,6 @@ title: Phase 1 Lesson 3 — File Permissions, Ownership & sudo Privileges
 description: Linux Permissions စနစ် (rwx, 755, 600), Ownership (chown), Users & Groups စီမံခန့်ခွဲမှု, sudo privileges နှင့် /etc/sudoers လုံခြုံရေး (မြန်မာဘာသာ)
 ---
 
-# 🛡️ Phase 1 — Lesson 3: File Permissions, Ownership & sudo Privileges
 
 Linux သည် မူလကတည်းက **Multi-User Operating System** အဖြစ် တည်ဆောက်ထားသဖြင့် မည်သည့် User သည် မည်သည့် ဖိုင်ကို ဖတ်ရှုခွင့်၊ ရေးသားခွင့်နှင့် Program အဖြစ် run ခွင့်ရှိသည်ကို တင်းကျပ်သော **File Permissions & Ownership** စနစ်ဖြင့် ကာကွယ်ထားပါသည်။
 

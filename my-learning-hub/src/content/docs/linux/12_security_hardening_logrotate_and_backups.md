@@ -3,7 +3,6 @@ title: Phase 4 Lesson 12 — Security Hardening, Logrotate & Backup Automation
 description: Fail2ban Brute-force ကာကွယ်ခြင်း, Unattended Upgrades, Logrotate Architecture (/etc/logrotate.d/), 3-2-1 Backup Strategy, tar/mysqldump နှင့် Disaster Recovery (မြန်မာဘာသာ)
 ---
 
-# 🛡️ Phase 4 — Lesson 12: Security Hardening, Logrotate & Backup Automation
 
 Production Linux Server တစ်ခုကို ရေရှည်စိတ်ချစွာ လည်ပတ်နိုင်စေရန် အရေးကြီးဆုံး တာဝန် ၂ ရပ်မှာ **လုံခြုံရေးတိုက်ခိုက်မှုများကို အလိုအလျောက် ခုခံခြင်း** နှင့် **Disk မပြည့်စေရန် Log rotation ပြုလုပ်ပြီး ဒေတာများ ပျက်စီးဆုံးရှုံးမှုမရှိစေရန် Backup အလိုအလျောက် ရယူခြင်း** ဖြစ်ပါသည်။
 

@@ -1,0 +1,6 @@
+---
+- name: Deploy Production Nginx Cluster
+  hosts: webservers
+  become: true
+  roles:
+    - webserver

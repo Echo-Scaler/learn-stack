@@ -3,7 +3,6 @@ title: Phase 8 Lesson 17 — Monitoring, Observability & Incident Response
 description: Production Observability, System Metrics (iostat, vmstat, iftop), Prometheus & Node Exporter, Incident Triage, 5 Whys Root Cause Analysis (RCA) နှင့် Runbooks (မြန်မာဘာသာ)
 ---
 
-# 🩺 Phase 8 — Lesson 17: Monitoring, Observability & Incident Response
 
 Production Server များတွင် အရေးပေါ် Incident တစ်ခု ဖြစ်ပေါ်လာချိန် (ဥပမာ- ညဉ့်နက် ၂:၀၀ နာရီတွင် Website Down သွားခြင်း) တွင် ထိတ်လန့်မသွားဘဲ စနစ်တကျ **Triage (အဆင့်ခွဲခြားခြင်း)** ပြုလုပ်နိုင်ပြီး **Root Cause Analysis (RCA)** ရှာဖွေနိုင်ခြင်းသည် ၄ နှစ်လုပ်သက် Senior Engineer တစ်ဦး၏ အဓိက အရည်အသွေး ဖြစ်ပါသည်။
 

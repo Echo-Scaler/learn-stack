@@ -3,7 +3,6 @@ title: Phase 6 Lesson 15 — Bash Scripting, Pipes & Text Processing
 description: Bash Automation, set -euo pipefail, Pipes (|), Redirection, Exit Codes, grep, sed, awk, cut, sort, xargs နှင့် Production Server Health Check Script (မြန်မာဘာသာ)
 ---
 
-# 📜 Phase 6 — Lesson 15: Bash Scripting, Pipes & Text Processing
 
 Junior Developer တစ်ဦးသည် အလုပ်တစ်ခုကို အကြိမ်ကြိမ် ကိုယ်တိုင် manual ရိုက်နှိပ်လုပ်ဆောင်နေချိန်တွင် Senior Linux Engineer တစ်ဦးသည် ထိုအလုပ်ကို **Bash Script (Shell Scripting)** ဖြင့် တစ်ခါတည်း အလိုအလျောက် ရေးသားခိုင်းစေထားလေ့ရှိပါသည်။
 

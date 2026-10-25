@@ -3,7 +3,6 @@ title: Phase 1 Lesson 2 — Filesystem Hierarchy & Navigation
 description: Linux Filesystem Hierarchy Standard (FHS), Directory တည်ဆောက်ပုံ (/, /etc, /var, /usr, /opt), Absolute vs Relative Paths နှင့် ဖိုင်လမ်းညွှန် command များ (မြန်မာဘာသာ)
 ---
 
-# 📁 Phase 1 — Lesson 2: Filesystem Hierarchy Standard (FHS) & File Navigation
 
 Windows စနစ်တွင် `C:\`, `D:\` စသည့် Drive အကွက်များဖြင့် စတင်သော်လည်း Linux တွင် Drive ဟူ၍ မရှိပါ။ Linux တွင် သိုလှောင်မှုစနစ်တစ်ခုလုံးသည် Root Directory ဟုခေါ်သော **Single Inverted Tree (`/`)** အောက်တွင်သာ စုစည်းတည်ရှိပါသည်။
 

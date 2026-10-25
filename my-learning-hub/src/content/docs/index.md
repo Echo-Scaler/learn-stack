@@ -136,7 +136,8 @@ Master modern software engineering, cloud architecture, and high-income language
 <p class="catalog-sub">Select your learning path from beginner syntax to enterprise architecture &amp; language mastery.</p>
 </div>
 <div class="track-filter-bar">
-<a href="/linux/00_overview/" class="track-pill track-pill-linux">🐧 Linux Server</a>
+<a href="/devops-guide/00_overview/" class="track-pill" style="border-color:#0ea5e9; color:#0ea5e9;">🚀 DevOps Guide (14 Steps)</a>
+<a href="/linux/00_overview/" class="track-pill track-pill-linux">🐧 Linux (22 Labs)</a>
 <a href="/git/00_overview/" class="track-pill track-pill-git">🐙 Git &amp; GitHub (7 Ch)</a>
 <a href="/java/00_overview/" class="track-pill track-pill-java">☕ Java (20 Ch)</a>
 <a href="/php/00_overview/" class="track-pill track-pill-php">🐘 PHP (24 Ch)</a>
@@ -325,13 +326,25 @@ Master modern software engineering, cloud architecture, and high-income language
 
 <a href="/linux/00_overview/" class="catalog-card card-highlight-linux">
 <div>
-<span class="catalog-card-tag tag-linux" style="color:#eab308; font-weight:700;">Track 15 • System Administration <span class="tag-badge-new" style="background:#eab308; color:#000;">SYSADMIN &amp; DEVOPS</span></span>
-<h3>Linux Server Engineering (0 to 4-Year)</h3>
-<p>Linux Kernel &amp; Architecture၊ Mac Virtual Lab (Multipass)၊ Filesystem Hierarchy၊ File Permissions &amp; sudo၊ systemd Daemons၊ Nginx Web Server၊ Bash Automation နှင့် 3–4 Years Professional Mentorship (မြန်မာဘာသာ အပြည့်အစုံ)။</p>
+<span class="catalog-card-tag tag-linux" style="color:#eab308; font-weight:700;">Track 15 • Server Engineering <span class="tag-badge-new" style="background:#eab308; color:#000;">22 LABS</span></span>
+<h3>Linux Server Engineering Roadmap (22 Hands-on Labs)</h3>
+<p>Filesystem Hierarchy Standard၊ systemd Services၊ Storage &amp; Mounts၊ UFW Firewalls၊ Nginx SSL Reverse Proxy၊ Bash Automation နှင့် Mid/Advanced/Pro Real-Work Production Labs (မြန်မာဘာသာ အပြည့်အစုံ)။</p>
 </div>
 <div class="catalog-card-footer">
-<span>9 Phases • 3–4 Year Mentorship</span>
+<span>22 In-Depth Production Labs (9 Phases)</span>
 <span style="color:#eab308; font-weight:700;">Start Linux ↗</span>
+</div>
+</a>
+
+<a href="/devops-guide/00_overview/" class="catalog-card" style="border-color: rgba(14, 165, 233, 0.4);">
+<div>
+<span class="catalog-card-tag" style="color:#0ea5e9; font-weight:700;">Track 16 • DevOps &amp; Cloud Infrastructure <span class="tag-badge-new" style="background:#0ea5e9; color:#fff;">14 STEPS</span></span>
+<h3>DevOps Engineer Master Guide (14 Steps &amp; Real Labs)</h3>
+<p>Linux Fundamentals, Networking, Git, Bash Automation, Docker, CI/CD Actions, AWS Production Architecture, Terraform IaC, Ansible, Monitoring &amp; K8s (မြန်မာဘာသာ အပြည့်အစုံ)။</p>
+</div>
+<div class="catalog-card-footer">
+<span>14 Modules, 4 Capstones &amp; Interview Prep</span>
+<span style="color:#0ea5e9; font-weight:700;">Start DevOps Guide ↗</span>
 </div>
 </a>
 </div>

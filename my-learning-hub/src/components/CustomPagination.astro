@@ -92,6 +92,10 @@ const sectorIcons: Record<string, string> = {
   'Linux Server Engineering': '🐧',
   'Linux': '🐧',
   'Domain Knowledge': '🛒',
+  'DevOps Engineer Guide': '🚀',
+  'DevOps Learning Guide': '🚀',
+  'DevOps': '🚀',
+  'Devops': '🚀',
 };
 const sectorIcon = sectorIcons[sectorTitle] || '📚';
 
@@ -1170,6 +1174,74 @@ function classifyLesson(href: string, courseName: string) {
         subTag: 'Laravel Solutions'
       };
     }
+  }
+
+  // 11. DevOps Engineer Guide Track (14-Step Roadmap & Real-World Labs)
+  if (courseName === 'DevOps Engineer Guide' || courseName === 'Devops' || courseName === 'DevOps Learning Guide' || normHref.includes('/devops-guide/')) {
+    if (clean.includes('00_overview') || clean.includes('roadmap') || clean.includes('study-plan') || clean === 'devops-guide' || clean === 'devops-guide/readme') {
+      if (clean.includes('study-plan-30')) {
+        return { sectionKey: 'devops_roadmap', sectionTitle: 'Roadmap & Study Plans', sectionIcon: '🗺️', badge: '30-DAY PLAN', subTag: '30-Day Plan' };
+      }
+      if (clean.includes('study-plan-90')) {
+        return { sectionKey: 'devops_roadmap', sectionTitle: 'Roadmap & Study Plans', sectionIcon: '🗺️', badge: '90-DAY PLAN', subTag: '90-Day Plan' };
+      }
+      if (clean.includes('roadmap')) {
+        return { sectionKey: 'devops_roadmap', sectionTitle: 'Roadmap & Study Plans', sectionIcon: '🗺️', badge: 'ROADMAP', subTag: 'Roadmap' };
+      }
+      return { sectionKey: 'devops_roadmap', sectionTitle: 'Roadmap & Study Plans', sectionIcon: '🗺️', badge: 'OVERVIEW', subTag: 'Master Overview' };
+    }
+    if (clean.includes('01-linux')) {
+      return { sectionKey: 'devops_m01', sectionTitle: 'Module 01: Production Linux Mastery', sectionIcon: '🐧', badge: 'LINUX', subTag: 'Linux CLI & Admin' };
+    }
+    if (clean.includes('02-networking')) {
+      return { sectionKey: 'devops_m02', sectionTitle: 'Module 02: Core DevOps Networking', sectionIcon: '🌐', badge: 'NETWORKING', subTag: 'DNS, TCP & Ports' };
+    }
+    if (clean.includes('03-git')) {
+      return { sectionKey: 'devops_m03', sectionTitle: 'Module 03: Git & Production Team Workflow', sectionIcon: '🐙', badge: 'GIT', subTag: 'Branching & Rebase' };
+    }
+    if (clean.includes('04-bash-automation')) {
+      return { sectionKey: 'devops_m04', sectionTitle: 'Module 04: Bash Automation & Scripting', sectionIcon: '📜', badge: 'AUTOMATION', subTag: 'Cron & Shell' };
+    }
+    if (clean.includes('05-docker')) {
+      return { sectionKey: 'devops_m05', sectionTitle: 'Module 05: Docker & Containerization', sectionIcon: '🐳', badge: 'DOCKER', subTag: 'Compose & Images' };
+    }
+    if (clean.includes('06-cicd')) {
+      return { sectionKey: 'devops_m06', sectionTitle: 'Module 06: CI/CD Pipelines (GitHub Actions)', sectionIcon: '🚀', badge: 'CI/CD', subTag: 'Workflows & Release' };
+    }
+    if (clean.includes('07-aws-fundamentals')) {
+      return { sectionKey: 'devops_m07', sectionTitle: 'Module 07: AWS Cloud Fundamentals', sectionIcon: '☁️', badge: 'AWS CLOUD', subTag: 'IAM, VPC & EC2' };
+    }
+    if (clean.includes('08-aws-deployment')) {
+      return { sectionKey: 'devops_m08', sectionTitle: 'Module 08: AWS Production Deployment', sectionIcon: '🏗️', badge: 'DEPLOYMENT', subTag: '2-Tier Production' };
+    }
+    if (clean.includes('09-terraform')) {
+      return { sectionKey: 'devops_m09', sectionTitle: 'Module 09: Infrastructure as Code (Terraform)', sectionIcon: '📐', badge: 'TERRAFORM', subTag: 'HCL & State' };
+    }
+    if (clean.includes('10-ansible')) {
+      return { sectionKey: 'devops_m10', sectionTitle: 'Module 10: Configuration Management (Ansible)', sectionIcon: '⚙️', badge: 'ANSIBLE', subTag: 'Playbooks & Roles' };
+    }
+    if (clean.includes('11-monitoring-observability')) {
+      return { sectionKey: 'devops_m11', sectionTitle: 'Module 11: Monitoring & Observability', sectionIcon: '📊', badge: 'MONITORING', subTag: 'Prometheus & Grafana' };
+    }
+    if (clean.includes('12-devsecops')) {
+      return { sectionKey: 'devops_m12', sectionTitle: 'Module 12: DevSecOps & Security Hardening', sectionIcon: '🛡️', badge: 'SECURITY', subTag: 'Trivy, IAM & Vault' };
+    }
+    if (clean.includes('13-kubernetes')) {
+      return { sectionKey: 'devops_m13', sectionTitle: 'Module 13: Kubernetes Container Orchestration', sectionIcon: '☸️', badge: 'K8S', subTag: 'Pods, Helm & EKS' };
+    }
+    if (clean.includes('14-sre-operations')) {
+      return { sectionKey: 'devops_m14', sectionTitle: 'Module 14: SRE & Production Operations', sectionIcon: '🚨', badge: 'SRE', subTag: 'Incidents & Runbooks' };
+    }
+    if (clean.includes('15-projects')) {
+      return { sectionKey: 'devops_m15', sectionTitle: 'Module 15: Real-World Portfolio Projects', sectionIcon: '🏆', badge: 'PORTFOLIO', subTag: '4 Capstone Projects' };
+    }
+    if (clean.includes('interview-preparation')) {
+      return { sectionKey: 'devops_interview', sectionTitle: 'Technical Interview Preparation', sectionIcon: '🎯', badge: 'INTERVIEW', subTag: 'Top 25 Q&A' };
+    }
+    if (clean.includes('glossary')) {
+      return { sectionKey: 'devops_glossary', sectionTitle: 'DevOps Technical Glossary', sectionIcon: '📖', badge: 'GLOSSARY', subTag: '60+ Tech Terms' };
+    }
+    return { sectionKey: 'devops_general', sectionTitle: 'DevOps Engineer Master Guide', sectionIcon: '🚀', badge: 'DEVOPS', subTag: 'DevOps Guide' };
   }
 
   // Default fallback

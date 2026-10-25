@@ -1,0 +1,29 @@
+groups:
+  - name: host_alerts
+    rules:
+      - alert: HostDown
+        expr: up == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Host {{ $labels.instance }} is DOWN!"
+          description: "Target node {{ $labels.instance }} has been unreachable for more than 1 minute."
+
+      - alert: HostHighCpuLoad
+        expr: 100 - (avg by(instance) (rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100) > 85
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High CPU usage on {{ $labels.instance }}"
+          description: "CPU load is over 85% on {{ $labels.instance }}."
+
+      - alert: HostDiskSpaceRunningLow
+        expr: 100 - ((node_filesystem_avail_bytes{mountpoint="/"} * 100) / node_filesystem_size_bytes{mountpoint="/"}) > 85
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Disk space critical on {{ $labels.instance }}"
+          description: "Root partition disk usage is over 85% on {{ $labels.instance }}."

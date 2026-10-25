@@ -66,6 +66,16 @@
       "permanent": false
     },
     {
+      "source": "/devops-guide",
+      "destination": "/devops-guide/00_overview/",
+      "permanent": false
+    },
+    {
+      "source": "/domain-knowledge",
+      "destination": "/domain-knowledge/00_overview/",
+      "permanent": false
+    },
+    {
       "source": "/eccube",
       "destination": "/eccube/00_overview/",
       "permanent": false

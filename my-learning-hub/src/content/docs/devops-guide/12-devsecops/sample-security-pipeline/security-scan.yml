@@ -1,0 +1,43 @@
+name: DevSecOps Security Scan
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  secret-scan:
+    name: Secret Leak Detection (Gitleaks)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run Gitleaks
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  vulnerability-scan:
+    name: Container Vulnerability Scan (Trivy)
+    runs-on: ubuntu-latest
+    needs: secret-scan
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Build Local Docker Image
+        run: docker build -t my-app:${{ github.sha }} .
+
+      - name: Run Trivy Vulnerability Scanner
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: 'my-app:${{ github.sha }}'
+          format: 'table'
+          exit-code: '1'
+          ignore-unfixed: true
+          vuln-type: 'os,library'
+          severity: 'CRITICAL,HIGH'

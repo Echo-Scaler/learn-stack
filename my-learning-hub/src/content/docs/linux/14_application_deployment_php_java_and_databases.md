@@ -3,7 +3,6 @@ title: Phase 5 Lesson 14 — Application Deployment (PHP, Java & Databases)
 description: PHP-FPM Deployment, Spring Boot Java JAR Daemon, MySQL Production Security, Symlink Zero-Downtime Deployment Pattern နှင့် Instant Rollback (မြန်မာဘာသာ)
 ---
 
-# 🚀 Phase 5 — Lesson 14: Application Deployment (PHP, Java & Databases)
 
 Web Server အခြေခံများကို နားလည်ပြီးနောက် တကယ့် **Production Web Applications (PHP, Java, Node.js)** များကို Database (MySQL) နှင့် တွဲဖက်၍ Server ပေါ်သို့ အမှားအယွင်းမရှိ Deploy ပြုလုပ်နိုင်ရန် လိုအပ်ပါသည်။
 

@@ -3,7 +3,6 @@ title: Phase 3 Lesson 9 — SSH Hardening & Network Socket Tooling
 description: SSH Architecture, /etc/ssh/sshd_config Hardening (Disable Root Login, Key-only Auth), Network Socket စစ်ဆေးခြင်း (ss -tulpn), ip addr, nc နှင့် rsync (မြန်မာဘာသာ)
 ---
 
-# 🔐 Phase 3 — Lesson 9: SSH Hardening & Network Socket Tooling
 
 Production Linux Server တိုင်းကို ကမ္ဘာပေါ်ရှိ မည်သည့်နေရာမှမဆို လုံခြုံစွာ အဝေးထိန်း ချိတ်ဆက်ရန် **SSH (Secure Shell - Port 22)** ကို အသုံးပြုပါသည်။ သို့သော် Default SSH Configuration ဖြင့် ထားရှိပါက Hacker များနှင့် Bot များ၏ ၂၄ နာရီ မနားတမ်း Brute-force Password တိုက်ခိုက်မှုကို ခံရမည် ဖြစ်ပါသည်။
 

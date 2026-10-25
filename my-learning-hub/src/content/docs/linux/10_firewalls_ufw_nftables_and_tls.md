@@ -3,7 +3,6 @@ title: Phase 3 Lesson 10 — Linux Firewalls (UFW), nftables & TLS/HTTPS
 description: Linux Firewalls, UFW (Uncomplicated Firewall) စည်းမျဉ်းများ, Default Deny Policy, Port Management, TLS/HTTPS သဘောတရားနှင့် Let's Encrypt Certbot (မြန်မာဘာသာ)
 ---
 
-# 🧱 Phase 3 — Lesson 10: Linux Firewalls (UFW), nftables & TLS/HTTPS
 
 Production Server တစ်ခုကို အင်တာနက် Public IP ပေါ်သို့ တင်လိုက်သည်နှင့် စက္ကန့်ပိုင်းအတွင်း ကမ္ဘာအနှံ့မှ Hacker များနှင့် Vulnerability Scanners များ၏ တံခါးပေါက်ရှာဖွေမှုကို စတင်ကြုံတွေ့ရမည် ဖြစ်ပါသည်။
 

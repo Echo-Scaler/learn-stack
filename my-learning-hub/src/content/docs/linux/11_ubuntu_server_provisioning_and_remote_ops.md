@@ -3,7 +3,6 @@ title: Phase 4 Lesson 11 — Ubuntu Server Provisioning & Remote Ops
 description: Production Ubuntu Server စတင်တည်ဆောက်ခြင်း Checklist, Hostname, Timezone (timedatectl), NTP Clock Sync, SSH Bastion Host Architecture နှင့် Remote Ops (မြန်မာဘာသာ)
 ---
 
-# 🚀 Phase 4 — Lesson 11: Ubuntu Server Provisioning & Remote Ops
 
 Cloud Provider တစ်ခု (AWS, GCP, DigitalOcean, Hetzner) ပေါ်တွင် Ubuntu Server အသစ်တစ်လုံး Spin up လုပ်ပြီးပါက Application များကို ချက်ချင်း install မလုပ်သင့်သေးပါ။ Senior Server Engineer တစ်ဦးသည် စနစ်ခိုင်မာလုံခြုံစေရန် **Day-1 Provisioning Checklist** ကို ဦးစွာ စနစ်တကျ လုပ်ဆောင်လေ့ရှိပါသည်။
 

@@ -3,7 +3,6 @@ title: Phase 9 Lesson 18 — Enterprise Production Server Capstone Project
 description: Real-World Enterprise Production Server တည်ဆောက်ခြင်း၊ Hardening၊ Nginx Reverse Proxy၊ TLS/HTTPS၊ Database၊ Zero-Downtime Deployment၊ Automated Backup & Disaster Recovery Drill (မြန်မာဘာသာ)
 ---
 
-# 🏆 Phase 9 — Lesson 18: End-to-End Enterprise Production Server Capstone Project
 
 ဂုဏ်ယူပါသည်! သင်သည် Phase 1 မှ Phase 8 အထိ Linux Fundamentals၊ Process၊ Storage၊ Networking၊ Firewalls၊ Hardening၊ Web Servers၊ Shell Scripting၊ Docker နှင့် Observability ဘာသာရပ်အားလုံးကို စနစ်တကျ သင်ယူလေ့လာပြီး ဖြစ်ပါသည်။
 

@@ -3,7 +3,6 @@ title: Phase 1 Lesson 1 — Linux Server Basics & Mac Lab Setup
 description: Linux ဆိုတာဘာလဲ, Linux Server နှင့် Desktop ကွာခြားချက်, macOS vs Linux နှိုင်းယှဉ်ချက်, Linux Architecture နှင့် Mac ပေါ်တွင် Ubuntu Lab တည်ဆောက်ခြင်း (မြန်မာဘာသာ)
 ---
 
-# 🐧 Phase 1 — Lesson 1: What is Linux, Linux Server & Mac Lab Setup
 
 မင်္ဂလာပါ! ကျွန်ုပ်တို့၏ **Linux Server Engineering Course** မှ ကြိုဆိုပါသည်။ ဤပထမဆုံး Lesson တွင် Linux ၏ အနှစ်သာရ၊ Server များတွင် Linux ကို အဘယ်ကြောင့် ၉၀% ကျော် အသုံးပြုကြရသည့် အကြောင်းရင်း၊ သင်၏ Mac စက်နှင့် Linux မည်သို့ ကွာခြားပုံ၊ နှင့် Mac ပေါ်တွင် စမ်းသပ်ရန် **Ubuntu Server Virtual Lab** ကို စတင် တည်ဆောက်သွားပါမည်။
 
