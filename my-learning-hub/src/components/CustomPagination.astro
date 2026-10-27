@@ -85,6 +85,7 @@ const sectorIcons: Record<string, string> = {
   'AWS Cloud & DevOps': '☁️',
   'AWS ECS SAA Practice': '☁️',
   'AWS SAA 800+ Practice Exam': '☁️',
+  'AWS SAA Mock Exam': '📝',
   'Networking & Cloud Automation': '🌐',
   'Java': '☕',
   'Git & GitHub Enterprise': '🐙',
@@ -239,6 +240,17 @@ function classifyLesson(href: string, courseName: string) {
         subTag: 'Practice Exams'
       };
     }
+  }
+
+  // AWS SAA Mock Exam Track
+  if (courseName === 'AWS SAA Mock Exam' || normHref.includes('/aws-mock-exam/')) {
+    return {
+      sectionKey: 'aws_mock_exam',
+      sectionTitle: 'AWS SAA-C03 Real Mock Exams',
+      sectionIcon: '📝',
+      badge: 'MOCK EXAM',
+      subTag: 'SAA-C03 Test 1 (65 Qs)'
+    };
   }
 
   // All in One Feature of SAA Track (Separated into 7 Core Sectors)

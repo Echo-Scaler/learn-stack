@@ -341,6 +341,15 @@ description: Overview of all 15 tracks, 546+ lessons, chapter breakdown, and com
 
 ---
 
+## 📝 12. AWS SAA-C03 Real Mock Exams Track
+- **စုစုပေါင်း မေးခွန်းရေ**: ၆၅ ပုဒ်ပါဝင်သော Full Real Exam Simulation Tests
+- **အဆင့်**: AWS Certified Solutions Architect - Associate (SAA-C03) Standard
+- **အဓိက ခေါင်းစဉ်များ**:
+  - [AWS SAA Mock Exam Hub Overview & Strategy](/aws-mock-exam/00_overview/)
+  - [SAA-C03 Mock Exam Test 1 (Complete 65 Questions with In-Depth Burmese Explanations)](/aws-mock-exam/01_test_01_65_questions/)
+
+---
+
 ## 🈸 12. Japanese N1 Kanji Mastery Track
 - **စုစုပေါင်း အခန်းရေ**: ၁၀ ခန်း (Overview, High-Frequency, Politics, Psychology, Action & Nature, Radicals & Lookalikes, Ateji & Yojijukugo, IT Genba, Real Exam Tests)
 - **အဆင့်**: JLPT N1 Kanji & Reading Mastery (မြန်မာဘာသာ + Romaji အသေးစိတ် ရှင်းလင်းချက်)

@@ -137,7 +137,8 @@ graph TD
 3. **Week 5 - 6**: [Level 4-5 Labs](/aws/02_beginner_to_advanced_real_work/04_level4_rds_aurora_elasticache_redis/) ရှိ Multi-AZ RDS MySQL၊ Aurora Cluster၊ ElastiCache Redis နှင့် Dockerized ECS Fargate Container Deployment ကို Hands-on လေ့ကျင့်ပါ။
 4. **Week 7 - 8**: [Level 6-9 Labs](/aws/02_beginner_to_advanced_real_work/06_level6_lambda_apigateway_dynamodb/) မှတစ်ဆင့် Serverless (Lambda + API Gateway + DynamoDB)၊ Event-Driven SQS/SNS နှင့် Terraform IaC အသုံးပြု၍ Infrastructure အားလုံးကို Code ဖြင့် အလိုအလျောက် Deploy ပြုလုပ်ပါ။
 5. **Week 9 - 10**: [Japanese Workplace IT Tickets](/aws/02_beginner_to_advanced_real_work/11_level11_japanese_workplace_it_and_tickets/) (လက်တွေ့ လုပ်ငန်းခွင်သုံး 障害対応 မေးခွန်း ၂၅ ခု) နှင့် [Troubleshooting Runbook](/aws/02_beginner_to_advanced_real_work/12_level12_production_troubleshooting_runbook/) ကို အသုံးပြု၍ Production Incident ဖြေရှင်းနည်းများကို လေ့ကျင့်ပါ။
-6. **Week 11 - 12**: [SAA Solutions Architect Phases](/aws/03_saa_solutions_architect_real_work/00_phase0_foundations_cloud_networking_linux/) နှင့် [AWS ECS SAA Practice Track](/aws-saa/00_overview/) ကို မြန်မာလို အသေးစိတ်ရှင်းလင်းချက်များနှင့်အတူ လေ့လာပြင်ဆင်ပါ။
+6. **Week 11 - 12**: [SAA Solutions Architect Phases](/aws/03_saa_solutions_architect_real_work/00_phase0_foundations_cloud_networking_linux/) နှင့် [All in One Feature of SAA Track](/aws-saa/00_overview/) ကို မြန်မာလို အသေးစိတ်ရှင်းလင်းချက်များနှင့်အတူ လေ့လာပြင်ဆင်ပါ။
+7. **Week 13**: [AWS SAA-C03 Real Mock Exams (Test 1 - 65 Questions)](/aws-mock-exam/01_test_01_65_questions/) ကို ဖြေဆိုပြီး မေးခွန်းတစ်ခုချင်းစီ၏ အသေးစိတ် မြန်မာဘာသာ ရှင်းလင်းချက်များ၊ Exam Traps များကို အပြီးသတ် စစ်ဆေးပါ။
 
 ---
 
