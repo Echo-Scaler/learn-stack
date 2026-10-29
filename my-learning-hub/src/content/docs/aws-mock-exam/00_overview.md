@@ -49,6 +49,7 @@ pie title SAA-C03 Domain Weighting
 | Test | Title | Question Count | Core Focus Areas | Direct Link |
 | :---: | :--- | :---: | :--- | :--- |
 | **Test 01** | **SAA-C03 Full Mock Exam 01** | **65 Questions** | Auto Scaling, S3 Security & WORM, Aurora Global, VPC Endpoints, CloudFront, FSx, IAM Federation | [**Start Test 1 (Q01–Q65) →**](/aws-mock-exam/01_test_01_65_questions/) |
+| **Test 02** | **SAA-C03 Full Mock Exam 02** | **65 Questions** | STS AssumeRole, DynamoDB Provisioned, RDS Proxy, Control Tower, Network Firewall, Route 53 Routing | [**Start Test 2 (Q01–Q65) →**](/aws-mock-exam/02_test_02_65_questions/) |
 
 ---
 

@@ -2336,5 +2336,371 @@ header.header {
   color: var(--sl-color-gray-1);
 }
 
+/* ==========================================================================
+   AWS SAA Mock Exam Interactive UI / UX Design System
+   ========================================================================== */
+
+.exam-hero-card {
+  background: linear-gradient(135deg, rgba(255, 91, 0, 0.08) 0%, rgba(59, 130, 246, 0.08) 100%);
+  border: 1px solid rgba(255, 91, 0, 0.25);
+  border-radius: 16px;
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 2rem;
+  backdrop-filter: blur(8px);
+}
+
+.exam-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 0.85rem;
+  margin: 1rem 0;
+}
+
+.exam-stat-item {
+  background: var(--sl-color-bg);
+  border: 1px solid var(--sl-color-hairline);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+}
+
+.exam-stat-val {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--klook-orange, #ff5b00);
+}
+
+.exam-stat-lbl {
+  font-size: 0.75rem;
+  color: var(--sl-color-gray-3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+}
+
+/* Quick Nav Matrix */
+.exam-nav-wrapper {
+  background: var(--devlab-bg-light);
+  border: 1px solid var(--sl-color-hairline);
+  border-radius: 14px;
+  padding: 1.25rem;
+  margin: 1.5rem 0 2.5rem 0;
+}
+
+.exam-nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.exam-nav-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--sl-color-gray-1);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.exam-action-btns {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.exam-btn {
+  padding: 0.35rem 0.85rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 1px solid var(--sl-color-hairline);
+  background: var(--sl-color-bg);
+  color: var(--sl-color-gray-2);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.exam-btn:hover {
+  background: var(--sl-color-accent-low);
+  border-color: var(--klook-orange);
+  color: var(--klook-orange);
+}
+
+.exam-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(44px, 1fr));
+  gap: 6px;
+  max-height: 220px;
+  overflow-y: auto;
+  padding: 4px;
+}
+
+.exam-grid-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  border-radius: 6px;
+  background: var(--sl-color-bg);
+  border: 1px solid var(--sl-color-hairline);
+  color: var(--sl-color-gray-2);
+  text-decoration: none !important;
+  transition: all 0.15s ease;
+}
+
+.exam-grid-link:hover {
+  background: var(--klook-orange);
+  color: #fff !important;
+  border-color: var(--klook-orange);
+  transform: translateY(-1px);
+}
+
+/* Question Cards */
+.exam-q-box {
+  background: var(--sl-color-bg);
+  border: 1px solid var(--sl-color-hairline);
+  border-radius: 14px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+  scroll-margin-top: 80px;
+  transition: border-color 0.2s ease;
+}
+
+.exam-q-box:hover {
+  border-color: rgba(255, 91, 0, 0.35);
+}
+
+.exam-q-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-bottom: 0.85rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--sl-color-hairline);
+}
+
+.exam-q-num {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--klook-orange);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.exam-badges-wrap {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.exam-badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.2rem 0.55rem;
+  border-radius: 12px;
+  line-height: 1.2;
+}
+
+.exam-badge-domain {
+  background: rgba(59, 130, 246, 0.1);
+  color: #2563eb;
+  border: 1px solid rgba(59, 130, 246, 0.25);
+}
+
+.exam-badge-multi {
+  background: rgba(234, 88, 12, 0.1);
+  color: #c2410c;
+  border: 1px solid rgba(234, 88, 12, 0.25);
+}
+
+.exam-badge-single {
+  background: rgba(16, 185, 129, 0.1);
+  color: #059669;
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.exam-q-scenario {
+  font-size: 0.98rem;
+  font-weight: 500;
+  line-height: 1.65;
+  color: var(--sl-color-gray-1);
+  margin-bottom: 1rem;
+}
+
+.exam-options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.exam-option-item {
+  background: var(--devlab-bg-light);
+  border: 1px solid var(--sl-color-hairline);
+  border-radius: 8px;
+  padding: 0.65rem 0.95rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--sl-color-gray-2);
+  transition: all 0.15s ease;
+}
+
+.exam-option-item:hover {
+  background: var(--sl-color-accent-low);
+  border-color: rgba(255, 91, 0, 0.3);
+}
+
+/* Accordion Details & Summary */
+details.exam-answer-details {
+  border: 1px solid var(--sl-color-hairline);
+  border-radius: 10px;
+  background: var(--sl-color-bg);
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+details.exam-answer-details summary.exam-summary-btn {
+  padding: 0.75rem 1rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  background: var(--devlab-bg-light);
+  color: var(--sl-color-gray-1);
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background 0.2s ease, color 0.2s ease;
+  list-style: none;
+}
+
+details.exam-answer-details summary.exam-summary-btn::-webkit-details-marker {
+  display: none;
+}
+
+details.exam-answer-details summary.exam-summary-btn:hover {
+  background: var(--sl-color-accent-low);
+  color: var(--klook-orange);
+}
+
+details.exam-answer-details[open] summary.exam-summary-btn {
+  background: rgba(16, 185, 129, 0.08);
+  border-bottom: 1px solid var(--sl-color-hairline);
+  color: #059669;
+}
+
+.exam-answer-body {
+  padding: 1.25rem 1.25rem 1rem 1.25rem;
+}
+
+.exam-correct-banner {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  color: #047857;
+  padding: 0.45rem 0.95rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.exam-expl-section {
+  margin-top: 0.85rem;
+}
+
+.exam-expl-card {
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.65rem;
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.exam-expl-correct {
+  background: rgba(16, 185, 129, 0.06);
+  border-left: 3px solid #10b981;
+}
+
+.exam-expl-incorrect {
+  background: var(--devlab-bg-light);
+  border-left: 3px solid var(--sl-color-gray-4);
+  color: var(--sl-color-gray-3);
+}
+
+.exam-tip-box {
+  background: rgba(245, 158, 11, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-top: 1rem;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--sl-color-gray-1);
+}
+
+.exam-tip-title {
+  font-weight: 700;
+  color: #b45309;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 0.35rem;
+}
+
+/* Dark mode adjustments */
+:root[data-theme='dark'] .exam-hero-card {
+  background: linear-gradient(135deg, rgba(255, 91, 0, 0.12) 0%, rgba(59, 130, 246, 0.12) 100%);
+  border-color: rgba(255, 91, 0, 0.35);
+}
+
+:root[data-theme='dark'] .exam-badge-domain {
+  background: rgba(59, 130, 246, 0.2);
+  color: #60a5fa;
+}
+
+:root[data-theme='dark'] .exam-badge-multi {
+  background: rgba(234, 88, 12, 0.2);
+  color: #fb923c;
+}
+
+:root[data-theme='dark'] .exam-badge-single {
+  background: rgba(16, 185, 129, 0.2);
+  color: #34d399;
+}
+
+:root[data-theme='dark'] .exam-correct-banner {
+  background: rgba(16, 185, 129, 0.18);
+  color: #34d399;
+  border-color: rgba(16, 185, 129, 0.4);
+}
+
+:root[data-theme='dark'] .exam-expl-correct {
+  background: rgba(16, 185, 129, 0.1);
+  border-left-color: #34d399;
+}
+
+:root[data-theme='dark'] .exam-tip-box {
+  background: rgba(245, 158, 11, 0.12);
+  color: #fde68a;
+}
+
+:root[data-theme='dark'] .exam-tip-title {
+  color: #fbbf24;
+}
+
+
 
 

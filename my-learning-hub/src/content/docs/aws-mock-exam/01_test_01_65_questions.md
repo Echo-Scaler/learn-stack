@@ -1,30 +1,150 @@
 ---
 title: "AWS SAA-C03 Mock Exam — Test 01 (65 Questions)"
-description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam Test 1 — Complete 65 Questions with Accurate Answers and In-Depth Burmese Explanations"
+description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam Test 1 — Interactive Real Exam Simulation with Spoiler-Free Accordions & In-Depth Burmese Explanations"
 ---
 
 # 📝 AWS SAA-C03 Mock Exam — Test 01
-### Real Exam Simulation (65 Questions) with Comprehensive Burmese Explanations
+### Interactive Real Exam Simulation (65 Questions) with Spoiler-Free UI & In-Depth Explanations
 
-> **စာမေးပွဲ ညွှန်ကြားချက်များ:**
-> - စုစုပေါင်း မေးခွန်း: **၆၅ ခု**
-> - မေးခွန်းပုံစံ: **Real Exam Standard English**
-> - ရှင်းလင်းချက်: **Option တစ်ခုချင်းစီအတွက် အသေးစိတ် မြန်မာဘာသာ ခွဲခြမ်းစိတ်ဖြာချက်**
-> - အကြံပြုချက်: အဖြေမကြည့်မီ ကိုယ်တိုင် အရင်ရွေးချယ် ဖြေဆိုကြည့်ပါ။
+<div class="exam-hero-card">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;">
+    <h3 style="margin: 0; font-size: 1.15rem; color: var(--klook-orange);">🎯 SAA-C03 Practice Exam Simulation 01</h3>
+    <span class="exam-badge exam-badge-single">Real Exam Standard</span>
+  </div>
+  <p style="margin: 0 0 1rem 0; font-size: 0.9rem; color: var(--sl-color-gray-2); line-height: 1.55;">
+    ဤ Mock Exam သည် စာမေးပွဲ စစ်စစ်တွင် တွေ့ကြုံရမည့် မေးခွန်းပုံစံအတိုင်း ပြုစုထားပါသည်။ အဖြေများကို စတင်ဖတ်ရှုချိန်တွင် ဖုံးအုပ်ထားသဖြင့် (Spoiler-Free) ကိုယ်တိုင် အရင်ရွေးချယ်ပြီးမှ အဖြေနှင့် မြန်မာဘာသာ ရှင်းလင်းချက်ကို ဖွင့်ဖတ်နိုင်ပါသည်။
+  </p>
+  <div class="exam-stats-grid">
+    <div class="exam-stat-item">
+      <div class="exam-stat-val">65</div>
+      <div class="exam-stat-lbl">Questions</div>
+    </div>
+    <div class="exam-stat-item">
+      <div class="exam-stat-val">130m</div>
+      <div class="exam-stat-lbl">Target Time</div>
+    </div>
+    <div class="exam-stat-item">
+      <div class="exam-stat-val">720 / 1000</div>
+      <div class="exam-stat-lbl">Passing Score</div>
+    </div>
+    <div class="exam-stat-item">
+      <div class="exam-stat-val">≥ 47 / 65</div>
+      <div class="exam-stat-lbl">Passing Target</div>
+    </div>
+  </div>
+</div>
+
+<div class="exam-nav-wrapper">
+  <div class="exam-nav-header">
+    <div class="exam-nav-title">
+      <span>🧭 Quick Question Navigator (မေးခွန်းသို့ အမြန်သွားရန်)</span>
+    </div>
+    <div class="exam-action-btns">
+      <button type="button" class="exam-btn" onclick="document.querySelectorAll('details.exam-answer-details').forEach(d => d.open = true)">🔓 Show All Answers</button>
+      <button type="button" class="exam-btn" onclick="document.querySelectorAll('details.exam-answer-details').forEach(d => d.open = false)">🔒 Hide All Answers</button>
+    </div>
+  </div>
+  <div class="exam-grid">
+    <a href="#q01" class="exam-grid-link">Q01</a>
+    <a href="#q02" class="exam-grid-link">Q02</a>
+    <a href="#q03" class="exam-grid-link">Q03</a>
+    <a href="#q04" class="exam-grid-link">Q04</a>
+    <a href="#q05" class="exam-grid-link">Q05</a>
+    <a href="#q06" class="exam-grid-link">Q06</a>
+    <a href="#q07" class="exam-grid-link">Q07</a>
+    <a href="#q08" class="exam-grid-link">Q08</a>
+    <a href="#q09" class="exam-grid-link">Q09</a>
+    <a href="#q10" class="exam-grid-link">Q10</a>
+    <a href="#q11" class="exam-grid-link">Q11</a>
+    <a href="#q12" class="exam-grid-link">Q12</a>
+    <a href="#q13" class="exam-grid-link">Q13</a>
+    <a href="#q14" class="exam-grid-link">Q14</a>
+    <a href="#q15" class="exam-grid-link">Q15</a>
+    <a href="#q16" class="exam-grid-link">Q16</a>
+    <a href="#q17" class="exam-grid-link">Q17</a>
+    <a href="#q18" class="exam-grid-link">Q18</a>
+    <a href="#q19" class="exam-grid-link">Q19</a>
+    <a href="#q20" class="exam-grid-link">Q20</a>
+    <a href="#q21" class="exam-grid-link">Q21</a>
+    <a href="#q22" class="exam-grid-link">Q22</a>
+    <a href="#q23" class="exam-grid-link">Q23</a>
+    <a href="#q24" class="exam-grid-link">Q24</a>
+    <a href="#q25" class="exam-grid-link">Q25</a>
+    <a href="#q26" class="exam-grid-link">Q26</a>
+    <a href="#q27" class="exam-grid-link">Q27</a>
+    <a href="#q28" class="exam-grid-link">Q28</a>
+    <a href="#q29" class="exam-grid-link">Q29</a>
+    <a href="#q30" class="exam-grid-link">Q30</a>
+    <a href="#q31" class="exam-grid-link">Q31</a>
+    <a href="#q32" class="exam-grid-link">Q32</a>
+    <a href="#q33" class="exam-grid-link">Q33</a>
+    <a href="#q34" class="exam-grid-link">Q34</a>
+    <a href="#q35" class="exam-grid-link">Q35</a>
+    <a href="#q36" class="exam-grid-link">Q36</a>
+    <a href="#q37" class="exam-grid-link">Q37</a>
+    <a href="#q38" class="exam-grid-link">Q38</a>
+    <a href="#q39" class="exam-grid-link">Q39</a>
+    <a href="#q40" class="exam-grid-link">Q40</a>
+    <a href="#q41" class="exam-grid-link">Q41</a>
+    <a href="#q42" class="exam-grid-link">Q42</a>
+    <a href="#q43" class="exam-grid-link">Q43</a>
+    <a href="#q44" class="exam-grid-link">Q44</a>
+    <a href="#q45" class="exam-grid-link">Q45</a>
+    <a href="#q46" class="exam-grid-link">Q46</a>
+    <a href="#q47" class="exam-grid-link">Q47</a>
+    <a href="#q48" class="exam-grid-link">Q48</a>
+    <a href="#q49" class="exam-grid-link">Q49</a>
+    <a href="#q50" class="exam-grid-link">Q50</a>
+    <a href="#q51" class="exam-grid-link">Q51</a>
+    <a href="#q52" class="exam-grid-link">Q52</a>
+    <a href="#q53" class="exam-grid-link">Q53</a>
+    <a href="#q54" class="exam-grid-link">Q54</a>
+    <a href="#q55" class="exam-grid-link">Q55</a>
+    <a href="#q56" class="exam-grid-link">Q56</a>
+    <a href="#q57" class="exam-grid-link">Q57</a>
+    <a href="#q58" class="exam-grid-link">Q58</a>
+    <a href="#q59" class="exam-grid-link">Q59</a>
+    <a href="#q60" class="exam-grid-link">Q60</a>
+    <a href="#q61" class="exam-grid-link">Q61</a>
+    <a href="#q62" class="exam-grid-link">Q62</a>
+    <a href="#q63" class="exam-grid-link">Q63</a>
+    <a href="#q64" class="exam-grid-link">Q64</a>
+    <a href="#q65" class="exam-grid-link">Q65</a>
+  </div>
+</div>
 
 ---
 
-## Q01
+<div class="exam-q-box" id="q01">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q01</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A company hosted a web application in an Auto Scaling group of EC2 instances. The IT manager is concerned about the over-provisioning of the resources that can cause higher operating costs. A Solutions Architect has been instructed to create a cost-effective solution without affecting the performance of the application.**
 
 **Which dynamic scaling policy should be used to satisfy this requirement?**
 
-- **A)** Simple scaling policy
-- **B)** Step scaling policy
-- **C)** Target tracking scaling policy
-- **D)** Scheduled scaling policy
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Simple scaling policy</div>
+  <div class="exam-option-item">**B)** Step scaling policy</div>
+  <div class="exam-option-item">**C)** Target tracking scaling policy</div>
+  <div class="exam-option-item">**D)** Scheduled scaling policy</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: C**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -46,17 +166,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q02
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q02">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q02</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A travel photo-sharing website is using Amazon S3 to serve high-quality photos to visitors. After a few days, it was discovered that other travel websites are linking to and using these photos. This has resulted in financial losses for the business. The team initially applied PutBucketPolicy with referrer restrictions, but found that referrer headers can be spoofed, rendering this approach insufficient.**
 
 **What is the MOST effective method to mitigate this issue?**
 
-- **A)** Configure an Amazon CloudFront distribution and serve the photos using CloudFront signed URLs or signed cookies, with Origin Access Control (OAC) to restrict direct S3 access
-- **B)** Implement AWS WAF on the S3 bucket to inspect and block unauthorized HTTP Referer headers
-- **C)** Enable S3 Object Lock in Governance Mode on all image objects in the bucket
-- **D)** Configure Cross-Origin Resource Sharing (CORS) on the S3 bucket to allow only the company's domain
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Configure an Amazon CloudFront distribution and serve the photos using CloudFront signed URLs or signed cookies, with Origin Access Control (OAC) to restrict direct S3 access</div>
+  <div class="exam-option-item">**B)** Implement AWS WAF on the S3 bucket to inspect and block unauthorized HTTP Referer headers</div>
+  <div class="exam-option-item">**C)** Enable S3 Object Lock in Governance Mode on all image objects in the bucket</div>
+  <div class="exam-option-item">**D)** Configure Cross-Origin Resource Sharing (CORS) on the S3 bucket to allow only the company's domain</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -78,17 +222,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q03
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q03">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q03</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A company wishes to query data that resides in multiple AWS accounts from a central data lake. Each account has its own Amazon S3 bucket that stores data unique to its business function. Access to the data lake must be granted based on user roles.**
 
 **Which solution will minimize overhead and costs while meeting the required access patterns?**
 
-- **A)** Replicate all S3 data from each account into a single central S3 bucket using S3 Cross-Region Replication (CRR) and query using Amazon EMR
-- **B)** Use AWS Lake Formation to manage cross-account permissions and use Amazon Athena to query the data in place
-- **C)** Set up an Amazon Redshift cluster in the central account and load data using AWS Glue ETL daily
-- **D)** Configure VPC Peering between all accounts and deploy an Amazon OpenSearch cluster to index all S3 buckets
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Replicate all S3 data from each account into a single central S3 bucket using S3 Cross-Region Replication (CRR) and query using Amazon EMR</div>
+  <div class="exam-option-item">**B)** Use AWS Lake Formation to manage cross-account permissions and use Amazon Athena to query the data in place</div>
+  <div class="exam-option-item">**C)** Set up an Amazon Redshift cluster in the central account and load data using AWS Glue ETL daily</div>
+  <div class="exam-option-item">**D)** Configure VPC Peering between all accounts and deploy an Amazon OpenSearch cluster to index all S3 buckets</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: B**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -110,17 +278,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q04
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q04">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q04</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A suite of web applications is hosted in an Auto Scaling group of Amazon EC2 instances across three Availability Zones and is configured with default settings. There is an Application Load Balancer that forwards the request to the respective target group on the URL path. The scale-in policy has been triggered due to the low number of incoming traffic to the application.**
 
 **Which EC2 instance will be the first one to be terminated by the Auto Scaling group?**
 
-- **A)** The instance with the highest CPU utilization across all Availability Zones
-- **B)** The instance in the Availability Zone that has the most instances, and was launched from the oldest launch template or launch configuration
-- **C)** The newest instance launched in the Availability Zone that has the least number of instances
-- **D)** The instance that has been registered with the Application Load Balancer target group the longest
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** The instance with the highest CPU utilization across all Availability Zones</div>
+  <div class="exam-option-item">**B)** The instance in the Availability Zone that has the most instances, and was launched from the oldest launch template or launch configuration</div>
+  <div class="exam-option-item">**C)** The newest instance launched in the Availability Zone that has the least number of instances</div>
+  <div class="exam-option-item">**D)** The instance that has been registered with the Application Load Balancer target group the longest</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: B**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -139,17 +331,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q05
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q05">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q05</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A company is designing a banking portal that uses Amazon ElastiCache for Redis as its distributed session management component. To secure session data and ensure that Cloud Engineers must authenticate before executing Redis commands, specifically MULTI EXEC commands, the system should enforce strong authentication by requiring users to enter a password. Additionally, access should be managed with long-lived credentials while supporting robust security practices.**
 
 **Which of the following actions should be taken to meet the above requirement?**
 
-- **A)** Enable Redis AUTH by configuring a password token and enable In-Transit Encryption (TLS)
-- **B)** Use IAM Database Authentication with temporary STS tokens
-- **C)** Configure Security Group rules on the Redis cluster to restrict port 6379 to specific engineer IP addresses only
-- **D)** Enable At-Rest Encryption using AWS KMS and disable Redis command logging
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Enable Redis AUTH by configuring a password token and enable In-Transit Encryption (TLS)</div>
+  <div class="exam-option-item">**B)** Use IAM Database Authentication with temporary STS tokens</div>
+  <div class="exam-option-item">**C)** Configure Security Group rules on the Redis cluster to restrict port 6379 to specific engineer IP addresses only</div>
+  <div class="exam-option-item">**D)** Enable At-Rest Encryption using AWS KMS and disable Redis command logging</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -168,17 +384,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q06
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q06">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q06</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A popular social network is hosted in AWS and is using a Amazon DynamoDB table as its database. There is a requirement to implement a 'follow' feature where users can subscribe to certain updates made by a particular user and be notified via email.**
 
 **Which of the following is the most suitable solution to implement to meet the requirement?**
 
-- **A)** Enable Amazon DynamoDB Streams, configure an AWS Lambda function to process the stream, and publish email notifications to an Amazon SNS topic
-- **B)** Create an Amazon CloudWatch Event Rule that triggers an Amazon SES email whenever a DynamoDB PutItem API call is recorded in AWS CloudTrail
-- **C)** Configure Amazon SQS to poll the DynamoDB table every minute and send emails via Amazon Pinpoint
-- **D)** Use DynamoDB Accelerator (DAX) to cache user updates and use an EC2 cron job to query updates and send emails
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Enable Amazon DynamoDB Streams, configure an AWS Lambda function to process the stream, and publish email notifications to an Amazon SNS topic</div>
+  <div class="exam-option-item">**B)** Create an Amazon CloudWatch Event Rule that triggers an Amazon SES email whenever a DynamoDB PutItem API call is recorded in AWS CloudTrail</div>
+  <div class="exam-option-item">**C)** Configure Amazon SQS to poll the DynamoDB table every minute and send emails via Amazon Pinpoint</div>
+  <div class="exam-option-item">**D)** Use DynamoDB Accelerator (DAX) to cache user updates and use an EC2 cron job to query updates and send emails</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -194,17 +434,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q07
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q07">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q07</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A company collects atmospheric data such as temperature, air pressure, and humidity from different countries. Each site location is equipped with various weather instruments and a high-speed Internet connection. The average collected data in each location is around 500 GB and will be analyzed by a weather forecasting application hosted in Northern Virginia. The Solutions Architect must determine the fastest way to aggregate all the data. An AWS Direct Connect Partner would be too slow for a one-time aggregation.**
 
 **Which of the following options can satisfy the given requirement?**
 
-- **A)** Ship an AWS Snowball Edge device to each location to copy data and mail back to Northern Virginia
-- **B)** Upload the atmospheric data from each site directly to Amazon S3 using Amazon S3 Transfer Acceleration
-- **C)** Set up an AWS Site-to-Site VPN between each country and the VPC in Northern Virginia
-- **D)** Use AWS DataSync over the public internet to sync data to an Amazon EFS file system
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Ship an AWS Snowball Edge device to each location to copy data and mail back to Northern Virginia</div>
+  <div class="exam-option-item">**B)** Upload the atmospheric data from each site directly to Amazon S3 using Amazon S3 Transfer Acceleration</div>
+  <div class="exam-option-item">**C)** Set up an AWS Site-to-Site VPN between each country and the VPC in Northern Virginia</div>
+  <div class="exam-option-item">**D)** Use AWS DataSync over the public internet to sync data to an Amazon EFS file system</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: B**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -223,17 +487,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q08
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q08">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q08</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A company plans to migrate its on-premises workload to AWS. The current architecture is composed of a Microsoft SharePoint server that uses a Windows shared file storage. The Solutions Architect needs to use a cloud storage solution that is highly available and can be integrated with Active Directory for access control and authentication, and must be accessible from on-premises via a direct connection.**
 
 **Which of the following options can satisfy the given requirement?**
 
-- **A)** Amazon EFS with Active Directory integration
-- **B)** Amazon S3 bucket mounted on Windows instances using AWS Storage Gateway File Gateway
-- **C)** Amazon FSx for Windows File Server configured with Multi-AZ deployment
-- **D)** Amazon EBS Multi-Attach Provisioned IOPS SSD volumes
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Amazon EFS with Active Directory integration</div>
+  <div class="exam-option-item">**B)** Amazon S3 bucket mounted on Windows instances using AWS Storage Gateway File Gateway</div>
+  <div class="exam-option-item">**C)** Amazon FSx for Windows File Server configured with Multi-AZ deployment</div>
+  <div class="exam-option-item">**D)** Amazon EBS Multi-Attach Provisioned IOPS SSD volumes</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: C**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -251,6 +539,11 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 > EBS Multi-Attach သည် Availability Zone တစ်ခုတည်းအတွင်း (Single AZ) တွင်သာ attach လုပ်နိုင်ပြီး Multi-AZ HA မရရှိနိုင်ပါ။
 
 ---
+
+</div>
+</details>
+
+</div>
 
 ## Q09
 **A company plans to host a web application in an Auto Scaling group of Amazon EC2 instances. The application will be used globally by users to upload and store several types of files. Based on user trends, files that are older than 2 years must be stored in a different storage class. The Solutions Architect of the company needs to create a cost-effective and scalable solution to store the old files yet still provide durability and high availability.**
@@ -283,17 +576,37 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q10
+
+<div class="exam-q-box" id="q10">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q10</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **An AI-powered Forex trading application consumes thousands of data sets to train its machine learning model. The application’s workload requires a high-performance, parallel hot storage to process the training datasets concurrently. It also needs cost-effective cold storage to archive those datasets that yield low profit.**
 
 **Which of the following Amazon storage services should the developer use?**
 
-- **A)** Amazon FSx for Lustre for hot training storage, and Amazon S3 for cold archive storage
-- **B)** Amazon EFS for hot storage, and Amazon S3 Glacier Deep Archive for cold storage
-- **C)** Amazon EBS Provisioned IOPS (io2) for hot storage, and Amazon S3 Standard for cold storage
-- **D)** Amazon FSx for Windows File Server for hot storage, and AWS Storage Gateway for cold storage
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Amazon FSx for Lustre for hot training storage, and Amazon S3 for cold archive storage</div>
+  <div class="exam-option-item">**B)** Amazon EFS for hot storage, and Amazon S3 Glacier Deep Archive for cold storage</div>
+  <div class="exam-option-item">**C)** Amazon EBS Provisioned IOPS (io2) for hot storage, and Amazon S3 Standard for cold storage</div>
+  <div class="exam-option-item">**D)** Amazon FSx for Windows File Server for hot storage, and AWS Storage Gateway for cold storage</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -309,17 +622,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q11
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q11">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q11</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A company has a web application that uses Amazon CloudFront to distribute its images, videos, and other static content stored in its Amazon S3 bucket to users around the world. The company has recently introduced a new member-only access feature for some of its high-quality media files. There is a requirement to provide access to multiple private media files only to paying subscribers without having to change the current URLs.**
 
 **Which of the following is the most suitable solution to implement to satisfy this requirement?**
 
-- **A)** Use Amazon CloudFront Signed URLs for each individual media file
-- **B)** Use Amazon CloudFront Signed Cookies
-- **C)** Configure S3 Pre-signed URLs for each media file
-- **D)** Use AWS Secrets Manager to generate session keys in the URL query string
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Use Amazon CloudFront Signed URLs for each individual media file</div>
+  <div class="exam-option-item">**B)** Use Amazon CloudFront Signed Cookies</div>
+  <div class="exam-option-item">**C)** Configure S3 Pre-signed URLs for each media file</div>
+  <div class="exam-option-item">**D)** Use AWS Secrets Manager to generate session keys in the URL query string</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: B**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -332,17 +669,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q12
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q12">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q12</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A company is in the process of migrating their applications to AWS. One of their systems requires a database that can scale globally and handle frequent schema changes. The application should not have any downtime or performance issues whenever there is a schema change in the database. It should also provide a low latency response to high-traffic queries.**
 
 **Which is the most suitable database solution to use to achieve this requirement?**
 
-- **A)** Amazon RDS for MySQL with Multi-AZ
-- **B)** Amazon Aurora Global Database
-- **C)** Amazon DynamoDB
-- **D)** Amazon Redshift
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Amazon RDS for MySQL with Multi-AZ</div>
+  <div class="exam-option-item">**B)** Amazon Aurora Global Database</div>
+  <div class="exam-option-item">**C)** Amazon DynamoDB</div>
+  <div class="exam-option-item">**D)** Amazon Redshift</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: C**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -358,17 +719,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q13
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q13">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q13</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **An e-commerce company utilizes a regional Amazon API Gateway to host its public REST APIs. The API Gateway endpoint is accessed through a custom domain name set up with an Amazon Route 53 alias record. To support continuous improvement, the company intends to launch a new version of its APIs with enhanced features and performance optimizations.**
 
 **How can the company reduce customer disruption and ensure MINIMAL data loss during the update process in the MOST cost-effective way?**
 
-- **A)** Create a new API Gateway stage and use API Gateway Canary deployment to gradually route traffic to the new version
-- **B)** Deploy a second Application Load Balancer and use Route 53 Weighted routing to split traffic 50/50
-- **C)** Spin up a new set of EC2 instances and perform a Blue/Green deployment using AWS Elastic Beanstalk
-- **D)** Update the Route 53 alias record immediately to point to the new API Gateway endpoint during off-peak hours
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Create a new API Gateway stage and use API Gateway Canary deployment to gradually route traffic to the new version</div>
+  <div class="exam-option-item">**B)** Deploy a second Application Load Balancer and use Route 53 Weighted routing to split traffic 50/50</div>
+  <div class="exam-option-item">**C)** Spin up a new set of EC2 instances and perform a Blue/Green deployment using AWS Elastic Beanstalk</div>
+  <div class="exam-option-item">**D)** Update the Route 53 alias record immediately to point to the new API Gateway endpoint during off-peak hours</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -378,17 +763,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q14
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q14">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q14</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A startup is using Amazon RDS to store data from a web application. Most of the time, the application has low user activity but it receives bursts of traffic within seconds whenever there is a new product announcement. The Solutions Architect needs to create a solution that will allow users around the globe to access the data using an API.**
 
 **What should the Solutions Architect do meet the above requirement?**
 
-- **A)** Migrate the database to Amazon Aurora Serverless, and front the application with Amazon API Gateway and Amazon CloudFront
-- **B)** Scale up the Amazon RDS instance size to db.r5.24xlarge to permanently handle peak bursts
-- **C)** Deploy an Amazon SQS queue in front of Amazon RDS and use Auto Scaling EC2 instances to process requests
-- **D)** Migrate the RDS database to an Amazon Redshift cluster with concurrency scaling
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Migrate the database to Amazon Aurora Serverless, and front the application with Amazon API Gateway and Amazon CloudFront</div>
+  <div class="exam-option-item">**B)** Scale up the Amazon RDS instance size to db.r5.24xlarge to permanently handle peak bursts</div>
+  <div class="exam-option-item">**C)** Deploy an Amazon SQS queue in front of Amazon RDS and use Auto Scaling EC2 instances to process requests</div>
+  <div class="exam-option-item">**D)** Migrate the RDS database to an Amazon Redshift cluster with concurrency scaling</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -398,17 +807,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q15
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q15">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q15</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A medical records company is planning to store sensitive clinical trial data in an Amazon S3 repository with the object-level versioning feature enabled. The Solutions Architect is tasked with ensuring that no object can be overwritten or deleted by any user for a period of one year only. To meet the strict compliance requirements, the root user of the company’s AWS account must also be restricted from making any changes to an object in the S3 bucket. Backup Vault Lock offers similar immutability, but the company requires object-level protection in S3.**
 
 **Which of the following is the most secure way of storing the data in S3?**
 
-- **A)** Enable S3 Object Lock in Governance Mode with a retention period of 1 year
-- **B)** Enable S3 Object Lock in Compliance Mode with a retention period of 1 year
-- **C)** Enable S3 MFA Delete on the bucket and use IAM policies to deny s3:DeleteObject
-- **D)** Configure an S3 Bucket Policy with a Deny effect on s3:DeleteObject for all IAM users except root
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Enable S3 Object Lock in Governance Mode with a retention period of 1 year</div>
+  <div class="exam-option-item">**B)** Enable S3 Object Lock in Compliance Mode with a retention period of 1 year</div>
+  <div class="exam-option-item">**C)** Enable S3 MFA Delete on the bucket and use IAM policies to deny s3:DeleteObject</div>
+  <div class="exam-option-item">**D)** Configure an S3 Bucket Policy with a Deny effect on s3:DeleteObject for all IAM users except root</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: B**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -420,17 +853,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q16
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q16">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q16</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A cryptocurrency trading platform is using an API built in AWS Lambda and API Gateway. Due to the recent news and rumors about the upcoming price surge of Bitcoin, Ethereum and other cryptocurrencies, it is expected that the trading platform would have a significant increase in site visitors and new users in the coming days ahead.**
 
 **In this scenario, how can you protect the backend systems of the platform from traffic spikes?**
 
-- **A)** Configure throttling limits (Rate and Burst limits) on Amazon API Gateway stages or usage plans
-- **B)** Increase the concurrency limit of AWS Lambda to the maximum allowed limit in the account
-- **C)** Enable Network ACL rules to drop packets when traffic reaches a certain threshold
-- **D)** Deploy an AWS WAF Web ACL with a geographic match rule to block non-local traffic
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Configure throttling limits (Rate and Burst limits) on Amazon API Gateway stages or usage plans</div>
+  <div class="exam-option-item">**B)** Increase the concurrency limit of AWS Lambda to the maximum allowed limit in the account</div>
+  <div class="exam-option-item">**C)** Enable Network ACL rules to drop packets when traffic reaches a certain threshold</div>
+  <div class="exam-option-item">**D)** Deploy an AWS WAF Web ACL with a geographic match rule to block non-local traffic</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -440,17 +897,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q17
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q17">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q17</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A company has recently migrated its microservices-based application to Amazon Elastic Kubernetes Service (Amazon EKS). As part of the migration, the company must ensure that all sensitive configuration data and credentials, such as database passwords and API keys, are stored securely and encrypted within the Amazon EKS cluster's etcd key-value store.**
 
 **What is the most suitable solution to meet the company's requirements?**
 
-- **A)** Enable AWS Key Management Service (AWS KMS) envelope encryption for Kubernetes Secrets in Amazon EKS
-- **B)** Encrypt the Amazon EBS volumes attached to the EKS worker nodes using default EBS encryption
-- **C)** Store the secrets in Amazon S3 and encrypt them using SSE-S3
-- **D)** Use Kubernetes ConfigMaps instead of Kubernetes Secrets and encode them in Base64
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Enable AWS Key Management Service (AWS KMS) envelope encryption for Kubernetes Secrets in Amazon EKS</div>
+  <div class="exam-option-item">**B)** Encrypt the Amazon EBS volumes attached to the EKS worker nodes using default EBS encryption</div>
+  <div class="exam-option-item">**C)** Store the secrets in Amazon S3 and encrypt them using SSE-S3</div>
+  <div class="exam-option-item">**D)** Use Kubernetes ConfigMaps instead of Kubernetes Secrets and encode them in Base64</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -459,6 +940,11 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 > Kubernetes တွင် native secrets များသည် standard အားဖြင့် etcd key-value store ထဲတွင် base64 encoded ပုံစံဖြင့်သာ သိမ်းဆည်းထားပါသည်။ EKS တွင် etcd အတွင်းရှိ secrets များကို at-rest encryption အဆင့်မြင့်မားစွာ ကာကွယ်ရန် **AWS KMS envelope encryption for Kubernetes Secrets** feature ကို cluster creation သို့မဟုတ် update တွင် ဖွင့်လှစ်ပေးရပါမည်။ ၎င်းသည် etcd ထဲသို့ secret မသိမ်းမီ KMS key ဖြင့် encrypt ပြုလုပ်ပေးပါသည်။
 
 ---
+
+</div>
+</details>
+
+</div>
 
 ## Q18
 **A telecommunications company is planning to grant AWS Console access to its developers. Company policy requires the use of identity federation and role-based access control. Currently, the roles are already assigned via groups in the corporate Active Directory.**
@@ -483,17 +969,37 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q19
+
+<div class="exam-q-box" id="q19">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q19</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A financial services company plans to migrate its trading application from on-premises Microsoft Windows Server to Amazon Web Services (AWS). The solution must ensure high availability across multiple Availability Zones and offer low-latency access to block storage.**
 
 **Which of the following solutions will fulfill these requirements?**
 
-- **A)** Deploy Amazon EC2 instances across multiple Availability Zones and use Amazon FSx for Windows File Server with Multi-AZ deployment
-- **B)** Deploy EC2 instances in a single AZ with an Amazon EBS io2 Block Express volume
-- **C)** Use Amazon S3 Glacier Flexible Retrieval for application storage across multiple AZs
-- **D)** Deploy EC2 instances across multiple AZs and configure Amazon EFS with cross-region replication
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Deploy Amazon EC2 instances across multiple Availability Zones and use Amazon FSx for Windows File Server with Multi-AZ deployment</div>
+  <div class="exam-option-item">**B)** Deploy EC2 instances in a single AZ with an Amazon EBS io2 Block Express volume</div>
+  <div class="exam-option-item">**C)** Use Amazon S3 Glacier Flexible Retrieval for application storage across multiple AZs</div>
+  <div class="exam-option-item">**D)** Deploy EC2 instances across multiple AZs and configure Amazon EFS with cross-region replication</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -503,17 +1009,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q20
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q20">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q20</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A company is using a combination of Amazon API Gateway and AWS Lambda for the web services of an online web portal that is accessed by hundreds of thousands of clients each day. The company will be announcing a new revolutionary product, and it is expected that the web portal will receive a massive number of visitors from all around the globe.**
 
 **How can the back-end systems and applications, beyond the subnet-level filtering of network ACLs, be protected from traffic spikes?**
 
-- **A)** Configure Amazon API Gateway Throttling (Rate and Burst limits) and enable API Gateway Stage Caching
-- **B)** Increase the memory allocation of all Lambda functions to 10,240 MB
-- **C)** Place an Amazon EC2 instance running Nginx in front of API Gateway
-- **D)** Configure AWS Shield Standard to rate limit incoming API calls
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Configure Amazon API Gateway Throttling (Rate and Burst limits) and enable API Gateway Stage Caching</div>
+  <div class="exam-option-item">**B)** Increase the memory allocation of all Lambda functions to 10,240 MB</div>
+  <div class="exam-option-item">**C)** Place an Amazon EC2 instance running Nginx in front of API Gateway</div>
+  <div class="exam-option-item">**D)** Configure AWS Shield Standard to rate limit incoming API calls</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -525,17 +1055,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q21
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q21">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q21</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **An online cryptocurrency exchange platform is hosted in AWS, utilizing an Amazon ECS Cluster and Amazon RDS in a Multi-AZ Deployments configuration. The application heavily uses the RDS instance to process complex read and write database operations. To maintain reliability, availability, and performance, it is necessary to closely monitor how the different processes or threads on a DB instance use the CPU, including the percentage of CPU bandwidth and total memory consumed by each process.**
 
 **Which of the following is the most suitable solution to monitor the database properly?**
 
-- **A)** Amazon CloudWatch standard metrics
-- **B)** Amazon RDS Enhanced Monitoring
-- **C)** AWS CloudTrail data events
-- **D)** Amazon RDS Performance Insights only
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Amazon CloudWatch standard metrics</div>
+  <div class="exam-option-item">**B)** Amazon RDS Enhanced Monitoring</div>
+  <div class="exam-option-item">**C)** AWS CloudTrail data events</div>
+  <div class="exam-option-item">**D)** Amazon RDS Performance Insights only</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: B**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -546,17 +1100,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q22
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q22">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q22</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A tech company has a CRM application hosted on an Auto Scaling group of On-Demand EC2 instances with different instance types and sizes. The application is extensively used during office hours from 9 in the morning to 5 in the afternoon. Their users are complaining that the performance of the application is slow during the start of the day but then works normally after a couple of hours.**
 
 **Which of the following is the MOST operationally efficient solution to implement to ensure the application works properly at the beginning of the day?**
 
-- **A)** Configure a Scheduled Scaling policy on the Auto Scaling group to scale out capacity before 9:00 AM (e.g., at 8:30 AM)
-- **B)** Replace all EC2 instances with larger instance sizes permanently
-- **C)** Write a custom bash script running on an EC2 instance that uses AWS CLI to launch instances every morning
-- **D)** Switch the Auto Scaling policy from Target Tracking to Simple Scaling
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Configure a Scheduled Scaling policy on the Auto Scaling group to scale out capacity before 9:00 AM (e.g., at 8:30 AM)</div>
+  <div class="exam-option-item">**B)** Replace all EC2 instances with larger instance sizes permanently</div>
+  <div class="exam-option-item">**C)** Write a custom bash script running on an EC2 instance that uses AWS CLI to launch instances every morning</div>
+  <div class="exam-option-item">**D)** Switch the Auto Scaling policy from Target Tracking to Simple Scaling</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -566,17 +1144,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q23
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q23">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q23</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A healthcare organization wants to build a system that can predict drug prescription abuse. The organization will gather real-time data from multiple sources, which include Personally Identifiable Information (PII). It's crucial that this sensitive information is anonymized prior to landing in a NoSQL database for further processing.**
 
 **Which solution would meet the requirements?**
 
-- **A)** Ingest data using Amazon Kinesis Data Streams, process and anonymize PII using AWS Lambda, and store the sanitized data in Amazon DynamoDB
-- **B)** Ingest data into Amazon DynamoDB directly, and use a nightly AWS Glue job to scrub PII data
-- **C)** Ingest data using Amazon SQS, and run an Amazon EC2 cron job once every 6 hours to remove PII
-- **D)** Ingest data into Amazon RDS PostgreSQL, anonymize data using database triggers, and export to DynamoDB
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Ingest data using Amazon Kinesis Data Streams, process and anonymize PII using AWS Lambda, and store the sanitized data in Amazon DynamoDB</div>
+  <div class="exam-option-item">**B)** Ingest data into Amazon DynamoDB directly, and use a nightly AWS Glue job to scrub PII data</div>
+  <div class="exam-option-item">**C)** Ingest data using Amazon SQS, and run an Amazon EC2 cron job once every 6 hours to remove PII</div>
+  <div class="exam-option-item">**D)** Ingest data into Amazon RDS PostgreSQL, anonymize data using database triggers, and export to DynamoDB</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -589,17 +1191,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q24
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q24">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q24</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A Solutions Architect is designing a highly available relational database solution to mitigate the risk of a multi-region failure. The database must meet a Recovery Point Objective (RPO) of 1 second and a Recovery Time Objective (RTO) of less than 1 minute. The architect needs a disaster recovery plan that enables automatic cross-region replication with minimal data loss and rapid recovery in the event of a failure, which is a requirement beyond the regional high availability provided by Amazon RDS Multi-AZ.**
 
 **Which AWS solution best fulfills this requirement?**
 
-- **A)** Amazon Aurora Global Database
-- **B)** Amazon RDS for MySQL with Cross-Region Read Replicas
-- **C)** Multi-Region Amazon DynamoDB Global Tables
-- **D)** Amazon EC2 instances running MySQL with native asynchronous replication across regions
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Amazon Aurora Global Database</div>
+  <div class="exam-option-item">**B)** Amazon RDS for MySQL with Cross-Region Read Replicas</div>
+  <div class="exam-option-item">**C)** Multi-Region Amazon DynamoDB Global Tables</div>
+  <div class="exam-option-item">**D)** Amazon EC2 instances running MySQL with native asynchronous replication across regions</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -613,17 +1239,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q25
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q25">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q25</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **An organization requires a persistent block storage volume to support its mission-critical workloads. The backup data will be stored in an object storage service and, after 30 days, transitioned to an archival storage service for long-term retention. The team has already configured an Amazon EBS snapshot retention rule for point-in-time recovery.**
 
 **What should be done to meet the above requirement?**
 
-- **A)** Use Amazon Data Lifecycle Manager (Amazon DLM) to automate EBS snapshots and configure an archive rule to transition snapshots to EBS Snapshot Archive after 30 days
-- **B)** Write a Python script running on an EC2 instance to export EBS snapshots to S3 Glacier manually
-- **C)** Use AWS Backup to copy EBS snapshots to AWS Snowball every 30 days
-- **D)** Attach an S3 bucket as an EBS block volume using third-party drivers
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Use Amazon Data Lifecycle Manager (Amazon DLM) to automate EBS snapshots and configure an archive rule to transition snapshots to EBS Snapshot Archive after 30 days</div>
+  <div class="exam-option-item">**B)** Write a Python script running on an EC2 instance to export EBS snapshots to S3 Glacier manually</div>
+  <div class="exam-option-item">**C)** Use AWS Backup to copy EBS snapshots to AWS Snowball every 30 days</div>
+  <div class="exam-option-item">**D)** Attach an S3 bucket as an EBS block volume using third-party drivers</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -633,17 +1283,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q26
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q26">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q26</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **An online medical system hosted in AWS stores sensitive Personally Identifiable Information (PII) of the users in an Amazon S3 bucket. Both the master keys and the unencrypted data should never be sent to AWS to comply with the strict compliance and regulatory requirements of the company.**
 
 **Which S3 encryption technique should the Architect use?**
 
-- **A)** Server-Side Encryption with AWS KMS Managed Keys (SSE-KMS)
-- **B)** Server-Side Encryption with Customer-Provided Keys (SSE-C)
-- **C)** Client-Side Encryption with client-managed keys
-- **D)** Server-Side Encryption with Amazon S3-Managed Keys (SSE-S3)
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Server-Side Encryption with AWS KMS Managed Keys (SSE-KMS)</div>
+  <div class="exam-option-item">**B)** Server-Side Encryption with Customer-Provided Keys (SSE-C)</div>
+  <div class="exam-option-item">**C)** Client-Side Encryption with client-managed keys</div>
+  <div class="exam-option-item">**D)** Server-Side Encryption with Amazon S3-Managed Keys (SSE-S3)</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: C**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -655,17 +1329,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q27
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q27">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q27</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A Docker application, which is running on an Amazon ECS cluster behind a load balancer, is heavily using Amazon DynamoDB. The application requires improved database performance by distributing the workload evenly and utilizing the provisioned throughput efficiently. Currently, the table's write capacity units (WCU) are unevenly consumed due to key distribution.**
 
 **Which of the following should be implemented for the DynamoDB table?**
 
-- **A)** Use Write Sharding by adding random suffixes or calculated suffixes to the partition key
-- **B)** Enable DynamoDB Accelerator (DAX)
-- **C)** Convert the DynamoDB table to an Amazon Aurora PostgreSQL table
-- **D)** Increase the read capacity units (RCU) of the table
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Use Write Sharding by adding random suffixes or calculated suffixes to the partition key</div>
+  <div class="exam-option-item">**B)** Enable DynamoDB Accelerator (DAX)</div>
+  <div class="exam-option-item">**C)** Convert the DynamoDB table to an Amazon Aurora PostgreSQL table</div>
+  <div class="exam-option-item">**D)** Increase the read capacity units (RCU) of the table</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -675,17 +1373,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q28
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q28">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q28</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A company plans to launch an Amazon EC2 instance in a private subnet for its internal corporate web portal. For security purposes, the EC2 instance must send data to Amazon DynamoDB and Amazon S3 via private endpoints that don't pass through the public Internet, which does not involve NAT Instances.**
 
 **Which of the following can meet the above requirements?**
 
-- **A)** Create Gateway VPC Endpoints for Amazon S3 and Amazon DynamoDB in the VPC
-- **B)** Deploy an AWS Transit Gateway with VPN connections
-- **C)** Configure an Internet Gateway and assign Elastic IP addresses to the private instances
-- **D)** Create an Interface VPC Endpoint for DynamoDB and a NAT Gateway for S3
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Create Gateway VPC Endpoints for Amazon S3 and Amazon DynamoDB in the VPC</div>
+  <div class="exam-option-item">**B)** Deploy an AWS Transit Gateway with VPN connections</div>
+  <div class="exam-option-item">**C)** Configure an Internet Gateway and assign Elastic IP addresses to the private instances</div>
+  <div class="exam-option-item">**D)** Create an Interface VPC Endpoint for DynamoDB and a NAT Gateway for S3</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -695,17 +1417,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q29
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q29">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q29</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A company is using Amazon S3 to store frequently accessed data. When an object is created or deleted, the S3 bucket will send an event notification to the Amazon SQS queue. A solutions architect needs to create a solution that will notify the development and operations team about the created or deleted objects.**
 
 **Which of the following would satisfy this requirement?**
 
-- **A)** Configure the S3 event notifications to publish to an Amazon SNS topic, and subscribe the SQS queue and the email addresses of both teams to the SNS topic
-- **B)** Create two separate S3 event notifications pointing to two different SQS queues directly
-- **C)** Write a cron job on an EC2 instance that reads the SQS queue and forwards emails
-- **D)** Configure Amazon CloudWatch Logs to tail the S3 bucket and trigger an SES email
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Configure the S3 event notifications to publish to an Amazon SNS topic, and subscribe the SQS queue and the email addresses of both teams to the SNS topic</div>
+  <div class="exam-option-item">**B)** Create two separate S3 event notifications pointing to two different SQS queues directly</div>
+  <div class="exam-option-item">**C)** Write a cron job on an EC2 instance that reads the SQS queue and forwards emails</div>
+  <div class="exam-option-item">**D)** Configure Amazon CloudWatch Logs to tail the S3 bucket and trigger an SES email</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -715,6 +1461,11 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 > S3 Event ကို **Amazon SNS Topic** ထံသို့ publish လုပ်ပြီး၊ ထို SNS Topic အောက်တွင် SQS Queue နှင့် သက်ဆိုင်ရာ Email endpoints များကို subscriber အဖြစ် ထားရှိခြင်း ဖြစ်ပါသည်။
 
 ---
+
+</div>
+</details>
+
+</div>
 
 ## Q30
 **A newly hired Solutions Architect is assigned to manage a set of CloudFormation templates that are used in the company's cloud architecture in AWS. The Architect accessed the templates and tried to analyze the configured IAM policy for an S3 bucket.**
@@ -765,17 +1516,37 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q31
+
+<div class="exam-q-box" id="q31">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q31</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A company requires all the data stored in the cloud to be encrypted at rest. To easily integrate this with other AWS services, they must have full control over the encryption of the created keys and also the ability to immediately remove the key material from AWS KMS. The solution should also be able to audit the key usage independently of AWS CloudTrail.**
 
 **Which of the following options will meet this requirement?**
 
-- **A)** Use AWS KMS Customer Managed Keys (CMKs) with Imported Key Material (BYOK)
-- **B)** Use AWS Key Management Service (AWS KMS) with AWS Managed Keys
-- **C)** Use Server-Side Encryption with Amazon S3-Managed Keys (SSE-S3)
-- **D)** Use AWS Secrets Manager to store encryption keys
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Use AWS KMS Customer Managed Keys (CMKs) with Imported Key Material (BYOK)</div>
+  <div class="exam-option-item">**B)** Use AWS Key Management Service (AWS KMS) with AWS Managed Keys</div>
+  <div class="exam-option-item">**C)** Use Server-Side Encryption with Amazon S3-Managed Keys (SSE-S3)</div>
+  <div class="exam-option-item">**D)** Use AWS Secrets Manager to store encryption keys</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -787,17 +1558,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q32
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q32">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q32</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A company uses an Application Load Balancer (ALB) for its public-facing multi-tier web applications. The security team has recently reported that there has been a surge of SQL injection attacks lately, which causes critical data discrepancy issues. The same issue is also encountered by its other web applications in other AWS accounts that are behind an ALB. An immediate solution is required to prevent the remote injection of unauthorized SQL queries and protect their applications hosted across multiple accounts.**
 
 **As a Solutions Architect, what solution would you recommend?**
 
-- **A)** Deploy AWS WAF with AWS Managed Rules for SQL database injection, and centrally manage rules across all accounts using AWS Firewall Manager
-- **B)** Configure Security Group rules on the ALBs to block port 1433 and port 3306
-- **C)** Deploy Amazon GuardDuty to automatically block SQL queries in real-time
-- **D)** Create Network ACL rules in each VPC to inspect HTTP payload bodies
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Deploy AWS WAF with AWS Managed Rules for SQL database injection, and centrally manage rules across all accounts using AWS Firewall Manager</div>
+  <div class="exam-option-item">**B)** Configure Security Group rules on the ALBs to block port 1433 and port 3306</div>
+  <div class="exam-option-item">**C)** Deploy Amazon GuardDuty to automatically block SQL queries in real-time</div>
+  <div class="exam-option-item">**D)** Create Network ACL rules in each VPC to inspect HTTP payload bodies</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -807,6 +1602,11 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 > - **AWS Firewall Manager:** AWS Organizations နှင့် ချိတ်ဆက်ပြီး AWS accounts များစွာရှိ ALBs များအားလုံးပေါ်သို့ WAF rules များကို ဗဟိုမှ တစ်ပြိုင်နက်တည်း အလိုအလျောက် သတ်မှတ်ထိန်းချုပ် ပေးနိုင်ပါသည်။
 
 ---
+
+</div>
+</details>
+
+</div>
 
 ## Q33
 **A popular social media website uses a Amazon CloudFront web distribution to serve static content to millions of users around the globe. Recently, the website has received a number of complaints about long login times. Additionally, there are instances where users encounter HTTP 504 errors. The manager has instructed the team to significantly reduce login time and further optimize the system.**
@@ -830,17 +1630,37 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q34
+
+<div class="exam-q-box" id="q34">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q34</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A Solutions Architect identified a series of DDoS attacks while monitoring the Amazon VPC, where applications are fronted by Elastic Load Balancing. The Architect needs to fortify the current cloud infrastructure to protect the data of the clients.**
 
 **Which of the following is the most suitable solution to mitigate these kinds of attacks?**
 
-- **A)** Subscribe to AWS Shield Advanced and associate it with the Elastic Load Balancers
-- **B)** Configure Amazon Inspector on all EC2 instances
-- **C)** Deploy NAT Gateways in private subnets
-- **D)** Enable VPC Flow Logs and analyze them using Amazon Athena
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Subscribe to AWS Shield Advanced and associate it with the Elastic Load Balancers</div>
+  <div class="exam-option-item">**B)** Configure Amazon Inspector on all EC2 instances</div>
+  <div class="exam-option-item">**C)** Deploy NAT Gateways in private subnets</div>
+  <div class="exam-option-item">**D)** Enable VPC Flow Logs and analyze them using Amazon Athena</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -850,17 +1670,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q35
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q35">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q35</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A business has recently migrated its applications to AWS. The audit team must be able to assess whether the services the company is using meet common security and regulatory standards. A solutions architect needs to provide the team with a report of all compliance-related documents for their account.**
 
 **Which action should a solutions architect consider?**
 
-- **A)** Download the compliance reports and agreements directly from AWS Artifact
-- **B)** Request compliance reports by submitting a ticket to AWS Support
-- **C)** Generate a compliance report using Amazon Inspector
-- **D)** Download the compliance audit history from AWS CloudTrail
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Download the compliance reports and agreements directly from AWS Artifact</div>
+  <div class="exam-option-item">**B)** Request compliance reports by submitting a ticket to AWS Support</div>
+  <div class="exam-option-item">**C)** Generate a compliance report using Amazon Inspector</div>
+  <div class="exam-option-item">**D)** Download the compliance audit history from AWS CloudTrail</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -869,6 +1713,11 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 > **AWS Artifact** သည် AWS ၏ လုံခြုံရေးနှင့် စည်းမျဉ်းလိုက်နာမှုဆိုင်ရာ စာရွက်စာတမ်းများ (ဥပမာ: SOC 1/2/3 reports, PCI DSS reports, ISO certifications, BAA agreements) ကို on-demand အခမဲ့ ဒေါင်းလုဒ်ရယူနိုင်သော central self-service portal ဖြစ်ပါသည်။ Audit team များအတွက် လိုအပ်သော compliance reports အားလုံးကို AWS Artifact မှ တိုက်ရိုက် ရယူနိုင်ပါသည်။
 
 ---
+
+</div>
+</details>
+
+</div>
 
 ## Q36
 **An online learning company hosts its Microsoft .NET e-Learning application on a Windows Server in its on-premises data center. The application uses an Oracle Database Standard Edition as its backend database. The company wants a high-performing solution to migrate this workload to the AWS cloud to take advantage of the cloud’s high availability. The migration process should minimize development changes, and the environment should be easier to manage.**
@@ -893,17 +1742,37 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q37
+
+<div class="exam-q-box" id="q37">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q37</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A company is experiencing repeated outages in the Availability Zone where its Amazon RDS database instance is deployed, resulting in a complete loss of access to the database during each incident. The team evaluated a multi-site active/active deployment but found that it requires cross-Region synchronization, whereas a simpler embedded solution would suffice.**
 
 **Which solution should be implemented to prevent losing database access if this occurs again?**
 
-- **A)** Modify the Amazon RDS DB instance to be a Multi-AZ deployment
-- **B)** Create an Amazon RDS Read Replica in the same Availability Zone
-- **C)** Set up an AWS Direct Connect connection to the on-premises database
-- **D)** Take automated snapshots every hour and restore manually
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Modify the Amazon RDS DB instance to be a Multi-AZ deployment</div>
+  <div class="exam-option-item">**B)** Create an Amazon RDS Read Replica in the same Availability Zone</div>
+  <div class="exam-option-item">**C)** Set up an AWS Direct Connect connection to the on-premises database</div>
+  <div class="exam-option-item">**D)** Take automated snapshots every hour and restore manually</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -913,17 +1782,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q38
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q38">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q38</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A company has a hybrid cloud architecture that connects its on-premises data center and cloud infrastructure in AWS. It requires a durable storage backup for its corporate documents stored on-premises and a local cache that provides low-latency access to recently accessed data to reduce data egress charges. The documents must be stored on and retrieved from AWS via the Server Message Block (SMB) protocol. These files must be immediately accessible within minutes for six months and archived for another decade to meet data compliance.**
 
 **Which of the following is the best and most cost-effective approach to implement in this scenario?**
 
-- **A)** Deploy an AWS Storage Gateway (S3 File Gateway) on-premises using SMB, store data in Amazon S3 Standard, and configure an S3 Lifecycle policy to transition objects to S3 Glacier Flexible Retrieval / Deep Archive after 6 months
-- **B)** Deploy an AWS Volume Gateway in stored volume mode on-premises
-- **C)** Use Amazon FSx for Lustre connected to S3 Glacier
-- **D)** Deploy an AWS DataSync agent to copy files to Amazon EFS daily
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Deploy an AWS Storage Gateway (S3 File Gateway) on-premises using SMB, store data in Amazon S3 Standard, and configure an S3 Lifecycle policy to transition objects to S3 Glacier Flexible Retrieval / Deep Archive after 6 months</div>
+  <div class="exam-option-item">**B)** Deploy an AWS Volume Gateway in stored volume mode on-premises</div>
+  <div class="exam-option-item">**C)** Use Amazon FSx for Lustre connected to S3 Glacier</div>
+  <div class="exam-option-item">**D)** Deploy an AWS DataSync agent to copy files to Amazon EFS daily</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -933,6 +1826,11 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 > - **S3 Lifecycle:** ဖိုင်များကို ပထမ ၆ လတွင် S3 Standard တွင် ထားရှိပြီး၊ ၆ လကျော်ပါက ကုန်ကျစရိတ် အလွန်သက်သာသော **S3 Glacier Flexible Retrieval / Deep Archive** သို့ ၁၀ နှစ်တိုင်တိုင် archive လုပ်ရန် lifecycle rule သတ်မှတ်ပေးခြင်းသည် အကိုက်ညီဆုံး ဖြစ်ပါသည်။
 
 ---
+
+</div>
+</details>
+
+</div>
 
 ## Q39
 **A global IT company with offices around the world has multiple AWS accounts. To improve efficiency and drive costs down, the Chief Information Officer (CIO) wants to set up a solution that centrally manages their AWS resources. This will allow them to procure AWS resources centrally and share resources such as AWS Transit Gateways, AWS License Manager configurations, or Amazon Route 53 Resolver rules across their various accounts.**
@@ -956,17 +1854,37 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q40
+
+<div class="exam-q-box" id="q40">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q40</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **An application consists of multiple Amazon EC2 instances in private subnets in different availability zones. The application uses a single NAT Gateway for downloading software patches from the Internet to the instances. There is a requirement to protect the application from a single point of failure when the NAT Gateway encounters a failure or if its availability zone goes down.**
 
 **How should the Solutions Architect redesign the architecture to be more highly available and cost-effective?**
 
-- **A)** Deploy a NAT Gateway in the public subnet of each Availability Zone and configure the route table of each private subnet to route outbound traffic through the NAT Gateway in its own AZ
-- **B)** Deploy an Internet Gateway in each private subnet
-- **C)** Launch a fleet of NAT Instances in an Auto Scaling group behind a Network Load Balancer
-- **D)** Configure a secondary elastic network interface (ENI) on the existing NAT Gateway
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Deploy a NAT Gateway in the public subnet of each Availability Zone and configure the route table of each private subnet to route outbound traffic through the NAT Gateway in its own AZ</div>
+  <div class="exam-option-item">**B)** Deploy an Internet Gateway in each private subnet</div>
+  <div class="exam-option-item">**C)** Launch a fleet of NAT Instances in an Auto Scaling group behind a Network Load Balancer</div>
+  <div class="exam-option-item">**D)** Configure a secondary elastic network interface (ENI) on the existing NAT Gateway</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -976,17 +1894,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q41
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q41">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q41</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A pharmaceutical company has resources hosted on both its on-premises network and in the AWS cloud. The company requires all Software Architects to access resources in both environments using on-premises credentials, which are stored in Active Directory, rather than through an Amazon Cognito identity pool.**
 
 **In this scenario, which of the following can be used to fulfill this requirement?**
 
-- **A)** Configure Active Directory Federation Services (AD FS) or a SAML 2.0 Identity Provider with AWS IAM and IAM roles
-- **B)** Use Amazon Cognito user pools with social identity providers
-- **C)** Create individual IAM users with the same passwords as Active Directory
-- **D)** Set up an AWS Direct Connect connection with public virtual interfaces
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Configure Active Directory Federation Services (AD FS) or a SAML 2.0 Identity Provider with AWS IAM and IAM roles</div>
+  <div class="exam-option-item">**B)** Use Amazon Cognito user pools with social identity providers</div>
+  <div class="exam-option-item">**C)** Create individual IAM users with the same passwords as Active Directory</div>
+  <div class="exam-option-item">**D)** Set up an AWS Direct Connect connection with public virtual interfaces</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -996,17 +1938,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q42
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q42">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q42</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A company has 3 DevOps engineers that are handling its software development and infrastructure management processes. One of the engineers accidentally deleted a file hosted in Amazon S3 which has caused disruption of service.**
 
 **What can the DevOps engineers do to prevent this from happening again?**
 
-- **A)** Enable S3 Versioning and MFA Delete on the S3 bucket
-- **B)** Configure S3 Lifecycle rules to delete previous versions
-- **C)** Deny all s3:GetObject actions in the bucket policy
-- **D)** Move all files from S3 Standard to S3 One Zone-IA
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Enable S3 Versioning and MFA Delete on the S3 bucket</div>
+  <div class="exam-option-item">**B)** Configure S3 Lifecycle rules to delete previous versions</div>
+  <div class="exam-option-item">**C)** Deny all s3:GetObject actions in the bucket policy</div>
+  <div class="exam-option-item">**D)** Move all files from S3 Standard to S3 One Zone-IA</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -1017,17 +1983,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q43
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q43">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q43</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **An online shopping platform is hosted on an Auto Scaling group of Amazon EC2 Spot instances and utilizes Amazon Aurora PostgreSQL as its database. It is required to optimize database workloads in the cluster by directing the production traffic to high-capacity instances and routing the reporting queries from the internal staff to the low-capacity instances.**
 
 **Which is the most suitable configuration for the application as well as the Aurora database cluster to achieve this requirement?**
 
-- **A)** Create Amazon Aurora Custom Endpoints to separate high-capacity instances for production traffic and low-capacity instances for reporting queries
-- **B)** Use the Aurora Cluster Endpoint for reporting queries and the Reader Endpoint for production traffic
-- **C)** Deploy an Amazon ElastiCache cluster for reporting queries only
-- **D)** Configure a classic Application Load Balancer in front of the database instances
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Create Amazon Aurora Custom Endpoints to separate high-capacity instances for production traffic and low-capacity instances for reporting queries</div>
+  <div class="exam-option-item">**B)** Use the Aurora Cluster Endpoint for reporting queries and the Reader Endpoint for production traffic</div>
+  <div class="exam-option-item">**C)** Deploy an Amazon ElastiCache cluster for reporting queries only</div>
+  <div class="exam-option-item">**D)** Configure a classic Application Load Balancer in front of the database instances</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -1037,17 +2027,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q44
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q44">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q44</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A financial application consists of an Auto Scaling group of Amazon EC2 instances, an Application Load Balancer, and a MySQL RDS instance set up in a Multi-AZ Deployment configuration. To protect customers' confidential data, it must be ensured that the Amazon RDS database is only accessible using an authentication token specific to the profile credentials of EC2 instances.**
 
 **Which of the following actions should be taken to meet this requirement?**
 
-- **A)** Enable IAM Database Authentication on the Amazon RDS MySQL instance and attach an IAM role with the appropriate permissions to the EC2 instances
-- **B)** Store the database password in an S3 bucket and download it via user data script
-- **C)** Configure SSL/TLS client certificates on each EC2 instance manually
-- **D)** Use AWS Secrets Manager with permanent hardcoded credentials in the application code
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Enable IAM Database Authentication on the Amazon RDS MySQL instance and attach an IAM role with the appropriate permissions to the EC2 instances</div>
+  <div class="exam-option-item">**B)** Store the database password in an S3 bucket and download it via user data script</div>
+  <div class="exam-option-item">**C)** Configure SSL/TLS client certificates on each EC2 instance manually</div>
+  <div class="exam-option-item">**D)** Use AWS Secrets Manager with permanent hardcoded credentials in the application code</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -1057,17 +2071,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q45
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q45">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q45</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A content management system (CMS) is hosted on a fleet of auto-scaled, On-Demand Amazon EC2 instances that use Amazon Aurora as its database. Currently, the system stores the file documents that users upload in one of the attached Amazon EBS volumes. The system's performance has been observed to be slow, and the manager has instructed the team to improve the architecture.**
 
 **In this scenario, which solution should be implemented to achieve a scalable, highly available, POSIX-compliant shared file system?**
 
-- **A)** Amazon Elastic File System (Amazon EFS)
-- **B)** Amazon S3 Standard
-- **C)** Amazon EBS Provisioned IOPS (io2) with Multi-Attach
-- **D)** Amazon FSx for Lustre
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Amazon Elastic File System (Amazon EFS)</div>
+  <div class="exam-option-item">**B)** Amazon S3 Standard</div>
+  <div class="exam-option-item">**C)** Amazon EBS Provisioned IOPS (io2) with Multi-Attach</div>
+  <div class="exam-option-item">**D)** Amazon FSx for Lustre</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -1081,17 +2119,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q46
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q46">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q46</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **An e-commerce company runs a highly scalable web application that depends on an Amazon Aurora database. As the number of users increases, the read replica faces difficulties keeping up with the increasing read traffic, causing performance bottlenecks during peak periods.**
 
 **Which of the following will resolve the issue with the most cost-effective solution?**
 
-- **A)** Implement Amazon ElastiCache in front of the Amazon Aurora database to cache frequent read queries
-- **B)** Upgrade the Aurora DB instance size to the largest available instance type
-- **C)** Create 15 Aurora Read Replicas across multiple regions
-- **D)** Migrate the database to Amazon DynamoDB
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Implement Amazon ElastiCache in front of the Amazon Aurora database to cache frequent read queries</div>
+  <div class="exam-option-item">**B)** Upgrade the Aurora DB instance size to the largest available instance type</div>
+  <div class="exam-option-item">**C)** Create 15 Aurora Read Replicas across multiple regions</div>
+  <div class="exam-option-item">**D)** Migrate the database to Amazon DynamoDB</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -1101,17 +2163,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q47
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q47">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q47</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A company has a cloud architecture composed of Linux and Windows Amazon EC2 instances that process high volumes of financial data 24 hours a day, 7 days a week. To ensure high availability of the systems, the Solutions Architect must create a solution that enables monitoring of memory and disk utilization metrics for all instances.**
 
 **Which of the following is the most suitable monitoring solution to implement?**
 
-- **A)** Install and configure the unified Amazon CloudWatch Agent on all Linux and Windows EC2 instances
-- **B)** Enable CloudWatch detailed monitoring on all EC2 instances
-- **C)** Use Amazon Inspector to collect memory and disk utilization
-- **D)** View memory and disk metrics from the default CloudWatch EC2 dashboard
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Install and configure the unified Amazon CloudWatch Agent on all Linux and Windows EC2 instances</div>
+  <div class="exam-option-item">**B)** Enable CloudWatch detailed monitoring on all EC2 instances</div>
+  <div class="exam-option-item">**C)** Use Amazon Inspector to collect memory and disk utilization</div>
+  <div class="exam-option-item">**D)** View memory and disk metrics from the default CloudWatch EC2 dashboard</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -1121,17 +2207,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q48
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q48">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q48</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A company has a web application that uses Internet Information Services (IIS) for Windows Server. A file share is used to store the application data on the network-attached storage of the company’s on-premises data center. To achieve a highly available system, the company plans to migrate the application and file share to AWS. The team considered using Logical Volume Management (LVM) stripe on Amazon EC2, but this approach would not provide a managed, highly available SMB file service.**
 
 **Which of the following can be used to fulfill this requirement?**
 
-- **A)** Amazon FSx for Windows File Server
-- **B)** Amazon EFS
-- **C)** Amazon S3 Glacier
-- **D)** AWS Storage Gateway Tape Gateway
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Amazon FSx for Windows File Server</div>
+  <div class="exam-option-item">**B)** Amazon EFS</div>
+  <div class="exam-option-item">**C)** Amazon S3 Glacier</div>
+  <div class="exam-option-item">**D)** AWS Storage Gateway Tape Gateway</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -1140,6 +2250,11 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 > Windows IIS Web Application များအတွက် native **SMB (Server Message Block)** protocol ဖြင့် shared file storage ပေးနိုင်သော fully-managed AWS service မှာ **Amazon FSx for Windows File Server** ဖြစ်ပါသည်။ Multi-AZ deployment ဖြင့် continuous availability ကို ပေးစွမ်းနိုင်ပြီး Windows NTFS permissions, Active Directory integration များကို အပြည့်အဝ support လုပ်ပါသည်။
 
 ---
+
+</div>
+</details>
+
+</div>
 
 ## Q49
 **A Forex trading platform, which frequently processes and stores global financial data every minute, is hosted in an on-premises data center and uses an Oracle database. Due to a recent cooling problem in its data center, the company urgently needs to migrate its infrastructure to AWS to improve the performance of its applications. As the Solutions Architect, the responsibility is to ensure that the database is properly migrated and remains available in case of database server failure in the future, following AWS Prescriptive Guidance for database migration and high availability.**
@@ -1163,17 +2278,37 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q50
+
+<div class="exam-q-box" id="q50">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q50</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A payment processing company plans to migrate its on-premises application to an Amazon EC2 instance. An IPv6 CIDR block is attached to the company’s Amazon VPC. Strict security policy mandates that the production VPC must only allow outbound communication over IPv6 between the instance and the internet but should prevent the internet from initiating an inbound IPv6 connection. The new architecture should also allow traffic flow inspection and traffic filtering.**
 
 **What should a solutions architect do to meet these requirements?**
 
-- **A)** Deploy an Egress-Only Internet Gateway in the VPC for outbound-only IPv6, and integrate AWS Network Firewall for traffic flow inspection and filtering
-- **B)** Deploy a NAT Gateway and configure IPv6 NAT translation
-- **C)** Deploy an Internet Gateway and use security groups to block all inbound traffic
-- **D)** Configure a Virtual Private Gateway with an IPsec VPN tunnel
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Deploy an Egress-Only Internet Gateway in the VPC for outbound-only IPv6, and integrate AWS Network Firewall for traffic flow inspection and filtering</div>
+  <div class="exam-option-item">**B)** Deploy a NAT Gateway and configure IPv6 NAT translation</div>
+  <div class="exam-option-item">**C)** Deploy an Internet Gateway and use security groups to block all inbound traffic</div>
+  <div class="exam-option-item">**D)** Configure a Virtual Private Gateway with an IPsec VPN tunnel</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -1185,17 +2320,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q51
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q51">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q51</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A Solutions Architect needs to make sure that the On-Demand Amazon EC2 instance can only be accessed from this IP address (110.238.98.71) via an SSH connection.**
 
 **Which configuration below will satisfy this requirement?**
 
-- **A)** Add an inbound rule to the instance's Security Group: Protocol TCP, Port 22, Source 110.238.98.71/32
-- **B)** Add an inbound rule to the instance's Security Group: Protocol TCP, Port 22, Source 110.238.98.71/0
-- **C)** Add an outbound rule to the instance's Network ACL: Protocol TCP, Port 22, Destination 110.238.98.71/32
-- **D)** Configure IAM policy to restrict SSH access by IP address
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Add an inbound rule to the instance's Security Group: Protocol TCP, Port 22, Source 110.238.98.71/32</div>
+  <div class="exam-option-item">**B)** Add an inbound rule to the instance's Security Group: Protocol TCP, Port 22, Source 110.238.98.71/0</div>
+  <div class="exam-option-item">**C)** Add an outbound rule to the instance's Network ACL: Protocol TCP, Port 22, Destination 110.238.98.71/32</div>
+  <div class="exam-option-item">**D)** Configure IAM policy to restrict SSH access by IP address</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -1207,17 +2366,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q52
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q52">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q52</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A software development company is using serverless computing with AWS Lambda to build and run applications without having to set up or manage servers. The company has a Lambda function that connects to a MongoDB Atlas, which is a popular Database as a Service (DBaaS) platform, and also uses a third-party API to fetch certain data for its application. One of the developers was instructed to create the environment variables for the MongoDB database hostname, username, and password, as well as the API credentials that will be used by the Lambda function for DEV, SIT, UAT, and PROD environments.**
 
 **Considering that the Lambda function is storing sensitive database and API credentials, how can this information be secured to prevent other developers on the team, or anyone, from seeing these credentials in plain text? Select the best option that provides maximum security.**
 
-- **A)** Store the credentials in AWS Secrets Manager (or Systems Manager Parameter Store SecureString) encrypted with AWS KMS, and retrieve them programmatically in the Lambda function code at runtime
-- **B)** Store credentials directly in Lambda environment variables in plain text and restrict Lambda console access
-- **C)** Commit the credentials in the GitHub repository encrypted with a password
-- **D)** Store credentials in an S3 bucket with public read access disabled
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Store the credentials in AWS Secrets Manager (or Systems Manager Parameter Store SecureString) encrypted with AWS KMS, and retrieve them programmatically in the Lambda function code at runtime</div>
+  <div class="exam-option-item">**B)** Store credentials directly in Lambda environment variables in plain text and restrict Lambda console access</div>
+  <div class="exam-option-item">**C)** Commit the credentials in the GitHub repository encrypted with a password</div>
+  <div class="exam-option-item">**D)** Store credentials in an S3 bucket with public read access disabled</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -1227,17 +2410,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q53
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q53">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q53</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A Solutions Architect is hosting a website in an Amazon S3 bucket named tutorialsdojo. The users load the website using the following URL: http://tutorialsdojo.s3-website-us-east-1.amazonaws.com. A new requirement has been introduced to add JavaScript on the webpages to make authenticated HTTP GET requests against the same bucket using the S3 API endpoint (tutorialsdojo.s3.amazonaws.com). However, upon testing, the web browser blocks JavaScript from allowing those requests.**
 
 **Which of the following options is the MOST suitable solution to implement for this scenario?**
 
-- **A)** Configure Cross-Origin Resource Sharing (CORS) on the tutorialsdojo S3 bucket to allow requests from http://tutorialsdojo.s3-website-us-east-1.amazonaws.com
-- **B)** Disable S3 Block Public Access on the tutorialsdojo bucket
-- **C)** Update the S3 bucket policy to allow s3:GetObject to all principals
-- **D)** Enable S3 Transfer Acceleration on the bucket
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Configure Cross-Origin Resource Sharing (CORS) on the tutorialsdojo S3 bucket to allow requests from http://tutorialsdojo.s3-website-us-east-1.amazonaws.com</div>
+  <div class="exam-option-item">**B)** Disable S3 Block Public Access on the tutorialsdojo bucket</div>
+  <div class="exam-option-item">**C)** Update the S3 bucket policy to allow s3:GetObject to all principals</div>
+  <div class="exam-option-item">**D)** Enable S3 Transfer Acceleration on the bucket</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -1247,17 +2454,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q54
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q54">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q54</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A company hosted an e-commerce website on an Auto Scaling group of Amazon EC2 instances behind an Application Load Balancer. The Solutions Architect noticed that the website is receiving a high number of illegitimate external requests from multiple systems with frequently changing IP addresses. To address the performance issues, the Solutions Architect must implement a solution that would block these requests while having minimal impact on legitimate traffic.**
 
 **Which of the following options fulfills this requirement?**
 
-- **A)** Implement AWS WAF with rate-based rules associated with the Application Load Balancer
-- **B)** Block the IP addresses manually in the VPC Network ACL
-- **C)** Configure security group rules to reject connections with high latency
-- **D)** Modify the Auto Scaling group cooldown period to 0 seconds
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Implement AWS WAF with rate-based rules associated with the Application Load Balancer</div>
+  <div class="exam-option-item">**B)** Block the IP addresses manually in the VPC Network ACL</div>
+  <div class="exam-option-item">**C)** Configure security group rules to reject connections with high latency</div>
+  <div class="exam-option-item">**D)** Modify the Auto Scaling group cooldown period to 0 seconds</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -1267,17 +2498,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q55
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q55">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q55</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A logistics company plans to automate its order management application. The company wants to use SFTP file transfer for uploading business-critical documents. Since the files are confidential, encryption at rest is required, and high availability must be ensured. Additionally, each file must be automatically deleted one month after creation.**
 
 **Which of the following options should be implemented to meet the company’s requirements with the least operational overhead?**
 
-- **A)** Use AWS Transfer Family for SFTP backed by Amazon S3 with default encryption enabled, and configure an S3 Lifecycle expiration rule to delete objects after 30 days
-- **B)** Launch an EC2 instance, install OpenSSH SFTP server, attach an EBS volume, and write a cron job to delete old files
-- **C)** Deploy an Amazon EFS file system with an EC2 SFTP proxy
-- **D)** Use Amazon SQS to receive SFTP files and store in DynamoDB
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Use AWS Transfer Family for SFTP backed by Amazon S3 with default encryption enabled, and configure an S3 Lifecycle expiration rule to delete objects after 30 days</div>
+  <div class="exam-option-item">**B)** Launch an EC2 instance, install OpenSSH SFTP server, attach an EBS volume, and write a cron job to delete old files</div>
+  <div class="exam-option-item">**C)** Deploy an Amazon EFS file system with an EC2 SFTP proxy</div>
+  <div class="exam-option-item">**D)** Use Amazon SQS to receive SFTP files and store in DynamoDB</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -1288,6 +2543,11 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 > - **Auto-delete after 1 month:** **S3 Lifecycle expiration rule** သတ်မှတ်ပြီး 30 days ပြည့်ပါက အလိုအလျောက် ဖျက်ပစ်နိုင်သဖြင့် human intervention နှင့် operational overhead လုံးဝ မရှိပါ။
 
 ---
+
+</div>
+</details>
+
+</div>
 
 ## Q56
 **There was an incident in a production environment where user data stored in an Amazon S3 bucket was accidentally deleted by a Junior DevOps Engineer. The issue was escalated to management, and after a few days, an instruction was given to improve the security and protection of AWS resources.**
@@ -1311,17 +2571,37 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q57
+
+<div class="exam-q-box" id="q57">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q57</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **An application that records weather data every minute is deployed in a fleet of Amazon EC2 Spot instances and uses a MySQL RDS database instance. Currently, there is only one Amazon RDS instance running in one Availability Zone. The database needs to be improved to ensure high availability by enabling synchronous data replication to another RDS instance.**
 
 **Which of the following performs synchronous data replication in RDS?**
 
-- **A)** Amazon RDS Multi-AZ Deployments
-- **B)** Amazon RDS Read Replicas
-- **C)** Amazon RDS Cross-Region Read Replicas
-- **D)** AWS Database Migration Service (AWS DMS)
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Amazon RDS Multi-AZ Deployments</div>
+  <div class="exam-option-item">**B)** Amazon RDS Read Replicas</div>
+  <div class="exam-option-item">**C)** Amazon RDS Cross-Region Read Replicas</div>
+  <div class="exam-option-item">**D)** AWS Database Migration Service (AWS DMS)</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -1333,19 +2613,43 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q58
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q58">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q58</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A retail company receives raw .csv data files into its Amazon S3 bucket from multiple sources on an hourly basis, with an average file size of 2 GB. The bucket is managed using S3 Access Grants for fine‑grained access control.**
 
 **An automated process must be implemented to convert these .csv files into the more efficient Apache Parquet format and store the converted files in another S3 bucket. Additionally, the conversion process must be automatically initiated each time a new file is uploaded into the S3 bucket.**
 
 **Which of the following options must be implemented to meet these requirements with the LEAST operational overhead?**
 
-- **A)** Configure an Amazon S3 Event Notification or EventBridge rule to trigger an AWS Glue ETL job that converts the CSV files to Apache Parquet format
-- **B)** Launch an Amazon EC2 instance running a custom Python script that continuously polls the S3 bucket
-- **C)** Use Amazon EMR cluster running 24/7 with Apache Spark to process files
-- **D)** Configure Amazon Athena to convert the CSV files using an INSERT INTO query via a Lambda scheduled cron
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Configure an Amazon S3 Event Notification or EventBridge rule to trigger an AWS Glue ETL job that converts the CSV files to Apache Parquet format</div>
+  <div class="exam-option-item">**B)** Launch an Amazon EC2 instance running a custom Python script that continuously polls the S3 bucket</div>
+  <div class="exam-option-item">**C)** Use Amazon EMR cluster running 24/7 with Apache Spark to process files</div>
+  <div class="exam-option-item">**D)** Configure Amazon Athena to convert the CSV files using an INSERT INTO query via a Lambda scheduled cron</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -1356,17 +2660,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q59
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q59">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q59</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A car dealership website hosted in Amazon EC2 stores car listings in an Amazon Aurora database managed by Amazon RDS. Once a vehicle has been sold, its data must be removed from the current listings and forwarded to a distributed processing system.**
 
 **Which of the following options can satisfy the given requirement?**
 
-- **A)** Configure an Amazon Aurora database trigger or stored procedure to invoke an AWS Lambda function that forwards the sold vehicle data
-- **B)** Use an EC2 cron job that polls the Aurora database every minute
-- **C)** Set up an Amazon CloudWatch alarm on Aurora CPU utilization to trigger an SNS notification
-- **D)** Configure an AWS DataSync task to copy the database table to Amazon S3
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Configure an Amazon Aurora database trigger or stored procedure to invoke an AWS Lambda function that forwards the sold vehicle data</div>
+  <div class="exam-option-item">**B)** Use an EC2 cron job that polls the Aurora database every minute</div>
+  <div class="exam-option-item">**C)** Set up an Amazon CloudWatch alarm on Aurora CPU utilization to trigger an SNS notification</div>
+  <div class="exam-option-item">**D)** Configure an AWS DataSync task to copy the database table to Amazon S3</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -1376,17 +2704,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q60
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q60">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q60</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A company needs to deploy at least two Amazon EC2 instances to support the normal workloads of its application and automatically scale up to six EC2 instances to handle the peak load. The architecture must be highly available and fault-tolerant as it is processing mission-critical workloads.**
 
 **As a Solutions Architect, what should be done to meet this requirement?**
 
-- **A)** Deploy an Auto Scaling group across three Availability Zones behind an Application Load Balancer, with minimum size 2 and maximum size 6
-- **B)** Deploy an Auto Scaling group across one Availability Zone with minimum size 2 and maximum size 6
-- **C)** Launch two EC2 instances with Elastic IP addresses in two different AWS Regions
-- **D)** Deploy an Auto Scaling group with minimum size 6 and maximum size 6 in a single subnet
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Deploy an Auto Scaling group across three Availability Zones behind an Application Load Balancer, with minimum size 2 and maximum size 6</div>
+  <div class="exam-option-item">**B)** Deploy an Auto Scaling group across one Availability Zone with minimum size 2 and maximum size 6</div>
+  <div class="exam-option-item">**C)** Launch two EC2 instances with Elastic IP addresses in two different AWS Regions</div>
+  <div class="exam-option-item">**D)** Deploy an Auto Scaling group with minimum size 6 and maximum size 6 in a single subnet</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -1396,17 +2748,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q61
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q61">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q61</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A company has a highly available architecture consisting of an Elastic Load Balancer and multiple Amazon EC2 instances configured with Auto Scaling across three Availability Zones. The company needs to monitor EC2 instances based on a specific metric that is not readily available in Amazon CloudWatch.**
 
 **Which of the following is a custom metric in CloudWatch that requires manual setup?**
 
-- **A)** Memory Utilization
-- **B)** CPU Utilization
-- **C)** Network In / Network Out
-- **D)** Disk Read Bytes / Disk Write Bytes
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Memory Utilization</div>
+  <div class="exam-option-item">**B)** CPU Utilization</div>
+  <div class="exam-option-item">**C)** Network In / Network Out</div>
+  <div class="exam-option-item">**D)** Disk Read Bytes / Disk Write Bytes</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -1420,17 +2796,41 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q62
+</div>
+</details>
+
+</div>
+
+<div class="exam-q-box" id="q62">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q62</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A company is using AWS Fargate to run a batch job whenever an object is uploaded to an Amazon S3 bucket. The minimum ECS task count is initially set to 1 to save on costs and should only be increased based on new objects uploaded to the S3 bucket.**
 
 **Which is the most suitable option to implement with the LEAST amount of effort?**
 
-- **A)** Configure Amazon S3 Event Notifications to send messages to an Amazon SQS queue, and configure ECS Service Auto Scaling based on the SQS queue length (backlog metric)
-- **B)** Write a custom Lambda function to poll S3 every second and use ECS API to run tasks
-- **C)** Create a CloudWatch alarm based on Fargate CPU utilization to scale the task count
-- **D)** Configure S3 Batch Operations to launch EC2 instances directly
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Configure Amazon S3 Event Notifications to send messages to an Amazon SQS queue, and configure ECS Service Auto Scaling based on the SQS queue length (backlog metric)</div>
+  <div class="exam-option-item">**B)** Write a custom Lambda function to poll S3 every second and use ECS API to run tasks</div>
+  <div class="exam-option-item">**C)** Create a CloudWatch alarm based on Fargate CPU utilization to scale the task count</div>
+  <div class="exam-option-item">**D)** Configure S3 Batch Operations to launch EC2 instances directly</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -1441,6 +2841,11 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 > 2. Amazon ECS Fargate Service တွင် **Target Tracking Scaling Policy (သို့မဟုတ် Step Scaling)** ကို SQS Queue Length (ApproximateNumberOfMessagesVisible) ပေါ်တွင် ချိန်ညှိထားခြင်း ဖြစ်ပါသည်။ SQS ထဲတွင် စီတန်းနေသော message များပြားလာပါက Fargate task အရေအတွက် အလိုအလျောက် တိုးလာမည် ဖြစ်ပါသည်။
 
 ---
+
+</div>
+</details>
+
+</div>
 
 ## Q63
 **A government agency plans to store confidential tax documents on AWS. Due to the sensitive information in the files, the Solutions Architect must restrict the data access requests made to the storage solution to a specific Amazon VPC only. The solution should also prevent the files from being deleted or overwritten to meet the regulatory requirement of having a write-once-read-many (WORM) storage model.**
@@ -1464,17 +2869,37 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 
 ---
 
-## Q64
+
+<div class="exam-q-box" id="q64">
+  <div class="exam-q-header">
+    <span class="exam-q-num">Q64</span>
+    <div class="exam-badges-wrap">
+      <span class="exam-badge exam-badge-single">Single Choice</span>
+    </div>
+  </div>
+
+<div class="exam-q-scenario">
+
 **A government entity is conducting a population and housing census in the city. Each household’s information uploaded to its online portal is stored in encrypted files in Amazon S3. The government assigned its Solutions Architect to set compliance policies that verify data containing personally identifiable information (PII) in a manner that meets its compliance standards. It should also be alerted if there are potential policy violations with the privacy of its S3 buckets, beyond the object listing that S3 Inventory provides.**
 
 **Which of the following should the Architect implement to satisfy this requirement?**
 
-- **A)** Enable Amazon Macie to scan S3 buckets for sensitive PII data and generate security alerts
-- **B)** Use Amazon GuardDuty to monitor VPC Flow Logs
-- **C)** Enable AWS CloudTrail data events and analyze them with Amazon Athena
-- **D)** Run Amazon Inspector on the S3 bucket
+</div>
 
----
+<div class="exam-options-list">
+  <div class="exam-option-item">**A)** Enable Amazon Macie to scan S3 buckets for sensitive PII data and generate security alerts</div>
+  <div class="exam-option-item">**B)** Use Amazon GuardDuty to monitor VPC Flow Logs</div>
+  <div class="exam-option-item">**C)** Enable AWS CloudTrail data events and analyze them with Amazon Athena</div>
+  <div class="exam-option-item">**D)** Run Amazon Inspector on the S3 bucket</div>
+</div>
+
+<details class="exam-answer-details">
+<summary class="exam-summary-btn">
+  <span>💡 Click to Reveal Answer & In-Depth Burmese Explanation (အဖြေနှင့် ရှင်းလင်းချက် ကြည့်ရန်)</span>
+  <span>▼</span>
+</summary>
+<div class="exam-answer-body">
+
 **✅ Correct Answer: A**
 
 ### မြန်မာဘာသာ အသေးစိတ် ရှင်းလင်းချက်
@@ -1483,6 +2908,11 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 > **Amazon Macie** သည် Machine Learning နှင့် Pattern Matching စနစ်များကို အသုံးပြု၍ Amazon S3 အတွင်းရှိ data များတွင် **Personally Identifiable Information (PII)** (ဥပမာ: မှတ်ပုံတင်နံပါတ်၊ နိုင်ငံကူးလက်မှတ်၊ ဘဏ်အကောင့်၊ ဖုန်းနံပါတ် စသည်) ပါဝင်နေမှု ရှိ/မရှိကို အလိုအလျောက် ရှာဖွေစစ်ဆေး (discover, classify, protect) ပေးသော Data Security & Privacy Service ဖြစ်ပါသည်။ ထို့အပြင် S3 bucket များ public ပေါက်ကြားနေခြင်း ရှိ/မရှိ privacy violations များကို alert ထုတ်ပေးနိုင်ပါသည်။
 
 ---
+
+</div>
+</details>
+
+</div>
 
 ## Q65
 **A tech company that you are working for has undertaken a Total Cost Of Ownership (TCO) analysis evaluating the use of Amazon S3 versus acquiring more storage hardware. The result was that all 1200 employees would be granted access to use Amazon S3 for the storage of their personal documents.**
@@ -1523,3 +2953,4 @@ description: "AWS Certified Solutions Architect - Associate (SAA-C03) Mock Exam 
 | **Databases** | Q05, Q06, Q12, Q14, Q21, Q24, Q27, Q37, Q43, Q44, Q46, Q49, Q57, Q59 | DynamoDB Streams/Sharding, Aurora Global/Serverless/Custom Endpoints, ElastiCache Redis AUTH, RDS Enhanced Monitoring |
 | **Networking & Security** | Q11, Q17, Q18, Q28, Q30, Q31, Q32, Q33, Q34, Q35, Q39, Q40, Q41, Q50, Q51, Q52, Q54, Q64 | Gateway VPC Endpoints, EKS Envelope Encryption, WAF Rate-based, Shield Advanced, KMS BYOK, AWS Artifact, Macie |
 | **Analytics & Serverless** | Q03, Q13, Q23, Q29, Q58, Q62 | Lake Formation + Athena, Canary Deployments, Kinesis + Lambda, S3 Event + SQS + Glue |
+
